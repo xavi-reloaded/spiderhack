@@ -66,7 +66,6 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         String requestUrl = rss_server;
         String html = downloader.getRequest(requestUrl);
 
-        addNewSeed(new Seed(rss_server+"/foxnews/latest", 100));
 
         //TODO: get rss feeds(seeds)
 
@@ -79,6 +78,8 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
 //        } else {
 //            System.out.println("error :"+requestUrl);
 //        }
+
+        addNewSeed(new Seed(rss_server+"/foxnews/latest", 100));
 
         /////////////////////////////////////////////////////////
         // Start Agents

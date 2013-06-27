@@ -9,7 +9,7 @@ package com.apiumtech.spider;
  */
 public interface SpiderConfig {
 
-    String WORKING_FOLDER = "/media/diocane/sd_spider";
-    String cacheFolder = "/media/diocane/sd_spider/cache";
+    String WORKING_FOLDER = "sd_spider";
+    String cacheFolder = "sd_spider/cache";
 
 }
