@@ -58,21 +58,5 @@ public class SpiderGettedFileTest {
         Assert.assertEquals("ERROR: ["+actual+"]","+34934371628",actual);
     }
 
-    @Test
-    public void test_getDataFromGettedFolder() throws Exception {
-        File folder = new File("/media/diocane/sd_spider/spider");
-        int actual = sut.getDataFromGettedFolder(folder);
-        Assert.assertEquals(14439,actual);
-    }
-
-    @Test
-    public void test_createCSVfromGettedFolder() throws Exception {
-        File folder = new File("/media/diocane/sd_spider/spider");
-        int actual = sut.createCSVfromGettedFolder(folder);
-        Assert.assertEquals(14439,actual);
-    }
-
-
-
 
 }
