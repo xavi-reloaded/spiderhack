@@ -20,6 +20,7 @@ public class SpiderSiRSS_Test
         sut = new SpiderSiRSS();
     }
 
+
     @Test
     public void test_getNewsFromRSSserver_foxRSS_searchRSSfeeds() throws Exception {
         String rssServer = "http://feeds.foxnews.com";
