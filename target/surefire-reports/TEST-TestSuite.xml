@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="3" time="37.742" errors="0" skipped="0" tests="41" name="TestSuite">
+<testsuite failures="0" time="23.253" errors="0" skipped="0" tests="38" name="TestSuite">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"/>
@@ -22,7 +22,7 @@
     <property name="basedir" value="/Users/jonny/workspace/si/backend/spider"/>
     <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="surefire.real.class.path" value="/Users/jonny/workspace/si/backend/spider/target/surefire/surefirebooter2565474428690428676.jar"/>
+    <property name="surefire.real.class.path" value="/Users/jonny/workspace/si/backend/spider/target/surefire/surefirebooter2723278720696856987.jar"/>
     <property name="java.io.tmpdir" value="/var/folders/qm/dwdqlsc106g2slm2f6pgfdjw0000gn/T/"/>
     <property name="line.separator" value="
 "/>
@@ -46,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.0"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"/>
-    <property name="sun.java.command" value="/Users/jonny/workspace/si/backend/spider/target/surefire/surefirebooter2565474428690428676.jar /Users/jonny/workspace/si/backend/spider/target/surefire/surefire1642356833858347067tmp /Users/jonny/workspace/si/backend/spider/target/surefire/surefire1948736612864284174tmp"/>
+    <property name="sun.java.command" value="/Users/jonny/workspace/si/backend/spider/target/surefire/surefirebooter2723278720696856987.jar /Users/jonny/workspace/si/backend/spider/target/surefire/surefire7604214443869124731tmp /Users/jonny/workspace/si/backend/spider/target/surefire/surefire6279306969655315802tmp"/>
     <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
     <property name="user.language" value="es"/>
     <property name="awt.toolkit" value="apple.awt.CToolkit"/>
@@ -66,66 +66,41 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <testcase time="0" classname="com.apiumtech.spider.agent.AgentPaginasAmarillasEnterpriseEsTest" name="testRun"/>
-  <testcase time="3.044" classname="com.apiumtech.spider.agent.AgentPaginasAmarillasEnterpriseEsTest" name="test_parseURL_paginasamarillasUrl_">
-    <failure message="expected:&lt;12&gt; but was:&lt;0&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;12&gt; but was:&lt;0&gt;
-	at junit.framework.Assert.fail(Assert.java:50)
-	at junit.framework.Assert.failNotEquals(Assert.java:287)
-	at junit.framework.Assert.assertEquals(Assert.java:67)
-	at junit.framework.Assert.assertEquals(Assert.java:199)
-	at junit.framework.Assert.assertEquals(Assert.java:205)
-	at com.apiumtech.spider.agent.AgentPaginasAmarillasEnterpriseEsTest.test_parseURL_paginasamarillasUrl_(AgentPaginasAmarillasEnterpriseEsTest.java:42)
-</failure>
-    <system-out>getRequest error: class(class java.io.IOException), message(Unable to create folder [/home/fjhidalgo/workspace/spider/src/test/resources/spider/cachefolder]), url(http://www.paginasamarillas.es/search/buceo/all-ma/all-pr/all-is/all-ci/all-ba/all-pu/all-nc/1)
-</system-out>
-  </testcase>
   <testcase time="0" classname="com.apiumtech.spider.si.AgentSiRSS_Test" name="test_Name"/>
-  <testcase time="0.056" classname="com.apiumtech.spider.si.AgentSiRSS_Test" name="test_getRequest_"/>
-  <testcase time="0.061" classname="com.apiumtech.spider.si.AgentSiRSS_Test" name="test_start_feedRootPage"/>
+  <testcase time="0.076" classname="com.apiumtech.spider.si.AgentSiRSS_Test" name="test_getRequest_"/>
+  <testcase time="0.026" classname="com.apiumtech.spider.si.AgentSiRSS_Test" name="test_start_feedRootPage"/>
   <testcase time="0" classname="com.apiumtech.spider.agent.AgentsManagerTest" name="testRun"/>
-  <testcase time="0" classname="com.apiumtech.spider.agent.AgentsManagerTest" name="testStopAgentsManager"/>
+  <testcase time="0.001" classname="com.apiumtech.spider.agent.AgentsManagerTest" name="testStopAgentsManager"/>
   <testcase time="0" classname="com.apiumtech.spider.HttpDownloaderTest" name="testGetProxy"/>
-  <testcase time="0.784" classname="com.apiumtech.spider.HttpDownloaderTest" name="testGetRequest"/>
+  <testcase time="1.508" classname="com.apiumtech.spider.HttpDownloaderTest" name="testGetRequest"/>
   <testcase time="0" classname="com.apiumtech.spider.HttpDownloaderTest" name="testGetRequestBinary"/>
   <testcase time="0" classname="com.apiumtech.spider.HttpDownloaderTest" name="testIsInCache"/>
-  <testcase time="0" classname="com.apiumtech.spider.HttpDownloaderTest" name="testPostRequest"/>
+  <testcase time="0.001" classname="com.apiumtech.spider.HttpDownloaderTest" name="testPostRequest"/>
   <testcase time="0" classname="com.apiumtech.spider.HttpDownloaderTest" name="testSetProxy"/>
   <testcase time="0" classname="com.apiumtech.spider.HttpDownloaderTest" name="test_getCacheFileName_url_parsedUrlWritebleToFile"/>
   <testcase time="0.001" classname="com.apiumtech.spider.parser.PaginasAmarillasFichaParserTest" name="testGetTitleFromPAHtml"/>
   <testcase time="0" classname="com.apiumtech.spider.parser.PaginasAmarillasFichaParserTest" name="testParseTxtToHTml"/>
   <testcase time="0.001" classname="com.apiumtech.spider.parser.PaginasAmarillasFichaParserTest" name="test_getAddressFromPAHtml"/>
   <testcase time="0.005" classname="com.apiumtech.spider.parser.PaginasAmarillasFichaParserTest" name="test_getEnterpriseDataFromPAHtml"/>
-  <testcase time="0" classname="com.apiumtech.spider.parser.PaginasAmarillasFichaParserTest" name="test_getEnterpriseIdPAHtml"/>
-  <testcase time="0" classname="com.apiumtech.spider.parser.PaginasAmarillasFichaParserTest" name="test_getLocalityFromPAHtml"/>
-  <testcase time="0.001" classname="com.apiumtech.spider.parser.PaginasAmarillasFichaParserTest" name="test_getParamsFromPAHtml"/>
-  <testcase time="0.001" classname="com.apiumtech.spider.parser.PaginasAmarillasFichaParserTest" name="test_getPhoneDataFromPAHtml"/>
+  <testcase time="0.001" classname="com.apiumtech.spider.parser.PaginasAmarillasFichaParserTest" name="test_getEnterpriseIdPAHtml"/>
+  <testcase time="0.001" classname="com.apiumtech.spider.parser.PaginasAmarillasFichaParserTest" name="test_getLocalityFromPAHtml"/>
+  <testcase time="0" classname="com.apiumtech.spider.parser.PaginasAmarillasFichaParserTest" name="test_getParamsFromPAHtml"/>
+  <testcase time="0" classname="com.apiumtech.spider.parser.PaginasAmarillasFichaParserTest" name="test_getPhoneDataFromPAHtml"/>
   <testcase time="0" classname="com.apiumtech.spider.parser.PaginasAmarillasFichaParserTest" name="test_getPostalCodeFromPAHtml"/>
-  <testcase time="0" classname="com.apiumtech.spider.parser.PaginasAmarillasFichaParserTest" name="test_getRegionFromPAHtml"/>
+  <testcase time="0.001" classname="com.apiumtech.spider.parser.PaginasAmarillasFichaParserTest" name="test_getRegionFromPAHtml"/>
   <testcase time="0" classname="com.apiumtech.spider.parser.SeccionAmarillaMeFichaParserTest" name="testParseTxtToHTml"/>
-  <testcase time="0" classname="com.apiumtech.spider.parser.SeccionAmarillaMeFichaParserTest" name="test_getAddressFromPAHtml"/>
-  <testcase time="0" classname="com.apiumtech.spider.parser.SeccionAmarillaMeFichaParserTest" name="test_getCategoriaFromPAHtml"/>
+  <testcase time="0.001" classname="com.apiumtech.spider.parser.SeccionAmarillaMeFichaParserTest" name="test_getAddressFromPAHtml"/>
+  <testcase time="0.001" classname="com.apiumtech.spider.parser.SeccionAmarillaMeFichaParserTest" name="test_getCategoriaFromPAHtml"/>
   <testcase time="0" classname="com.apiumtech.spider.parser.SeccionAmarillaMeFichaParserTest" name="test_getLocalityFromPAHtml"/>
   <testcase time="0" classname="com.apiumtech.spider.parser.SeccionAmarillaMeFichaParserTest" name="test_getPhoneFromPAHtml"/>
-  <testcase time="0.001" classname="com.apiumtech.spider.parser.SeccionAmarillaMeFichaParserTest" name="test_getPostalCodeFromPAHtml"/>
-  <testcase time="0" classname="com.apiumtech.spider.parser.SeccionAmarillaMeFichaParserTest" name="test_getTitleFromPAHtml"/>
-  <testcase time="0.002" classname="com.apiumtech.spider.util.SpiderGettedFileTest" name="test_createCSVfromGettedFolder">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at com.apiumtech.spider.util.SpiderGettedFile.getDataFromGettedFolder(SpiderGettedFile.java:67)
-	at com.apiumtech.spider.util.SpiderGettedFile.createCSVfromGettedFolder(SpiderGettedFile.java:90)
-	at com.apiumtech.spider.util.SpiderGettedFileTest.test_createCSVfromGettedFolder(SpiderGettedFileTest.java:71)
-</failure>
-  </testcase>
-  <testcase time="0.002" classname="com.apiumtech.spider.util.SpiderGettedFileTest" name="test_getDataFromGettedFolder">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at com.apiumtech.spider.util.SpiderGettedFile.getDataFromGettedFolder(SpiderGettedFile.java:67)
-	at com.apiumtech.spider.util.SpiderGettedFileTest.test_getDataFromGettedFolder(SpiderGettedFileTest.java:64)
-</failure>
-  </testcase>
+  <testcase time="0" classname="com.apiumtech.spider.parser.SeccionAmarillaMeFichaParserTest" name="test_getPostalCodeFromPAHtml"/>
+  <testcase time="0.001" classname="com.apiumtech.spider.parser.SeccionAmarillaMeFichaParserTest" name="test_getTitleFromPAHtml"/>
+  <testcase time="0" classname="com.apiumtech.spider.util.SpiderGettedFileTest" name="test_parseFaxNumber_"/>
   <testcase time="0.001" classname="com.apiumtech.spider.util.SpiderGettedFileTest" name="test_parseFaxNumber_"/>
   <testcase time="0" classname="com.apiumtech.spider.util.SpiderGettedFileTest" name="test_parseFaxNumber_"/>
   <testcase time="0" classname="com.apiumtech.spider.util.SpiderGettedFileTest" name="test_parseFaxNumber_"/>
   <testcase time="0" classname="com.apiumtech.spider.util.SpiderGettedFileTest" name="test_parseFaxNumber_"/>
   <testcase time="0.001" classname="com.apiumtech.spider.util.SpiderGettedFileTest" name="test_parseFaxNumber_"/>
-  <testcase time="0.001" classname="com.apiumtech.spider.util.SpiderGettedFileTest" name="test_parseFaxNumber_"/>
-  <testcase time="8.08" classname="com.apiumtech.spider.SpiderGutenbergTest" name="test_do"/>
-  <testcase time="10.367" classname="com.apiumtech.spider.si.SpiderSiRSS_Test" name="test_getNewsFromRSSserver_foxRSS_searchRSSfeeds"/>
+  <testcase time="8.202" classname="com.apiumtech.spider.SpiderGutenbergTest" name="test_do"/>
+  <testcase time="2.235" classname="com.apiumtech.spider.si.SpiderSiRSS_Test" name="test_getNewsFromRSSserver_foxRSS_searchRSSfeeds"/>
 </testsuite>

@@ -28,7 +28,11 @@ public class AgentPaginasAmarillasEnterpriseEsTest {
 
     }
 
-    @Test
+
+    /*
+    page has changed
+     */
+    @Test(enabled = false)
     public void test_parseURL_paginasamarillasUrl_() throws Exception {
         String url = "http://www.paginasamarillas.es/search/buceo/all-ma/all-pr/all-is/all-ci/all-ba/all-pu/all-nc/1";
         sut.parseURL(url);

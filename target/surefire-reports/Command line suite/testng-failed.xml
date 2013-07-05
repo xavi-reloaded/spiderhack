@@ -3,23 +3,11 @@
 <suite verbose="0" name="Failed suite [Command line suite]">
   <test name="Command line test(failed)" preserve-order="true">
     <classes>
-      <class name="com.apiumtech.spider.si.AgentSiRSS_Test">
+      <class name="com.apiumtech.spider.si.SpiderSiRSS_Test">
         <methods>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.apiumtech.spider.si.AgentSiRSS_Test -->
-      <class name="com.apiumtech.spider.SpiderGutenbergTest">
-        <methods>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.apiumtech.spider.SpiderGutenbergTest -->
-      <class name="com.apiumtech.spider.util.SpiderGettedFileTest">
-        <methods>
-          <include name="test_getDataFromGettedFolder"/>
-          <include name="setUp"/>
-          <include name="test_createCSVfromGettedFolder"/>
-        </methods>
-      </class> <!-- com.apiumtech.spider.util.SpiderGettedFileTest -->
+      </class> <!-- com.apiumtech.spider.si.SpiderSiRSS_Test -->
       <class name="com.apiumtech.spider.agent.AgentPaginasAmarillasEnterpriseEsTest">
         <methods>
           <include name="test_parseURL_paginasamarillasUrl_"/>
@@ -31,26 +19,36 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- com.apiumtech.spider.agent.AgentsManagerTest -->
-      <class name="com.apiumtech.spider.parser.PaginasAmarillasFichaParserTest">
-        <methods>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.apiumtech.spider.parser.PaginasAmarillasFichaParserTest -->
-      <class name="com.apiumtech.spider.parser.SeccionAmarillaMeFichaParserTest">
-        <methods>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.apiumtech.spider.parser.SeccionAmarillaMeFichaParserTest -->
       <class name="com.apiumtech.spider.HttpDownloaderTest">
         <methods>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.apiumtech.spider.HttpDownloaderTest -->
-      <class name="com.apiumtech.spider.si.SpiderSiRSS_Test">
+      <class name="com.apiumtech.spider.parser.SeccionAmarillaMeFichaParserTest">
         <methods>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.apiumtech.spider.si.SpiderSiRSS_Test -->
+      </class> <!-- com.apiumtech.spider.parser.SeccionAmarillaMeFichaParserTest -->
+      <class name="com.apiumtech.spider.util.SpiderGettedFileTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.apiumtech.spider.util.SpiderGettedFileTest -->
+      <class name="com.apiumtech.spider.parser.PaginasAmarillasFichaParserTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.apiumtech.spider.parser.PaginasAmarillasFichaParserTest -->
+      <class name="com.apiumtech.spider.SpiderGutenbergTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.apiumtech.spider.SpiderGutenbergTest -->
+      <class name="com.apiumtech.spider.si.AgentSiRSS_Test">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.apiumtech.spider.si.AgentSiRSS_Test -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->
