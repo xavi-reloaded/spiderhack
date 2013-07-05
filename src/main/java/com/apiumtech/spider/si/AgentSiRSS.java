@@ -1,6 +1,5 @@
 package com.apiumtech.spider.si;
 
-import com.apiumtech.spider.RegExpHelper;
 import com.apiumtech.spider.agent.Agent;
 import com.socialintellegentia.commonhelpers.rss.Feed;
 import com.socialintellegentia.commonhelpers.rss.FeedMessage;
@@ -17,10 +16,11 @@ import java.io.IOException;
  */
 public class AgentSiRSS extends Agent
 {
-
+    private RSSFeedParser parser;
 
     public AgentSiRSS(String workingFolder, String cacheFolder, long minutesInCache) throws IOException, InterruptedException {
         super(workingFolder, cacheFolder, minutesInCache);
+        parser = new RSSFeedParser();
     }
 
     @Override
@@ -40,11 +40,11 @@ public class AgentSiRSS extends Agent
             }
             else
             {
-                String name = RegExpHelper.getFirstMatch(url, "/([^\"/]+)\\.txt\\.utf8", 1);
+//                String name = RegExpHelper.getFirstMatch(url, "/([^\"/]+)\\.txt\\.utf8", 1);
 //                saveResult(rawnews, name);
-                RSSFeedParser parser = new RSSFeedParser();
+                System.out.println(rawnews);
                 Feed feed = parser.readFeed(rawnews);
-                System.out.println(feed);
+//                System.out.println(feed);
                 for (FeedMessage message : feed.getMessages()) {
                     System.out.println(message);
 
@@ -53,6 +53,7 @@ public class AgentSiRSS extends Agent
         }
         catch(Exception e)
         {
+            System.out.println("getRequest error: class(" + e.getClass().toString() + "), message(" + e.getMessage() + ")");
             e.printStackTrace();
         }
     }

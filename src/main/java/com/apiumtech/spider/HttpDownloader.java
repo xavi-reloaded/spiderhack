@@ -41,7 +41,7 @@ public class HttpDownloader
 		return result;
 	}
 
-	private String getCacheFileName(String url)
+	public String getCacheFileName(String url)
 	{
 		return (m_cacheFolder + System.getProperty("file.separator") + url.replaceAll("[\\\\/:\\*\"\\?<>\\|]", "") + ".html").toLowerCase();
 	}
@@ -53,7 +53,8 @@ public class HttpDownloader
 		if(url != null && m_cacheFolder != null)
 		{
 			String cachefile = getCacheFileName(url);
-			result = minutesCache > -1 && FileHelper.fileExists(cachefile) && getMinutesSinceLastModified(cachefile) < minutesCache;
+            boolean fileExists = FileHelper.fileExists(cachefile);
+            result = minutesCache > -1 && fileExists && getMinutesSinceLastModified(cachefile) < minutesCache;
 		}
 
 		return result;
@@ -94,8 +95,7 @@ public class HttpDownloader
 		{
 			if(isInCache(url, minutesInCache))
 			{
-				// System.out.println("Page retrieved from cache [" + url +
-				// "]");
+				System.out.println("Page retrieved from cache [" + url + "]");
 				return getFromCache(url);
 			}
 			else
@@ -103,15 +103,16 @@ public class HttpDownloader
 				try
 				{
 					URLConnection conn = null;
-					if(m_proxy != null)
+                    URL urlObject = new URL(url);
+                    if(m_proxy != null)
 					{
-						conn = (new URL(url)).openConnection(m_proxy);
+						conn = urlObject.openConnection(m_proxy);
 						conn.setConnectTimeout(m_connectionTimeout);
 						conn.setReadTimeout(m_readTimeout);
 					}
 					else
 					{
-						conn = (new URL(url)).openConnection();
+						conn = urlObject.openConnection();
 						conn.setConnectTimeout(m_connectionTimeout);
 						conn.setReadTimeout(m_readTimeout);
 					}
@@ -155,7 +156,7 @@ public class HttpDownloader
 				}
 				catch(Exception e)
 				{
-					//System.out.println("getRequest error: class(" + e.getClass().toString() + "), message(" + e.getMessage() + "), url(" + url + ")");
+					System.out.println("getRequest error: class(" + e.getClass().toString() + "), message(" + e.getMessage() + "), url(" + url + ")");
 					response = null;
 				}
 			}
