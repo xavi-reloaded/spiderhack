@@ -36,8 +36,6 @@ public class AgentSiRSS_Test implements SpiderConfig
 
     @Test
     public void test_Name() throws Exception {
-
-
         sut.start(url, url);
 
     }
