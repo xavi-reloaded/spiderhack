@@ -27,7 +27,7 @@ public class AgentSiRSS extends Agent
         {
             clearNewLinks();
             String url = getUrl();
-            String rawnews = getRequest(url);
+            StringBuffer rawnews = getRequest(url);
 
             if(rawnews == null)
             {

@@ -19,7 +19,7 @@ public class AgentGutenbergEpub extends Agent
 			clearNewLinks();
 
 			String url = getUrl();
-			String html = getRequest(url);
+			String html = getRequest(url).toString();
 			if(html == null)
 			{
 				System.out.println("Error requesting \"" + url + "\" from \"" + getProxy() + "\"");

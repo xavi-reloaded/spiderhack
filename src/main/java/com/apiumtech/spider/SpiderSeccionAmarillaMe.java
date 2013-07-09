@@ -67,7 +67,7 @@ public class SpiderSeccionAmarillaMe extends AgentsManager implements SpiderConf
         String requestUrl = "http://www.seccionamarilla.com.mx/resultados/"+ group + "/distrito-federal/";
         //String html = downloader.getRequest(requestUrl);
 
-        String html = downloader.getRequest(requestUrl);
+        String html = downloader.getRequest(requestUrl).toString();
 
         if (html!=null) {
             int numOfItems = Integer.parseInt("0" + RegExpHelper.getFirstMatch(html, "</strong></h1>&nbsp;\\(([0-9]+)\\)</div>", 1));

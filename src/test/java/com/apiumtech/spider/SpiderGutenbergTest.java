@@ -1,8 +1,5 @@
 package com.apiumtech.spider;
 
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-
 /**
  * Created with IntelliJ IDEA.
  * User: fjhidalgo
@@ -14,13 +11,13 @@ public class SpiderGutenbergTest {
 
     private SpiderGutenberg sut;
 
-    @BeforeMethod
-    public void setUp() throws Exception {
-        sut = new SpiderGutenberg();
-    }
-
-    @Test
-    public void test_do() throws Exception {
-        sut.getLanguageBooks("english","en");
-    }
+//    @BeforeMethod
+//    public void setUp() throws Exception {
+//        sut = new SpiderGutenberg();
+//    }
+//
+//    @Test
+//    public void test_do() throws Exception {
+//        sut.getLanguageBooks("english","en");
+//    }
 }

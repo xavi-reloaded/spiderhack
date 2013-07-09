@@ -38,8 +38,8 @@ public class HttpDownloaderTest {
     @Test
     public void testGetRequest() throws Exception {
         String url = "http://www.paginasamarillas.es/search/colegio-publico/all-ma/all-pr/all-is/all-ci/all-ba/all-pu/all-nc/1";
-        String actual = sut.getRequest(url, -1);
-        Assert.assertTrue(actual, actual.startsWith("\r\n<!DOCTYPE html PUBLIC"));
+        StringBuffer actual = sut.getRequest(url, -1);
+        Assert.assertTrue(actual.toString(), actual.toString().startsWith("\r\n<!DOCTYPE html PUBLIC"));
     }
 
     @Test

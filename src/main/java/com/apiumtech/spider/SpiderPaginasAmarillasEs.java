@@ -80,7 +80,7 @@ public class SpiderPaginasAmarillasEs extends AgentsManager implements SpiderCon
         // Add Seeds
         /////////////////////////////////////////////////////////
         String requestUrl = "http://www.paginasamarillas.es/search/" + group + "/all-ma/all-pr/all-is/all-ci/all-ba/all-pu/all-nc/1";
-        String html = downloader.getRequest(requestUrl);
+        String html = downloader.getRequest(requestUrl).toString();
 
         if (html!=null) {
             int numOfItems = Integer.parseInt("0" + RegExpHelper.getFirstMatch(html, "</strong></h1>&nbsp;\\(([0-9]+)\\)</div>", 1));

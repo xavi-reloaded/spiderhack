@@ -23,7 +23,7 @@ public class AgentPaginasAmarillasEs extends Agent
         {
             String url = urls.get(j);
             //url= "http://www.becerrildelasierra.es/index.php?option=com_contact&task=view&contact_id=4&Itemid=3";
-            String html = getRequest(url);
+            String html = getRequest(url).toString();
             if(html == null)
             {
                 //System.out.println("Error requesting URL level 2 (" + url + ") from proxy (" + getProxy() + ")");
@@ -132,7 +132,7 @@ public class AgentPaginasAmarillasEs extends Agent
 			if(url.matches("^http://www\\.paginasamarillas\\.es.*")) ////////////////////////////////////////////////////////////////////
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			{
-                String html = getRequest(url);
+                String html = getRequest(url).toString();
                 if(html == null)
                 {
                     //System.out.println("Error requesting URL (" + url + ") from proxy (" + getProxy() + ")");
@@ -173,7 +173,7 @@ public class AgentPaginasAmarillasEs extends Agent
                 //url = "http://www.consaburum.com";
                 //url = "http://edu.jccm.es/ies/consaburum";
                 //url = "http://www.ayuntamientodecubasdelasagra.es";
-                String html = getRequest(url);
+                String html = getRequest(url).toString();
                 if(html == null)
                 {
                     //System.out.println("Error requesting URL level 1 (" + url + ") from proxy (" + getProxy() + ")");

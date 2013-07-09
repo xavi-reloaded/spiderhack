@@ -123,7 +123,7 @@ public class AnonymousProxyManager implements Runnable,SpiderConfig
 	private List<Proxy> getProxyList_rosinstrumentcom(String cacheFolder) throws IOException
 	{
 		HttpDownloader downloader = new HttpDownloader(cacheFolder, 60 * 24, 5000, 10000);
-		String response = downloader.getRequest("http://tools.rosinstrument.com/proxy/?rule2");
+		String response = downloader.getRequest("http://tools.rosinstrument.com/proxy/?rule2").toString();
 		FileHelper.stringToFile(response, WORKING_FOLDER+"/test.html");
 		Long modulus = new Long(RegExpHelper.getFirstMatch(response, "Math.sqrt\\(([0-9]+)\\)", 1));
 		String rawProxyList = RegExpHelper.getFirstMatch(response, "hideText\\('([^']*)'\\)", 1);
@@ -166,7 +166,7 @@ public class AnonymousProxyManager implements Runnable,SpiderConfig
 			HttpDownloader downloader = new HttpDownloader(null, -1, 5000, 10000);
 			downloader.setProxy(proxy);
 			String key = "" + Math.random();
-			String response = downloader.getRequest("http://ca.wikipedia.org/w/index.php?title=Especial%3ACerca&search=" + key, -1);
+			String response = downloader.getRequest("http://ca.wikipedia.org/w/index.php?title=Especial%3ACerca&search=" + key, -1).toString();
 			if(response != null)
 			{
 				if(response.length() > 0)

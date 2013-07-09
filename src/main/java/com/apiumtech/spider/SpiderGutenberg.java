@@ -67,14 +67,14 @@ public class SpiderGutenberg extends AgentsManager implements SpiderConfig
 		HttpDownloader downloader = new HttpDownloader(cacheFolder, 10 * 24 * 60, 10000, 60000);
 
 		String url = "http://www.gutenberg.org/browse/languages/" + languageShort;
-		String pageContents = downloader.getRequest(url);
+		String pageContents = downloader.getRequest(url).toString();
 		processPage(language, pageContents, maxBooks);
 
 		String abc = "abcdefghijklmnopqrstuvwxyz";
 		for(int i = 0; i < abc.length(); i++)
 		{
 			url = "http://www.gutenberg.org/browse/titles/" + Character.toString(abc.charAt(i));
-			pageContents = downloader.getRequest(url);
+			pageContents = downloader.getRequest(url).toString();
 			processPage(language, pageContents, maxBooks);
 		}
 
