@@ -21,7 +21,7 @@ import java.util.List;
 public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
 
     private AnonymousProxyManager proxyManager = null;
-    int maxProxyThreads = 1;
+    int maxProxyThreads = 5;
 
     public SpiderSiRSS() throws IOException
     {
