@@ -3,6 +3,9 @@ package com.apiumtech.spider.si;
 import com.apiumtech.spider.*;
 import com.apiumtech.spider.agent.Agent;
 import com.apiumtech.spider.agent.AgentsManager;
+import com.socialintellegentia.commonhelpers.rss.Feed;
+import com.socialintellegentia.commonhelpers.rss.FrontEndItem;
+import com.socialintellegentia.commonhelpers.rss.RSSFrontEndHelper;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -63,23 +66,22 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         /////////////////////////////////////////////////////////
         // Add Seeds
         /////////////////////////////////////////////////////////
-        String requestUrl = rss_server;
-        String html = downloader.getRequest(requestUrl);
+        String html = downloader.getRequest(rss_server);
 
 
-        //TODO: get rss feeds(seeds)
+        RSSFrontEndHelper rssFrontEndHelper = new RSSFrontEndHelper();
+        if (html!=null)
+        {
+            FrontEndItem frontEndItem = rssFrontEndHelper.getFrontEndItemFromHtml(html);
+            for(Feed feed : frontEndItem.getFeedList())
+            {
+                addNewSeed(new Seed(feed.getLink(),100));
+            }
 
-//        if (html!=null) {
-//            int numOfItems = Integer.parseInt("0" + RegExpHelper.getFirstMatch(html, "</strong></h1>&nbsp;\\(([0-9]+)\\)</div>", 1));
-//            for(int i = 1; i <= (numOfItems / 15)/*items per page*/ + 1; i++)
-//            {
-//                addNewSeed(new Seed("http://www.paginasamarillas.es/search/" + group + "/all-ma/all-pr/all-is/all-ci/all-ba/all-pu/all-nc/" + i, 100));
-//            }
-//        } else {
-//            System.out.println("error :"+requestUrl);
-//        }
-
-        addNewSeed(new Seed(rss_server+"/foxnews/latest", 100));
+        } else
+        {
+            System.out.println("error :"+rss_server);
+        }
 
         /////////////////////////////////////////////////////////
         // Start Agents
