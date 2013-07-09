@@ -69,7 +69,7 @@ public class HttpDownloader
 		}
 	}
 
-	private String getFromCache(String url) throws IOException
+	public String getFromCache(String url) throws IOException
 	{
 		String result = null;
 
