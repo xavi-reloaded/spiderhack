@@ -67,15 +67,20 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         // Add Seeds
         /////////////////////////////////////////////////////////
         StringBuffer html = downloader.getRequest(rss_server);
-
         RSSFrontEndHelper rssFrontEndHelper = new RSSFrontEndHelper();
 
         if (html!=null)
         {
+            System.out.println("creating front end...");
             FrontEndItem frontEndItem = rssFrontEndHelper.getFrontEndItemFromHtml(html.toString());
+            System.out.println("feeds added");
+            int i = 0;
             for(Feed feed : frontEndItem.getFeedList())
             {
+                System.out.println("adding seeds... "+i+"/"+frontEndItem.getFeedList().size());
                 addNewSeed(new Seed(feed.getLink(),100));
+                System.out.println("added "+i+"/"+frontEndItem.getFeedList().size());
+                i++;
             }
 
         } else
