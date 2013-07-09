@@ -50,6 +50,8 @@ public class AgentSiRSS extends Agent
 
 //                feed = parser.readFeed(rawnews);
 
+
+
                 saveResult(rawnews, name);
 
 //
