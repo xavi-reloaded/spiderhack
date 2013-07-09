@@ -23,7 +23,7 @@ public class SpiderSiRSS_Test
 
     @Test
     public void test_getNewsFromRSSserver_foxRSS_searchRSSfeeds() throws Exception {
-        String rssServer = "http://feeds.foxnews.com";
+        String rssServer = "http://www.foxnews.com/about/rss/";
         sut.getNewsFromRSSserver(rssServer);
 
     }

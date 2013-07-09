@@ -21,7 +21,7 @@ import java.util.List;
 public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
 
     private AnonymousProxyManager proxyManager = null;
-    int maxProxyThreads = 5;
+    int maxProxyThreads = 1;
 
     public SpiderSiRSS() throws IOException
     {
@@ -53,11 +53,13 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         /////////////////////////////////////////////////////////
         // Create Spiders
         /////////////////////////////////////////////////////////
+        System.out.println("Creating spider list...");
+
         List<Agent> spiderList = new ArrayList<Agent>();
         for(int i = 0; i < maxSpiderThreads; i++) {
             spiderList.add(new AgentSiRSS(workingFolder, cacheFolder, Long.MAX_VALUE));
         }
-
+        System.out.println("Spider list created");
         /////////////////////////////////////////////////////////
         // Create Downloader
         /////////////////////////////////////////////////////////
@@ -67,15 +69,19 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         // Add Seeds
         /////////////////////////////////////////////////////////
         String html = downloader.getRequest(rss_server);
-
+        System.out.println("HTML: \n[\n"+html.subSequence(0,50)+"\n"+html.subSequence(html.length()-50, html.length())+"\n]\n");
 
         RSSFrontEndHelper rssFrontEndHelper = new RSSFrontEndHelper();
         if (html!=null)
         {
             FrontEndItem frontEndItem = rssFrontEndHelper.getFrontEndItemFromHtml(html);
+            int i = 0;
             for(Feed feed : frontEndItem.getFeedList())
             {
+                System.out.println("Adding seeds..."+i+"/"+frontEndItem.getFeedList().size());
                 addNewSeed(new Seed(feed.getLink(),100));
+                System.out.println("Added: "+i+"/"+frontEndItem.getFeedList().size());
+                i++;
             }
 
         } else
