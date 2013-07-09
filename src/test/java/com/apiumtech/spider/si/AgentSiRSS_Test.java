@@ -31,6 +31,10 @@ public class AgentSiRSS_Test implements SpiderConfig
         sut = new AgentSiRSS(testWorkingFolder, testCacheFolder, Long.MAX_VALUE);
 
         url = "http://feeds.foxnews.com/foxnews/latests";
+        prepareCacheFilesUsedOnTest();
+    }
+
+    private void prepareCacheFilesUsedOnTest() throws Exception {
         filePath = WORKING_FOLDER + File.separator + url.replaceAll("[\\\\/:\\*\"\\?<>\\|]", "");
 
         if (FileHelper.fileExists(filePath))
