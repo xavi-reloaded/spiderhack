@@ -1,9 +1,13 @@
 package com.apiumtech.spider.si;
 
+import com.apiumtech.spider.FileHelper;
 import com.apiumtech.spider.SpiderConfig;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.io.File;
 
 /**
  * Created with IntelliJ IDEA.
@@ -15,15 +19,29 @@ import org.testng.annotations.Test;
 
 public class AgentSiRSS_Test implements SpiderConfig
 {
+    private static final String TEMP_SEED_FILE = "";
     private AgentSiRSS sut;
     private String url;
+    private String filePath;
 
     @BeforeMethod
     public void setUp() throws Exception {
         String testWorkingFolder = WORKING_FOLDER;
         String testCacheFolder = cacheFolder;
         sut = new AgentSiRSS(testWorkingFolder, testCacheFolder, Long.MAX_VALUE);
+
         url = "http://feeds.foxnews.com/foxnews/latests";
+        filePath = WORKING_FOLDER + File.separator + url.replaceAll("[\\\\/:\\*\"\\?<>\\|]", "");
+
+        if (FileHelper.fileExists(filePath))
+        {
+            FileHelper.deleteFile(filePath);
+        }
+    }
+
+    @AfterMethod
+    public void tearDown() throws Exception {
+        FileHelper.deleteFile(filePath);
     }
 
     @Test
@@ -35,10 +53,14 @@ public class AgentSiRSS_Test implements SpiderConfig
     }
 
     @Test
-    public void test_Name() throws Exception {
-
+    public void test_runAgentSiRSS_seedInCacheFoxCom_writesFileResultReadyToBeParsed() throws Exception {
 
         sut.start(url, url);
+        while (sut.isAlive()) {}
+
+        boolean actual = FileHelper.fileExists(filePath);
+        boolean expected = true;
+        Assert.assertEquals(actual, expected);
 
     }
 
