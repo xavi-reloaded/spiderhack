@@ -82,21 +82,21 @@ public class HttpDownloader
 		return result;
 	}
 
-	public String getRequest(String url) throws IOException
+	public StringBuffer getRequest(String url) throws IOException
 	{
 		return getRequest(url, m_minutesInCache);
 	}
 
-	public String getRequest(String url, long minutesInCache) throws IOException
+	public StringBuffer getRequest(String url, long minutesInCache) throws IOException
 	{
-		String response = null;
-
+        StringBuffer sb = new StringBuffer();
 		if(url != null)
 		{
 			if(isInCache(url, minutesInCache))
 			{
 				System.out.println("Page retrieved from cache [" + url + "]");
-				return getFromCache(url);
+                String fromCache = getFromCache(url);
+                return new StringBuffer(fromCache);
 			}
 			else
 			{
@@ -118,6 +118,7 @@ public class HttpDownloader
 					}
 
 					conn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
+                    conn.setRequestProperty("Referer", "https://mail.google.com/mail/u/0/#inbox");
 
 					String contentType = conn.getHeaderField("Content-Type").toUpperCase();
 					String charset = RegExpHelper.getFirstMatch(contentType, "CHARSET[ ]*=[ ]*([^ ;]+)", 1);
@@ -129,7 +130,7 @@ public class HttpDownloader
 					}
 
 					BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream(), charset/* "ISO-8859-1" */));
-					StringBuffer sb = new StringBuffer();
+
 					char cbuf[] = new char[1024];
 					int numOfReadChars = 0;
 					while((numOfReadChars = rd.read(cbuf)) > 0 )
@@ -146,23 +147,22 @@ public class HttpDownloader
                     }
                     else*/
                     {
-                        response = sb.toString();
-                        if(minutesInCache > -1 && response.length() > 0)
+                        if(minutesInCache > -1 && sb.length() > 0)
                         {
                             FileHelper.createFolder(m_cacheFolder);
-                            setInCache(url, response);
+                            setInCache(url, sb.toString());
                         }
                     }
 				}
 				catch(Exception e)
 				{
 					System.out.println("getRequest error: class(" + e.getClass().toString() + "), message(" + e.getMessage() + "), url(" + url + ")");
-					response = null;
+                    sb = null;
 				}
 			}
 		}
 
-		return response;
+		return sb;
 	}
 	
 	public boolean getRequestBinary(String url, String outputFilePath) throws IOException

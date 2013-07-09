@@ -21,17 +21,16 @@ public class SpiderSiRSS_Test
     }
 
 
-    @Test
+    @Test(enabled = false)
     public void test_getNewsFromRSSserver_foxRSS_searchRSSfeeds() throws Exception {
         String rssServer = "http://feeds.foxnews.com";
         sut.getNewsFromRSSserver(rssServer);
 
     }
 
-    @Test
+    @Test(enabled = false)
     public void test_getNewsFromRSSserver_BBC_functional() throws Exception {
         String rssServer = "http://news.bbc.co.uk/2/hi/help/rss/";
         sut.getNewsFromRSSserver(rssServer);
-
     }
 }

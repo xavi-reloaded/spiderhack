@@ -22,7 +22,7 @@ public class AgentWordContext extends Agent
 		{
 			clearNewLinks();
 
-			String response = getRequest(getUrl());
+			String response = getRequest(getUrl()).toString();
 			if(response == null)
 			{
 				System.out.println("Error requesting \"" + getUrl() + "\" from \"" + getProxy() + "\"");

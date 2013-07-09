@@ -72,12 +72,12 @@ public abstract class Agent extends HttpDownloader implements Runnable
 		m_newLinks.clear();
 	}
 	
-	public void saveResult(String result, String name) throws IOException
+	public void saveResult(StringBuffer result, String name) throws IOException
 	{
 		String outputFile = getWorkingFolder() + System.getProperty("file.separator") + name;
 		if(!FileHelper.fileExists(outputFile))
 		{
-			FileHelper.stringToFile(result, outputFile);
+			FileHelper.stringToFile(result.toString(), outputFile);
 			System.out.println("New result saved [" + outputFile + "] from [" + m_seed + "]");
 		}
 		else
@@ -85,8 +85,13 @@ public abstract class Agent extends HttpDownloader implements Runnable
 			//System.out.println("Repeated article [" + outputFile + "] from [" + m_seed + "]");
 		}
 	}
-	
-	public void reportError(String name, String url, String html) throws IOException, InterruptedException
+
+    public void saveResult(String text, String name) throws IOException {
+        saveResult(new StringBuffer(text),name);
+    }
+
+
+    public void reportError(String name, String url, String html) throws IOException, InterruptedException
 	{
 		String folder = m_workingFolder + System.getProperty("file.separator") + "errors" + System.getProperty("file.separator") + name;
 		FileHelper.createFolder(folder);

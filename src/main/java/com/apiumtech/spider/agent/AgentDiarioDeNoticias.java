@@ -32,7 +32,8 @@ public class AgentDiarioDeNoticias extends Agent
 		return r;
 	}
 
-	private boolean getArticle2(String url, String html) throws IOException, InterruptedException
+
+    private boolean getArticle2(String url, String html) throws IOException, InterruptedException
 	{
 		boolean r = false;
 		String[] parts = html.split("<span id=\"ctl00_ctl00_bcr_maincontent_ThisContent\">");
@@ -58,7 +59,7 @@ public class AgentDiarioDeNoticias extends Agent
 			clearNewLinks();
 
 			String url = getUrl();
-			String html = getRequest(url);
+			String html = getRequest(url).toString();
 
 			if(html == null)
 			{

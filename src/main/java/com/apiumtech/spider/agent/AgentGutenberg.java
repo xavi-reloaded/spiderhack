@@ -18,7 +18,7 @@ public class AgentGutenberg extends Agent
 			clearNewLinks();
 
 			String url = getUrl();
-			String html = getRequest(url);
+			String html = getRequest(url).toString();
 			if(html == null)
 			{
 				System.out.println("Error requesting \"" + url + "\" from \"" + getProxy() + "\"");
@@ -36,7 +36,7 @@ public class AgentGutenberg extends Agent
 				}
 				else
 				{
-					html = getRequest(bookUrl);
+					html = getRequest(bookUrl).toString();
 					if(html == null)
 					{
 						System.out.println("Error requesting \"" + url + "\" from \"" + getProxy() + "\"");
@@ -56,4 +56,5 @@ public class AgentGutenberg extends Agent
 			e.printStackTrace();
 		}
 	}
+
 }

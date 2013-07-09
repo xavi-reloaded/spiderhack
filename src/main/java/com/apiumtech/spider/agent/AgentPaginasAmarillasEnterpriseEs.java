@@ -23,7 +23,7 @@ public class AgentPaginasAmarillasEnterpriseEs extends Agent
         {
             String url = urls.get(j);
             //url= "http://www.becerrildelasierra.es/index.php?option=com_contact&task=view&contact_id=4&Itemid=3";
-            String html = getRequest(url);
+            String html = getRequest(url).toString();
             if(html == null)
             {
                 //System.out.println("Error requesting URL level 2 (" + url + ") from proxy (" + getProxy() + ")");
@@ -77,7 +77,7 @@ public class AgentPaginasAmarillasEnterpriseEs extends Agent
                     // data: "url[]\nfax[]"
                     String data = "url[" + url + "]\nfax[" + fax + "]";
                     // save
-                    saveResult(data, filename);
+                    saveResult(new StringBuffer(data), filename);
                     // mark
                     numberOfFaxes++;
                 }
@@ -140,7 +140,7 @@ public class AgentPaginasAmarillasEnterpriseEs extends Agent
         if(url.matches("^http://www\\.paginasamarillas\\.es.*")) ////////////////////////////////////////////////////////////////////
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         {
-            String html = getRequest(url);
+            String html = getRequest(url).toString();
             if(html == null)
             {
                 //System.out.println("Error requesting URL (" + url + ") from proxy (" + getProxy() + ")");
@@ -183,7 +183,7 @@ public class AgentPaginasAmarillasEnterpriseEs extends Agent
         List<String> newLinks = new ArrayList<String>();
 
         url = url.substring(2);
-        String html = getRequest(url);
+        String html = getRequest(url).toString();
         if(html == null)
         {
             //System.out.println("Error requesting URL level 1 (" + url + ") from proxy (" + getProxy() + ")");
