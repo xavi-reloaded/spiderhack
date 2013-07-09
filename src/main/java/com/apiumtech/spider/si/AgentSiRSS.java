@@ -17,10 +17,14 @@ import java.io.IOException;
 public class AgentSiRSS extends Agent
 {
     private RSSFeedParser parser;
+    private Feed feed;
+    private FeedMessage feedMessage;
+
 
     public AgentSiRSS(String workingFolder, String cacheFolder, long minutesInCache) throws IOException, InterruptedException {
         super(workingFolder, cacheFolder, minutesInCache);
         parser = new RSSFeedParser();
+        feed = new Feed();
     }
 
     @Override
@@ -33,6 +37,7 @@ public class AgentSiRSS extends Agent
 
             String url = getUrl();
             String rawnews = getRequest(url);
+
             if(rawnews == null)
             {
                 System.out.println("Error requesting \"" + url + "\" from \"" + getProxy() + "\"");
@@ -40,15 +45,19 @@ public class AgentSiRSS extends Agent
             }
             else
             {
-//                String name = RegExpHelper.getFirstMatch(url, "/([^\"/]+)\\.txt\\.utf8", 1);
-//                saveResult(rawnews, name);
-                System.out.println(rawnews);
-                Feed feed = parser.readFeed(rawnews);
-//                System.out.println(feed);
-                for (FeedMessage message : feed.getMessages()) {
-                    System.out.println(message);
+//                String name = RegExpHelper.getFirstMatch(url, "/([^\"/]+)\\.txt", 1);
+                String name = url.replaceAll("[\\\\/:\\*\"\\?<>\\|]", "");
 
-                }
+//                feed = parser.readFeed(rawnews);
+
+                saveResult(rawnews, name);
+
+//
+//                for (FeedMessage feedMessage : feed.getMessages() ) {
+//                    System.out.println(feedMessage);
+//                }
+
+                System.out.println(feed.toString());
             }
         }
         catch(Exception e)
