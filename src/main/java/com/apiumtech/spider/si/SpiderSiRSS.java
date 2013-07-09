@@ -72,7 +72,7 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
 
         if (html!=null)
         {
-            FrontEndItem frontEndItem = rssFrontEndHelper.getFrontEndItemFromHtml(html.toString());
+            FrontEndItem frontEndItem = rssFrontEndHelper.getFrontEndItemFromHtml(html);
             for(Feed feed : frontEndItem.getFeedList())
             {
                 addNewSeed(new Seed(feed.getLink(),100));
