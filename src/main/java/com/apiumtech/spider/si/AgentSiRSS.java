@@ -1,6 +1,7 @@
 package com.apiumtech.spider.si;
 
 import com.apiumtech.spider.agent.Agent;
+import com.socialintellegentia.commonhelpers.rss.RSSHelper;
 
 import java.io.IOException;
 
@@ -28,6 +29,11 @@ public class AgentSiRSS extends Agent
             clearNewLinks();
             String url = getUrl();
             StringBuffer rawnews = getRequest(url);
+            if (!RSSHelper.isXMLRSS(rawnews.toString()))
+            {
+                System.out.println("getRequest error: parser has taken a bad rss file (sometimes it happens bro)");
+                return;
+            }
 
             if(rawnews == null)
             {
