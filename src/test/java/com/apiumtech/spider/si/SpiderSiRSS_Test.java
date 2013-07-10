@@ -33,4 +33,10 @@ public class SpiderSiRSS_Test
         String rssServer = "http://news.bbc.co.uk/2/hi/help/rss/";
         sut.getNewsFromRSSserver(rssServer);
     }
+
+    @Test
+    public void test_getNewsFromRSSserver_ElMundo_functional() throws Exception {
+        String rssServer = "http://rss.elmundo.es/rss/";
+        sut.getNewsFromRSSserver(rssServer);
+    }
 }
