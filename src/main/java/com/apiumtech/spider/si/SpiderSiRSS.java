@@ -21,7 +21,7 @@ import java.util.List;
 public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
 
     private AnonymousProxyManager proxyManager = null;
-    int maxProxyThreads = 1;
+    int maxProxyThreads = 5;
 
     public SpiderSiRSS() throws IOException
     {
@@ -67,14 +67,17 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         // Add Seeds
         /////////////////////////////////////////////////////////
         StringBuffer html = downloader.getRequest(rss_server);
+
         RSSFrontEndHelper rssFrontEndHelper = new RSSFrontEndHelper();
 
         if (html!=null)
         {
-            System.out.println("creating front end...");
-            FrontEndItem frontEndItem = rssFrontEndHelper.getFrontEndItemFromHtml(html.toString());
-            System.out.println("feeds added");
+          
+         
             int i = 0;
+            System.out.println("creating front end...");
+            FrontEndItem frontEndItem = rssFrontEndHelper.getFrontEndItemFromHtml(html);
+            System.out.println("feeds added");
             for(Feed feed : frontEndItem.getFeedList())
             {
                 System.out.println("adding seeds... "+i+"/"+frontEndItem.getFeedList().size());
