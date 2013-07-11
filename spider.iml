@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
@@ -18,7 +19,7 @@
     <orderEntry type="library" name="Maven: com.beust:jcommander:1.12" level="project" />
     <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.6" level="project" />
     <orderEntry type="module" module-name="common-helpers" />
-    <orderEntry type="library" name="Maven: com.androidxtrem:commonsHelpers:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="module" module-name="commonsHelpers" />
     <orderEntry type="library" name="Maven: org.sweble.wikitext:swc-engine:1.1.0" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.14" level="project" />
     <orderEntry type="library" name="Maven: org.sweble.wikitext:swc-parser-lazy:1.1.0" level="project" />
