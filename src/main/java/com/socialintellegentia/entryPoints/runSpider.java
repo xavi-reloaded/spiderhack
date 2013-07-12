@@ -11,7 +11,7 @@ import com.apiumtech.spider.si.SpiderSiRSS;
  */
 public class runSpider {
 
-    public static void main()
+    public static void main(String[] args)
     {
         try
         {
@@ -20,7 +20,7 @@ public class runSpider {
             runner.getNewsFromRSSserver(rssServer);
         }
         catch (Exception e){
-            System.out.println("Error when running spider: "+e.getMessage());
+            System.out.println("Error when running spider: " + e.getMessage());
         }
     }
 
