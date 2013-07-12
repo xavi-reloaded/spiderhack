@@ -13,10 +13,11 @@ public class runSpider {
 
     private SpiderSiRSS runner;
 
-    public void main (String[] args) throws Exception{
-        runner = new SpiderSiRSS();
-        String rssServer = "http://www.foxnews.com/about/rss/";
-        runner.getNewsFromRSSserver(rssServer);
+    public static void main(String[] args)
+    {
+        System.out.println("jonny is gayer"+args[0]);
     }
+
+
 
 }
