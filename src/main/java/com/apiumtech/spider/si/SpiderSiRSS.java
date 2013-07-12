@@ -34,7 +34,7 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
     }
 
 
-    void getNewsFromRSSserver(String rss_server) throws IOException, InterruptedException
+    public void getNewsFromRSSserver(String rss_server) throws IOException, InterruptedException
     {
         /////////////////////////////////////////////////////////
         // Parameters
