@@ -18,7 +18,7 @@ import java.util.List;
  */
 public class ProcessRSS {
 
-    public List<Feed> getfeedObjectsFromGettedFeedsFiles(String path) throws Exception {
+    public List<Feed> getFeedsFromSeedsByPath(String path) throws Exception {
         List<String> fileList = FileHelper.getFileList(path,"");
         RSSFeedParser parser = new RSSFeedParser();
         List<Feed> feedList = new ArrayList<Feed>();

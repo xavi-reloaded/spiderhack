@@ -37,19 +37,19 @@ public class ProcessRSSTest {
     }
 
     @Test
-    public void test_getObjectsFromGettedFeeds_validPathWithRealFeeds_listOfRSSFrontEndHelpersCorrectlyPopulated() throws Exception
+    public void test_getFeedsFromSeedsByPath_validPathWithRealFeeds_listOfRSSFrontEndHelpersCorrectlyPopulated() throws Exception
     {
         String path = tempFolder.getPath();
-        List<Feed> actual = sut.getfeedObjectsFromGettedFeedsFiles(path);
+        List<Feed> actual = sut.getFeedsFromSeedsByPath(path);
         int expected = 73;
         Assert.assertEquals(actual.size(),expected);
     }
 
     @Test
-    public void test_getObjectsFromGettedFeeds_validPathWithRealFeeds_seedsAreCorrectlyDeleted() throws Exception
+    public void test_getFeedsFromSeedsByPath_validPathWithRealFeeds_seedsAreCorrectlyDeleted() throws Exception
     {
         String path = tempFolder.getPath();
-        sut.getfeedObjectsFromGettedFeedsFiles(path);
+        sut.getFeedsFromSeedsByPath(path);
         List<String> fileList = FileHelper.getFileList(path, "");
         int expected = 0;
         Assert.assertEquals(fileList.size(),expected);
