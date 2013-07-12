@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Technology</title>  
+    <link>http://www.bbc.co.uk/news/video_and_audio/technology/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Technology section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Fri, 12 Jul 2013 01:25:21 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Technology</title>  
+      <link>http://www.bbc.co.uk/news/video_and_audio/technology/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/video_and_audio/technology/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>AUDIO: Ð symbol for The on new keyboards?</title>  
+      <description>Paul Mathis has invented a new symbol for use on our keyboards: Ð.</description>  
+      <link>http://www.bbc.co.uk/news/technology-23270758#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-23270758</guid>  
+      <pubDate>Thu, 11 Jul 2013 12:37:22 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68667000/png/_68667198_th.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68667000/png/_68667199_th.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'Women prefer mobile gaming'</title>  
+      <description>Delegates at Brighton's Develop conference for the video game industry, talk about the impact of mobile gaming.</description>  
+      <link>http://www.bbc.co.uk/news/technology-23274741#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-23274741</guid>  
+      <pubDate>Thu, 11 Jul 2013 23:01:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676729_68675139.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676730_68675139.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Nokia should 'target India' instead</title>  
+      <description>Tech analyst Chris Green believes Nokia should target emerging markets overseas if it wants to see success.</description>  
+      <link>http://www.bbc.co.uk/news/business-23270764#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23270764</guid>  
+      <pubDate>Thu, 11 Jul 2013 16:33:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68678000/jpg/_68678821_indiagetty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68678000/jpg/_68678822_indiagetty.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: US drone makes first carrier landing</title>  
+      <description>An unmanned US jet has landed on an aircraft carrier for the first time. The US Navy's X-47B drone nicknamed "Salty Dog502" landed on the USS George H W Bush off the coast of Virginia.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-23268285#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-23268285</guid>  
+      <pubDate>Thu, 11 Jul 2013 10:19:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68668000/jpg/_68668000_68665181.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68668000/jpg/_68668001_68665181.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Recycling bicycle makes money from plastic</title>  
+      <description>The BBC's Up Next series takes a look at some cutting edge technologies in the field of recycling.</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23230134#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23230134</guid>  
+      <pubDate>Tue, 09 Jul 2013 23:08:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68623000/jpg/_68623468_bike.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68638000/jpg/_68638496_bike.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Virtuoso who plays piano and iPad</title>  
+      <description>Conrad Tao tells the BBC why being a virtuoso pianist isn't enough. He also uses an tablet computer to combine tradition and technology to attract a younger audience.</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23233103#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23233103</guid>  
+      <pubDate>Mon, 08 Jul 2013 22:33:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68619000/jpg/_68619936_conradtao.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68619000/jpg/_68619937_conradtao.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: How much is your old computer worth?</title>  
+      <description>As an Apple-I computer goes up for auction and could fetch $500,000 - how much could your old home computer be worth?</description>  
+      <link>http://www.bbc.co.uk/news/business-23243069#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23243069</guid>  
+      <pubDate>Tue, 09 Jul 2013 12:16:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68634000/jpg/_68634028_apple-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68634000/jpg/_68634029_apple-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Top tips to save mobile battery life</title>  
+      <description>BBC Click's Spencer Kelly presents an essential guide to saving mobile phone battery life.</description>  
+      <link>http://www.bbc.co.uk/news/technology-23194901#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-23194901</guid>  
+      <pubDate>Mon, 08 Jul 2013 09:17:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68573000/jpg/_68573529_mobilephone_640pa.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68573000/jpg/_68573530_mobilephone_640pa.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Inventor of computer mouse dies</title>  
+      <description>The man who invented the computer mouse and predicted the internet and video conferencing long before they became a reality, Douglas Engelbart, has died at the age of 88.</description>  
+      <link>http://www.bbc.co.uk/news/technology-23176610#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-23176610</guid>  
+      <pubDate>Thu, 04 Jul 2013 14:17:22 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68551000/jpg/_68551542_68538261.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68551000/jpg/_68551543_68538261.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Rural broadband roll-out criticised</title>  
+      <description>The UK government's roll-out of "superfast" broadband to rural areas is about two years behind its original schedule, an official audit has found.</description>  
+      <link>http://www.bbc.co.uk/news/technology-23193267#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-23193267</guid>  
+      <pubDate>Fri, 05 Jul 2013 18:27:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68560000/jpg/_68560792_68560774.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68560000/jpg/_68560793_68560774.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: The etiquette of mobile phones</title>  
+      <description>Sainsbury's has apologised to a customer who was refused service by a checkout worker until she had ended her mobile phone call.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23177177#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23177177</guid>  
+      <pubDate>Thu, 04 Jul 2013 08:28:58 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68539000/jpg/_68539917_68539913.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68539000/jpg/_68539918_68539913.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Could brainwaves replace passwords?</title>  
+      <description>Sumi Das discovers that monitoring brainwaves may provide an alternative to typing passwords.</description>  
+      <link>http://www.bbc.co.uk/news/technology-23105192#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-23105192</guid>  
+      <pubDate>Thu, 04 Jul 2013 07:29:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68444000/jpg/_68444598_brainwaves640.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68444000/jpg/_68444599_brainwaves640.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Tech-levels 'to have A-level status'</title>  
+      <description>Technical courses for 16 to 19-year-olds will gain the same status as A-levels from 2014 but only if they attract business or university support, the government announces.</description>  
+      <link>http://www.bbc.co.uk/news/education-23176713#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-23176713</guid>  
+      <pubDate>Thu, 04 Jul 2013 18:24:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68538000/jpg/_68538979_blackcountryutc.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68538000/jpg/_68538980_blackcountryutc.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Tech whizz kids at Buckingham Palace</title>  
+      <description>Winners of the inaugural TeenTech awards, recognising the achievements of pupils working on technology projects, take part in a ceremony at Buckingham Palace.</description>  
+      <link>http://www.bbc.co.uk/news/technology-23131866#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-23131866</guid>  
+      <pubDate>Mon, 01 Jul 2013 23:25:14 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68480000/jpg/_68480954_68480704.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68480000/jpg/_68480955_68480704.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: The man who became a pigeon</title>  
+      <description>Bram Esser has been posting videos, tweeting and existing online as a pigeon for two weeks. He is part of an art project designed to close the gap between nature and urban life through technology and social media.</description>  
+      <link>http://www.bbc.co.uk/news/23108808#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/23108808</guid>  
+      <pubDate>Tue, 02 Jul 2013 01:00:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68505000/jpg/_68505305_pigeonman1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68505000/jpg/_68505306_pigeonman1.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Britain 'under attack' in cyberspace</title>  
+      <description>Britain is seeing about 70 sophisticated cyber espionage operations a month against government or industry networks, British intelligence tells BBC.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23124291#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23124291</guid>  
+      <pubDate>Mon, 01 Jul 2013 08:31:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68471000/jpg/_68471751_cyber.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68471000/jpg/_68471752_cyber.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: The virtual autopsy</title>  
+      <description>How those conducting autopsies are getting help from new computer imaging technology.</description>  
+      <link>http://www.bbc.co.uk/news/technology-23104182#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-23104182</guid>  
+      <pubDate>Mon, 01 Jul 2013 07:54:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68442000/jpg/_68442881_de03-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68442000/jpg/_68442882_de03-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Drones making oil rigs and pylons safer</title>  
+      <description>A Scottish firm's remote control helicopters are being used to inspect North Sea oil rigs and wind farms.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-23130820#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-23130820</guid>  
+      <pubDate>Mon, 01 Jul 2013 13:31:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68501000/jpg/_68501288_drone.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68501000/jpg/_68501289_drone.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: F1 technology helping train companies</title>  
+      <description>Train and bus companies are using Formula One-inspired technology to improve services.</description>  
+      <link>http://www.bbc.co.uk/news/business-23127303#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23127303</guid>  
+      <pubDate>Mon, 01 Jul 2013 22:49:33 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68482000/jpg/_68482713_68482603.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68482000/jpg/_68482714_68482603.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Inside RoboCup 2013 in Holland</title>  
+      <description>More than 2,500 contestants have taken part in a football world cup with a difference.</description>  
+      <link>http://www.bbc.co.uk/news/technology-23117095#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-23117095</guid>  
+      <pubDate>Sun, 30 Jun 2013 11:27:35 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68463000/jpg/_68463968_68463625.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68463000/jpg/_68463969_68463625.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Mobile phone roaming costs fall</title>  
+      <description>The cost of using a mobile phone in another European Union country has been reduced.</description>  
+      <link>http://www.bbc.co.uk/news/business-23127297#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23127297</guid>  
+      <pubDate>Mon, 01 Jul 2013 09:24:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68475000/jpg/_68475448_phone.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68475000/jpg/_68475449_phone.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Microsoft unveils new Windows 8</title>  
+      <description>Microsoft has unveiled version 8.1 of its Windows operating system at its annual developers conference in San Francisco.</description>  
+      <link>http://www.bbc.co.uk/news/business-23062272#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23062272</guid>  
+      <pubDate>Wed, 26 Jun 2013 09:59:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68384000/jpg/_68384122_68384113.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68384000/jpg/_68384204_68384113.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Cheap consoles take on the giants</title>  
+      <description>The gaming machines aiming to be an alternative to Sony, Nintendo and Microsoft.</description>  
+      <link>http://www.bbc.co.uk/news/technology-23044701#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-23044701</guid>  
+      <pubDate>Thu, 27 Jun 2013 07:58:48 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68363000/jpg/_68363539_gaming_ouya640.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68363000/jpg/_68363540_gaming_ouya640.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Download a movie in 43 seconds?</title>  
+      <description>Broadband so fast you will be able to download a movie on to your phone in 43 seconds - plus other tech news</description>  
+      <link>http://www.bbc.co.uk/news/technology-23098523#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-23098523</guid>  
+      <pubDate>Fri, 28 Jun 2013 10:18:47 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68432000/jpg/_68432750_broadband.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68432000/jpg/_68432751_broadband.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Electric car record 'shows potential'</title>  
+      <description>Drayson Racing Technologies has broken the world land speed record for a lightweight electric car. Its chief executive Lord Drayson told the BBC he was delighted and it showed the "future potential of electric cars".</description>  
+      <link>http://www.bbc.co.uk/news/technology-23071190#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-23071190</guid>  
+      <pubDate>Wed, 26 Jun 2013 21:10:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68404000/jpg/_68404279_68404277.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68404000/jpg/_68404280_68404277.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Drone art in White House's shadow</title>  
+      <description>British artist James Bridle invites his audience to raise questions about the US drone programme in an exhibition held across the street from the White House.</description>  
+      <link>http://www.bbc.co.uk/news/magazine-22997396#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-22997396</guid>  
+      <pubDate>Mon, 24 Jun 2013 23:19:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68374000/jpg/_68374521_dronestill04.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68374000/jpg/_68374522_dronestill04.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Talking 'robot astronaut' set for ISS</title>  
+      <description>A Japanese ''robot astronaut'' has been designed to function in space and engage in conversation.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-23076297#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-23076297</guid>  
+      <pubDate>Thu, 27 Jun 2013 04:45:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68404000/jpg/_68404217_robot.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68404000/jpg/_68404218_robot.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Spotting the photographic fakes</title>  
+      <description>Click's David Reid meets some of the people who investigate whether a photo is fact or fiction.</description>  
+      <link>http://www.bbc.co.uk/news/technology-23000438#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-23000438</guid>  
+      <pubDate>Wed, 26 Jun 2013 07:47:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68307000/jpg/_68307603_photos640.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68307000/jpg/_68307604_photos640.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Standing ovation for robot musicians</title>  
+      <description>Three robot musicians wow critics at their stage debut in Japan</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23028961#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23028961</guid>  
+      <pubDate>Mon, 24 Jun 2013 14:41:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68349000/jpg/_68349482_68345603.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68349000/jpg/_68349483_68345603.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: The pub where people play video games</title>  
+      <description>BBC News visits the Meltdown pub in central London where you can play video games, and watch international video game competitions live.</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23047460#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23047460</guid>  
+      <pubDate>Tue, 25 Jun 2013 23:04:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68388000/jpg/_68388706_68365439.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68388000/jpg/_68388707_68365439.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Do you want to 'Skype' your doctor?</title>  
+      <description>IT projects in the health services have a history of poor performance with billions of pounds wasted and critical reports from the Public Accounts Committee.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23029899#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23029899</guid>  
+      <pubDate>Mon, 24 Jun 2013 11:59:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68340000/jpg/_68340263_68339785.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68340000/jpg/_68340264_68339785.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

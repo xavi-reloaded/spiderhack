@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Have Your Say</title>  
+    <link>http://www.bbc.co.uk/news/have_your_say/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Have Your Say section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Thu, 11 Jul 2013 13:54:59 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Have Your Say</title>  
+      <link>http://www.bbc.co.uk/news/have_your_say/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/have_your_say/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Royal baby: What gift would you give?</title>  
+      <description>Take our baby gift quiz and find out what traditional presents are given to newborns in different parts of the world.</description>  
+      <link>http://www.bbc.co.uk/news/world-23188064#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-23188064</guid>  
+      <pubDate>Wed, 10 Jul 2013 12:16:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68634000/jpg/_68634781_baby_gifts.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68634000/jpg/_68634782_baby_gifts.jpg"/> 
+    </item>  
+    <item> 
+      <title>Why not... nationalise the railways?</title>  
+      <description>The case for - and against - renationalising Britain's railway system.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-22700805#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-22700805</guid>  
+      <pubDate>Wed, 10 Jul 2013 23:53:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68254000/jpg/_68254592_68254523.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68254000/jpg/_68254593_68254523.jpg"/> 
+    </item>  
+    <item> 
+      <title>Most new parents 'unmarried by 2016'</title>  
+      <description>The majority of babies born in three years' time will have parents who are not married, official figures suggest. Comment here.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23265810#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23265810</guid>  
+      <pubDate>Thu, 11 Jul 2013 02:37:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68663000/jpg/_68663168_baby.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68663000/jpg/_68663169_baby.jpg"/> 
+    </item>  
+    <item> 
+      <title>Over-90s 'defying mental decline'</title>  
+      <description>Today's 90-year-olds are surviving into very old age with improved mental faculties, Danish research suggests.</description>  
+      <link>http://www.bbc.co.uk/news/health-23252763#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23252763</guid>  
+      <pubDate>Thu, 11 Jul 2013 02:50:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68656000/jpg/_68656239_p9300217-elderly_man_and_boy_climbing-spl.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68656000/jpg/_68656240_p9300217-elderly_man_and_boy_climbing-spl.jpg"/> 
+    </item>  
+    <item> 
+      <title>Parade marks Korean War anniversary</title>  
+      <description>The 60th anniversary of the end of the Korean War is marked in London with a parade and thanksgiving service at Westminster Abbey.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23254493#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23254493</guid>  
+      <pubDate>Thu, 11 Jul 2013 15:35:02 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68674000/jpg/_68674336_korea_ap.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68674000/jpg/_68674337_korea_ap.jpg"/> 
+    </item>  
+    <item> 
+      <title>EastEnders actress Anna Wing dies</title>  
+      <description>Actress Anna Wing, best known for her role as Lou Beale in BBC soap EastEnders, dies aged 98.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23268512#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23268512</guid>  
+      <pubDate>Thu, 11 Jul 2013 13:42:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68674000/jpg/_68674222_loubeale.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68674000/jpg/_68674223_loubeale.jpg"/> 
+    </item>  
+    <item> 
+      <title>Organ donor wish 'must be honoured'</title>  
+      <description>The NHS is considering whether to stop families from overriding the consent of people who have signed the organ donor register.</description>  
+      <link>http://www.bbc.co.uk/news/health-23260057#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23260057</guid>  
+      <pubDate>Wed, 10 Jul 2013 23:10:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68657000/jpg/_68657705_m5800210-donorcard-spl.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68657000/jpg/_68657706_m5800210-donorcard-spl.jpg"/> 
+    </item>  
+    <item> 
+      <title>'Stick' MPs' pay rise, says Gove</title>  
+      <description>Education Secretary Michael Gove tells Parliament's spending watchdog to "stick" a planned Â£6,000 pay rise for MPs, but officials insist it is fair.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23262503#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23262503</guid>  
+      <pubDate>Thu, 11 Jul 2013 17:44:09 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68683000/jpg/_68683876_68683139.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68683000/jpg/_68683877_68683139.jpg"/> 
+    </item>  
+    <item> 
+      <title>Care assistants: Your stories</title>  
+      <description>BBC website readers share their experiences</description>  
+      <link>http://www.bbc.co.uk/news/health-23256674#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23256674</guid>  
+      <pubDate>Wed, 10 Jul 2013 13:25:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68652000/jpg/_68652417_kylesterry110.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68652000/jpg/_68652418_kylesterry110.jpg"/> 
+    </item>  
+    <item> 
+      <title>Egypt clashes: Divided views</title>  
+      <description>Reaction from Egypt</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-23233963#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-23233963</guid>  
+      <pubDate>Tue, 09 Jul 2013 11:26:53 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68625000/jpg/_68625168_mbnasrcityreuters.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68625000/jpg/_68625169_mbnasrcityreuters.jpg"/> 
+    </item>  
+    <item> 
+      <title>30 tips for first-time parents</title>  
+      <description>Your advice for the Duke and Duchess</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23226216#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23226216</guid>  
+      <pubDate>Tue, 09 Jul 2013 09:54:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68625000/jpg/_68625980_kateandwill.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68625000/jpg/_68625981_kateandwill.jpg"/> 
+    </item>  
+    <item> 
+      <title>Your week in pictures</title>  
+      <description>A selection of your photos from around the world</description>  
+      <link>http://www.bbc.co.uk/news/in-pictures-23206137#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/in-pictures-23206137</guid>  
+      <pubDate>Sun, 07 Jul 2013 15:20:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68595000/jpg/_68595652_helicopter.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68595000/jpg/_68595653_helicopter.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Eyewitness: 'Plane was out of control'</title>  
+      <description>An Asiana Airlines plane which crash landed in San Francisco was "out of control", an eyewitness has said.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-23214500#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-23214500</guid>  
+      <pubDate>Sat, 06 Jul 2013 21:03:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68589000/jpg/_68589082_68588960.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68589000/jpg/_68589083_68588960.jpg"/> 
+    </item>  
+    <item> 
+      <title>Telegram memories: What are yours?</title>  
+      <description>India's 160-year-old telegram service ends in July</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-india-23178987#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-india-23178987</guid>  
+      <pubDate>Fri, 05 Jul 2013 05:13:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68548000/jpg/_68548091_68174076.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68548000/jpg/_68548092_68174076.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

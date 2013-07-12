@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - World</title>  
+    <link>http://www.bbc.co.uk/news/video_and_audio/world/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the World section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Fri, 12 Jul 2013 07:01:41 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - World</title>  
+      <link>http://www.bbc.co.uk/news/video_and_audio/world/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/video_and_audio/world/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>VIDEO: Taiwan braces for Typhoon Soulik</title>  
+      <description>People in Taiwan are bracing themselves for the arrival of Typhoon Soulik.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-23282175#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-23282175</guid>  
+      <pubDate>Fri, 12 Jul 2013 02:28:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687356_68687327.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687357_68687327.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Malala to make UN birthday address</title>  
+      <description>A Pakistani teenager who was shot in the head by the Taliban is to address the United Nations on Friday - on her 16th birthday.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-23282494#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-23282494</guid>  
+      <pubDate>Fri, 12 Jul 2013 06:30:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687774_68687744.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687775_68687744.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: DNA links 'Boston Strangler' to victim</title>  
+      <description>US authorities say DNA evidence links a dead convict long suspected to have been a notorious serial killer to a woman murdered nearly 50 years ago.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-23282176#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-23282176</guid>  
+      <pubDate>Fri, 12 Jul 2013 02:27:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687319_68687310.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687320_68687310.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Rio clashes follow day of strikes</title>  
+      <description>Police in Rio de Janiero have clashed with demonstrators after a day of strikes across Brazil, called by the country's largest trade unions.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-23282298#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-23282298</guid>  
+      <pubDate>Fri, 12 Jul 2013 04:05:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687650_68687642.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687651_68687642.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Egypt protests set to continue</title>  
+      <description>Egypt's Muslim Brotherhood has pledged to continue "peaceful" resistance to the country's interim government.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-23282261#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-23282261</guid>  
+      <pubDate>Fri, 12 Jul 2013 03:28:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687568_68687540.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687569_68687540.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: US rebukes China over Snowden</title>  
+      <description>The US says it is "disappointed" over China's failure to hand over fugitive intelligence analyst Edward Snowden.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-23282379#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-23282379</guid>  
+      <pubDate>Fri, 12 Jul 2013 05:21:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687677_68687668.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687689_68687668.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Ireland votes for limited abortion</title>  
+      <description>Lawmakers in the Republic of Ireland have voted to allow abortion under certain conditions for the first time, following a marathon debate.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-23282104#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-23282104</guid>  
+      <pubDate>Fri, 12 Jul 2013 05:22:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687249_68687240.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687303_68687240.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: South Africa's Rivonia raid remembered</title>  
+      <description>On 11th July 1963 on Liliesleaf Farm near Johannesburg a police raid on the ANC</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-23266765#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-23266765</guid>  
+      <pubDate>Thu, 11 Jul 2013 08:09:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68665000/jpg/_68665112_68664264.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68665000/jpg/_68665113_68664264.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Mexico volcano seen from the air</title>  
+      <description>Mexico's erupting Popocatepetl volcano, just east of Mexico City, has continued to spew large clouds of ash and vapour into the sky.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-23267354#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-23267354</guid>  
+      <pubDate>Thu, 11 Jul 2013 09:55:51 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68665000/jpg/_68665093_68664584.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68665000/jpg/_68665094_68664584.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: US drone makes first carrier landing</title>  
+      <description>An unmanned US jet has landed on an aircraft carrier for the first time. The US Navy's X-47B drone nicknamed "Salty Dog502" landed on the USS George H W Bush off the coast of Virginia.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-23268285#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-23268285</guid>  
+      <pubDate>Thu, 11 Jul 2013 10:19:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68668000/jpg/_68668000_68665181.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68668000/jpg/_68668001_68665181.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Will Ramadan affect Egypt crisis?</title>  
+      <description>In Egypt, the holy month of Ramadan has got off to an anxious start, as people wait to see how the month of fasting effects the country's ongoing political crisis.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-23265662#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-23265662</guid>  
+      <pubDate>Thu, 11 Jul 2013 03:59:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68662000/jpg/_68662982_68662931.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68662000/jpg/_68662983_68662931.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Juncker to resign over spy scandal</title>  
+      <description>Luxembourg will hold new elections after Prime Minister Jean-Claude Juncker announced he would resign following a secret service scandal.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-23265964#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-23265964</guid>  
+      <pubDate>Thu, 11 Jul 2013 04:23:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68663000/jpg/_68663362_68661904.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68663000/jpg/_68663363_68661904.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'Unusual not to order to evacuate'</title>  
+      <description>National Transportation Safety Board (NTSB) chair Deborah Hersman said it seems unusual the crew would not announce an order to evacuate.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-23265340#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-23265340</guid>  
+      <pubDate>Wed, 10 Jul 2013 23:19:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68662000/jpg/_68662811_hersman.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68663000/jpg/_68663059_hersman.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: A father and son on opposite sides</title>  
+      <description>Aleem Maqbool has spoken to the Douma family in Cairo, a father and son who are on opposite sides as the unrest continues.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-23256927#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-23256927</guid>  
+      <pubDate>Wed, 10 Jul 2013 12:28:47 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68650000/png/_68650412_doumafamily.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68650000/png/_68650413_doumafamily.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Mandela 'showing signs of response'</title>  
+      <description>Nelson Mandela is "looking better" and responding to visitors, the head of his Thembu tribe, King Buyelekhaya Dalindyebo has said after visiting him.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-23264810#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-23264810</guid>  
+      <pubDate>Wed, 10 Jul 2013 21:18:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68662000/jpg/_68662236_68661234.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68662000/jpg/_68662237_68661234.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Dust storm rolling over Phoenix</title>  
+      <description>A dust storm is gathering over farmland in Phoenix, Arizona. The dust cloud stretches across 16km, seriously limiting visibility in the Pima County area.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-23265962#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-23265962</guid>  
+      <pubDate>Thu, 11 Jul 2013 03:26:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68663000/jpg/_68663265_dust.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68663000/jpg/_68663266_dust.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Worker rescued as factory washed away</title>  
+      <description>More than 2,500 people were evacuated from their homes on Tuesday as an extraordinary flood wreaked havoc in southwest China's Sichuan Province.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-23252414#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-23252414</guid>  
+      <pubDate>Wed, 10 Jul 2013 12:46:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68644000/jpg/_68644866_68644845.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68644000/jpg/_68644867_68644845.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Train blast fire caught on video</title>  
+      <description>Dramatic amateur video footage has emerged of an explosion in Canada following the derailment of an oil train in a small Quebec town on Saturday.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-23252281#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-23252281</guid>  
+      <pubDate>Wed, 10 Jul 2013 09:45:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68647000/jpg/_68647418_68645796.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68647000/jpg/_68647419_68645796.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Attendants 'ejected' in San Francisco crash</title>  
+      <description>Details of the Boeing 777 crash in San Francisco which killed two passengers has revealed that it was flying "too slowly", and that two flight attendants were "ejected" during the crash.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-23251607#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-23251607</guid>  
+      <pubDate>Wed, 10 Jul 2013 06:17:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68643000/jpg/_68643950_68643942.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68643000/jpg/_68643951_68643942.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Criminal inquiry into Quebec blast</title>  
+      <description>A criminal inquiry has been launched in Canada into the derailment of an oil train that killed at least 15 people in a small Quebec town on Saturday.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-23250719#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-23250719</guid>  
+      <pubDate>Wed, 10 Jul 2013 05:58:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68644000/jpg/_68644041_68644033.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68644000/jpg/_68644042_68644033.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: What will the Royal baby be called?</title>  
+      <description>As the Duke and Duchess of Cambridge prepare for the birth of their first child, what are the names doing business at the bookies.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23245108#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23245108</guid>  
+      <pubDate>Tue, 09 Jul 2013 23:05:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68623000/jpg/_68623464_68638435.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68623000/jpg/_68623465_68638435.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Children muck about on Mud Day</title>  
+      <description>It's every parent's nightmare - a child covered head to toe in sticky brown mud.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-23252422#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-23252422</guid>  
+      <pubDate>Wed, 10 Jul 2013 10:58:36 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68649000/jpg/_68649752_68649746.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68649000/jpg/_68649753_68649746.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Republic faces 'humanitarian crisis'</title>  
+      <description>Medecins Sans Frontieres says that following a coup in Central African Republic March, most aid agencies have withdrawn to the capital, citing a lack of security.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-23250086#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-23250086</guid>  
+      <pubDate>Tue, 09 Jul 2013 20:48:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68641000/jpg/_68641353_68641346.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68641000/jpg/_68641354_68641346.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Toronto hit by heavy rainstorm</title>  
+      <description>A heavy rainstorm in Toronto has left some 300,000 people without power and flooded parts of Canada's largest city.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-23241068#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-23241068</guid>  
+      <pubDate>Tue, 09 Jul 2013 10:26:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68625000/jpg/_68625955_68625948.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68625000/jpg/_68625956_68625948.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Nigeria's endless cycle of corruption</title>  
+      <description>A new corruption survey by Transparency International shows that nine out of ten of the countries with the highest reported bribery rate in the world are in Africa.</description>  
+      <link>http://www.bbc.co.uk/news/world-africa-23249614#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-africa-23249614</guid>  
+      <pubDate>Tue, 09 Jul 2013 20:40:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68639000/jpg/_68639273_untitled-1aa.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68639000/jpg/_68639274_untitled-1aa.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Kidnap victims release video</title>  
+      <description>Three women who were imprisoned in a house in Cleveland, Ohio for more than a decade have posted a video on YouTube thanking their supporters for helping them rebuild their lives.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-23241073#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-23241073</guid>  
+      <pubDate>Tue, 09 Jul 2013 15:31:40 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68631000/jpg/_68631254_68626376.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68631000/jpg/_68631255_68626376.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Bolivian plane diversion row</title>  
+      <description>In Washington a special meeting has been held by The Organization of American States to discuss why the Bolivian president's plane was forced to divert to Austria after it was suspected Edward Snowden was on board.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-23250718#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-23250718</guid>  
+      <pubDate>Wed, 10 Jul 2013 01:52:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68643000/jpg/_68643476_plane3.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68643000/jpg/_68643477_plane3.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Documents 'implicate Spanish PM'</title>  
+      <description>A Spanish newspaper has published what it alleges are documents showing Prime Minister Mariano Rajoy and other top politicians received illicit payments.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-23250720#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-23250720</guid>  
+      <pubDate>Wed, 10 Jul 2013 04:38:02 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68643000/jpg/_68643603_68623926.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68643000/jpg/_68643604_68623926.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: What prospects for peace in Afghanistan?</title>  
+      <description>Jonathan Beale speaks to Nato and Taliban commanders in Kandahar Province, southern Afghanistan, about the prospects for reconciliation.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-23245269#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-23245269</guid>  
+      <pubDate>Tue, 09 Jul 2013 15:27:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68632000/jpg/_68632629_68631520.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68632000/jpg/_68632630_68631520.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: China's coal addiction 'shortens lives'</title>  
+      <description>Research carried out in northern China suggests that air pollution is causing people to die up to five years earlier on average.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-china-23247803#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-china-23247803</guid>  
+      <pubDate>Tue, 09 Jul 2013 19:02:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68639000/jpg/_68639466_68639459.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68639000/jpg/_68639467_68639459.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Blame game over Canada train blast</title>  
+      <description>A rail firm and fire department appear to be pointing the finger at one another over a Canada oil train blast that has killed at least 13 people.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-23250716#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-23250716</guid>  
+      <pubDate>Tue, 09 Jul 2013 22:26:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68642000/jpg/_68642753_68606399.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68642000/jpg/_68642754_68606399.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Head of Bolshoi Theatre sacked</title>  
+      <description>The head of the Bolshoi Theatre, Anatoly Iskanov, has been sacked after a series of scandals.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-23247804#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-23247804</guid>  
+      <pubDate>Tue, 09 Jul 2013 19:06:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68641000/jpg/_68641336_68639616.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68641000/jpg/_68641337_68639616.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Minister 'worried' over Golden Dawn</title>  
+      <description>The Greek Minister for Public Order, Nikos Dendias, tells of concerns over the growing popularity of the far-right party, Golden Dawn</description>  
+      <link>http://www.bbc.co.uk/news/world-23202684#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-23202684</guid>  
+      <pubDate>Mon, 08 Jul 2013 07:53:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68576000/jpg/_68576951_nikos_dendias.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68576000/jpg/_68576952_nikos_dendias.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: BP in court over oil spill payouts</title>  
+      <description>Oil giant BP is returning to court in the US to try to limit compensation payouts from a fund set up to help those affected by the 2010 Deepwater Horizon oil spill in the Gulf of Mexico.</description>  
+      <link>http://www.bbc.co.uk/news/business-23225804#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23225804</guid>  
+      <pubDate>Mon, 08 Jul 2013 10:48:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68603000/jpg/_68603876_68603828.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68603000/jpg/_68603877_68603828.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Middle class yearn for 'Chinese Dream'</title>  
+      <description>China's economy has grown enormously over the past decade and its middle class is now estimated to number 150m.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-china-23225808#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-china-23225808</guid>  
+      <pubDate>Mon, 08 Jul 2013 15:17:50 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68613000/jpg/_68613370_68612848.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68613000/jpg/_68613371_68612848.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: India hotel collapse leaves 12 dead</title>  
+      <description>At least 12 people have been killed in a building collapse in the southern Indian city of Secunderabad, police say.</description>  
+      <link>http://www.bbc.co.uk/news/world-middle-east-23228562#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-23228562</guid>  
+      <pubDate>Mon, 08 Jul 2013 11:37:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68607000/jpg/_68607453_68607444.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68607000/jpg/_68607964_68607444.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

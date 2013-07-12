@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Scotland</title>  
+    <link>http://www.bbc.co.uk/news/video_and_audio/scotland/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Scotland section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Thu, 11 Jul 2013 19:56:07 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Scotland</title>  
+      <link>http://www.bbc.co.uk/news/video_and_audio/scotland/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/video_and_audio/scotland/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>VIDEO: Last days of tallest chimney</title>  
+      <description>BBC Scotland's environment correspondent David Miller takes one last look around the chimney at Inverkip power station.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-23254894#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-23254894</guid>  
+      <pubDate>Wed, 10 Jul 2013 09:56:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68665000/jpg/_68665761_inverkip.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68665000/jpg/_68665762_inverkip.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: GPs worried by first island pharmacy</title>  
+      <description>Doctors are warning plans to open the first pharmacy on Uist could threaten jobs and close GP surgeries.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-23269842#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-23269842</guid>  
+      <pubDate>Thu, 11 Jul 2013 19:56:02 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68675000/jpg/_68675472_kate_dawson.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68675000/jpg/_68675473_kate_dawson.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: High caffeine energy drink warning</title>  
+      <description>There are calls for tighter controls to prevent children consuming high caffeine energy drinks.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-23254897#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-23254897</guid>  
+      <pubDate>Wed, 10 Jul 2013 15:10:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68653000/jpg/_68653791_energy_drinks.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68653000/jpg/_68653792_energy_drinks.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Building Andy Scott's 30m Kelpies</title>  
+      <description>Construction is underway of two 30m high steel-plated Kelpies designed by Andy Scott for the Helix Project at Falkirk.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-23248089#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-23248089</guid>  
+      <pubDate>Tue, 09 Jul 2013 16:41:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68636000/jpg/_68636615_kelpies_heads.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68636000/jpg/_68636667_kelpies_heads.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: German POW grateful for Kelso kindness</title>  
+      <description>A former German prisoner of war returns to the Borders country house where he was held captive in 1945.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-23245677#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-23245677</guid>  
+      <pubDate>Tue, 09 Jul 2013 13:27:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68632000/jpg/_68632015_pow_horst.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68632000/jpg/_68632066_pow_horst.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Round-up - news from around Scotland</title>  
+      <description>A two-minute round-up of the news which has been happening around Scotland.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-16824389#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-16824389</guid>  
+      <pubDate>Wed, 10 Jul 2013 08:58:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/57800000/jpg/_57800811_b00t8396_366_206.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/57800000/jpg/_57800810_b00t8396_366_206.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

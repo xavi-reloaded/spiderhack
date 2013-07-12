@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+
+  <channel>
+    <title>Podcast del resumen de noticias 60 SEGUNDOS de elmundo.es</title>
+    <link>http://www.elmundo.es/</link>
+    <description>Podcasting de elmundo.es</description>
+    <itunes:category text="News" />
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:image href="http://estaticos.elmundo.es/imagen/canalima.gif" />
+    <itunes:owner>
+      <itunes:email>podcasting@el-mundo.net</itunes:email>
+      <itunes:name>Unidad Editorial Internet</itunes:name>
+    </itunes:owner>
+    <itunes:author>elmundo.es</itunes:author>
+    <language>es</language>
+    <copyright>(c) Unidad Editorial Internet, S.L. - El Mundo</copyright>
+    <pubDate>Thu, 11 Jul 2013 18:22 +0200</pubDate>
+    <lastBuildDate>Thu, 11 Jul 2013 18:22 +0200</lastBuildDate>
+    <category>News</category>
+    <ttl>60</ttl>
+
+    <image>
+      <title>elmundo.es</title>
+      <url>http://estaticos.elmundo.es/imagen/canalima144.gif</url>
+      <link>http://www.elmundo.es/</link>
+      <width>144</width>
+      <height>24</height>
+      <description>elmundo.es</description>
+    </image>
+
+    <item>
+      <title><![CDATA[Podcast del resumen de noticias 60 SEGUNDOS de elmundo.es]]></title>
+      <link>http://www.elmundo.es/elmundo/ultimas.html</link>
+      <description><![CDATA[Podcast resumen con los titulares de las noticias de 60 SEGUNDOS de elmundo.es. Recuerde que existen RSS y podcast completos de cada noticia. <a href="http://www.elmundo.es/elmundo/ultimas.html">Leer</a>. <a href="http://www.elmundo.es/tts/rosa_60segundos.html">Escuchar</a>.<img src="http://w3php.elmundo.es/rss/pixel.html?srcrss=60segundos" />]]></description>
+      <author><![CDATA[elmundo.es <internet@elmundo.es>]]></author>
+      <itunes:duration>05:40</itunes:duration>
+      <itunes:author>elmundo.es</itunes:author>
+      <pubDate>Thu, 11 Jul 2013 18:22 +0200</pubDate>
+      <enclosure url="http://estaticos.elmundo.es/tts/rosa/60segundos.mp3" length="733030" type="audio/mpeg" />
+    </item>
+
+  </channel>
+</rss>

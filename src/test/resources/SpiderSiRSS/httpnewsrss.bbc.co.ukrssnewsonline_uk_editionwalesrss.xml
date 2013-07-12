@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Wales</title>  
+    <link>http://www.bbc.co.uk/news/wales/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Wales section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Fri, 12 Jul 2013 07:06:16 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Wales</title>  
+      <link>http://www.bbc.co.uk/news/wales/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/wales/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Internet speed 'hinders' school work</title>  
+      <description>Slow internet connections at schools are affecting pupils' ICT studies, according to the education watchdog Estyn.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23275692#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23275692</guid>  
+      <pubDate>Fri, 12 Jul 2013 07:21:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676804_014378487-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676805_014378487-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Dragon Somme memorial to be restored</title>  
+      <description>A red dragon memorial to Welsh soldiers who died in a World War I battle in northern France is to be restored after the Welsh government pledged Â£7,000.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23280757#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23280757</guid>  
+      <pubDate>Fri, 12 Jul 2013 07:32:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68684000/png/_68684820_vlcsnap-2012-07-06-14h24m22s98.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68684000/png/_68684821_vlcsnap-2012-07-06-14h24m22s98.png"/> 
+    </item>  
+    <item> 
+      <title>Prestatyn coach praises historic win</title>  
+      <description>Coach Chris Hughes is delighted after Prestatyn Town beat Liepajas Metalurgs to reach the Europa League second qualifying round.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/23281333</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/23281333</guid>  
+      <pubDate>Fri, 12 Jul 2013 06:54:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68688000/jpg/_68688505_hi018622518.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68685000/jpg/_68685377_hi018622518.jpg"/> 
+    </item>  
+    <item> 
+      <title>Murder accused 'in love' with victim</title>  
+      <description>A man accused of setting a house fire killing three generations of family, including his girlfriend, said they in love and planned to marry, a jury hears.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23271256#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23271256</guid>  
+      <pubDate>Thu, 11 Jul 2013 11:52:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68670000/jpg/_68670169_composite2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68670000/jpg/_68670170_composite2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Hospital infection rates revealed</title>  
+      <description>Detailed figures outlining just how Welsh hospitals are combating infections acquired on wards are released by the Welsh NHS.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23279939#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23279939</guid>  
+      <pubDate>Thu, 11 Jul 2013 17:48:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68683000/jpg/_68683800_c_difficile.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68683000/jpg/_68683801_c_difficile.jpg"/> 
+    </item>  
+    <item> 
+      <title>Bellamy warns of Premier 'reality'</title>  
+      <description>Veteran striker Craig Bellamy says Cardiff City's players must keep their belief that they can survive in the Premier League.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/23276873</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/23276873</guid>  
+      <pubDate>Fri, 12 Jul 2013 06:20:40 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68688000/jpg/_68688187_craig_bellamy.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68688000/jpg/_68688188_craig_bellamy.jpg"/> 
+    </item>  
+    <item> 
+      <title>Second nurse in fake records probe</title>  
+      <description>A second nurse is arrested by police investigating allegations that patient notes have been faked "resulting in neglect" at Bridgend's Princess of Wales Hospital.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23275686#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23275686</guid>  
+      <pubDate>Thu, 11 Jul 2013 14:24:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676673__46677358_powhospital_grab_226-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676674__46677358_powhospital_grab_226-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Criticism over dog control law drop</title>  
+      <description>Plans for a new dog control law in Wales are shelved by politicians sparking criticism from several organisations.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23275593#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23275593</guid>  
+      <pubDate>Thu, 11 Jul 2013 16:03:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68681000/jpg/_68681042_dogattack304wn.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68681000/jpg/_68681043_dogattack304wn.jpg"/> 
+    </item>  
+    <item> 
+      <title>Engine 'may have caused' plane crash</title>  
+      <description>A light aircraft crash near a Flintshire airfield which killed two men could have been caused by an engine failure, say air accident investigators.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-23272579#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-23272579</guid>  
+      <pubDate>Thu, 11 Jul 2013 13:30:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68673000/jpg/_68673819_karl.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68673000/jpg/_68673820_karl.jpg"/> 
+    </item>  
+    <item> 
+      <title>Severn toll plan for M4 relief road</title>  
+      <description>Construction of an M4 relief road in south Wales could be paid for by the Severn Bridge tolls, the Welsh government says.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23266720#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23266720</guid>  
+      <pubDate>Thu, 11 Jul 2013 17:55:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68664000/gif/_68664222_vlcsnap-262011.gif"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68664000/gif/_68664223_vlcsnap-262011.gif"/> 
+    </item>  
+    <item> 
+      <title>Wind farm 'will attract billions'</title>  
+      <description>A giant onshore wind farm in south Wales will attract billions of pounds of investment to the UK, the energy secretary says.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23260134#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23260134</guid>  
+      <pubDate>Thu, 11 Jul 2013 20:09:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68661000/jpg/_68661419_003829240-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68661000/jpg/_68661420_003829240-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Over 400,000 wait for NHS treatment</title>  
+      <description>The number of people waiting to start NHS treatment in Wales rises by more than 10,000 to nearly 407,000.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-politics-23270283#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-politics-23270283</guid>  
+      <pubDate>Thu, 11 Jul 2013 16:43:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68668000/jpg/_68668445_016578431-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68668000/jpg/_68668446_016578431-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Kittens saved by curious chihuahua</title>  
+      <description>A trio of kittens are rescued from a tied-up bin bag after being spotted by a holidaymaker's curious chihuahua dog at Porthcawl in south Wales</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23277051#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23277051</guid>  
+      <pubDate>Thu, 11 Jul 2013 17:09:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68682000/jpg/_68682999_bin_bag_cats_protect.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68683000/jpg/_68683000_bin_bag_cats_protect.jpg"/> 
+    </item>  
+    <item> 
+      <title>Rescuers called to save Minnie Mouse</title>  
+      <description>A lifeboat crew is called to a rescue only to find a large inflatable of cartoon character Minnie Mouse had been mistaken for a person falling in the sea.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-north-west-wales-23281126#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-north-west-wales-23281126</guid>  
+      <pubDate>Fri, 12 Jul 2013 06:28:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68688000/jpg/_68688479_001536454-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68688000/jpg/_68688480_001536454-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Uni worker dies in incident at work</title>  
+      <description>A university technician dies after suffering a serious head injury while at work.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-north-west-wales-23267950#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-north-west-wales-23267950</guid>  
+      <pubDate>Thu, 11 Jul 2013 10:42:57 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68669000/jpg/_68669852_iannicholls_bangoruni144.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68669000/jpg/_68669853_iannicholls_bangoruni144.jpg"/> 
+    </item>  
+    <item> 
+      <title>Brave Bala Town exit Europa League</title>  
+      <description>Ryan Jones' late strike is not enough to prevent Bala Town's Europa League exit against Estonia's Levadia Tallinn.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/23255741</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/23255741</guid>  
+      <pubDate>Thu, 11 Jul 2013 17:57:40 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68652000/jpg/_68652956_colin_caton_bbc.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68652000/jpg/_68652958_colin_caton_bbc.jpg"/> 
+    </item>  
+    <item> 
+      <title>NHS problems 'vigorously' tackled</title>  
+      <description>Problems in the Welsh NHS are being "vigorously" addressed following an English hospital scandal in which patients died needlessly, says the health minister.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23252348#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23252348</guid>  
+      <pubDate>Wed, 10 Jul 2013 11:57:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68646000/jpg/_68646457_373150_43401419-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68646000/jpg/_68646458_373150_43401419-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Airbus UK bow out of Europa League</title>  
+      <description>Airbus UK's bid to reach the Europa League qualifying second round ends in a 0-0 draw against Latvia's Ventspils.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/23262089</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/23262089</guid>  
+      <pubDate>Thu, 11 Jul 2013 17:19:20 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/46309000/jpg/_46309285_europa_66_49.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/51751000/jpg/_51751011_europa_live_114.jpg"/> 
+    </item>  
+    <item> 
+      <title>Â£900,000 heritage museum bid</title>  
+      <description>A history group is given lottery money to draw up Â£900,000 plans for a new museum in Flintshire.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-north-east-wales-23265113#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-north-east-wales-23265113</guid>  
+      <pubDate>Thu, 11 Jul 2013 06:51:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68664000/jpg/_68664151_iainpatterson.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68664000/jpg/_68664152_iainpatterson.jpg"/> 
+    </item>  
+    <item> 
+      <title>Police car fire cause investigated</title>  
+      <description>An investigation is under way after a police car caught fire while officers were carrying out inquiries at a nearby address.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23251891#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23251891</guid>  
+      <pubDate>Wed, 10 Jul 2013 09:17:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68644000/jpg/_68644348_bluelights_grid.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68644000/jpg/_68644349_bluelights_grid.jpg"/> 
+    </item>  
+    <item> 
+      <title>Concerns over village hostel sale</title>  
+      <description>A youth hostel in Ceredigion which needs a Â£600,000 revamp is for sale and could close if a buyer is not found.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-mid-wales-23255764#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-mid-wales-23255764</guid>  
+      <pubDate>Thu, 11 Jul 2013 07:19:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68654000/jpg/_68654952_hostel.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68655000/jpg/_68655134_hostel.jpg"/> 
+    </item>  
+    <item> 
+      <title>River pollution from old mine cut</title>  
+      <description>The amount of harmful chemicals leaking into a Ceredigion river from a disused mine for more than 100 years is cut by 50%, says Natural Resources Wales.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23255769#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23255769</guid>  
+      <pubDate>Wed, 10 Jul 2013 13:41:09 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68650000/jpg/_68650986_frongochupdate.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68650000/jpg/_68650987_frongochupdate.jpg"/> 
+    </item>  
+    <item> 
+      <title>TNS boss relishes Legia Warsaw tie</title>  
+      <description>TNS boss Craig Harrison recalls the biggest low of his career as he awaits a Champions League tie against Legia Warsaw.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/23240873</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/23240873</guid>  
+      <pubDate>Tue, 09 Jul 2013 15:28:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68630000/gif/_68630781_craig_harrison_2.gif"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68660000/jpg/_68660221_race.jpg"/> 
+    </item>  
+    <item> 
+      <title>Bony inspired by Drogba's success</title>  
+      <description>New Swansea City striker Wilfried Bony says emulating Didier Drogba's scoring record will be his target in the Premier League.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/23257325</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/23257325</guid>  
+      <pubDate>Thu, 11 Jul 2013 21:02:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68663000/jpg/_68663967_144820686.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68663000/jpg/_68663965_144820686.jpg"/> 
+    </item>  
+    <item> 
+      <title>Tribute to 'irreplaceable' woman</title>  
+      <description>The family of a woman who died following a collision involving a pick-up truck and two parked vehicles in Swansea say she loved to help others.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23282931#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23282931</guid>  
+      <pubDate>Fri, 12 Jul 2013 06:22:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68688000/jpg/_68688157_paulinerichards.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68688000/jpg/_68688158_paulinerichards.jpg"/> 
+    </item>  
+    <item> 
+      <title>Boardwalk reopens bay to visitors</title>  
+      <description>One of Swansea's most popular beaches is fully reopened after bad weather destroyed part of the seawall protecting the promenade.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23269710#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23269710</guid>  
+      <pubDate>Thu, 11 Jul 2013 11:57:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68672000/jpg/_68672776_langlandbay.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68672000/jpg/_68672777_langlandbay.jpg"/> 
+    </item>  
+    <item> 
+      <title>Tribute after road race cyclist dies</title>  
+      <description>The family of a cyclist who died while taking part in a road race pays tribute to a "fantastic, caring son".</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23272820#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23272820</guid>  
+      <pubDate>Thu, 11 Jul 2013 13:06:36 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68674000/jpg/_68674359_bencarroll.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68674000/jpg/_68674360_bencarroll.jpg"/> 
+    </item>  
+    <item> 
+      <title>National Tennis Centre under threat</title>  
+      <description>Just days after Andy Murray ended Britain's wait for a men's Wimbledon champion, the Welsh National Tennis Centre is under threat.</description>  
+      <link>http://www.bbc.co.uk/sport/0/wales/23269667</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/wales/23269667</guid>  
+      <pubDate>Thu, 11 Jul 2013 15:35:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68667000/jpg/_68667458_murrayafp1.jpg"/>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68667000/jpg/_68667506_murrayafp1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Teacher saddened by Hollie's death</title>  
+      <description>The head teacher of a Glasgow teenager whose body was recovered from the sea in south Wales speaks of his shock and sadness after her death.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23267959#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23267959</guid>  
+      <pubDate>Thu, 11 Jul 2013 10:42:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68668000/jpg/_68668593_hollymcclymont.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68668000/jpg/_68668594_hollymcclymont.jpg"/> 
+    </item>  
+    <item> 
+      <title>Internet speed 'hinders' school work</title>  
+      <description>Slow internet connections at schools are affecting pupils' ICT studies, according to the education watchdog Estyn.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23275692#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23275692</guid>  
+      <pubDate>Fri, 12 Jul 2013 07:21:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676804_014378487-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676805_014378487-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Frustration over devolution review</title>  
+      <description>A member of a commission recommending more fiscal powers for the Welsh assembly calls for the UK government to respond to the proposals.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23266561#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23266561</guid>  
+      <pubDate>Thu, 11 Jul 2013 12:18:40 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68663000/jpg/_68663723_008295961-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68663000/jpg/_68663724_008295961-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Call for BBC Trust chairman to quit</title>  
+      <description>The BBC Trust chairman Lord Patten must stand down over severance payments made to senior managers at the corporation, an ex-BBC governor for Wales says.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23263072#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23263072</guid>  
+      <pubDate>Wed, 10 Jul 2013 17:37:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68658000/jpg/_68658469_011896113-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68658000/jpg/_68658470_011896113-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Prestatyn win Euro penalty thriller</title>  
+      <description>Prestatyn Town book their place in the Europa League second qualifying round with a thrilling penalty shoot-out win at Liepajas Metalurgs.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/23262568</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/23262568</guid>  
+      <pubDate>Thu, 11 Jul 2013 19:08:04 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/46309000/jpg/_46309285_europa_66_49.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68685000/jpg/_68685377_hi018622518.jpg"/> 
+    </item>  
+    <item> 
+      <title>Glamorgan hope for record T20 crowd</title>  
+      <description>Glamorgan captain Marcus North wants to see a record crowd for the club's Friends Life T20 clash with Somerset on Friday.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/23269669</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/23269669</guid>  
+      <pubDate>Fri, 12 Jul 2013 06:38:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68674000/jpg/_68674996_glam1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68688000/jpg/_68688194_glam1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Greene eyes British Championships win</title>  
+      <description>World 400m hurdle champion Dai Greene targets his first win of the year at the British Championships in Birmingham.</description>  
+      <link>http://www.bbc.co.uk/sport/0/athletics/23281670</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/athletics/23281670</guid>  
+      <pubDate>Thu, 11 Jul 2013 22:56:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68686000/jpg/_68686869_dai_greene2_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68686000/jpg/_68686867_dai_greene2_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ysgolion Cymru: TGCh rhagorol</title>  
+      <description>Sgiliau TGCh yn dda neu rhagorol yn ysgolion Cymru, ond cysylltiadau sÃ¢l i'r we yn cael effaith negyddol.</description>  
+      <link>http://www.bbc.co.uk/newyddion/23280978</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/newyddion/23280978</guid>  
+      <pubDate>Fri, 12 Jul 2013 05:57:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68684000/jpg/_68684976_68684924.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68684000/jpg/_68684977_68684924.jpg"/> 
+    </item>  
+    <item> 
+      <title>Adnewyddu cofeb i filwyr yn Ffrainc</title>  
+      <description>Cofeb i filwyr Cymreig a fu farw ym Mrwydr Coed Mametz yng ngogledd Ffrainc yn cael ei hadnewyddu gyda chymorth gan Lywodraeth Cymru.</description>  
+      <link>http://www.bbc.co.uk/newyddion/23280133</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/newyddion/23280133</guid>  
+      <pubDate>Fri, 12 Jul 2013 06:06:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68683000/jpg/_68683760_cofebmametz.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68683000/jpg/_68683761_cofebmametz.jpg"/> 
+    </item>  
+    <item> 
+      <title>Tollau pontydd Hafren ar gyfer cynllun M4?</title>  
+      <description>Bydd ffordd liniaru ar gyfer yr M4 gael ei gyllido drwy ddefnyddio tollau pontydd Hafren yn Ã´l Gweinidog Cyllid Llywodraeth Cymru, Jane Hutt.</description>  
+      <link>http://www.bbc.co.uk/newyddion/23270065</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/newyddion/23270065</guid>  
+      <pubDate>Thu, 11 Jul 2013 16:19:45 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68671000/jpg/_68671756_68670159.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68671000/jpg/_68671757_68670159.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Giant wind farm needed, says Davey</title>  
+      <description>A giant onshore wind farm in south Wales will attract billions of pounds investment to the UK and help secure vital energy supplies for the future says the UK Energy Secretary Ed Davey.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23280379#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23280379</guid>  
+      <pubDate>Thu, 11 Jul 2013 20:08:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68685000/jpg/_68685878_windfarm464.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68685000/jpg/_68685879_windfarm464.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: MPs have their say on pay rise</title>  
+      <description>Proposals for increasing MPs' pay gets a mixed reaction in Wales - from both politicians and the public.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23280375#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23280375</guid>  
+      <pubDate>Thu, 11 Jul 2013 18:26:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68684000/png/_68684450_vlcsnap-2013-07-11-19h06m08s47.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68684000/png/_68684451_vlcsnap-2013-07-11-19h06m08s47.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Valleys candles by royal appointment</title>  
+      <description>A candlemaker who makes thousands of candles for the Royal household every year will be at the Coronation Festival at Buckingham Palace this weekend, which will be attended by 200 companies awarded the Royal Warrant of Appointment.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23274007#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23274007</guid>  
+      <pubDate>Thu, 11 Jul 2013 12:55:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68674000/png/_68674009_vlcsnap-2013-07-11-13h33m21s192.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68674000/png/_68674010_vlcsnap-2013-07-11-13h33m21s192.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Wind turbines prompts mixed views</title>  
+      <description>A giant onshore wind farm in south Wales will attract billions of pounds investment to the UK, according to UK Energy Secretary Ed Davey - but another in Gilfach Goch has prompted mixed views from residents.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23274009#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23274009</guid>  
+      <pubDate>Thu, 11 Jul 2013 16:53:40 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68682000/png/_68682160_vlcsnap-2013-07-11-17h35m08s18.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68682000/png/_68682161_vlcsnap-2013-07-11-17h35m08s18.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Calon Lan writer's life on film</title>  
+      <description>Schoolchildren have helped create an animated film of the life of Daniel James, the man who wrote the hymn Calon Lan in the 19th Century.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23274008#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23274008</guid>  
+      <pubDate>Thu, 11 Jul 2013 14:01:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68676000/png/_68676322_vlcsnap-2013-07-11-14h47m42s167.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68676000/png/_68676323_vlcsnap-2013-07-11-14h47m42s167.png"/> 
+    </item>  
+    <item> 
+      <title>In pictures: Gallery celebrates B&amp;B</title>  
+      <description>Gallery creates fictional accommodation</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23246429#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23246429</guid>  
+      <pubDate>Fri, 12 Jul 2013 07:02:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68642000/jpg/_68642082_bb12.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68642000/jpg/_68642083_bb12.jpg"/> 
+    </item>  
+    <item> 
+      <title>Academic's 13,000-book library opens</title>  
+      <description>Student housing turned into library housing US academic's collection</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23280761#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23280761</guid>  
+      <pubDate>Fri, 12 Jul 2013 06:47:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68685000/jpg/_68685704_dsc00029.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68685000/jpg/_68685705_dsc00029.jpg"/> 
+    </item>  
+    <item> 
+      <title>New Â£6m beach 'is boosting business'</title>  
+      <description>Business is said to be booming after town's beach creation</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-north-west-wales-23266641#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-north-west-wales-23266641</guid>  
+      <pubDate>Thu, 11 Jul 2013 09:14:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68664000/jpg/_68664227_photo.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68664000/jpg/_68664228_photo.jpg"/> 
+    </item>  
+    <item> 
+      <title>Anglesey by-election: Ynys Mon</title>  
+      <description>List of candidates declared for assembly poll</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23134610#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23134610</guid>  
+      <pubDate>Fri, 05 Jul 2013 12:20:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68489000/jpg/_68489125_006967701-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68489000/jpg/_68489126_006967701-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Your Pictures: Photos from Wales</title>  
+      <description>A selection of your digital photos from around Wales</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23230587#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23230587</guid>  
+      <pubDate>Wed, 10 Jul 2013 07:07:51 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68612000/jpg/_68612658_stcaranog549.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68612000/jpg/_68612679_stcaranog549.jpg"/> 
+    </item> 
+  </channel> 
+</rss>
