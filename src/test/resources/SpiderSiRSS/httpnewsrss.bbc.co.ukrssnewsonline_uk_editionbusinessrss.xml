@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Business</title>  
+    <link>http://www.bbc.co.uk/news/business/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Business section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Fri, 12 Jul 2013 07:26:27 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Business</title>  
+      <link>http://www.bbc.co.uk/news/business/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/business/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Co-op 'considered' BoE plan for bank</title>  
+      <description>Co-op Group considered using the Bank of England's resolution process to deal with its struggling bank, BBC Business Editor Robert Peston has learned.</description>  
+      <link>http://www.bbc.co.uk/news/business-23279457#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23279457</guid>  
+      <pubDate>Fri, 12 Jul 2013 07:30:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687993_68687986.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687994_68687986.jpg"/> 
+    </item>  
+    <item> 
+      <title>US shares surge to record close</title>  
+      <description>US shares close at record levels following reassurance that efforts to boost the economy by the Federal Reserve will not end soon.</description>  
+      <link>http://www.bbc.co.uk/news/business-23281644#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23281644</guid>  
+      <pubDate>Thu, 11 Jul 2013 22:24:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68686000/jpg/_68686930_nyse.trade.g.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68686000/jpg/_68686931_nyse.trade.g.jpg"/> 
+    </item>  
+    <item> 
+      <title>Steep rise in football transfer fees</title>  
+      <description>International football transfer numbers fall slightly but the income they generate has risen sharply in the past six months, says governing body Fifa.</description>  
+      <link>http://www.bbc.co.uk/news/business-23282840#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23282840</guid>  
+      <pubDate>Fri, 12 Jul 2013 06:51:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68688000/jpg/_68688334_68688259.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68688000/jpg/_68688335_68688259.jpg"/> 
+    </item>  
+    <item> 
+      <title>Invensys confirms takeover approach</title>  
+      <description>UK engineering firm Invensys confirms it has received a takeover approach from France's Schneider Electric, which it is likely to accept.</description>  
+      <link>http://www.bbc.co.uk/news/business-23282705#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23282705</guid>  
+      <pubDate>Fri, 12 Jul 2013 07:25:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68689000/jpg/_68689034_refinery.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68689000/jpg/_68689035_refinery.jpg"/> 
+    </item>  
+    <item> 
+      <title>China to resume US investment talks</title>  
+      <description>China agrees to resume talks on a bilateral investment treaty with the US which could open up new opportunities for businesses in both the countries.</description>  
+      <link>http://www.bbc.co.uk/news/business-23267381#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23267381</guid>  
+      <pubDate>Fri, 12 Jul 2013 01:38:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687374_173212826-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687375_173212826-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>New offer in Dell takeover battle</title>  
+      <description>Billionaire investor Carl Icahn says he will improve his offer for Dell as he tries to stop a takeover by the computer maker's founder.</description>  
+      <link>http://www.bbc.co.uk/news/business-23281159#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23281159</guid>  
+      <pubDate>Thu, 11 Jul 2013 21:39:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68685000/jpg/_68685188_carl.icahn.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68685000/jpg/_68685189_carl.icahn.jpg"/> 
+    </item>  
+    <item> 
+      <title>Cigarette packaging plans on hold</title>  
+      <description>The government is to postpone plans for standardised plain cigarette packaging, to spend more time studying a similar scheme in Australia.</description>  
+      <link>http://www.bbc.co.uk/news/health-23281804#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23281804</guid>  
+      <pubDate>Fri, 12 Jul 2013 06:34:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687271_68687250.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687272_68687250.jpg"/> 
+    </item>  
+    <item> 
+      <title>S Korea car firms hit by China fears</title>  
+      <description>Shares in South Korean car makers Hyundai and Kia fall by about 5% after reports that eight Chinese cities could implement curbs on car sales.</description>  
+      <link>http://www.bbc.co.uk/news/business-23282479#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23282479</guid>  
+      <pubDate>Fri, 12 Jul 2013 06:25:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687818_138518525.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687819_138518525.jpg"/> 
+    </item>  
+    <item> 
+      <title>Microsoft unveils reorganisation</title>  
+      <description>Microsoft chief executive Steve Ballmer announces a restructuring in what is the first major overhaul of the company in five years.</description>  
+      <link>http://www.bbc.co.uk/news/business-23272331#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23272331</guid>  
+      <pubDate>Thu, 11 Jul 2013 15:40:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687026_microsoft.logo.r.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687027_microsoft.logo.r.jpg"/> 
+    </item>  
+    <item> 
+      <title>Infosys shares surge on forecast</title>  
+      <description>Shares of Infosys, India's second-largest software firm, rise by 12% after it reports a jump in profits and leaves its revenue growth outlook unchanged.</description>  
+      <link>http://www.bbc.co.uk/news/business-23282475#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23282475</guid>  
+      <pubDate>Fri, 12 Jul 2013 05:53:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687764_169757101.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687765_169757101.jpg"/> 
+    </item>  
+    <item> 
+      <title>AG Barr abandons bid for Britvic</title>  
+      <description>The maker of Irn Bru announces it will not make a bid for rival soft drinks firm Britvic, days after clearance from the Competition Commission.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-scotland-business-23275790#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-scotland-business-23275790</guid>  
+      <pubDate>Thu, 11 Jul 2013 16:38:04 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68677000/jpg/_68677960__57176778__48530116_original-x-6-1-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68677000/jpg/_68677961__57176778__48530116_original-x-6-1-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>No need for tax rises, says Osborne</title>  
+      <description>Chancellor George Osborne says he will not need to raise UK taxes to meet deficit reduction targets after the next election.</description>  
+      <link>http://www.bbc.co.uk/news/business-23269070#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23269070</guid>  
+      <pubDate>Thu, 11 Jul 2013 14:48:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68677000/jpg/_68677290_68665937.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68677000/jpg/_68677291_68665937.jpg"/> 
+    </item>  
+    <item> 
+      <title>Unite warns of Labour funding plunge</title>  
+      <description>The Unite union says the changes proposed by Ed Miliband could slash the amount of funding it provides to the Party, the BBC has learned.</description>  
+      <link>http://www.bbc.co.uk/news/business-23279459#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23279459</guid>  
+      <pubDate>Thu, 11 Jul 2013 19:38:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68685000/jpg/_68685115_unite.pa.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68685000/jpg/_68685116_unite.pa.jpg"/> 
+    </item>  
+    <item> 
+      <title>US senators aim to separate banks</title>  
+      <description>A group of US senators, including Elizabeth Warren and John McCain, introduce "new" Glass-Steagall legislation to separate commercial and investment banking.</description>  
+      <link>http://www.bbc.co.uk/news/business-23280734#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23280734</guid>  
+      <pubDate>Thu, 11 Jul 2013 19:03:30 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68684000/jpg/_68684588_mccainwarren.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68684000/jpg/_68684589_mccainwarren.jpg"/> 
+    </item>  
+    <item> 
+      <title>Profits soar at Scottish Power</title>  
+      <description>Utility company Scottish Power reports a doubling of profits while charging customers more for their energy.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-scotland-business-23270146#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-scotland-business-23270146</guid>  
+      <pubDate>Thu, 11 Jul 2013 15:26:50 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68672000/jpg/_68672967_wires.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68672000/jpg/_68672968_wires.jpg"/> 
+    </item>  
+    <item> 
+      <title>G4S probed over tag overcharging</title>  
+      <description>The Serious Fraud Office will consider whether to investigate G4S over alleged overcharging for electronic tagging, which the government says totalled millions of pounds.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23272708#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23272708</guid>  
+      <pubDate>Thu, 11 Jul 2013 16:30:53 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676532_tagging_g4s.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676533_tagging_g4s.jpg"/> 
+    </item>  
+    <item> 
+      <title>Pension reform 'will hit the young'</title>  
+      <description>Young people will lose out the most from planned reforms to the state pension, a report from the Institute for Fiscal Studies warns.</description>  
+      <link>http://www.bbc.co.uk/news/business-23266520#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23266520</guid>  
+      <pubDate>Thu, 11 Jul 2013 11:05:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68679000/jpg/_68679240_tv000142796.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68679000/jpg/_68679694_tv000142796.jpg"/> 
+    </item>  
+    <item> 
+      <title>'Debt peril' warning over rate rises</title>  
+      <description>The number of families in "debt peril" could double over the next four years if interest rates rise faster than expected, a think tank warns.</description>  
+      <link>http://www.bbc.co.uk/news/business-23265761#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23265761</guid>  
+      <pubDate>Thu, 11 Jul 2013 09:37:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68667000/jpg/_68667139_y7zmpqqt.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68667000/jpg/_68667221_y7zmpqqt.jpg"/> 
+    </item>  
+    <item> 
+      <title>OFT lists workplace pension concerns</title>  
+      <description>An Office of Fair Trading investigation into workplace pensions raises concerns over charges and insufficient levels of governance.</description>  
+      <link>http://www.bbc.co.uk/news/business-23273184#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23273184</guid>  
+      <pubDate>Thu, 11 Jul 2013 14:58:22 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68672000/jpg/_68672564_65172030.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68672000/jpg/_68672565_65172030.jpg"/> 
+    </item>  
+    <item> 
+      <title>US budget surplus highest in 5 years</title>  
+      <description>The US government reported a budget surplus of $116.5b (Â£77.02b) in June, the most in five years.</description>  
+      <link>http://www.bbc.co.uk/news/business-23280737#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23280737</guid>  
+      <pubDate>Thu, 11 Jul 2013 20:37:35 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68684000/jpg/_68684848_162913877.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68684000/jpg/_68684849_162913877.jpg"/> 
+    </item>  
+    <item> 
+      <title>Bank of Japan upbeat on economy</title>  
+      <description>The Bank of Japan gives an upbeat assessment of the country's economy, saying it is starting to "recover modestly".</description>  
+      <link>http://www.bbc.co.uk/news/business-23267645#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23267645</guid>  
+      <pubDate>Thu, 11 Jul 2013 11:42:22 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68665000/jpg/_68665100_bankofjapan(boj)governorharuhikokuroda.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68665000/jpg/_68665101_bankofjapan(boj)governorharuhikokuroda.jpg"/> 
+    </item>  
+    <item> 
+      <title>Africa's economy 'sees rapid growth'</title>  
+      <description>Africa's economy is growing faster than any other continent, with a rapidly expanding middle class, according to the African Development Bank.</description>  
+      <link>http://www.bbc.co.uk/news/business-23267647#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23267647</guid>  
+      <pubDate>Thu, 11 Jul 2013 10:46:51 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68669000/jpg/_68669158_africanmiddleclasslagosjewellers.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68669000/jpg/_68669289_africanmiddleclasslagosjewellers.jpg"/> 
+    </item>  
+    <item> 
+      <title>Taking a family business global</title>  
+      <description>Profile of George Logothetis, who took over a small family shipping company and turned it into an international conglomerate.</description>  
+      <link>http://www.bbc.co.uk/news/business-23041304#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23041304</guid>  
+      <pubDate>Sun, 07 Jul 2013 23:11:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68355000/jpg/_68355805_george_logothetis_chairman_and_ceo_libra_group.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68355000/jpg/_68355806_george_logothetis_chairman_and_ceo_libra_group.jpg"/> 
+    </item>  
+    <item> 
+      <title>Are entrepreneurs born or can they be taught?</title>  
+      <description>What makes a successful entrepreneur? Are they born with the required skills, or can people be taught to be one? The BBC's Sarah Treanor takes a closer look.</description>  
+      <link>http://www.bbc.co.uk/news/business-23157638#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23157638</guid>  
+      <pubDate>Wed, 03 Jul 2013 22:59:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68521000/jpg/_68521768_baby2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68521000/jpg/_68521789_baby2.jpg"/> 
+    </item>  
+    <item> 
+      <title>The boss who aims to hit the right note</title>  
+      <description>Hotels.com chief executive David Roche explains why running a successful internet company is very similar to being a jazz musician.</description>  
+      <link>http://www.bbc.co.uk/news/business-22983181#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-22983181</guid>  
+      <pubDate>Sun, 30 Jun 2013 22:46:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68441000/jpg/_68441284_piano2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68441000/jpg/_68441285_piano2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Unrest forces end of Egyptian league</title>  
+      <description>Continuing unrest in Egypt has brought the country's football league to a premature end, with Al Ahly and Zamalek declared champions.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/23269271</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/23269271</guid>  
+      <pubDate>Thu, 11 Jul 2013 14:14:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68677000/jpg/_68677232_ahly.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68677000/jpg/_68677174_ahly.jpg"/> 
+    </item>  
+    <item> 
+      <title>Brazil row over topless fan ban</title>  
+      <description>Controversial new plans which include a ban of shirtless and standing fans at Rio de Janeiro's Maracana stadium are causing outcry in Brazil.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-23281927#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-23281927</guid>  
+      <pubDate>Fri, 12 Jul 2013 00:32:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687169_68687157.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687170_68687157.jpg"/> 
+    </item>  
+    <item> 
+      <title>Fans' group submits bid for Hearts</title>  
+      <description>The Foundation of Hearts becomes the first group to formally submit a takeover bid to the club's administrator.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/23272164</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/23272164</guid>  
+      <pubDate>Thu, 11 Jul 2013 15:12:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/44944000/gif/_44944066_hearts_66x49.gif"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68678000/jpg/_68678809_tynecastle.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Families 'burying heads' over household debt</title>  
+      <description>Gillian Tett and Sir John Gieve discuss potential problems that families will be facing when interest rates rise.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23266867#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23266867</guid>  
+      <pubDate>Thu, 11 Jul 2013 07:28:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68664000/jpg/_68664258_68664105.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68664000/jpg/_68664259_68664105.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: US and China eye investment treaty</title>  
+      <description>The US and China have agreed to start talks over an investment treaty that would make it easier for US companies to invest in China.</description>  
+      <link>http://www.bbc.co.uk/news/23281995#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/23281995</guid>  
+      <pubDate>Fri, 12 Jul 2013 01:55:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687139_china.notes.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687140_china.notes.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: How can you keep 'paradise' clean?</title>  
+      <description>As the eastern Caribbean nation of Barbados is reported as being one of the least corrupt countries in the world, Nick Davis reports from the capital, Bridgetown, on how it has kept its ''clean'' reputation.</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-23270215#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-23270215</guid>  
+      <pubDate>Thu, 11 Jul 2013 13:21:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68673000/jpg/_68673901_beach1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68673000/jpg/_68673902_beach1.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: GSK to investigate China claims</title>  
+      <description>Authorities in China have launched a probe against some senior executives of the Chinese division of GlaxoSmithKline (GSK) over allegations of bribery.</description>  
+      <link>http://www.bbc.co.uk/news/business-23281994#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23281994</guid>  
+      <pubDate>Fri, 12 Jul 2013 06:42:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687112_gsk.china.r.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687113_gsk.china.r.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Growing tension in India over wages</title>  
+      <description>A wage dispute at Indian motorbike maker Bajaj Auto highlights growing tension between employers and their staff.</description>  
+      <link>http://www.bbc.co.uk/news/business-23279452#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23279452</guid>  
+      <pubDate>Fri, 12 Jul 2013 05:44:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68682000/jpg/_68682089_bajaj.bbc.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68682000/jpg/_68682090_bajaj.bbc.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Greek jobless set to hit record high</title>  
+      <description>Official unemployment figures are expected to show Greece's jobless rate has risen to another record high.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-23266763#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-23266763</guid>  
+      <pubDate>Thu, 11 Jul 2013 08:46:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68665000/jpg/_68665133_68665329.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68665000/jpg/_68665134_68665329.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Royal chimney sweeps at the palace</title>  
+      <description>For the first time ever hundreds of firms that supply goods to the Queen, the Duke of Edinburgh and Prince Charles are gathering at Buckingham Palace.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23276765#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23276765</guid>  
+      <pubDate>Thu, 11 Jul 2013 14:53:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68677000/jpg/_68677896_68677888.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68677000/jpg/_68677897_68677888.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Miners given pension rescue deal</title>  
+      <description>Martin Clarke, at the Pension Protection Fund tells 5 live about the pension rescue scheme given to UK Coal.</description>  
+      <link>http://www.bbc.co.uk/news/business-23259051#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23259051</guid>  
+      <pubDate>Wed, 10 Jul 2013 22:32:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68655000/jpg/_68655575_coal.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68655000/jpg/_68655576_coal.jpg"/> 
+    </item>  
+    <item> 
+      <title>How much does a good sea view cost?</title>  
+      <description>How much for for the best sea views?</description>  
+      <link>http://www.bbc.co.uk/news/business-23255452#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23255452</guid>  
+      <pubDate>Thu, 11 Jul 2013 23:12:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68658000/jpg/_68658517_p1010586.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68658000/jpg/_68658776_p1010586.jpg"/> 
+    </item>  
+    <item> 
+      <title>Fixing work to make us happier</title>  
+      <description>It makes many of us unhappy - so how do we fix it?</description>  
+      <link>http://www.bbc.co.uk/news/business-23260286#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23260286</guid>  
+      <pubDate>Thu, 11 Jul 2013 22:54:18 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68685000/jpg/_68685786_hands624.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68685000/jpg/_68685787_hands624.jpg"/> 
+    </item>  
+    <item> 
+      <title>Bosses who look 100 years ahead</title>  
+      <description>The companies who plan 100 years in advance</description>  
+      <link>http://www.bbc.co.uk/news/business-23263697#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23263697</guid>  
+      <pubDate>Thu, 11 Jul 2013 23:00:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68682000/jpg/_68682715_155632056-3.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68682000/jpg/_68682716_155632056-3.jpg"/> 
+    </item>  
+    <item> 
+      <title>Weather apps battle to reign supreme</title>  
+      <description>The flood of weather apps for your mobile phone</description>  
+      <link>http://www.bbc.co.uk/news/business-23250238#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23250238</guid>  
+      <pubDate>Wed, 10 Jul 2013 23:04:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68651000/jpg/_68651057_phone2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68651000/jpg/_68651058_phone2.jpg"/> 
+    </item>  
+    <item> 
+      <title>The crisis facing South Africa's gold mines</title>  
+      <description>Is the sun going down on South Africa's gold mines?</description>  
+      <link>http://www.bbc.co.uk/news/business-23249467#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23249467</guid>  
+      <pubDate>Thu, 11 Jul 2013 11:58:48 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68653000/jpg/_68653617_68652564.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68653000/jpg/_68653618_68652564.jpg"/> 
+    </item>  
+    <item> 
+      <title>Who is affected by big currency movements?</title>  
+      <description>Who is affected by big currency moves?</description>  
+      <link>http://www.bbc.co.uk/news/business-23140774#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23140774</guid>  
+      <pubDate>Tue, 09 Jul 2013 23:52:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68567000/jpg/_68567356_637.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68567000/jpg/_68567357_637.jpg"/> 
+    </item>  
+    <item> 
+      <title>Greece's life-saving austerity medics</title>  
+      <description>Greeks turn to charities for life-saving medicines</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23247914#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23247914</guid>  
+      <pubDate>Wed, 10 Jul 2013 11:04:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68650000/jpg/_68650525_ow2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68650000/jpg/_68650526_ow2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Why not... nationalise the railways?</title>  
+      <description>The case for and against renationalising Britain's railway system</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-22700805#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-22700805</guid>  
+      <pubDate>Wed, 10 Jul 2013 23:53:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68254000/jpg/_68254592_68254523.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68254000/jpg/_68254593_68254523.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

@@ -15,8 +15,8 @@ public class SpiderDiarioDeNoticias extends AgentsManager
 	void test() throws IOException, InterruptedException 
 	{
 		String jobName = "diario_de_noticias";
-		String workingFolder = "/home/xavi/.gvfs/spider/" + jobName;
-		String cacheFolder = "/home/xavi/.gvfs/spider/spidercache";
+		String workingFolder = "/home/xavi/.gvfs/processes/" + jobName;
+		String cacheFolder = "/home/xavi/.gvfs/processes/spidercache";
 		int maxLinksPerSeed = 3000;
 		int maxSpiderThreads = 25;
 		int maxProxyThreads = 5;

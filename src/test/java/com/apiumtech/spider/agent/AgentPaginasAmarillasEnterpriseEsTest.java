@@ -17,8 +17,8 @@ public class AgentPaginasAmarillasEnterpriseEsTest {
 
     @BeforeMethod
     public void setUp() throws Exception {
-        String workingfolder = "/home/fjhidalgo/workspace/spider/src/test/resources/spider/workingfolder";
-        String cacheFolder = "/home/fjhidalgo/workspace/spider/src/test/resources/spider/cachefolder";
+        String workingfolder = "/home/fjhidalgo/workspace/processes/src/test/resources/processes/workingfolder";
+        String cacheFolder = "/home/fjhidalgo/workspace/processes/src/test/resources/processes/cachefolder";
         sut = new AgentPaginasAmarillasEnterpriseEs(workingfolder,cacheFolder,Long.MAX_VALUE);
     }
 

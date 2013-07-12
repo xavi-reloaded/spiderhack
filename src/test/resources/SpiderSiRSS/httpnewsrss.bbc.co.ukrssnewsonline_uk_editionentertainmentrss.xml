@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Entertainment &amp; Arts</title>  
+    <link>http://www.bbc.co.uk/news/entertainment_and_arts/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Entertainment &amp; Arts section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Fri, 12 Jul 2013 06:39:06 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Entertainment &amp; Arts</title>  
+      <link>http://www.bbc.co.uk/news/entertainment_and_arts/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Mendes to direct next Bond film</title>  
+      <description>Skyfall director Sam Mendes is to direct the next James Bond film, due for release in 2015, it is announced.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23268463#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23268463</guid>  
+      <pubDate>Thu, 11 Jul 2013 17:04:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68681000/jpg/_68681315_68667270.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68681000/jpg/_68681316_68667270.jpg"/> 
+    </item>  
+    <item> 
+      <title>Proms to launch with world premiere</title>  
+      <description>A new work by acclaimed British composer Julian Anderson will open the two-month BBC Proms season later.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23246871#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23246871</guid>  
+      <pubDate>Fri, 12 Jul 2013 02:01:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68637000/jpg/_68637151_bbc-proms-launch.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68637000/jpg/_68637425_bbc-proms-launch.jpg"/> 
+    </item>  
+    <item> 
+      <title>Fans get ready for T in the Park</title>  
+      <description>Mumford &amp; Sons and Emeli Sande are among those appearing on day one of Scotland's largest festival.</description>  
+      <link>http://www.bbc.co.uk/newsbeat/23281474#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/newsbeat/23281474</guid>  
+      <pubDate>Thu, 11 Jul 2013 23:59:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68686000/jpg/_68686557_girls1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68688000/jpg/_68688105_afp_mumford.jpg"/> 
+    </item>  
+    <item> 
+      <title>Boy and a Bear wins debut book award</title>  
+      <description>Author Dave Shelton and editor David Fickling win this year's Branford Boase Award, with Shelton's illustrated tale A Boy and a Bear in a Boat.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23271351#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23271351</guid>  
+      <pubDate>Thu, 11 Jul 2013 18:35:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676266_sheltonfickling.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676267_sheltonfickling.jpg"/> 
+    </item>  
+    <item> 
+      <title>EastEnders actress Anna Wing dies</title>  
+      <description>Actress Anna Wing, best known for her role as Lou Beale in BBC soap EastEnders, dies aged 98.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23268512#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23268512</guid>  
+      <pubDate>Thu, 11 Jul 2013 13:42:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68674000/jpg/_68674222_loubeale.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68674000/jpg/_68674223_loubeale.jpg"/> 
+    </item>  
+    <item> 
+      <title>Mark Thompson hits back over BBC row</title>  
+      <description>Former BBC director general Mark Thompson says the BBC Trust knew about a Â£949,000 pay-off made to his deputy Mark Byford.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23274142#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23274142</guid>  
+      <pubDate>Thu, 11 Jul 2013 15:52:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68675000/jpg/_68675396_broadcasting_house.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68675000/jpg/_68675397_broadcasting_house.jpg"/> 
+    </item>  
+    <item> 
+      <title>BBFC gets Railway Children complaint</title>  
+      <description>Forty-two years after it was released, classic family film The Railway Children has prompted its first complaint to the British Board of Film Classification.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23270980#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23270980</guid>  
+      <pubDate>Thu, 11 Jul 2013 12:31:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68673000/jpg/_68673412_railwaychildren1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68673000/jpg/_68673413_railwaychildren1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Stuart Hall sentence to be reviewed</title>  
+      <description>The sentence given to BBC broadcaster Stuart Hall over his convictions for sexual abuse will be reviewed following complaints it was too lenient.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-23271739#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-23271739</guid>  
+      <pubDate>Thu, 11 Jul 2013 11:33:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68671000/jpg/_68671828_68231444.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68671000/jpg/_68671829_68231444.jpg"/> 
+    </item>  
+    <item> 
+      <title>David Bradley as the first Doctor</title>  
+      <description>A new picture of actor David Bradley as the first Doctor, William Hartnell, in Mark Gatiss' forthcoming drama is released by the BBC.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23267085#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23267085</guid>  
+      <pubDate>Thu, 11 Jul 2013 07:38:18 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68664000/jpg/_68664252_aventures-in-space-and-time_final_4482503_4482493.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68664000/jpg/_68664253_aventures-in-space-and-time_final_4482503_4482493.jpg"/> 
+    </item>  
+    <item> 
+      <title>Jackson 'frightened me' says Ortega</title>  
+      <description>The director of Michael Jackson's comeback concerts, Kenny Ortega, breaks down in tears while giving evidence at the singer's wrongful death trial.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23268462#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23268462</guid>  
+      <pubDate>Thu, 11 Jul 2013 10:04:35 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68667000/jpg/_68667167_michaeljackson_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68667000/jpg/_68667168_michaeljackson_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Hitchcock films given Unesco status</title>  
+      <description>Alfred Hitchcock's nine surviving silent films will join artefacts such as the Domesday Book in representing the cultural heritage of the UK.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23267601#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23267601</guid>  
+      <pubDate>Thu, 11 Jul 2013 09:01:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68665000/jpg/_68665748_t0qf9ops.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68665000/jpg/_68665749_t0qf9ops.jpg"/> 
+    </item>  
+    <item> 
+      <title>Medal for Star Wars director Lucas</title>  
+      <description>Star Wars director George Lucas receives the National Medal of Arts from President Obama in a ceremony at the White House.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23269169#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23269169</guid>  
+      <pubDate>Thu, 11 Jul 2013 10:54:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68668000/jpg/_68668469_wr0bgctv.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68668000/jpg/_68668470_wr0bgctv.jpg"/> 
+    </item>  
+    <item> 
+      <title>Angelina Jolie signs up Skins star</title>  
+      <description>Skins star Jack O'Connell lands a role as the lead in a film directed by Angelina Jolie.</description>  
+      <link>http://www.bbc.co.uk/newsbeat/23273463#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/newsbeat/23273463</guid>  
+      <pubDate>Thu, 11 Jul 2013 14:04:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68675000/jpg/_68675462__yhf7479.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68675000/jpg/_68675464__yhf7479.jpg"/> 
+    </item>  
+    <item> 
+      <title>Record amount for Hepworth sculpture</title>  
+      <description>Work created by famous sculptor Barbara Hepworth more than 50 years ago has sold at auction for Â£2.4m.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-cornwall-23266137#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-cornwall-23266137</guid>  
+      <pubDate>Thu, 11 Jul 2013 08:43:45 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68665000/jpg/_68665537_68663744.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68665000/jpg/_68665538_68663744.jpg"/> 
+    </item>  
+    <item> 
+      <title>Beckett manuscript sells at auction</title>  
+      <description>A manuscript of writer Samuel Beckett's first novel Murphy is bought at auction for Â£962,500 by the University of Reading.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23252529#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23252529</guid>  
+      <pubDate>Wed, 10 Jul 2013 11:44:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68648000/jpg/_68648266_beckettmanuscript2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68648000/jpg/_68648267_beckettmanuscript2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ryder set for Irish Beckett festival</title>  
+      <description>Hollywood actress Winona Ryder is to take part in a festival celebrating the life and works of writer Samuel Beckett in Northern Ireland.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23245547#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23245547</guid>  
+      <pubDate>Tue, 09 Jul 2013 15:32:48 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68633000/jpg/_68633621_68633616.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68633000/jpg/_68633622_68633616.jpg"/> 
+    </item>  
+    <item> 
+      <title>Sky Arts axes Mariella's Book Show</title>  
+      <description>Sky Arts cancels Mariella Frostrup's book show following its final episode on 20 June.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23240911#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23240911</guid>  
+      <pubDate>Tue, 09 Jul 2013 11:09:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68626000/jpg/_68626774_the-book-show-mariella-frostrup.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68626000/jpg/_68626775_the-book-show-mariella-frostrup.jpg"/> 
+    </item>  
+    <item> 
+      <title>Wheatley 'overwhelmed' with reaction</title>  
+      <description>Director Ben Wheatley says he is "overwhelmed" with the reaction to his latest film, A Field in England, the first UK film to be released simultaneously on all formats.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23252045#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23252045</guid>  
+      <pubDate>Wed, 10 Jul 2013 16:53:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68648000/jpg/_68648215_fieldengland.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68648000/jpg/_68648216_fieldengland.jpg"/> 
+    </item>  
+    <item> 
+      <title>Despicable Me 2 holds UK box office</title>  
+      <description>Animated film Despicable Me 2 holds on to the top of the UK box office for a second week running.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23252043#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23252043</guid>  
+      <pubDate>Wed, 10 Jul 2013 10:35:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68648000/jpg/_68648203_despicableme_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68648000/jpg/_68648204_despicableme_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Indian star denies 'sex test' claims</title>  
+      <description>Top Bollywood star Shah Rukh Khan strongly denies any "irregularities" surrounding the run-up to the birth of his son last month.</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-india-23244407#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-india-23244407</guid>  
+      <pubDate>Tue, 09 Jul 2013 17:14:30 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68636000/jpg/_68636112_017678502.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68636000/jpg/_68636113_017678502.jpg"/> 
+    </item>  
+    <item> 
+      <title>Kanye West reacts to video leak</title>  
+      <description>The rapper asks websites to remove leaked version of a video for latest single Black Skinhead saying it's not official.</description>  
+      <link>http://www.bbc.co.uk/newsbeat/23253042#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/newsbeat/23253042</guid>  
+      <pubDate>Wed, 10 Jul 2013 10:55:35 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68649000/jpg/_68649350_pa_kanye66.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68647000/jpg/_68647268_bbc_kanye.jpg"/> 
+    </item>  
+    <item> 
+      <title>Sir Elton John: 'Lucky to be alive'</title>  
+      <description>Sir Elton John says he is "lucky to be alive" after being diagnosed with appendicitis - he has had to postpone a series of summer festival dates while he receives treatment.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23238584#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23238584</guid>  
+      <pubDate>Wed, 10 Jul 2013 08:32:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68631000/jpg/_68631245_68631215.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68631000/jpg/_68631246_68631215.jpg"/> 
+    </item>  
+    <item> 
+      <title>Domingo treated for blood clot</title>  
+      <description>Grammy Award-winning opera singer Placido Domingo is being treated in hospital in Madrid for a blood clot in his lung.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23252042#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23252042</guid>  
+      <pubDate>Wed, 10 Jul 2013 08:10:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68644000/jpg/_68644984_68644934.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68644000/jpg/_68644985_68644934.jpg"/> 
+    </item>  
+    <item> 
+      <title>More digital stations for listeners</title>  
+      <description>About 450,000 more homes in south and West Wales will be able to listen to local digital radio as new transmitters are switched on this summer.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23250095#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23250095</guid>  
+      <pubDate>Wed, 10 Jul 2013 15:10:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68642000/jpg/_68642019_005776222-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68642000/jpg/_68642020_005776222-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Singer Adam Lambert joins Glee cast</title>  
+      <description>The former American Idol runner-up is joining the US show for its fifth series, according to creator Ryan Murphy.</description>  
+      <link>http://www.bbc.co.uk/newsbeat/23266478#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/newsbeat/23266478</guid>  
+      <pubDate>Thu, 11 Jul 2013 08:57:04 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68664000/jpg/_68664045_getty_lambert.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68664000/jpg/_68664021_ap_lambert2.jpg"/> 
+    </item>  
+    <item> 
+      <title>'Shock and dismay' over BBC payments</title>  
+      <description>BBC Trust chairman Lord Patten calls the size of severance payments for senior managers a matter "of shock and dismay".</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23253276#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23253276</guid>  
+      <pubDate>Wed, 10 Jul 2013 17:03:36 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68652000/jpg/_68652691_broadcasting_house.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68652000/jpg/_68652692_broadcasting_house.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Meet the Author: Jo Marchant</title>  
+      <description>Jo Marchant talks to the BBC's Nick Higham about her new book The Shadow King which tells the story of Tutankhamun's mummy</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23270737#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23270737</guid>  
+      <pubDate>Thu, 11 Jul 2013 12:51:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68668000/jpg/_68668919_68667955.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68668000/jpg/_68668920_68667955.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: The family circus aged two to 66</title>  
+      <description>Performing in the circus is a family affair for 66-year-old grandfather and amateur clown Alain Carabinier.</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23270819#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23270819</guid>  
+      <pubDate>Thu, 11 Jul 2013 23:01:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68680000/jpg/_68680192_circus1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68680000/jpg/_68680193_circus1.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'People wonder if I have the capability'</title>  
+      <description>Myleene Klass has revealed she was concerned people questioned her "capability" to do her job because of her background in a pop band.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23281662#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23281662</guid>  
+      <pubDate>Fri, 12 Jul 2013 01:11:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687262_68687130.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687263_68687130.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Robson Green's fishing tips</title>  
+      <description>Robson Green talks to BBC Breakfast about his fishing adventures and new book .</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23270739#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23270739</guid>  
+      <pubDate>Thu, 11 Jul 2013 14:28:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68671000/jpg/_68671468_68671460.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68671000/jpg/_68671469_68671460.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Dynamo tricks Breakfast's Louise</title>  
+      <description>British magician Dynamo works his magic on the BBC Breakfast sofa</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23270736#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23270736</guid>  
+      <pubDate>Thu, 11 Jul 2013 10:29:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68667000/jpg/_68667665_68667657.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68667000/jpg/_68667666_68667657.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Female pair compete for Apprentice win</title>  
+      <description>This year's Apprentice finalists talk about their winning strategy with BBC breakfast</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23270738#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23270738</guid>  
+      <pubDate>Thu, 11 Jul 2013 12:56:33 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68670000/jpg/_68670065_68669362.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68670000/jpg/_68670066_68669362.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: The fabric of Nigeria and other arts stories</title>  
+      <description>The work of London-born Nigerian artist Yinka Shonibare MBE comes to Yorkshire, the Montreux Jazz Festival gets some non-jazzy names - and other stories from the world of arts.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23262291#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23262291</guid>  
+      <pubDate>Thu, 11 Jul 2013 14:18:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68658000/jpg/_68658591_de27.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68658000/jpg/_68658592_de27.jpg"/> 
+    </item>  
+    <item> 
+      <title>Lake drama vies for Killing acclaim</title>  
+      <description>New Zealand's Top of Lake set to grip UK audience</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23203003#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23203003</guid>  
+      <pubDate>Fri, 12 Jul 2013 00:50:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68673000/jpg/_68673978_body.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68673000/jpg/_68673979_body.jpg"/> 
+    </item>  
+    <item> 
+      <title>The armed robber who became a writer</title>  
+      <description>Jake Arnott on the bank robber who became a writer</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23256395#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23256395</guid>  
+      <pubDate>Fri, 12 Jul 2013 00:07:36 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68668000/jpg/_68668395_small-bruce.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68668000/jpg/_68668396_small-bruce.jpg"/> 
+    </item>  
+    <item> 
+      <title>'Flying Sikh': Indian sprinter Milkha Singh biopic set for release</title>  
+      <description>Biopic of legendary Indian athlete set for release</description>  
+      <link>http://www.bbc.co.uk/news/world-asia-india-23241269#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-asia-india-23241269</guid>  
+      <pubDate>Fri, 12 Jul 2013 01:32:50 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68627000/jpg/_68627138_finalposter.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68627000/jpg/_68627139_finalposter.jpg"/> 
+    </item>  
+    <item> 
+      <title>From club to catwalk</title>  
+      <description>Were the 1980s a brave new world for British fashion?</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23259509#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23259509</guid>  
+      <pubDate>Wed, 10 Jul 2013 23:55:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68657000/jpg/_68657243_2_anita_cobin_the_cloth.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68657000/jpg/_68657244_2_anita_cobin_the_cloth.jpg"/> 
+    </item>  
+    <item> 
+      <title>Book Illustration winner announced</title>  
+      <description>Winning covers at the Book Illustration Competition</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23242123#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23242123</guid>  
+      <pubDate>Wed, 10 Jul 2013 04:52:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68634000/jpg/_68634422_finndean3.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68634000/jpg/_68634423_finndean3.jpg"/> 
+    </item>  
+    <item> 
+      <title>Following artists' orders to Do It</title>  
+      <description>Take a lemon and a bicycle seat... Following orders from artists</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23232082#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23232082</guid>  
+      <pubDate>Wed, 10 Jul 2013 02:35:22 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68645000/jpg/_68645191__jcf6381copy.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68645000/jpg/_68645192__jcf6381copy.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Virtuoso who plays piano and iPad</title>  
+      <description>The young musician giving classical music an update</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23233103#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23233103</guid>  
+      <pubDate>Mon, 08 Jul 2013 22:33:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68619000/jpg/_68619936_conradtao.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68619000/jpg/_68619937_conradtao.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

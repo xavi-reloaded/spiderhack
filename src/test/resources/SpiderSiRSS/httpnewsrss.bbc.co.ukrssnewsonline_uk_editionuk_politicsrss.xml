@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Politics</title>  
+    <link>http://www.bbc.co.uk/news/politics/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Politics section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Fri, 12 Jul 2013 07:21:19 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Politics</title>  
+      <link>http://www.bbc.co.uk/news/politics/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/politics/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>No need for tax rises, says Osborne</title>  
+      <description>Chancellor George Osborne says he will not need to raise UK taxes to meet deficit reduction targets after the next election.</description>  
+      <link>http://www.bbc.co.uk/news/business-23269070#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23269070</guid>  
+      <pubDate>Thu, 11 Jul 2013 14:48:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68677000/jpg/_68677290_68665937.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68677000/jpg/_68677291_68665937.jpg"/> 
+    </item>  
+    <item> 
+      <title>Cigarette packaging plans on hold</title>  
+      <description>The government is to postpone plans for standardised plain cigarette packaging, to spend more time studying a similar scheme in Australia.</description>  
+      <link>http://www.bbc.co.uk/news/health-23281804#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23281804</guid>  
+      <pubDate>Fri, 12 Jul 2013 06:34:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687271_68687250.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687272_68687250.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ban packed lunches, schools urged</title>  
+      <description>An official review of school food suggests head teachers in England should ban packed lunches and lower the price of cooked dinners to promote healthy eating.</description>  
+      <link>http://www.bbc.co.uk/news/education-23270715#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-23270715</guid>  
+      <pubDate>Fri, 12 Jul 2013 06:40:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687905_lunch.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687906_lunch.jpg"/> 
+    </item>  
+    <item> 
+      <title>'Stick' MPs' pay rise, says Gove</title>  
+      <description>Education Secretary Michael Gove tells Parliament's spending watchdog to "stick" a planned Â£6,000 pay rise for MPs, but officials insist it is fair.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23262503#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23262503</guid>  
+      <pubDate>Thu, 11 Jul 2013 17:44:09 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68683000/jpg/_68683876_68683139.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68683000/jpg/_68683877_68683139.jpg"/> 
+    </item>  
+    <item> 
+      <title>Denis MacShane charged over expenses</title>  
+      <description>Former MP Denis MacShane is to be charged with false accounting over parliamentary expenses claims, the Crown Prosecution Service says.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23267241#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23267241</guid>  
+      <pubDate>Thu, 11 Jul 2013 15:07:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68668000/jpg/_68668997_63853838.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68668000/jpg/_68668998_63853838.jpg"/> 
+    </item>  
+    <item> 
+      <title>Salmond sets out independence case</title>  
+      <description>The Scottish first minister is to argue the country needs independence to stop unpopular policies being "imposed" by the UK government.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-23278810#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-23278810</guid>  
+      <pubDate>Fri, 12 Jul 2013 01:33:18 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68686000/jpg/_68686418_016775397-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68686000/jpg/_68686419_016775397-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>G4S probed over tag overcharging</title>  
+      <description>The Serious Fraud Office will consider whether to investigate G4S over alleged overcharging for electronic tagging, which the government says totalled millions of pounds.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23272708#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23272708</guid>  
+      <pubDate>Thu, 11 Jul 2013 16:30:53 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676532_tagging_g4s.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676533_tagging_g4s.jpg"/> 
+    </item>  
+    <item> 
+      <title>Unite warns of Labour funding plunge</title>  
+      <description>The Unite union says the changes proposed by Ed Miliband could slash the amount of funding it provides to the Party, the BBC has learned.</description>  
+      <link>http://www.bbc.co.uk/news/business-23279459#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23279459</guid>  
+      <pubDate>Thu, 11 Jul 2013 19:38:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68685000/jpg/_68685115_unite.pa.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68685000/jpg/_68685116_unite.pa.jpg"/> 
+    </item>  
+    <item> 
+      <title>Consult us on Syria, MPs tell government</title>  
+      <description>The House of Commons urges the UK government to consult Parliament before any decision to arm rebel forces in Syria.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23274359#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23274359</guid>  
+      <pubDate>Thu, 11 Jul 2013 15:52:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676403_68676394.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676434_68676394.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ice-cream van chiming rules relaxed</title>  
+      <description>Parents are in for a potential barrage of pester power, as 31-year-old rules restricting the use of chimes on ice-cream vans are relaxed.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23279302#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23279302</guid>  
+      <pubDate>Thu, 11 Jul 2013 17:35:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68683000/jpg/_68683010_68682078.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68683000/jpg/_68683011_68682078.jpg"/> 
+    </item>  
+    <item> 
+      <title>Migration 'could be underestimated'</title>  
+      <description>Campaigners for lower levels of immigration warn officials could be underestimating the scale of net migration in the UK.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23265391#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23265391</guid>  
+      <pubDate>Thu, 11 Jul 2013 14:28:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68662000/jpg/_68662883_border2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68662000/jpg/_68662884_border2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Villiers has 'no power' over parade</title>  
+      <description>The Northern Ireland Secretary of State says she has currently no power to intervene over the Parades Commission's decision on a flashpoint Orange Order parade in north Belfast.</description>  
+      <link>http://www.bbc.co.uk/news/uk-northern-ireland-23266421#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-northern-ireland-23266421</guid>  
+      <pubDate>Thu, 11 Jul 2013 07:40:48 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68663000/jpg/_68663646_ardoyneparade2012.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68663000/jpg/_68663647_ardoyneparade2012.jpg"/> 
+    </item>  
+    <item> 
+      <title>Introduction</title>  
+      <description>A tour of the Northern Ireland Assembly at Stormont.</description>  
+      <link>http://news.bbc.co.uk/democracylive/hi/guides/newsid_8107000/8107911.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/democracylive/hi/guides/newsid_8107000/8107911.stm</guid>  
+      <pubDate>Tue, 20 Jul 2010 15:10:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/46006000/jpg/_46006061_stormont16649.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/51923000/jpg/_51923458_007566912-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Class divide for boys' reading</title>  
+      <description>The brightest boys from poor homes in England and Scotland are at least two-and-a-half years behind in reading compared with those from the richest homes, a study suggests</description>  
+      <link>http://www.bbc.co.uk/news/education-23271555#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-23271555</guid>  
+      <pubDate>Fri, 12 Jul 2013 02:34:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68672000/jpg/_68672060_secondarylesson.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68672000/jpg/_68672061_secondarylesson.jpg"/> 
+    </item>  
+    <item> 
+      <title>Introduction</title>  
+      <description>BBC Democracy Live takes you on a tour of the Scottish Parliament.</description>  
+      <link>http://news.bbc.co.uk/democracylive/hi/guides/newsid_8136000/8136663.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/democracylive/hi/guides/newsid_8136000/8136663.stm</guid>  
+      <pubDate>Wed, 28 Oct 2009 17:00:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/46018000/jpg/_46018083_-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/51923000/jpg/_51923456_003881440-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Internet speed 'hinders' school work</title>  
+      <description>Slow internet connections at schools are affecting pupils' ICT studies, according to the education watchdog Estyn.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23275692#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23275692</guid>  
+      <pubDate>Fri, 12 Jul 2013 07:21:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676804_014378487-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676805_014378487-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Introduction</title>  
+      <description>A guide to the National Assembly for Wales.</description>  
+      <link>http://news.bbc.co.uk/democracylive/hi/guides/newsid_8052000/8052008.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/democracylive/hi/guides/newsid_8052000/8052008.stm</guid>  
+      <pubDate>Tue, 31 May 2011 14:54:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/46422000/jpg/_46422017_005038219-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/51923000/jpg/_51923457_002219558-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Is Europe good for the Midlands?</title>  
+      <description>Would the Midlands be better or worse off if Britain were to leave the European Union?</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-23229077#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-23229077</guid>  
+      <pubDate>Wed, 10 Jul 2013 11:21:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68650000/jpg/_68650623_euparliament.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68650000/jpg/_68650624_euparliament.jpg"/> 
+    </item>  
+    <item> 
+      <title>Jobs pledge after funding decision</title>  
+      <description>Up to 45,000 new jobs could be generated after local enterprise partnerships are given the go-ahead for funding.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-23195313#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-23195313</guid>  
+      <pubDate>Fri, 05 Jul 2013 11:40:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68568000/jpg/_68568011_68567775.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68568000/jpg/_68568012_68567775.jpg"/> 
+    </item>  
+    <item> 
+      <title>Political editors across England</title>  
+      <description>Political analysis from around England</description>  
+      <link>http://www.bbc.co.uk/news/10605785#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/10605785</guid>  
+      <pubDate>Fri, 17 Jun 2011 14:15:17 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>VIDEO: House of Lords</title>  
+      <description>The justice secretary says firms have charged for tagging people who were in jail or had died.</description>  
+      <link>http://www.bbc.co.uk/democracylive/house-of-commons-23272108</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/democracylive/house-of-commons-23272108</guid>  
+      <pubDate>Thu, 11 Jul 2013 14:28:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676221_68675128.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676222_68675128.jpg"/> 
+    </item>  
+    <item> 
+      <title>Q&amp;A: Beginner's guide to PM's speech</title>  
+      <description>David Cameron delivers his long-awaited speech on the UK's relations with the EU. Here's an at-a-glance guide.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-21013771#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-21013771</guid>  
+      <pubDate>Wed, 23 Jan 2013 11:17:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/65307000/jpg/_65307127_65306702.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65307000/jpg/_65307128_65306702.jpg"/> 
+    </item>  
+    <item> 
+      <title>Links to UK political websites</title>  
+      <description>Links to political parties and other useful websites covering UK politics.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-18247131#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-18247131</guid>  
+      <pubDate>Tue, 31 Jul 2012 14:35:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/60567000/jpg/_60567022_014752423-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/60567000/jpg/_60567063_014752423-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Who's who: Cameron's new cabinet</title>  
+      <description>As David Cameron reshuffles his cabinet, here's a full list of who is doing what job.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-19475248#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-19475248</guid>  
+      <pubDate>Tue, 30 Oct 2012 12:36:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/62683000/jpg/_62683244_hunt.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/62683000/jpg/_62683245_hunt.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ed Miliband's shadow cabinet</title>  
+      <description>The details of Labour leader Ed Miliband's shadow cabinet following the recent reshuffle.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-11494915#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-11494915</guid>  
+      <pubDate>Thu, 17 May 2012 11:24:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/49472000/jpg/_49472021_edshadowcabpa.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/55913000/jpg/_55913742_013038819-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>European Parliaments online</title>  
+      <description>Links to other Parliamentary broadcasters</description>  
+      <link>http://news.bbc.co.uk/democracylive/hi/bbc_parliament/newsid_8762000/8762150.stm#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://news.bbc.co.uk/democracylive/hi/bbc_parliament/newsid_8762000/8762150.stm</guid>  
+      <pubDate>Fri, 25 Jun 2010 11:33:24 GMT</pubDate>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/65062000/jpg/_65062872_-7.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'You would be amazed at union power'</title>  
+      <description>A Labour Party worker who helped in candidate selection claimed 'you would be amazed at the amount of power they have behind doors"</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23281661#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23281661</guid>  
+      <pubDate>Thu, 11 Jul 2013 22:23:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68686000/jpg/_68686815_68686806.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68686000/jpg/_68686939_68686806.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Wright reviews scorching political week</title>  
+      <description>Broadcaster Matthew Wright headed for a central London beach to soak up the sun and look back over a scorching week with Andy Murray's win followed by politicians keen to sing his praises.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23281660#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23281660</guid>  
+      <pubDate>Thu, 11 Jul 2013 22:42:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68685000/jpg/_68685697_68686946.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68685000/jpg/_68685698_68686946.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: City where a third of travel is on a bike</title>  
+      <description>Britain's top cycling city is Cambridge where one in thee journeys is on two wheels, and where there are more cycle lanes and bike parks pars than anywhere in Britain.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23274432#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23274432</guid>  
+      <pubDate>Thu, 11 Jul 2013 23:01:14 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68677000/jpg/_68677480_68674166.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68677000/jpg/_68677481_68674166.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'People wonder if I have the capability'</title>  
+      <description>Myleene Klass has revealed she was concerned people questioned her "capability" to do her job because of her background in a pop band.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23281662#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23281662</guid>  
+      <pubDate>Fri, 12 Jul 2013 01:11:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687262_68687130.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687263_68687130.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: MP: We should accept pay rise</title>  
+      <description>MPs should accept a planned pay rise of Â£6,000 and "not worry about money", Liberal Democrat Stephen Williams has said.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23276966#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23276966</guid>  
+      <pubDate>Thu, 11 Jul 2013 19:35:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68684000/jpg/_68684475_68684017.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68684000/jpg/_68684476_68684017.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Pickles: Immigrants must learn English</title>  
+      <description>On the Daily Politics soapbox, Communities Secretary Eric Pickles argues that foreigners settling in the UK should learn English to help them integrate and get a job.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23271315#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23271315</guid>  
+      <pubDate>Thu, 11 Jul 2013 11:58:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68670000/jpg/_68670837_68670520.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68670000/jpg/_68670838_68670520.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Should MPs get a 9% pay rise?</title>  
+      <description>Giles Dilnot took the Daily Politics mood box to see what the man and woman on the street - including Tory MP Mark Field - thought of a plan to up up MPs' pay by 9%.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23271316#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23271316</guid>  
+      <pubDate>Thu, 11 Jul 2013 11:45:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68670000/jpg/_68670826_68670749.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68670000/jpg/_68670827_68670749.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: EU wants electronic cigarette controls</title>  
+      <description>The EU is trying to regulate the sale of electronic cigarettes - used by some as an aid to quitting smoking - by classifying them as medicines.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23273946#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23273946</guid>  
+      <pubDate>Thu, 11 Jul 2013 14:07:09 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68674000/jpg/_68674057_147880131.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68674000/jpg/_68674058_147880131.jpg"/> 
+    </item>  
+    <item> 
+      <title>Why not... nationalise the railways?</title>  
+      <description>The case for and against taking the railways out of private hands</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-22700805#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-22700805</guid>  
+      <pubDate>Wed, 10 Jul 2013 23:53:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68254000/jpg/_68254592_68254523.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68254000/jpg/_68254593_68254523.jpg"/> 
+    </item>  
+    <item> 
+      <title>Europe's debt crisis simmers</title>  
+      <description>Debt-laden Italy and Greece are still fragile</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-23267477#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-23267477</guid>  
+      <pubDate>Thu, 11 Jul 2013 14:35:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68677000/jpg/_68677453_img_2327.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68677000/jpg/_68677454_img_2327.jpg"/> 
+    </item>  
+    <item> 
+      <title>Q&amp;A: European Arrest Warrant</title>  
+      <description>What is it and how does it work? A look at its pros and cons.</description>  
+      <link>http://www.bbc.co.uk/news/world-europe-23239493#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-europe-23239493</guid>  
+      <pubDate>Tue, 09 Jul 2013 12:40:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68629000/jpg/_68629795_euforrestpa.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68629000/jpg/_68629796_euforrestpa.jpg"/> 
+    </item>  
+    <item> 
+      <title>Your questions on independence</title>  
+      <description>Key figures in debate address your questions</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-scotland-politics-22541807#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-scotland-politics-22541807</guid>  
+      <pubDate>Thu, 04 Jul 2013 06:50:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68539000/jpg/_68539522_webcastpeople624x351.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68539000/jpg/_68539523_webcastpeople624x351.jpg"/> 
+    </item>  
+    <item> 
+      <title>How does union-funding work?</title>  
+      <description>How do unions actually fund the Labour Party?</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23257182#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23257182</guid>  
+      <pubDate>Wed, 10 Jul 2013 16:52:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68659000/jpg/_68659556_68659434.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68659000/jpg/_68659557_68659434.jpg"/> 
+    </item>  
+    <item> 
+      <title>What is parliament and how does it work?</title>  
+      <description>Find out more about the Commons and Lords and how they work</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-17827461#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-17827461</guid>  
+      <pubDate>Tue, 29 May 2012 12:57:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/60616000/jpg/_60616515_001073022-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/60616000/jpg/_60616516_001073022-1.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

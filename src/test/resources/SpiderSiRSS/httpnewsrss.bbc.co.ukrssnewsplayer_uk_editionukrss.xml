@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - UK</title>  
+    <link>http://www.bbc.co.uk/news/video_and_audio/uk/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the UK section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Fri, 12 Jul 2013 06:41:37 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - UK</title>  
+      <link>http://www.bbc.co.uk/news/video_and_audio/uk/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/video_and_audio/uk/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>VIDEO: Festival's fake ecstasy pill warning</title>  
+      <description>Police in Scotland are worried that a deadly batch of ecstasy pills could get into the hands of festival goers at the T in the Park event this weekend.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23282857#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23282857</guid>  
+      <pubDate>Fri, 12 Jul 2013 05:56:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687960_6.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687961_6.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: City where a third of travel is on a bike</title>  
+      <description>Britain's top cycling city is Cambridge where one in thee journeys is on two wheels, and where there are more cycle lanes and bike parks pars than anywhere in Britain.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23274432#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23274432</guid>  
+      <pubDate>Thu, 11 Jul 2013 23:01:14 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68677000/jpg/_68677480_68674166.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68677000/jpg/_68677481_68674166.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: MP: We should accept pay rise</title>  
+      <description>MPs should accept a planned pay rise of Â£6,000 and "not worry about money", Liberal Democrat Stephen Williams has said.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23276966#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23276966</guid>  
+      <pubDate>Thu, 11 Jul 2013 19:35:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68684000/jpg/_68684475_68684017.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68684000/jpg/_68684476_68684017.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Crying shame? No bonny baby contest</title>  
+      <description>The organisers of a carnival in Wiltshire have banned the traditional element of the ''bonny baby'' competition, saying it is wrong to judge children on their looks.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23282858#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23282858</guid>  
+      <pubDate>Fri, 12 Jul 2013 06:35:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68688000/jpg/_68688209_cry.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68688000/jpg/_68688210_cry.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Dementia patients 'miss key tests'</title>  
+      <description>Many dementia patients fail to have the proper checks when they are in hospital, an audit of care has found.</description>  
+      <link>http://www.bbc.co.uk/news/health-23282673#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23282673</guid>  
+      <pubDate>Fri, 12 Jul 2013 06:41:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68688000/jpg/_68688127_68687966.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68688000/jpg/_68688128_68687966.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Schools urged to ban packed lunches</title>  
+      <description>An official review of school food suggests head teachers in England should ban packed lunches to increase the take-up of cooked dinners and promote healthy eating.</description>  
+      <link>http://www.bbc.co.uk/news/education-23282667#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-23282667</guid>  
+      <pubDate>Fri, 12 Jul 2013 05:54:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687948_68687889.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687949_68687889.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Protesters scale tallest building</title>  
+      <description>Six protesters from Greenpeace are scaling the highest building in western Europe.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-london-23267743#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-london-23267743</guid>  
+      <pubDate>Thu, 11 Jul 2013 19:59:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68685000/jpg/_68685000_68684692.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68685000/jpg/_68685001_68684692.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Royal chimney sweeps at the palace</title>  
+      <description>For the first time ever hundreds of firms that supply goods to the Queen, the Duke of Edinburgh and Prince Charles are gathering at Buckingham Palace.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23276765#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23276765</guid>  
+      <pubDate>Thu, 11 Jul 2013 14:53:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68677000/jpg/_68677896_68677888.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68677000/jpg/_68677897_68677888.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'Women prefer mobile gaming'</title>  
+      <description>Delegates at Brighton's Develop conference for the video game industry, talk about the impact of mobile gaming.</description>  
+      <link>http://www.bbc.co.uk/news/technology-23274741#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-23274741</guid>  
+      <pubDate>Thu, 11 Jul 2013 23:01:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676729_68675139.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676730_68675139.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Man dies after police use Taser gun</title>  
+      <description>A man has died after being shot by police with a Taser stun gun in Manchester.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23270216#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23270216</guid>  
+      <pubDate>Thu, 11 Jul 2013 17:43:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68674000/jpg/_68674981_tent1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68674000/jpg/_68674982_tent1.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: G4S fraud probe 'right thing to do'</title>  
+      <description>Calling in the Serious Fraud Office to investigate G4S overcharging for tagging criminals in England and Wales was the "right thing to do", said the chair of the Public Accounts Committee.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23273945#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23273945</guid>  
+      <pubDate>Thu, 11 Jul 2013 12:58:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68673000/jpg/_68673890_68673694.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68673000/jpg/_68673891_68673694.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Cafe owner gives 'I'm black' warning</title>  
+      <description>A cafe owner has put up a sign telling customers she is black after claiming she was badly treated by some customers.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-leeds-23260860#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-leeds-23260860</guid>  
+      <pubDate>Wed, 10 Jul 2013 18:48:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68664000/jpg/_68664124_martha.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68664000/jpg/_68664125_martha.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Crackdown on Luton prostitution</title>  
+      <description>A major police operation to curb prostitution and deter kerb crawlers has begun in Luton.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-beds-bucks-herts-23271631#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-beds-bucks-herts-23271631</guid>  
+      <pubDate>Thu, 11 Jul 2013 13:26:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68675000/jpg/_68675064_68674613.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68675000/jpg/_68675065_68674613.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Dynamo tricks Breakfast's Louise</title>  
+      <description>British magician Dynamo works his magic on the BBC Breakfast sofa</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23270736#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23270736</guid>  
+      <pubDate>Thu, 11 Jul 2013 10:29:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68667000/jpg/_68667665_68667657.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68667000/jpg/_68667666_68667657.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Fake ecstasy pills linked to deaths</title>  
+      <description>Police say the deaths of up to 17 people in Scotland and Northern Ireland may be linked to fake ecstasy tablets.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23264189#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23264189</guid>  
+      <pubDate>Wed, 10 Jul 2013 18:53:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68660000/jpg/_68660109_68660101.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68660000/jpg/_68660110_68660101.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Cerys Matthews on Wales' referendum hopes</title>  
+      <description>Singer and broadcaster Cerys Matthews examines if the Welsh look enviously, or nervously, at the choice that Scottish voters have.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23266871#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23266871</guid>  
+      <pubDate>Thu, 11 Jul 2013 08:32:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68664000/jpg/_68664132_cerys.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68667000/jpg/_68667191_cerys.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: What will the Royal baby be called?</title>  
+      <description>As the Duke and Duchess of Cambridge prepare for the birth of their first child, what are the names doing business at the bookies.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23245108#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23245108</guid>  
+      <pubDate>Tue, 09 Jul 2013 23:05:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68623000/jpg/_68623464_68638435.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68623000/jpg/_68623465_68638435.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Lions return Ashes good luck message</title>  
+      <description>The British and Irish Lions return home from a winning tour of Australia and give a good luck message to England for their Ashes campaign.</description>  
+      <link>http://www.bbc.co.uk/sport/0/rugby-union/23255006</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/rugby-union/23255006</guid>  
+      <pubDate>Wed, 10 Jul 2013 09:51:53 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68647000/png/_68647451_mmlionsashesmessage.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68647000/png/_68647453_mmlionsashesmessage.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Simon Pegg at World's End premiere</title>  
+      <description>Simon Pegg, Nick Frost and Edgar Wright have unveiled their new film The World's End in London tonight.</description>  
+      <link>http://www.bbc.co.uk/news/entertainment-arts-23264197#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/entertainment-arts-23264197</guid>  
+      <pubDate>Wed, 10 Jul 2013 19:58:04 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68661000/jpg/_68661051_68660137.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68661000/jpg/_68661052_68660137.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: House falls silent for Lee Rigby tribute</title>  
+      <description>The House of Commons fell silent as Conservative MP David Nuttall told MPs that the funeral of drummer Lee Rigby will be held in Bury on Friday.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23257937#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23257937</guid>  
+      <pubDate>Wed, 10 Jul 2013 11:58:50 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68651000/jpg/_68651261_n9n26rv0.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68651000/jpg/_68651489_n9n26rv0.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Big fishing firms lose quota battle</title>  
+      <description>The High Court has ruled in favour of redistributing some fishing rights from big producers to small-scale fishermen.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23257143#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23257143</guid>  
+      <pubDate>Wed, 10 Jul 2013 13:11:35 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68652000/jpg/_68652279_68648477.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68652000/jpg/_68652280_68648477.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Cliff top home going cheap</title>  
+      <description>A house built perilously close to Devon cliffs is being auctioned with no guarantee that it will remain standing if coastal erosion continues</description>  
+      <link>http://www.bbc.co.uk/news/uk-23252455#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23252455</guid>  
+      <pubDate>Wed, 10 Jul 2013 15:20:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68654000/jpg/_68654623_cliff.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68654000/jpg/_68654624_cliff.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Cameron makes Wimbledon gaffe</title>  
+      <description>David Cameron has erroneously referred to Andy Murray as "the first British player to win Wimbledon in 77 years" in a tribute to the Scot at Prime Minister's Questions.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23258911#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23258911</guid>  
+      <pubDate>Wed, 10 Jul 2013 15:12:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68653000/jpg/_68653318_68652331.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68653000/jpg/_68653319_68652331.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Former sniper guilty of possessing gun</title>  
+      <description>Former SAS sniper Sgt Danny Nightingale found guilty of illegally possessing a gun and ammunition</description>  
+      <link>http://www.bbc.co.uk/news/uk-23261986#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23261986</guid>  
+      <pubDate>Wed, 10 Jul 2013 19:51:36 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68657000/jpg/_68657518_68656789.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68657000/jpg/_68657519_68656789.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Feltham: 'Someone will die soon'</title>  
+      <description>A former prison officer at Feltham Young Offenders Institution fears someone could be killed there soon</description>  
+      <link>http://www.bbc.co.uk/news/uk-23259044#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23259044</guid>  
+      <pubDate>Wed, 10 Jul 2013 13:02:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68652000/jpg/_68652731_prison.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68652000/jpg/_68652732_prison.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Jumpers ignore 'tombstoning' warning</title>  
+      <description>Hot weather has brought thrill-seeking youths back to Devil's Bridge in Kirby Lonsdale to risk jumping into the water below, despite the death of a young man in 2012 and warnings from the police.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23252454#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23252454</guid>  
+      <pubDate>Wed, 10 Jul 2013 09:13:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68644000/jpg/_68644854_68637609.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68644000/jpg/_68644855_68637609.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Exercise routine 'boosts learning'</title>  
+      <description>A routine of exercises developed by an academic who had to re-learn how to read has improved pupils' reading skills.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-beds-bucks-herts-23256572#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-beds-bucks-herts-23256572</guid>  
+      <pubDate>Wed, 10 Jul 2013 10:58:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68649000/jpg/_68649598_68649590.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68649000/jpg/_68649599_68649590.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Last days of tallest chimney</title>  
+      <description>BBC Scotland's environment correspondent David Miller takes one last look around the chimney at Inverkip power station.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-23254894#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-23254894</guid>  
+      <pubDate>Wed, 10 Jul 2013 09:56:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68665000/jpg/_68665761_inverkip.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68665000/jpg/_68665762_inverkip.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'Shake-up' for healthcare assistants</title>  
+      <description>New checks and measures for healthcare assistants is needed in the wake of the Mid Staffordshire hospital scandal, an independent report has concluded.</description>  
+      <link>http://www.bbc.co.uk/news/health-23251414#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23251414</guid>  
+      <pubDate>Wed, 10 Jul 2013 17:57:50 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68643000/jpg/_68643831_68643812.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68643000/jpg/_68643832_68643812.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Death threat Facebook troll jailed</title>  
+      <description>A British man who threatened to kill 200 people in the US, in posts he made under a false name on Facebook, has been jailed for more than two years.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23249210#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23249210</guid>  
+      <pubDate>Tue, 09 Jul 2013 21:26:45 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68642000/jpg/_68642900_68638074.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68642000/jpg/_68642901_68638074.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Bamber 'should stay where he is'</title>  
+      <description>A cousin of Jeremy Bamber has said that he does not believe that the convicted murderer should ever be released.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23247525#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23247525</guid>  
+      <pubDate>Tue, 09 Jul 2013 18:56:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68638000/jpg/_68638110_68638102.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68638000/jpg/_68638111_68638102.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: BBC bosses face MPs on severance pay</title>  
+      <description>The BBC's Director General, Chairman and HR Director are to be questioned by the MPs on the Public Accounts Committee over severance packages given to senior managers.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23251528#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23251528</guid>  
+      <pubDate>Wed, 10 Jul 2013 06:43:53 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68643000/jpg/_68643870_68643839.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68643000/jpg/_68643871_68643839.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Captain Cook's quest for Ashes glory</title>  
+      <description>Patrick Geary talks to England captain Alastair Cook ahead of the Ashes.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23237381#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23237381</guid>  
+      <pubDate>Tue, 09 Jul 2013 08:28:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68621000/jpg/_68621578_68621428.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68621000/jpg/_68621579_68621428.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: How farming shows survive the times</title>  
+      <description>Agricultural shows were once the highlight of the farming diary but in the last few years, a number of high profile events - including The Royal Show - have been forced to close.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23237526#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23237526</guid>  
+      <pubDate>Tue, 09 Jul 2013 08:21:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68621000/jpg/_68621369_68621361.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68621000/jpg/_68621370_68621361.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: How can social enterprise help towns?</title>  
+      <description>Steph McGovern went to Alston in Cumbria, dubbed a social enterprise town because of the number of local businesses set up to benefit the community, to find out how to make them a success.</description>  
+      <link>http://www.bbc.co.uk/news/business-23240452#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23240452</guid>  
+      <pubDate>Tue, 09 Jul 2013 10:21:45 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68625000/jpg/_68625904_68625896.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68625000/jpg/_68625905_68625896.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Graffiti daubed on historic windmill</title>  
+      <description>One of country's oldest windmills, the Grade II-listed Rottingdean Windmill, has been daubed with graffiti.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-sussex-23239563#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-sussex-23239563</guid>  
+      <pubDate>Tue, 09 Jul 2013 08:34:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68623000/jpg/_68623345_rottingdean_windmill.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68623000/jpg/_68623346_rottingdean_windmill.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Wimbledon greats: Murray v Perry</title>  
+      <description>Newsnight splices footage of 2013 Wimbledon champion Andy Murray with archive of the previous British Wimbledon singles winner, Fred Perry, who last won the cup in 1936.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23240764#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23240764</guid>  
+      <pubDate>Tue, 09 Jul 2013 10:32:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68624000/jpg/_68624829_murrayperry.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68625000/jpg/_68625999_murrayperry.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

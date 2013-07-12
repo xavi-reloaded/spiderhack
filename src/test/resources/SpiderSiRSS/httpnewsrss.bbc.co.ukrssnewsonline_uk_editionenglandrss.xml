@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - England</title>  
+    <link>http://www.bbc.co.uk/news/england/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the England section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Fri, 12 Jul 2013 07:33:16 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - England</title>  
+      <link>http://www.bbc.co.uk/news/england/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/england/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Killed soldier's military funeral</title>  
+      <description>The full military funeral of Fusilier Lee Rigby, who was killed in Woolwich, south-east London, takes place later in Greater Manchester.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-23263754#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-23263754</guid>  
+      <pubDate>Fri, 12 Jul 2013 01:14:02 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68672000/jpg/_68672482_n9n26rv0.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68672000/jpg/_68672483_n9n26rv0.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ban packed lunches, schools urged</title>  
+      <description>An official review of school food suggests head teachers in England should ban packed lunches and lower the price of cooked dinners to promote healthy eating.</description>  
+      <link>http://www.bbc.co.uk/news/education-23270715#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-23270715</guid>  
+      <pubDate>Fri, 12 Jul 2013 06:40:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687905_lunch.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68687000/jpg/_68687906_lunch.jpg"/> 
+    </item>  
+    <item> 
+      <title>Six held over Shard climb protest</title>  
+      <description>Six Greenpeace protesters who scaled Britain's tallest building are in police custody after being arrested over the demonstration.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-london-23283323#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-london-23283323</guid>  
+      <pubDate>Fri, 12 Jul 2013 07:32:18 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68688000/jpg/_68688797_protest.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68688000/jpg/_68688798_protest.jpg"/> 
+    </item>  
+    <item> 
+      <title>Man in flat arrested by armed police</title>  
+      <description>A 46-year-old man is arrested after an 11-hour stand-off in a block of flats in Norfolk.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-norfolk-23282742#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-norfolk-23282742</guid>  
+      <pubDate>Fri, 12 Jul 2013 06:34:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68688000/jpg/_68688412_policenumberplate.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68688000/jpg/_68688413_policenumberplate.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ashes bag snatch killer's term cut</title>  
+      <description>A man jailed for murdering a 79-year-old woman while stealing a handbag containing her husband's ashes has his sentence reduced.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-manchester-23273652#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-manchester-23273652</guid>  
+      <pubDate>Thu, 11 Jul 2013 19:16:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68684000/jpg/_68684052_mark_royle.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68684000/jpg/_68684053_mark_royle.jpg"/> 
+    </item>  
+    <item> 
+      <title>Steep rise in football transfer fees</title>  
+      <description>International football transfer numbers fall slightly but the income they generate has risen sharply in the past six months, says governing body Fifa.</description>  
+      <link>http://www.bbc.co.uk/news/business-23282840#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23282840</guid>  
+      <pubDate>Fri, 12 Jul 2013 06:51:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68688000/jpg/_68688334_68688259.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68688000/jpg/_68688335_68688259.jpg"/> 
+    </item>  
+    <item> 
+      <title>Coventry move dubbed 'a disgrace'</title>  
+      <description>The decision to allow Coventry City to play their home games in Northampton is labelled "a disgrace" in Parliament.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-coventry-warwickshire-23273904#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-coventry-warwickshire-23273904</guid>  
+      <pubDate>Thu, 11 Jul 2013 20:00:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68673000/jpg/_68673633_ricoh_arena_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68680000/jpg/_68680236_ricoh_arena_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Gang members prone to mental illness</title>  
+      <description>Young men in gangs are significantly more likely to suffer from a mental disorder and need psychiatric help than other young men, says a UK study.</description>  
+      <link>http://www.bbc.co.uk/news/health-23275139#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23275139</guid>  
+      <pubDate>Fri, 12 Jul 2013 04:27:30 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68681000/jpg/_68681511_gang_teenage_drinking-spl.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68681000/jpg/_68681572_gang_teenage_drinking-spl.jpg"/> 
+    </item>  
+    <item> 
+      <title>Murder inquiry into OAP fire death</title>  
+      <description>Police launch a murder inquiry into the death of a 92-year-old man following a house fire in Guildford.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-surrey-23274898#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-surrey-23274898</guid>  
+      <pubDate>Thu, 11 Jul 2013 22:01:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68688000/jpg/_68688690_photo.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68688000/jpg/_68688691_photo.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ice-cream van chiming rules relaxed</title>  
+      <description>Parents are in for a potential barrage of pester power, as 31-year-old rules restricting the use of chimes on ice-cream vans are relaxed.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23279302#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23279302</guid>  
+      <pubDate>Thu, 11 Jul 2013 17:35:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68683000/jpg/_68683010_68682078.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68683000/jpg/_68683011_68682078.jpg"/> 
+    </item>  
+    <item> 
+      <title>England set for Women's Euro opener</title>  
+      <description>England coach Hope Powell says she is wary of the threat posed by Spain as her side kick off their Euro 2013 campaign on Friday.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/23193028</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/23193028</guid>  
+      <pubDate>Thu, 11 Jul 2013 16:22:52 GMT</pubDate>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68681000/jpg/_68681532_68669574.jpg"/> 
+    </item>  
+    <item> 
+      <title>Cattle swap cow-bells for GPS chips</title>  
+      <description>A heard of cows in the Cheviot hills will be tracked by Global Positioning System (GPS) technology to find out how their movements affect local biodiversity.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-tyne-23279024#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-tyne-23279024</guid>  
+      <pubDate>Thu, 11 Jul 2013 19:29:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68681000/jpg/_68681284_cow_collar_23.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68681000/jpg/_68681285_cow_collar_23.jpg"/> 
+    </item>  
+    <item> 
+      <title>Footballing fish scores for charity</title>  
+      <description>A football-playing goldfish is impressing people with her skills and raising money for charity.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-devon-23280046#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-devon-23280046</guid>  
+      <pubDate>Fri, 12 Jul 2013 02:45:51 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68685000/jpg/_68685729_fish.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68685000/jpg/_68685730_fish.jpg"/> 
+    </item>  
+    <item> 
+      <title>Injured Rooney sidelined for a month</title>  
+      <description>Wayne Rooney is heading home from Manchester United's pre-season tour and will be sidelined for a month with a hamstring problem.</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/23279075</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/23279075</guid>  
+      <pubDate>Fri, 12 Jul 2013 06:45:45 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68683000/jpg/_68683675_waynerooney_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68683000/jpg/_68683673_waynerooney_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>England unhappy with Trott dismissal</title>  
+      <description>England ask for clarification from the ICC after an lbw decision is reversed despite key technology being unavailable.</description>  
+      <link>http://www.bbc.co.uk/sport/0/cricket/23280652</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/cricket/23280652</guid>  
+      <pubDate>Thu, 11 Jul 2013 19:18:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68684000/jpg/_68684461_68684458.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68684000/jpg/_68684463_68684458.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ennis-Hill out of GB Championships</title>  
+      <description>Jessica Ennis-Hill withdraws from this weekend's British Championships in Birmingham because of injury.</description>  
+      <link>http://www.bbc.co.uk/sport/0/athletics/23277466</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/athletics/23277466</guid>  
+      <pubDate>Thu, 11 Jul 2013 16:19:45 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68680000/jpg/_68680902_jess_ennishill2_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68680000/jpg/_68680904_jess_ennishill2_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: House of Lords</title>  
+      <description>The justice secretary says firms have charged for tagging people who were in jail or had died.</description>  
+      <link>http://www.bbc.co.uk/democracylive/house-of-commons-23272108</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/democracylive/house-of-commons-23272108</guid>  
+      <pubDate>Thu, 11 Jul 2013 14:28:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676221_68675128.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676222_68675128.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Cafe targets gulls with water pistols</title>  
+      <description>Staff at a cafe in the Devon resort of Teignmouth are using water pistols to protect outdoor customers from hungry seagulls.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-devon-23280073#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-devon-23280073</guid>  
+      <pubDate>Thu, 11 Jul 2013 19:00:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68684000/jpg/_68684433_68674786.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68684000/jpg/_68684434_68674786.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Dancing man restarts challenge</title>  
+      <description>A former teacher is nearing the end of an unusual charity challenge, dancing all the way from John O'Groats to Land's End.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-wiltshire-23274733#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-wiltshire-23274733</guid>  
+      <pubDate>Thu, 11 Jul 2013 21:01:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68684000/jpg/_68684953_benhammond.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68684000/jpg/_68684954_benhammond.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Teens find bone in skull river</title>  
+      <description>Two teenagers discover another bone in a shallow river in Gloucestershire, after finding a human skull which police said could be from a nearby roman cemetery.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-gloucestershire-23279548#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-gloucestershire-23279548</guid>  
+      <pubDate>Thu, 11 Jul 2013 19:21:28 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68684000/jpg/_68684421_christianandrobbie.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68684000/jpg/_68684422_christianandrobbie.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Crackdown on Luton prostitution</title>  
+      <description>A major police operation to curb prostitution and deter kerb crawlers has begun in Luton.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-beds-bucks-herts-23271631#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-beds-bucks-herts-23271631</guid>  
+      <pubDate>Thu, 11 Jul 2013 13:26:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68675000/jpg/_68675064_68674613.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68675000/jpg/_68675065_68674613.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Coin handed over to city museum</title>  
+      <description>A silver penny dating back nearly 1,000 years has been handed over to the Gloucester city museum and will now go on display.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-gloucestershire-23274732#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-gloucestershire-23274732</guid>  
+      <pubDate>Thu, 11 Jul 2013 20:00:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68678000/jpg/_68678006_williamipenny.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68678000/jpg/_68678007_williamipenny.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: New Laura Knight exhibition unveiled</title>  
+      <description>The National Portrait Gallery is hosting an exhibition on the work of Nottingham artist Dame Laura Knight.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-nottinghamshire-23275746#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-nottinghamshire-23275746</guid>  
+      <pubDate>Thu, 11 Jul 2013 16:27:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676987_68676845.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68676000/jpg/_68676988_68676845.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Daughter died on 'suicide' bike path</title>  
+      <description>The mother of a French cyclist who was killed as she used a Cycle Superhighway in east London says the route is "suicidal".</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-london-23271760#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-london-23271760</guid>  
+      <pubDate>Thu, 11 Jul 2013 17:56:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68684000/jpg/_68684158_68683841.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68684000/jpg/_68684159_68683841.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Windfarm flooding claim by village</title>  
+      <description>Residents in a village in Cumbria claim a nearby windfarm is causing flooding and drying up natural water supplies.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-cumbria-23278395#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-cumbria-23278395</guid>  
+      <pubDate>Thu, 11 Jul 2013 17:58:54 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68681000/jpg/_68681917_68677027.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68681000/jpg/_68681918_68677027.jpg"/> 
+    </item>  
+    <item> 
+      <title>'It's like canoeing in Baghdad'</title>  
+      <description>Canoeists fight for the "right to paddle"</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-20182198#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-20182198</guid>  
+      <pubDate>Fri, 12 Jul 2013 00:29:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/63881000/jpg/_63881046_149838671.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/63881000/jpg/_63881047_149838671.jpg"/> 
+    </item>  
+    <item> 
+      <title>Killed Fusilier 'has become a hero'</title>  
+      <description>Fusilier Lee Rigby's family say he "has become a hero"</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-23263755#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-23263755</guid>  
+      <pubDate>Fri, 12 Jul 2013 01:18:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68674000/jpg/_68674034_68673751.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68674000/jpg/_68674035_68673751.jpg"/> 
+    </item>  
+    <item> 
+      <title>Fangio's F1 Mercedes to be auctioned</title>  
+      <description>Racing legend Fangio's Mercedes goes under the hammer</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-sussex-23275089#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-sussex-23275089</guid>  
+      <pubDate>Fri, 12 Jul 2013 03:02:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68682000/jpg/_68682541_mercedes_comp.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68682000/jpg/_68682542_mercedes_comp.jpg"/> 
+    </item>  
+    <item> 
+      <title>Can England win Women's Euro 2013?</title>  
+      <description>Hopes are high for Women's Euro 2013</description>  
+      <link>http://www.bbc.co.uk/sport/0/football/23078709</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/sport/0/football/23078709</guid>  
+      <pubDate>Thu, 11 Jul 2013 05:29:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68528000/jpg/_68528679_68528678.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68663000/jpg/_68663937_kelly_smith_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>The highs and lows of football fans</title>  
+      <description>The 2012/13 football season from a fans' perspective</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-manchester-23281091#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-manchester-23281091</guid>  
+      <pubDate>Fri, 12 Jul 2013 00:38:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68685000/jpg/_68685644_fcunited_9757.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68685000/jpg/_68685645_fcunited_9757.jpg"/> 
+    </item>  
+    <item> 
+      <title>Parents' angst over packed lunches</title>  
+      <description>Parents reveal their angst over the daily routine</description>  
+      <link>http://www.bbc.co.uk/news/education-23181389#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-23181389</guid>  
+      <pubDate>Fri, 12 Jul 2013 04:06:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68628000/jpg/_68628515_triothink.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68628000/jpg/_68628769_triothink.jpg"/> 
+    </item>  
+    <item> 
+      <title>How much does a good sea view cost?</title>  
+      <description>How much would you pay for a view of the beach?</description>  
+      <link>http://www.bbc.co.uk/news/business-23255452#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-23255452</guid>  
+      <pubDate>Thu, 11 Jul 2013 23:12:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68658000/jpg/_68658517_p1010586.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68658000/jpg/_68658776_p1010586.jpg"/> 
+    </item>  
+    <item> 
+      <title>The armed robber who became a writer</title>  
+      <description>Who was the mastermind behind the Great Train Robbery?</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23256395#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23256395</guid>  
+      <pubDate>Fri, 12 Jul 2013 00:07:36 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68668000/jpg/_68668395_small-bruce.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68668000/jpg/_68668396_small-bruce.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

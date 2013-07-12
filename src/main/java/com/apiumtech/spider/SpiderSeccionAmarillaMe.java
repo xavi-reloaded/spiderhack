@@ -34,7 +34,7 @@ public class SpiderSeccionAmarillaMe extends AgentsManager implements SpiderConf
         // Parameters
         /////////////////////////////////////////////////////////
         String jobName = "seccionamarillame_" + group.replace("[\\-]", "_");
-//        String workingfolder = "/home/xavi/.gvfs/spider/" + jobName;
+//        String workingfolder = "/home/xavi/.gvfs/processes/" + jobName;
         String workingFolder = WORKING_FOLDER + "/spider_me/" + jobName;
         int maxSpiderThreads = 20;
         int milisecondsBetweenQueries = 1000;

@@ -17,8 +17,8 @@ public class SpiderGoogleByDate extends AgentsManager
 	void test() throws IOException, InterruptedException
 	{
 		{
-			// String workingfolder = "\\\\ficheros\\65-XTYLE\\spider\\wordcontext";
-			// String cachefolder = "\\\\ficheros\\65-XTYLE\\spider\\spidercache";
+			// String workingfolder = "\\\\ficheros\\65-XTYLE\\processes\\wordcontext";
+			// String cachefolder = "\\\\ficheros\\65-XTYLE\\processes\\spidercache";
 			// String googleSearch =
 			// "\"Read%20full%20review\"+Advantages+Reviews+sea+site:ciao.co.uk";
 			// int maxSimultaneousSeeds = 15;
@@ -29,8 +29,8 @@ public class SpiderGoogleByDate extends AgentsManager
 
 			int i = 0;
 			String jobName = "wordcontext_caramel";
-			String workingFolder = "/home/xavi/.gvfs/spider/" + jobName;
-			String cacheFolder = "/home/xavi/.gvfs/spider/spidercache";
+			String workingFolder = "/home/xavi/.gvfs/processes/" + jobName;
+			String cacheFolder = "/home/xavi/.gvfs/processes/spidercache";
 			String googleSearch = "\"caramel\"";
 			int maxSimultaneousSeeds = 15;
 			int maxLinksPerSeed = 3000;

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Magazine</title>  
+    <link>http://www.bbc.co.uk/news/magazine/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Magazine section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Fri, 12 Jul 2013 07:28:49 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Magazine</title>  
+      <link>http://www.bbc.co.uk/news/magazine/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/magazine/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>English wine: Is sparkling wine better in England than France?</title>  
+      <description>Can English sparkling wine take on the mighty champagne?</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23008300#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23008300</guid>  
+      <pubDate>Thu, 11 Jul 2013 10:22:20 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68672000/jpg/_68672188_bubbly.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68672000/jpg/_68672189_bubbly.jpg"/> 
+    </item>  
+    <item> 
+      <title>Carp and coffee: The language of bribes</title>  
+      <description>The language of bribes</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23227391#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23227391</guid>  
+      <pubDate>Thu, 11 Jul 2013 00:08:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68661000/jpg/_68661664_coffee_cup_afp.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68661000/jpg/_68661665_coffee_cup_afp.jpg"/> 
+    </item>  
+    <item> 
+      <title>Can science explain why I'm a pessimist?</title>  
+      <description>Can science explain why I'm a pessimist?</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23229014#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23229014</guid>  
+      <pubDate>Wed, 10 Jul 2013 01:02:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68617000/jpg/_68617436_stills_130110_horizon_emotions_img_0547.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68617000/jpg/_68617437_stills_130110_horizon_emotions_img_0547.jpg"/> 
+    </item>  
+    <item> 
+      <title>7 questions on heatwaves</title>  
+      <description>What a scorcher - test yourself on hottest days</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23228285#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23228285</guid>  
+      <pubDate>Wed, 10 Jul 2013 10:45:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68635000/jpg/_68635081_icecream.think.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68635000/jpg/_68635082_icecream.think.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Recycling bicycle makes money from plastic</title>  
+      <description>Turning a bike into a plastic pedalling machine</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23230134#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23230134</guid>  
+      <pubDate>Tue, 09 Jul 2013 23:08:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68623000/jpg/_68623468_bike.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68638000/jpg/_68638496_bike.jpg"/> 
+    </item>  
+    <item> 
+      <title>Could one man have shortened the Vietnam War?</title>  
+      <description>Could one man have shortened the Vietnam War?</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23037957#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23037957</guid>  
+      <pubDate>Mon, 08 Jul 2013 23:58:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68617000/jpg/_68617430_68613829.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68617000/jpg/_68617431_68613829.jpg"/> 
+    </item>  
+    <item> 
+      <title>30 tips for first-time parents</title>  
+      <description>30 tips from real parents for the royal couple</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23226216#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23226216</guid>  
+      <pubDate>Tue, 09 Jul 2013 09:54:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68625000/jpg/_68625980_kateandwill.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68625000/jpg/_68625981_kateandwill.jpg"/> 
+    </item>  
+    <item> 
+      <title>What was Virginia Wade's legacy?</title>  
+      <description>What was legacy of Wade's Wimbledon win?</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23246616#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23246616</guid>  
+      <pubDate>Tue, 09 Jul 2013 15:55:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68635000/jpg/_68635847_wade_bbc.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68635000/jpg/_68635848_wade_bbc.jpg"/> 
+    </item>  
+    <item> 
+      <title>The first Australian cricket tour of England</title>  
+      <description>The first Australian cricket tour of the UK</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23225434#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23225434</guid>  
+      <pubDate>Tue, 09 Jul 2013 01:01:50 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68606000/jpg/_68606887_small2.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68606000/jpg/_68606888_small2.jpg"/> 
+    </item>  
+    <item> 
+      <title>Top travel photos from around the world</title>  
+      <description>Travel Photographer of the Year finalists</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23226029#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23226029</guid>  
+      <pubDate>Tue, 09 Jul 2013 01:05:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68625000/jpg/_68625231_awildplanetsm3sueflood.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68625000/jpg/_68625232_awildplanetsm3sueflood.jpg"/> 
+    </item>  
+    <item> 
+      <title>Should online jokes be criminal?</title>  
+      <description>Should internet pranksters go to jail?</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23188875#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23188875</guid>  
+      <pubDate>Tue, 09 Jul 2013 02:23:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68620000/jpg/_68620845_100578308.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68620000/jpg/_68620846_100578308.jpg"/> 
+    </item>  
+    <item> 
+      <title>Is the Wimbledon drought really 77 years?</title>  
+      <description>Is it 77 years since a British man won?</description>  
+      <link>http://www.bbc.co.uk/news/blogs-magazine-monitor-23225058#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/blogs-magazine-monitor-23225058</guid>  
+      <pubDate>Mon, 08 Jul 2013 10:25:14 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68605000/jpg/_68605181_fredperry_getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68605000/jpg/_68605182_fredperry_getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Christmas Island's nuclear legacy</title>  
+      <description>The hidden history of Britain's island tests</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23184816#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23184816</guid>  
+      <pubDate>Sun, 07 Jul 2013 23:56:20 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68578000/jpg/_68578877_kiribati_reuters.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68578000/jpg/_68578921_kiribati_reuters.jpg"/> 
+    </item>  
+    <item> 
+      <title>Revolution in the royal nursery</title>  
+      <description>Changing times for royal babies and parents</description>  
+      <link>http://www.bbc.co.uk/news/magazine-22971177#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-22971177</guid>  
+      <pubDate>Mon, 08 Jul 2013 03:10:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68570000/jpg/_68570439_babypa.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68570000/jpg/_68570440_babypa.jpg"/> 
+    </item>  
+    <item> 
+      <title>The sad life of a circus lion</title>  
+      <description>The small world of a big cat in a circus</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23179862#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23179862</guid>  
+      <pubDate>Sun, 07 Jul 2013 23:41:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68603000/jpg/_68603095_lion_think624.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68603000/jpg/_68603096_lion_think624.jpg"/> 
+    </item>  
+    <item> 
+      <title>10 very, very long waits for sporting glory</title>  
+      <description>10 of the longest waits for sporting glory</description>  
+      <link>http://www.bbc.co.uk/news/blogs-magazine-monitor-23224705#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/blogs-magazine-monitor-23224705</guid>  
+      <pubDate>Mon, 08 Jul 2013 12:53:09 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68606000/jpg/_68606569_prestonnewtown320getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68606000/jpg/_68606570_prestonnewtown320getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>In praise of the 12 times table</title>  
+      <description>In praise of the 12 times table</description>  
+      <link>http://www.bbc.co.uk/news/blogs-magazine-monitor-23230183#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/blogs-magazine-monitor-23230183</guid>  
+      <pubDate>Mon, 08 Jul 2013 14:20:09 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68612000/jpg/_68612940_12.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68612000/jpg/_68612941_12.jpg"/> 
+    </item>  
+    <item> 
+      <title>When can you legally travel without a passport?</title>  
+      <description>When can you travel without a passport?</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23038996#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23038996</guid>  
+      <pubDate>Fri, 28 Jun 2013 09:06:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68356000/jpg/_68356411_160017963.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68356000/jpg/_68356412_160017963.jpg"/> 
+    </item>  
+    <item> 
+      <title>Who, what, why: Are tech goods cheaper in the US than the UK?</title>  
+      <description>Are tech goods cheaper in the US?</description>  
+      <link>http://www.bbc.co.uk/news/magazine-22868787#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-22868787</guid>  
+      <pubDate>Wed, 12 Jun 2013 16:20:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68139000/jpg/_68139455_170344227.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68139000/jpg/_68139456_170344227.jpg"/> 
+    </item>  
+    <item> 
+      <title>What can you learn from people's phone records?</title>  
+      <description>What can you learn from people's phone records?</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-22808004#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-22808004</guid>  
+      <pubDate>Fri, 07 Jun 2013 00:55:18 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68028000/jpg/_68028281_phone_think.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68028000/jpg/_68028282_phone_think.jpg"/> 
+    </item>  
+    <item> 
+      <title>What's wrong with middle-lane hogging?</title>  
+      <description>What's wrong with hogging the centre lane?</description>  
+      <link>http://www.bbc.co.uk/news/magazine-22784983#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-22784983</guid>  
+      <pubDate>Wed, 05 Jun 2013 12:41:35 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/67993000/jpg/_67993563_traffic320getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/67993000/jpg/_67993564_traffic320getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Does the NFL have a crime problem?</title>  
+      <description>Does American football have a crime problem?</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23179125#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23179125</guid>  
+      <pubDate>Mon, 08 Jul 2013 09:55:34 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68555000/jpg/_68555080_320_big-tackle.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68555000/jpg/_68555081_320_big-tackle.jpg"/> 
+    </item>  
+    <item> 
+      <title>Where are the missing 90-year-olds?</title>  
+      <description>Where have the missing 90-somethings gone?</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23126814#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23126814</guid>  
+      <pubDate>Tue, 02 Jul 2013 00:39:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68493000/jpg/_68493375_dancinghands_afp624.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68493000/jpg/_68493376_dancinghands_afp624.jpg"/> 
+    </item>  
+    <item> 
+      <title>How long is the runway in Fast &amp; Furious 6?</title>  
+      <description>How long is the runway in Fast &amp; Furious 6?</description>  
+      <link>http://www.bbc.co.uk/news/blogs-magazine-monitor-23005848#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/blogs-magazine-monitor-23005848</guid>  
+      <pubDate>Fri, 21 Jun 2013 23:31:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68314000/jpg/_68314277_ff6mainquad_ref115_1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68314000/jpg/_68314724_ff6mainquad_ref115_1.jpg"/> 
+    </item>  
+    <item> 
+      <title>Does a child die of hunger every 10 seconds?</title>  
+      <description>Does a child die every 10 seconds?</description>  
+      <link>http://www.bbc.co.uk/news/magazine-22935692#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-22935692</guid>  
+      <pubDate>Tue, 18 Jun 2013 00:48:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68230000/jpg/_68230946_hunger-boy.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68230000/jpg/_68230947_hunger-boy.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Cuba's amazing dancing triplets</title>  
+      <description>Teenage triplets tipped to be ballet stars</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23062070#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23062070</guid>  
+      <pubDate>Thu, 27 Jun 2013 23:17:22 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68384000/jpg/_68384288_triplets3.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68384000/jpg/_68384289_triplets3.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: The pub where people play video games</title>  
+      <description>The pub where people play video games</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23047460#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23047460</guid>  
+      <pubDate>Tue, 25 Jun 2013 23:04:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68388000/jpg/_68388706_68365439.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68388000/jpg/_68388707_68365439.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: The 13-year-old fashion blogger</title>  
+      <description>The 13-year-old fashion blogger</description>  
+      <link>http://www.bbc.co.uk/news/magazine-22950167#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-22950167</guid>  
+      <pubDate>Tue, 18 Jun 2013 23:18:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68253000/jpg/_68253867_68247589.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68253000/jpg/_68253868_68247589.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Art deco cinemas saved from demolition</title>  
+      <description>The man reviving art deco cinemas</description>  
+      <link>http://www.bbc.co.uk/news/magazine-22750895#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-22750895</guid>  
+      <pubDate>Thu, 13 Jun 2013 23:01:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68180000/jpg/_68180278_68180153.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68180000/jpg/_68180279_68180153.jpg"/> 
+    </item>  
+    <item> 
+      <title>Working with wildlife: The conservationist</title>  
+      <description>Sharing an island home with 70,000 puffins</description>  
+      <link>http://www.bbc.co.uk/nature/22875751</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/nature/22875751</guid>  
+      <pubDate>Tue, 09 Jul 2013 17:19:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68486000/jpg/_68486687_fi-8a(5).jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68486000/jpg/_68486688_fi-8a(5).jpg"/> 
+    </item>  
+    <item> 
+      <title>The mysterious summer night clouds</title>  
+      <description>The high altitude clouds only seen at twilight</description>  
+      <link>http://www.bbc.co.uk/science/0/23003927</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/science/0/23003927</guid>  
+      <pubDate>Fri, 28 Jun 2013 15:55:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68308000/jpg/_68308018_complex.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68308000/jpg/_68308019_complex.jpg"/> 
+    </item>  
+    <item> 
+      <title>Caption Challenge: Surf's not up</title>  
+      <description>Surf's not up</description>  
+      <link>http://www.bbc.co.uk/news/blogs-magazine-monitor-23271467#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/blogs-magazine-monitor-23271467</guid>  
+      <pubDate>Thu, 11 Jul 2013 11:31:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68668000/jpg/_68668948_68668830.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68668000/jpg/_68668949_68668830.jpg"/> 
+    </item>  
+    <item> 
+      <title>Paper Monitor: An intervention, tabloid style</title>  
+      <description>An intervention, tabloid style</description>  
+      <link>http://www.bbc.co.uk/news/blogs-magazine-monitor-23255556#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/blogs-magazine-monitor-23255556</guid>  
+      <pubDate>Thu, 11 Jul 2013 10:52:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68667000/jpg/_68667623_68667592.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68667000/jpg/_68667624_68667592.jpg"/> 
+    </item>  
+    <item> 
+      <title>The Loop: Fame grilled</title>  
+      <description>Fame grilled</description>  
+      <link>http://www.bbc.co.uk/news/blogs-magazine-monitor-23039122#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/blogs-magazine-monitor-23039122</guid>  
+      <pubDate>Fri, 28 Jun 2013 14:50:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68473000/jpg/_68473147_159067307.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68473000/jpg/_68473148_159067307.jpg"/> 
+    </item>  
+    <item> 
+      <title>10 things we didn't know last week</title>  
+      <description>Plants can do maths, and nine other revealing nuggets</description>  
+      <link>http://www.bbc.co.uk/news/blogs-magazine-monitor-23102016#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/blogs-magazine-monitor-23102016</guid>  
+      <pubDate>Fri, 28 Jun 2013 17:15:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68447000/jpg/_68447315_plant_thinkstock.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68447000/jpg/_68447316_plant_thinkstock.jpg"/> 
+    </item>  
+    <item> 
+      <title>A presidential democracy without a president</title>  
+      <description>Egypt's presidential democracy with no president</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23199377#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23199377</guid>  
+      <pubDate>Sun, 07 Jul 2013 00:17:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68579000/jpg/_68579538_morsi_beach624getty.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68579000/jpg/_68579539_morsi_beach624getty.jpg"/> 
+    </item>  
+    <item> 
+      <title>Essential props for declaring a coup</title>  
+      <description>Uniform, podium and other key props for a coup</description>  
+      <link>http://www.bbc.co.uk/news/magazine-23196311#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/magazine-23196311</guid>  
+      <pubDate>Fri, 05 Jul 2013 23:05:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68577000/jpg/_68577569_97016329.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68577000/jpg/_68577570_97016329.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

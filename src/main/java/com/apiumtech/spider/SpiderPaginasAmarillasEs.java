@@ -10,7 +10,7 @@ import java.util.List;
 
 public class SpiderPaginasAmarillasEs extends AgentsManager implements SpiderConfig
 {
-    //	String cachefolder = "/home/fjhidalgo/.gvfs/spider/spidercache_paginasamarillases";
+    //	String cachefolder = "/home/fjhidalgo/.gvfs/processes/spidercache_paginasamarillases";
 	String cacheFolder = WORKING_FOLDER + "/spidercache_paginasamarillases";
 	private AnonymousProxyManager proxyManager = null;
 	int maxProxyThreads = 5;
@@ -52,7 +52,7 @@ public class SpiderPaginasAmarillasEs extends AgentsManager implements SpiderCon
         // Parameters
         /////////////////////////////////////////////////////////
         String jobName = "paginasamarillases_" + group.replace("[\\-]", "_");
-//        String workingfolder = "/home/xavi/.gvfs/spider/" + jobName;
+//        String workingfolder = "/home/xavi/.gvfs/processes/" + jobName;
         String workingFolder = WORKING_FOLDER + "/spider/" + jobName;
         int maxSpiderThreads = 20;
         int milisecondsBetweenQueries = 1000;

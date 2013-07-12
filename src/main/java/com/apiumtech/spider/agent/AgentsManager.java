@@ -100,7 +100,7 @@ public class AgentsManager implements Runnable
 			{
 				if(!m_agentList.get(i).isAlive())
 				{
-					// provide a exclusive proxy to spider
+					// provide a exclusive proxy to processes
 					if(m_proxyManager != null && m_agentList.get(i).getProxy() == null)
 					{
 						Proxy proxy = m_proxyManager.getProxy();
@@ -114,7 +114,7 @@ public class AgentsManager implements Runnable
 								m_agentList.get(i).setProxy(proxy);
 						}
 					}
-					// provide a link to spider
+					// provide a link to processes
 					if(m_proxyManager == null || m_agentList.get(i).getProxy() != null)
 					{
 						for(j = 0; j < m_seeds.size(); j++)

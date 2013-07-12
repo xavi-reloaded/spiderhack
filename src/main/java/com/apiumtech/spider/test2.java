@@ -9,9 +9,9 @@ public class test2
 
         SpiderPaginasAmarillasEs spider = new SpiderPaginasAmarillasEs();
 
-//        spider.search("centro-de-enseñanza"); //4893)
-//        spider.search("enseñanza-universitaria"); //4893)
-//        spider.search("enseñanza-de-idioma"); //4893)
+//        processes.search("centro-de-enseñanza"); //4893)
+//        processes.search("enseñanza-universitaria"); //4893)
+//        processes.search("enseñanza-de-idioma"); //4893)
 
         spider.stop();
         spider = null;

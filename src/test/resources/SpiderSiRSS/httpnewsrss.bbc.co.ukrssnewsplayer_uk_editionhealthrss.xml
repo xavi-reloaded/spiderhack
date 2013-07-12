@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Health</title>  
+    <link>http://www.bbc.co.uk/news/video_and_audio/health/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Health section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Fri, 12 Jul 2013 01:05:39 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Health</title>  
+      <link>http://www.bbc.co.uk/news/video_and_audio/health/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/video_and_audio/health/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>VIDEO: 'My son agreed to be an organ donor'</title>  
+      <description>As the NHS considers preventing families from overriding the consent of people who have signed the organ donor register, Ali Carter tells Fergus Walsh it is a comfort to her that her son, Lee, helped other people by donating his organs after his death.</description>  
+      <link>http://www.bbc.co.uk/news/health-23270217#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23270217</guid>  
+      <pubDate>Thu, 11 Jul 2013 17:46:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68682000/jpg/_68682152_ali1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68682000/jpg/_68682790_ali1.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: EU wants electronic cigarette controls</title>  
+      <description>The EU is trying to regulate the sale of electronic cigarettes - used by some as an aid to quitting smoking - by classifying them as medicines.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23273946#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23273946</guid>  
+      <pubDate>Thu, 11 Jul 2013 14:07:09 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68674000/jpg/_68674057_147880131.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68674000/jpg/_68674058_147880131.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Baby heart test can help save lives</title>  
+      <description>Problems with a baby's heart are among the most common forms of birth defects in the UK. Most turn out to be minor, but thousands of children are born with life altering conditions.</description>  
+      <link>http://www.bbc.co.uk/news/health-23266319#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23266319</guid>  
+      <pubDate>Thu, 11 Jul 2013 08:14:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68663000/jpg/_68663552_68663523.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68663000/jpg/_68663553_68663523.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Organ donor rule changes considered</title>  
+      <description>The NHS is considering preventing families from overriding the consent of people who have signed the organ donor register.</description>  
+      <link>http://www.bbc.co.uk/news/health-23274841#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23274841</guid>  
+      <pubDate>Thu, 11 Jul 2013 13:23:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68675000/jpg/_68675336_68675252.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68675000/jpg/_68675337_68675252.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: High caffeine energy drink warning</title>  
+      <description>There are calls for tighter controls to prevent children consuming high caffeine energy drinks.</description>  
+      <link>http://www.bbc.co.uk/news/uk-scotland-23254897#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-scotland-23254897</guid>  
+      <pubDate>Wed, 10 Jul 2013 15:10:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68653000/jpg/_68653791_energy_drinks.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68653000/jpg/_68653792_energy_drinks.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Â£22,000 gift helps Kyle, three, walk</title>  
+      <description>A Colwyn Bay three-year-old with cerebral palsy is well on the way to walking after another Conwy family donated Â£22,000 towards surgery in the United States.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-23196547#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-23196547</guid>  
+      <pubDate>Fri, 05 Jul 2013 12:01:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68568000/png/_68568168_vlcsnap-2013-07-05-12h20m06s5.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68568000/png/_68568169_vlcsnap-2013-07-05-12h20m06s5.png"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Fake ecstasy pills linked to deaths</title>  
+      <description>Police say the deaths of up to 17 people in Scotland and Northern Ireland may be linked to fake ecstasy tablets.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23264189#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23264189</guid>  
+      <pubDate>Wed, 10 Jul 2013 18:53:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68660000/jpg/_68660109_68660101.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68660000/jpg/_68660110_68660101.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Call to ban make-up preservatives</title>  
+      <description>Doctors are calling for a ban on a chemical preservative found in products like make-up, sun cream and shampoo.</description>  
+      <link>http://www.bbc.co.uk/news/health-23237530#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23237530</guid>  
+      <pubDate>Tue, 09 Jul 2013 08:57:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68622000/jpg/_68622149_68621453.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68622000/jpg/_68622150_68621453.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'I was having six panic attacks a day'</title>  
+      <description>There is growing evidence that large numbers of young people are suffering from mental health problems, according to new survey by You Gov.</description>  
+      <link>http://www.bbc.co.uk/news/health-23192252#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23192252</guid>  
+      <pubDate>Thu, 04 Jul 2013 23:02:22 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68559000/jpg/_68559824_68559521.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68559000/jpg/_68559825_68559521.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: The man who 'went into labour'</title>  
+      <description>Henry McKean went to a special private maternity hospital in Amsterdam to experience labour pains, thanks to a machine that used electrodes to simulate childbirth.</description>  
+      <link>http://www.bbc.co.uk/news/health-23187721#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23187721</guid>  
+      <pubDate>Thu, 04 Jul 2013 18:48:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68557000/jpg/_68557832_68556194.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68557000/jpg/_68557833_68556194.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Birth warning to British Pakistanis</title>  
+      <description>Bradford GP Dr. Rafaqut Rashid believes British Pakistani couples who are blood relatives need informing of birth defect risks.</description>  
+      <link>http://www.bbc.co.uk/news/health-23180425#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23180425</guid>  
+      <pubDate>Thu, 04 Jul 2013 14:38:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68551000/jpg/_68551253_hand.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68551000/jpg/_68551254_hand.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'Booze bracelets' to monitor parents</title>  
+      <description>Alcohol-monitoring ankle bracelets, known as "booze bracelets" have been used in child protection cases where alcohol dependency has been an issue.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23176722#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23176722</guid>  
+      <pubDate>Thu, 04 Jul 2013 06:59:22 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68539000/jpg/_68539385_68539035.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68539000/jpg/_68539386_68539035.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Calls for tougher 'legal high' laws</title>  
+      <description>Trading Standards and Avon and Somerset Police have called on the government to bring in tougher laws on so-called "legal highs".</description>  
+      <link>http://www.bbc.co.uk/news/uk-23172608#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23172608</guid>  
+      <pubDate>Wed, 03 Jul 2013 17:45:47 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68534000/jpg/_68534843_68531603.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68534000/jpg/_68534844_68531603.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Using legal highs 'left me paranoid'</title>  
+      <description>Former legal high user Jessica, 18, says she thought they were safe because she'd bought them legally from a shop.</description>  
+      <link>http://www.bbc.co.uk/newsbeat/23131078#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/newsbeat/23131078</guid>  
+      <pubDate>Wed, 03 Jul 2013 05:19:33 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68484000/jpg/_68484590_legalhighsjessica.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68484000/jpg/_68484592_legalhighsjessica.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Bone marrow 'frees men of HIV drugs'</title>  
+      <description>US doctor Daniel Kuritzkes explains how two patients have been taken off their HIV drugs after they were given bone marrow transplants.</description>  
+      <link>http://www.bbc.co.uk/news/world-us-canada-23180419#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-us-canada-23180419</guid>  
+      <pubDate>Thu, 04 Jul 2013 10:47:23 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68543000/jpg/_68543543_needle.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68543000/jpg/_68543544_needle.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Changing the IVF 'beauty contest'</title>  
+      <description>A baby has been born in the US using a new method for screening embryos during IVF which could dramatically reduce costs, researchers report.</description>  
+      <link>http://www.bbc.co.uk/news/health-23226613#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23226613</guid>  
+      <pubDate>Mon, 08 Jul 2013 10:03:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68605000/jpg/_68605201_68604221.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68605000/jpg/_68605203_68604221.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Tameside Hospital: Senior bosses resign</title>  
+      <description>The two most senior managers at a hospital investigated for high death rates have resigned from their jobs.</description>  
+      <link>http://www.bbc.co.uk/news/health-23174760#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23174760</guid>  
+      <pubDate>Wed, 03 Jul 2013 21:54:40 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68538000/jpg/_68538003_68537971.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68538000/jpg/_68538004_68537971.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 24-hour hospital care plan 'irresponsible'</title>  
+      <description>Health Secretary Jeremy Hunt wants to make care in the NHS truly 24/7, but some doctors say the proposals will not work in a service that is already overstretched.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23160159#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23160159</guid>  
+      <pubDate>Wed, 03 Jul 2013 10:02:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68519000/jpg/_68519845_68519492.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68519000/jpg/_68519846_68519492.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Avatar therapy for schizophrenia</title>  
+      <description>A revolutionary new therapy for schizophrenia has emerged. The new therapy, called avatar therapy, is about undergo a clinical trial.</description>  
+      <link>http://www.bbc.co.uk/news/health-23141916#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23141916</guid>  
+      <pubDate>Tue, 02 Jul 2013 08:46:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68494000/jpg/_68494747_68494455.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68494000/jpg/_68494748_68494455.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'I couldn't ask for condom in jail'</title>  
+      <description>One former prisoner says he couldn't ask for a condom in prison over fears he'd be outed to the authorities.</description>  
+      <link>http://www.bbc.co.uk/newsbeat/23088400#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/newsbeat/23088400</guid>  
+      <pubDate>Tue, 02 Jul 2013 05:11:45 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68442000/jpg/_68442481_prison_pic.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68443000/jpg/_68443091_prison_pic.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Doctors set students 'bad example'</title>  
+      <description>The teaching practices of senior doctors are contributing to a decline in patient care - according to new research.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23125138#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23125138</guid>  
+      <pubDate>Mon, 01 Jul 2013 12:59:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68479000/jpg/_68479167_68478742.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68479000/jpg/_68479168_68478742.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: The virtual autopsy</title>  
+      <description>How those conducting autopsies are getting help from new computer imaging technology.</description>  
+      <link>http://www.bbc.co.uk/news/technology-23104182#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-23104182</guid>  
+      <pubDate>Mon, 01 Jul 2013 07:54:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68442000/jpg/_68442881_de03-1.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68442000/jpg/_68442882_de03-1.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Organ donation opt-out is voted in</title>  
+      <description>Controversial Welsh government plans for a system of presumed consent for organ donation have been voted through by assembly members.</description>  
+      <link>http://www.bbc.co.uk/news/health-23141305#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23141305</guid>  
+      <pubDate>Tue, 02 Jul 2013 22:29:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68493000/jpg/_68493664_donor_card_pa.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68493000/jpg/_68493665_donor_card_pa.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Why is NHS Wales mentioned in PMQs?</title>  
+      <description>Viewers of PMQs will notice that when Ed Miliband asks a question about the NHS in England, David Cameron responds by referring to the health services in Wales where Labour is in charge.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23098928#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23098928</guid>  
+      <pubDate>Fri, 28 Jun 2013 11:14:21 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68433000/jpg/_68433891_68433628.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68433000/jpg/_68433892_68433628.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'No one should die because of HIV'</title>  
+      <description>The World Health Organisation is introducing new guidelines about the treatment of HIV in the developing world which it says could help prevent millions of people from dying of AIDS.</description>  
+      <link>http://www.bbc.co.uk/news/health-23116754#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23116754</guid>  
+      <pubDate>Sun, 30 Jun 2013 09:18:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68462000/jpg/_68462416_68462286.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68462000/jpg/_68462417_68462286.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Older karate fans fighting loneliness</title>  
+      <description>The BBC went to a karate class for older people to hear their thoughts on loneliness, and what can be done to beat it.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23077095#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23077095</guid>  
+      <pubDate>Thu, 27 Jun 2013 06:33:31 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68404000/jpg/_68404757_68404507.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68404000/jpg/_68404758_68404507.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Junk food in hospitals 'obscene'</title>  
+      <description>Hospitals are meant to be the place people go to get better, but leading doctors are warning that the amount of junk food on offer there could be bad for patients health.</description>  
+      <link>http://www.bbc.co.uk/news/health-23077582#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23077582</guid>  
+      <pubDate>Thu, 27 Jun 2013 08:38:04 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68404000/jpg/_68404812_68404803.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68404000/jpg/_68404875_68404803.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Anti-depressants 'risk to babies'</title>  
+      <description>The risk posed by some popular anti-depressants in early pregnancy is "not worth taking" for women with mild to moderate depression, according to an expert who is helping rewrite treatment guidelines for doctors.</description>  
+      <link>http://www.bbc.co.uk/news/health-23024088#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23024088</guid>  
+      <pubDate>Mon, 24 Jun 2013 00:43:33 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68335000/jpg/_68335544_68334760.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68335000/jpg/_68335545_68334760.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Susan Greenfield: What makes us human</title>  
+      <description>Leading neuroscientist Susan Greenfield believes the ability to understand metaphor sets humans apart from other animals.</description>  
+      <link>http://www.bbc.co.uk/news/health-23072493#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23072493</guid>  
+      <pubDate>Wed, 26 Jun 2013 17:18:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68399000/jpg/_68399217_greenfieldjv.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68399000/jpg/_68399218_greenfieldjv.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Breastfed children 'more successful'</title>  
+      <description>A new long term study suggests that Breastfeeding improves a child's chance of climbing the social ladder and becoming a successful adult.</description>  
+      <link>http://www.bbc.co.uk/news/health-23059391#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23059391</guid>  
+      <pubDate>Wed, 26 Jun 2013 07:04:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68382000/jpg/_68382138_68382067.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68382000/jpg/_68382139_68382067.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: Risks of cosmetic surgery abroad</title>  
+      <description>Vicki Osbourne from London opted to have tummy tuck and gastric band surgery in Belgium, but had to seek help for complications afterwards.</description>  
+      <link>http://www.bbc.co.uk/news/health-23081904#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23081904</guid>  
+      <pubDate>Thu, 27 Jun 2013 12:53:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68413000/jpg/_68413059_surgery.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68413000/jpg/_68413060_surgery.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Do you want to 'Skype' your doctor?</title>  
+      <description>IT projects in the health services have a history of poor performance with billions of pounds wasted and critical reports from the Public Accounts Committee.</description>  
+      <link>http://www.bbc.co.uk/news/uk-politics-23029899#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-politics-23029899</guid>  
+      <pubDate>Mon, 24 Jun 2013 11:59:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68340000/jpg/_68340263_68339785.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68340000/jpg/_68340264_68339785.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: 'CQC sacked me for raising concern'</title>  
+      <description>A former director of operations at the Care Quality Commission claims he was sacked after he raised concerns about the watchdog's competence.</description>  
+      <link>http://www.bbc.co.uk/news/health-23030658#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23030658</guid>  
+      <pubDate>Mon, 24 Jun 2013 16:11:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68346000/jpg/_68346073_nurse.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68346000/jpg/_68346205_nurse.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'Soldiers proud of Afghan role'</title>  
+      <description>As servicemen and women are honoured in the fifth annual Armed Forces Day, Caroline Wyatt meets the commander of Task Force Helmand in Lashkar Gar. Brigadier Rupert Jones.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23109024#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23109024</guid>  
+      <pubDate>Sat, 29 Jun 2013 15:38:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68457000/jpg/_68457659_de27.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68457000/jpg/_68457660_de27.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: NHS to offer breast cancer drug</title>  
+      <description>Healthy women who have an increased risk of getting breast cancer will be offered drugs on the NHS to help prevent the disease developing.</description>  
+      <link>http://www.bbc.co.uk/news/health-23042587#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-23042587</guid>  
+      <pubDate>Tue, 25 Jun 2013 05:53:16 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68357000/jpg/_68357430_68357421.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68357000/jpg/_68357461_68357421.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Injured soldiers' family house opened</title>  
+      <description>The Prince of Wales has opened the UK's first purpose-built home for the families of injured service personnel.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23011003#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23011003</guid>  
+      <pubDate>Fri, 21 Jun 2013 17:49:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68312000/jpg/_68312435_68314480.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68312000/jpg/_68312436_68314480.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: People today 'angrier' than ever</title>  
+      <description>Psychologist Dr Sandi Mann explains to 5 live why modern life is making people angrier than ever.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23002796#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23002796</guid>  
+      <pubDate>Fri, 21 Jun 2013 12:26:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68305000/jpg/_68305489_stress.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68305000/jpg/_68305490_stress.jpg"/> 
+    </item>  
+    <item> 
+      <title>AUDIO: CQC 'did not delete report'</title>  
+      <description>Jill Finney, former deputy chief executive of the Care Quality Commission, denies she was not involved in any decision to delete a critical internal review.</description>  
+      <link>http://www.bbc.co.uk/news/uk-23026846#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-23026846</guid>  
+      <pubDate>Mon, 24 Jun 2013 07:36:17 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68337000/jpg/_68337510_68337360.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68337000/jpg/_68337511_68337360.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Hunt: 'Action if CQC cover-up found'</title>  
+      <description>Health Secretary Jeremy Hunt has said there should be "very, very serious consequences" for anyone found guilty of a cover-up at the Care Quality Commission</description>  
+      <link>http://www.bbc.co.uk/news/health-22999064#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-22999064</guid>  
+      <pubDate>Fri, 21 Jun 2013 22:46:49 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/68316000/jpg/_68316963_68296184.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/68316000/jpg/_68316964_68296184.jpg"/> 
+    </item> 
+  </channel> 
+</rss>
