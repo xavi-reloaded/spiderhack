@@ -11,11 +11,17 @@ import com.apiumtech.spider.si.SpiderSiRSS;
  */
 public class runSpider {
 
-    private SpiderSiRSS runner;
-
-    public static void main(String[] args)
+    public static void main()
     {
-        System.out.println("jonny is gayer"+args[0]);
+        try
+        {
+            SpiderSiRSS runner = new SpiderSiRSS();
+            String rssServer = "http://www.foxnews.com/about/rss/";
+            runner.getNewsFromRSSserver(rssServer);
+        }
+        catch (Exception e){
+            System.out.println("Error when running spider: "+e.getMessage());
+        }
     }
 
 
