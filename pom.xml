@@ -72,6 +72,7 @@
                             <attachToBuild>true</attachToBuild>
                             <!-- Optional, default is "onejar" -->
                             <classifier>onejar</classifier>
+                            <filename>spider.jar</filename>
                         </configuration>
                         <goals>
                             <goal>one-jar</goal>
