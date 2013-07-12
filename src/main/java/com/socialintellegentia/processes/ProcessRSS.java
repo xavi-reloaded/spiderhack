@@ -3,9 +3,6 @@ package com.socialintellegentia.processes;
 import com.apiumtech.spider.FileHelper;
 import com.socialintellegentia.commonhelpers.rss.Feed;
 import com.socialintellegentia.commonhelpers.rss.RSSFeedParser;
-import com.socialintellegentia.commonhelpers.rss.RSSFrontEndHelper;
-
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,4 +30,5 @@ public class ProcessRSS {
 
         return feedList;
     }
+
 }
