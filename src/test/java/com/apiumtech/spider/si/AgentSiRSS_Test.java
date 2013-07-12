@@ -50,10 +50,8 @@ public class AgentSiRSS_Test implements SpiderConfig
 
     @Test
     public void test_start_feedRootPage() throws Exception {
-
         String url = "http://feeds.foxnews.com";
         sut.start(url, url);
-
     }
 
     @Test
