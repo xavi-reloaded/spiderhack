@@ -46,6 +46,15 @@ public class ProcessRSSTest {
     }
 
     @Test
+    public void test_getFeedsFromSeedsByPath_validPathWithRealFeeds_feedCorrectlyPopulateMessages() throws Exception
+    {
+        String path = tempFolder.getPath();
+        Feed actual = sut.getFeedsFromSeedsByPath(path).get(23);
+        String expected = "País Vasco // elmundo.es";
+        Assert.assertEquals(actual.getTitle(),expected);
+    }
+
+    @Test
     public void test_getFeedsFromSeedsByPath_validPathWithRealFeeds_seedsAreCorrectlyDeleted() throws Exception
     {
         String path = tempFolder.getPath();

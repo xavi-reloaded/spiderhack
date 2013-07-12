@@ -25,7 +25,6 @@ public class ProcessRSS {
 
         for(String filePath : fileList)
         {
-            System.out.println(filePath);
             String fileString = FileHelper.fileToString(filePath);
             Feed feed = parser.readFeed(fileString);
             feedList.add(feed);
