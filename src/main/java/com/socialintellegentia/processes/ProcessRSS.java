@@ -18,17 +18,18 @@ import java.util.List;
  */
 public class ProcessRSS {
 
-    public List<Feed> getfeedObjectsFromGettedFeedsFiles(String path) throws IOException {
+    public List<Feed> getfeedObjectsFromGettedFeedsFiles(String path) throws Exception {
         List<String> fileList = FileHelper.getFileList(path,"");
         RSSFeedParser parser = new RSSFeedParser();
         List<Feed> feedList = new ArrayList<Feed>();
 
-        for(String filename : fileList)
+        for(String filePath : fileList)
         {
-            System.out.println(filename);
-            String fileString = FileHelper.fileToString(filename);
+            System.out.println(filePath);
+            String fileString = FileHelper.fileToString(filePath);
             Feed feed = parser.readFeed(fileString);
             feedList.add(feed);
+            FileHelper.deleteFile(filePath);
         }
 
         return feedList;

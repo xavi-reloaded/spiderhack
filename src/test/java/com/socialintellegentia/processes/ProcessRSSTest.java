@@ -37,11 +37,22 @@ public class ProcessRSSTest {
     }
 
     @Test
-    public void test_getObjectsFromGettedFeeds_validPathWithRealFeeds_listOfRSSFrontEndHelpersCorrectlyPopulated() throws Exception {
+    public void test_getObjectsFromGettedFeeds_validPathWithRealFeeds_listOfRSSFrontEndHelpersCorrectlyPopulated() throws Exception
+    {
         String path = tempFolder.getPath();
         List<Feed> actual = sut.getfeedObjectsFromGettedFeedsFiles(path);
         int expected = 73;
         Assert.assertEquals(actual.size(),expected);
+    }
+
+    @Test
+    public void test_getObjectsFromGettedFeeds_validPathWithRealFeeds_seedsAreCorrectlyDeleted() throws Exception
+    {
+        String path = tempFolder.getPath();
+        sut.getfeedObjectsFromGettedFeedsFiles(path);
+        List<String> fileList = FileHelper.getFileList(path, "");
+        int expected = 0;
+        Assert.assertEquals(fileList.size(),expected);
     }
 
     private void deleteTempFiles() throws IOException {
@@ -56,6 +67,7 @@ public class ProcessRSSTest {
         {
             FileHelper.copyfile(filename, tempFolder.getPath() + "/" + new File(filename).getName());
         }
+
     }
 
 }
