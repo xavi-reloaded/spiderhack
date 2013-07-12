@@ -1,10 +1,16 @@
 package com.socialintellegentia.processes;
 
+import com.androidxtrem.commonsHelpers.FileHelper;
 import com.socialintellegentia.commonhelpers.rss.Feed;
+import com.socialintellegentia.commonhelpers.rss.RSSFeedParser;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -17,17 +23,41 @@ import java.util.List;
 public class ProcessRSSTest {
 
     private ProcessRSS sut;
+    private File tempFolder;
 
     @BeforeMethod
     public void setUp() throws Exception {
         sut = new ProcessRSS();
+        tempFolder = FileHelper.createTempFolder("spider_temp");
+        setUpTempFiles();
+    }
+
+    @AfterMethod
+    public void tearDown() throws Exception {
+        deleteTempFiles();
+
     }
 
     @Test
     public void test_getObjectsFromGettedFeeds_validPathWithRealFeeds_listOfRSSFrontEndHelpersCorrectlyPopulated() throws Exception {
-        String path = ProcessRSSTest.class.getResource("/SpiderSiRSS/").getPath();
+        String path = tempFolder.getPath();
         List<Feed> actual = sut.getfeedObjectsFromGettedFeedsFiles(path);
         int expected = 73;
         Assert.assertEquals(actual.size(),expected);
     }
+
+    private void deleteTempFiles() throws IOException {
+        FileHelper.recursivelyDeleteFileOrFolder(new File(tempFolder.getPath()));
+    }
+
+    private void setUpTempFiles() throws IOException {
+
+        String path = ProcessRSSTest.class.getResource("/SpiderSiRSS").getPath();
+        List<String> fileList = FileHelper.getFileList(path, "");
+        for(String filename : fileList)
+        {
+            FileHelper.copyfile(filename, tempFolder.getPath() + "/" + new File(filename).getName());
+        }
+    }
+
 }
