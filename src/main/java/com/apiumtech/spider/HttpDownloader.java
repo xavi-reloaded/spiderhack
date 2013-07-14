@@ -1,5 +1,7 @@
 package com.apiumtech.spider;
 
+import com.androidxtrem.commonsHelpers.FileHelper;
+
 import java.io.*;
 import java.net.Proxy;
 import java.net.URL;

@@ -10,6 +10,7 @@ package com.apiumtech.spider;
 public interface SpiderConfig {
 
     String WORKING_FOLDER = "sd_spider";
-    String cacheFolder = "sd_spider/cache";
+    String CACHE_FOLDER = "sd_spider/cache";
+    String LOG_PREFIX = "[socialintellegentia-spider] --> ";
 
 }

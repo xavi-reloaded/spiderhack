@@ -1,11 +1,18 @@
 package com.apiumtech.spider.si;
 
-import com.apiumtech.spider.*;
+import com.androidxtrem.commonsHelpers.FileHelper;
+import com.apiumtech.spider.AnonymousProxyManager;
+import com.apiumtech.spider.HttpDownloader;
+import com.apiumtech.spider.Seed;
+import com.apiumtech.spider.SpiderConfig;
 import com.apiumtech.spider.agent.Agent;
 import com.apiumtech.spider.agent.AgentsManager;
 import com.socialintellegentia.commonhelpers.rss.Feed;
 import com.socialintellegentia.commonhelpers.rss.FrontEndItem;
 import com.socialintellegentia.commonhelpers.rss.RSSFrontEndHelper;
+import org.joda.time.DateTime;
+import org.joda.time.Period;
+import org.joda.time.PeriodType;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -25,7 +32,7 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
 
     public SpiderSiRSS() throws IOException
     {
-        proxyManager = new AnonymousProxyManager(cacheFolder, maxProxyThreads);
+        proxyManager = new AnonymousProxyManager(CACHE_FOLDER, maxProxyThreads);
     }
 
     public void stop()
@@ -48,20 +55,20 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         // Working Folders
         /////////////////////////////////////////////////////////
         FileHelper.createFolder(workingFolder);
-        FileHelper.createFolder(cacheFolder);
+        FileHelper.createFolder(CACHE_FOLDER);
 
         /////////////////////////////////////////////////////////
         // Create Spiders
         /////////////////////////////////////////////////////////
         List<Agent> spiderList = new ArrayList<Agent>();
         for(int i = 0; i < maxSpiderThreads; i++) {
-            spiderList.add(new AgentSiRSS(workingFolder, cacheFolder, Long.MAX_VALUE));
+            spiderList.add(new AgentSiRSS(workingFolder, CACHE_FOLDER, Long.MAX_VALUE));
         }
 
         /////////////////////////////////////////////////////////
         // Create Downloader
         /////////////////////////////////////////////////////////
-        HttpDownloader downloader = new HttpDownloader(cacheFolder, 10 * 24 * 60, 10000, 60000);
+        HttpDownloader downloader = new HttpDownloader(CACHE_FOLDER, 10 * 24 * 60, 10000, 60000);
 
         /////////////////////////////////////////////////////////
         // Add Seeds
@@ -72,23 +79,29 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
 
         if (html!=null)
         {
-          
-         
-            int i = 1;
-            System.out.println("creating front end...");
+            DateTime dtBegin = new DateTime();
+            log.debug(LOG_PREFIX + "Request " + rss_server + " in: " + fmt.print(dtBegin) + "\n");
+
             FrontEndItem frontEndItem = rssFrontEndHelper.getFrontEndItemFromHtml(html);
-            System.out.println("feeds added");
+            log.debug(LOG_PREFIX + "get " + frontEndItem.getFeedList().size() + "feeds from " + rss_server);
+            StringBuilder builder = new StringBuilder("process feeds from" + rss_server +"\n");
             for(Feed feed : frontEndItem.getFeedList())
             {
-                System.out.println("adding seeds... "+i+"/"+frontEndItem.getFeedList().size());
-                addNewSeed(new Seed(feed.getLink(),100));
-                System.out.println("added "+i+"/"+frontEndItem.getFeedList().size());
-                i++;
+                addNewSeed(new Seed(feed.getLink(), 100));
+                builder.append("Added feed " + feed.toString() + "\n");
             }
+            log.debug(LOG_PREFIX + builder.toString());
+
+            DateTime dtEnd = new DateTime();
+            Period totalPeriod = new Period(dtBegin, dtEnd, PeriodType.time());
+            String strTotalTime=  totalPeriod.getHours() + ":" + totalPeriod.getSeconds() + ":" + totalPeriod.getMillis();
+            String lastLog = "[socialintellegentia-spider] --> Request "+ rss_server +" in: " + fmt.print(dtEnd) +  ". Tiempo total: " + strTotalTime;
+
+            log.debug(lastLog);
 
         } else
         {
-            System.out.println("error :"+rss_server);
+            log.warn(LOG_PREFIX + " can not get rss's from " + rss_server);
         }
 
         /////////////////////////////////////////////////////////

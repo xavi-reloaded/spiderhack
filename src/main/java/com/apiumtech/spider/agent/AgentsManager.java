@@ -2,6 +2,10 @@ package com.apiumtech.spider.agent;
 
 import com.apiumtech.spider.AnonymousProxyManager;
 import com.apiumtech.spider.Seed;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
 
 import java.io.IOException;
 import java.net.Proxy;
@@ -10,6 +14,11 @@ import java.util.List;
 
 public class AgentsManager implements Runnable 
 {
+
+    protected Log log = LogFactory.getLog(this.getClass());
+    protected StringBuffer logMessage = new StringBuffer();
+    protected DateTimeFormatter fmt = DateTimeFormat.forPattern("dd-MMMM-yyyy:HH:ss:mm");
+
 	// private int m_milisecondsBetweenQueries = 0;
 	private AnonymousProxyManager m_proxyManager = null;
 	private List<Agent> m_agentList = null;

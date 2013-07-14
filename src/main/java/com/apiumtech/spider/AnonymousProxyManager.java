@@ -1,5 +1,7 @@
 package com.apiumtech.spider;
 
+import com.androidxtrem.commonsHelpers.FileHelper;
+
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.InetSocketAddress;
@@ -124,7 +126,7 @@ public class AnonymousProxyManager implements Runnable,SpiderConfig
 	{
 		HttpDownloader downloader = new HttpDownloader(cacheFolder, 60 * 24, 5000, 10000);
 		String response = downloader.getRequest("http://tools.rosinstrument.com/proxy/?rule2").toString();
-		FileHelper.stringToFile(response, WORKING_FOLDER+"/test.html");
+		FileHelper.stringToFile(response, WORKING_FOLDER + "/test.html");
 		Long modulus = new Long(RegExpHelper.getFirstMatch(response, "Math.sqrt\\(([0-9]+)\\)", 1));
 		String rawProxyList = RegExpHelper.getFirstMatch(response, "hideText\\('([^']*)'\\)", 1);
 		rawProxyList = decodeProxyList_rosinstrumentcom(rawProxyList, modulus);

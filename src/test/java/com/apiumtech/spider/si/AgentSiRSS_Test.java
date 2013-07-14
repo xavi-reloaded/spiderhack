@@ -26,13 +26,13 @@ public class AgentSiRSS_Test implements SpiderConfig
     @BeforeMethod
     public void setUp() throws Exception {
         url = "http://someurl/news/latests";
-        filePath = cacheFolder + "/httpsomeurlnewslatests.html";
+        filePath = CACHE_FOLDER + "/httpsomeurlnewslatests.html";
         prepareCacheFilesUsedOnTest();
-        sut = new AgentSiRSS(WORKING_FOLDER, cacheFolder, Long.MAX_VALUE);
+        sut = new AgentSiRSS(WORKING_FOLDER, CACHE_FOLDER, Long.MAX_VALUE);
     }
 
     private void prepareCacheFilesUsedOnTest() throws Exception {
-
+        FileHelper.createFolder(CACHE_FOLDER);
         FileHelper.stringToFile(DUMMY_RSS_CONTENT,filePath);
     }
 
