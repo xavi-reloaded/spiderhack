@@ -2,6 +2,10 @@ package com.apiumtech.spider.agent;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
 import com.apiumtech.spider.HttpDownloader;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,6 +13,11 @@ import java.util.List;
 
 public abstract class Agent extends HttpDownloader implements Runnable
 {
+
+
+    protected Log log = LogFactory.getLog(this.getClass());
+    protected DateTimeFormatter fmt = DateTimeFormat.forPattern("dd-MMMM-yyyy:HH:ss:mm");
+
 	private String m_workingFolder = "";
 	private String m_seed = "";
 	private String m_url = "";

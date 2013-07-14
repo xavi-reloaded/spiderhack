@@ -31,24 +31,25 @@ public class AgentSiRSS extends Agent
             StringBuffer rawnews = getRequest(url);
             if (!RSSHelper.isXMLRSS(rawnews.toString()))
             {
-                System.out.println("getRequest error: parser has taken a bad rss file (sometimes it happens bro)");
+                log.warn("[AgentSiRSS] --> Not a valid RSS source " + getSeed());
                 return;
             }
 
             if(rawnews == null)
             {
-                System.out.println("Error requesting \"" + url + "\" from \"" + getProxy() + "\"");
+                log.warn("[AgentSiRSS] --> Error requesting \"" + url + "\" from \"" + getProxy() + "\"");
                 setProxy(null);
             }
             else
             {
                 String name = url.replaceAll("[\\\\/:\\*\"\\?<>\\|]", "");
                 saveResult(rawnews, name);
+                log.debug("[AgentSiRSS] --> Save founded seed \"" + name + "\"");
             }
         }
         catch(Exception e)
         {
-            System.out.println("getRequest error: class(" + e.getClass().toString() + "), message(" + e.getMessage() + ")");
+            log.warn("[AgentSiRSS] --> getRequest error: class(" + e.getClass().toString() + "), message(" + e.getMessage() + ")");
             e.printStackTrace();
         }
     }
