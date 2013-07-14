@@ -1,6 +1,6 @@
 package com.apiumtech.spider.agent;
 
-import com.apiumtech.spider.RegExpHelper;
+import com.androidxtrem.commonsHelpers.RegExpHelper;
 
 import java.io.IOException;
 

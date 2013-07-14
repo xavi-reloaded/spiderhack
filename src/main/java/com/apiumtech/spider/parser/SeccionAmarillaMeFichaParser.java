@@ -1,6 +1,5 @@
 package com.apiumtech.spider.parser;
 
-import com.apiumtech.spider.StringHelper;
 import com.apiumtech.spider.domain.DataFicha;
 
 import java.util.regex.Matcher;

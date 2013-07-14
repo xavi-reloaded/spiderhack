@@ -1,6 +1,6 @@
 package com.apiumtech.spider.agent;
 
-import com.apiumtech.spider.FileHelper;
+import com.androidxtrem.commonsHelpers.FileHelper;
 import com.apiumtech.spider.RegExpHelper;
 
 import java.io.IOException;

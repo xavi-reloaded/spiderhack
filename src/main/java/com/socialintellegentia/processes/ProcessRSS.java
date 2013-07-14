@@ -1,8 +1,9 @@
 package com.socialintellegentia.processes;
 
-import com.apiumtech.spider.FileHelper;
+import com.androidxtrem.commonsHelpers.FileHelper;
 import com.socialintellegentia.commonhelpers.rss.Feed;
 import com.socialintellegentia.commonhelpers.rss.RSSFeedParser;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +17,7 @@ import java.util.List;
 public class ProcessRSS {
 
     public List<Feed> getFeedsFromSeedsByPath(String path) throws Exception {
-        List<String> fileList = FileHelper.getFileList(path,"");
+        List<String> fileList = FileHelper.getFileList(path, "");
         RSSFeedParser parser = new RSSFeedParser();
         List<Feed> feedList = new ArrayList<Feed>();
 

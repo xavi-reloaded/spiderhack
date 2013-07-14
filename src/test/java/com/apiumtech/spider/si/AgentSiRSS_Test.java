@@ -1,14 +1,11 @@
 package com.apiumtech.spider.si;
 
-import com.apiumtech.spider.FileHelper;
+import com.androidxtrem.commonsHelpers.FileHelper;
 import com.apiumtech.spider.SpiderConfig;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import java.io.File;
 
 /**
  * Created with IntelliJ IDEA.

@@ -1,6 +1,8 @@
 package com.apiumtech.spider;
 
+import com.androidxtrem.commonsHelpers.FileHelper;
 import junit.framework.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -16,7 +18,16 @@ public class HttpDownloaderTest {
 
     @BeforeMethod
     public void setUp() throws Exception {
+
         sut = new HttpDownloader("/media/DioCane/sd_spider/spidercache_paginasamarillases", 10 * 24 * 60, 10000, 60000);
+        FileHelper.createFolder("sd_spider");
+        FileHelper.createFolder("sd_spider/cache");
+
+    }
+
+    @AfterMethod
+    public void tearDown() throws Exception {
+        FileHelper.recursivelyDeleteFileOrFolder("sd_spider");
 
     }
 

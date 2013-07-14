@@ -3,8 +3,8 @@ package com.apiumtech.spider.agent;
 import com.apiumtech.spider.RegExpHelper;
 import com.apiumtech.spider.StringHelper;
 
-import java.util.List;
 import java.io.IOException;
+import java.util.List;
 
 public class AgentDiarioDeNoticias extends Agent
 {
