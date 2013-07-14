@@ -19,6 +19,7 @@ public class runSpider {
         {
             SpiderSiRSS runner = new SpiderSiRSS();
             String rssServer = "http://www.foxnews.com/about/rss/";
+//            String rssServer = "http://rss.elmundo.es/rss/";
             runner.getNewsFromRSSserver(rssServer);
         }
         catch (Exception e){

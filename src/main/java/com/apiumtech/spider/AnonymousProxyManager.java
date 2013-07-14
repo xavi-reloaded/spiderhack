@@ -168,7 +168,7 @@ public class AnonymousProxyManager implements Runnable,SpiderConfig
 			HttpDownloader downloader = new HttpDownloader(null, -1, 5000, 10000);
 			downloader.setProxy(proxy);
 			String key = "" + Math.random();
-			String response = downloader.getRequest("http://ca.wikipedia.org/w/index.php?title=Especial%3ACerca&search=" + key, -1).toString();
+			String response = downloader.getRequest("http://ca.wikipedia.org/w/index.php?title=Especial%3ACerca&search=" + key, -1, false).toString();
 			if(response != null)
 			{
 				if(response.length() > 0)

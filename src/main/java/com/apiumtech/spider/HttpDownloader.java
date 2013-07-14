@@ -86,10 +86,15 @@ public class HttpDownloader
 
 	public StringBuffer getRequest(String url) throws IOException
 	{
-		return getRequest(url, m_minutesInCache);
+		return getRequest(url, m_minutesInCache, true);
 	}
 
-	public StringBuffer getRequest(String url, long minutesInCache) throws IOException
+    public StringBuffer getRequestXML(String url, long minutesInCache) throws IOException
+    {
+        return getRequest(url, m_minutesInCache, false);
+    }
+
+	public StringBuffer getRequest(String url, long minutesInCache, boolean setRequestProperties) throws IOException
 	{
         StringBuffer sb = new StringBuffer();
 		if(url != null)
@@ -119,8 +124,7 @@ public class HttpDownloader
 						conn.setReadTimeout(m_readTimeout);
 					}
 
-					conn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
-                    conn.setRequestProperty("Referer", "https://mail.google.com/mail/u/0/#inbox");
+                    if (setRequestProperties) setRequestProperties(conn);
 
 					String contentType = conn.getHeaderField("Content-Type").toUpperCase();
 					String charset = RegExpHelper.getFirstMatch(contentType, "CHARSET[ ]*=[ ]*([^ ;]+)", 1);
@@ -166,7 +170,13 @@ public class HttpDownloader
 
 		return sb;
 	}
-	
+
+
+    private void setRequestProperties(URLConnection conn) {
+        conn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
+        conn.setRequestProperty("Referer", "https://mail.google.com/mail/u/0/#inbox");
+    }
+
 	public boolean getRequestBinary(String url, String outputFilePath) throws IOException
 	{
 		boolean r = false;

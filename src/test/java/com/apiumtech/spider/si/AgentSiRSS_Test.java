@@ -65,4 +65,12 @@ public class AgentSiRSS_Test implements SpiderConfig
         Assert.assertEquals(actual.toString(),expected);
 
     }
+
+    @Test
+    public void test_getRequestXML_fonewsRSS_() throws Exception {
+        StringBuffer actual = sut.getRequestXML("http://feeds.foxnews.com/foxnews/most-popular",-1);
+        String expected = "<asdf";
+        Assert.assertTrue(actual.toString().startsWith(expected),actual.toString());
+
+    }
 }

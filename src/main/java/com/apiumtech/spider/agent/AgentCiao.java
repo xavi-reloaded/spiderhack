@@ -91,7 +91,7 @@ public class AgentCiao implements Runnable
 		try
 		{
 			m_newLinks.clear();
-			String response = m_downloader.getRequest(m_link, m_minutesInCache).toString();
+			String response = m_downloader.getRequest(m_link, m_minutesInCache, false).toString();
 			if(response == null)
 			{
 				System.out.println("Error requesting \"" + m_link + "\" from \"" + m_downloader.getProxy() + "\"");

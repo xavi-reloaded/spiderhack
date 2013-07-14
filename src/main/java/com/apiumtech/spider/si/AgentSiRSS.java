@@ -16,8 +16,11 @@ public class AgentSiRSS extends Agent
 {
 
 
+    private long minutesInCache;
+
     public AgentSiRSS(String workingFolder, String cacheFolder, long minutesInCache) throws IOException, InterruptedException {
         super(workingFolder, cacheFolder, minutesInCache);
+        this.minutesInCache = minutesInCache;
     }
 
     @Override
@@ -28,7 +31,7 @@ public class AgentSiRSS extends Agent
         {
             clearNewLinks();
             String url = getUrl();
-            StringBuffer rawnews = getRequest(url);
+            StringBuffer rawnews = getRequestXML(url, minutesInCache);
             if (!RSSHelper.isXMLRSS(rawnews.toString()))
             {
                 log.warn("[AgentSiRSS] --> Not a valid RSS source " + getSeed());
@@ -44,7 +47,7 @@ public class AgentSiRSS extends Agent
             {
                 String name = url.replaceAll("[\\\\/:\\*\"\\?<>\\|]", "");
                 saveResult(rawnews, name);
-                log.debug("[AgentSiRSS] --> Save founded seed \"" + name + "\"");
+                log.info("[AgentSiRSS] --> Save founded seed \"" + name + "\"");
             }
         }
         catch(Exception e)
