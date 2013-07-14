@@ -2,6 +2,9 @@ package com.apiumtech.spider.si;
 
 import com.apiumtech.spider.agent.Agent;
 import com.socialintellegentia.commonhelpers.rss.RSSHelper;
+import org.joda.time.DateTime;
+import org.joda.time.Period;
+import org.joda.time.PeriodType;
 
 import java.io.IOException;
 
@@ -27,8 +30,12 @@ public class AgentSiRSS extends Agent
 
     public void run()
     {
+
+
         try
         {
+
+
             clearNewLinks();
             String url = getUrl();
             StringBuffer rawnews = getRequestXML(url, minutesInCache);
@@ -55,6 +62,8 @@ public class AgentSiRSS extends Agent
             log.warn("[AgentSiRSS] --> getRequest error: class(" + e.getClass().toString() + "), message(" + e.getMessage() + ")");
             e.printStackTrace();
         }
+
+
     }
 
 }

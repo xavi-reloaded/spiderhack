@@ -107,10 +107,19 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         /////////////////////////////////////////////////////////
         // Start Agents
         /////////////////////////////////////////////////////////
+        DateTime dtBegin = new DateTime();
+        log.debug("[AgentSiRSS] --> Request " + rss_server + " in: " + fmt.print(dtBegin) + "\n");
+
         startAgentsManager(milisecondsBetweenQueries, proxyManager, spiderList);
         while(getSeedCount() > 0) Thread.sleep(50);
         stopAgentsManager();
         proxyManager.stop();
+
+        DateTime dtEnd = new DateTime();
+        Period totalPeriod = new Period(dtBegin, dtEnd, PeriodType.time());
+        String strTotalTime=  totalPeriod.getHours() + ":" + totalPeriod.getSeconds() + ":" + totalPeriod.getMillis();
+        String lastLog = "[AgentSiRSS] --> Request "+ rss_server +" in: " + fmt.print(dtEnd) +  ". Tiempo total: " + strTotalTime;
+        log.debug(lastLog);
     }
 
 
