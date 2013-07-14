@@ -64,7 +64,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.socialintellegentia.entryPoints.runSpider</mainClass>
+                            <mainClass>com.socialintellegentia.entryPoints.spider</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

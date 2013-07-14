@@ -2,6 +2,7 @@ package com.socialintellegentia.processes;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
 import com.socialintellegentia.commonhelpers.rss.Feed;
+import com.socialintellegentia.commonhelpers.rss.FeedMessage;
 import com.socialintellegentia.commonhelpers.rss.RSSFeedParser;
 
 import java.util.ArrayList;
@@ -31,5 +32,17 @@ public class ProcessRSS {
 
         return feedList;
     }
+
+    public String loadFeedInServer(Feed feed) {
+        List<FeedMessage> feedMessages = feed.getMessages();
+
+        for(FeedMessage feedMessage : feedMessages)
+        {
+            System.out.println(feedMessage.toString());
+        }
+
+        return null;  //To change body of created methods use File | Settings | File Templates.
+    }
+
 
 }

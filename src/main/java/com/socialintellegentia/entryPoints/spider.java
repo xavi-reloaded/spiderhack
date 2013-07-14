@@ -9,7 +9,7 @@ import com.apiumtech.spider.si.SpiderSiRSS;
  * Time: 17:33
  * To change this template use File | Settings | File Templates.
  */
-public class runSpider {
+public class spider {
 
 
 
@@ -18,9 +18,11 @@ public class runSpider {
         try
         {
             SpiderSiRSS runner = new SpiderSiRSS();
-            String rssServer = "http://www.foxnews.com/about/rss/";
-//            String rssServer = "http://rss.elmundo.es/rss/";
-            runner.getNewsFromRSSserver(rssServer);
+
+            runner.getNewsFromRSSserver("http://news.bbc.co.uk/2/hi/help/rss/");
+            runner.getNewsFromRSSserver("http://www.foxnews.com/about/rss/");
+            runner.getNewsFromRSSserver("http://rss.elmundo.es/rss/");
+
         }
         catch (Exception e){
             System.out.println("Error when running spider: " + e.getMessage());

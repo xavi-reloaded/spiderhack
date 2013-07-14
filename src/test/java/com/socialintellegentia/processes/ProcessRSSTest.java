@@ -22,11 +22,13 @@ public class ProcessRSSTest {
 
     private ProcessRSS sut;
     private File tempFolder;
+    private String path;
 
     @BeforeMethod
     public void setUp() throws Exception {
         sut = new ProcessRSS();
         tempFolder = FileHelper.createTempFolder("spider_temp");
+        path = tempFolder.getPath();
         setUpTempFiles();
     }
 
@@ -37,9 +39,18 @@ public class ProcessRSSTest {
     }
 
     @Test
+    public void test_loadFeedInServer_() throws Exception {
+        Feed feed = sut.getFeedsFromSeedsByPath(path).get(23);
+        String serverResponse = sut.loadFeedInServer(feed);
+
+        String expected = "adfs";
+        Assert.assertEquals(serverResponse,expected);
+
+    }
+
+    @Test
     public void test_getFeedsFromSeedsByPath_validPathWithRealFeeds_listOfRSSFrontEndHelpersCorrectlyPopulated() throws Exception
     {
-        String path = tempFolder.getPath();
         List<Feed> actual = sut.getFeedsFromSeedsByPath(path);
         int expected = 73;
         Assert.assertEquals(actual.size(),expected);
@@ -48,7 +59,6 @@ public class ProcessRSSTest {
     @Test
     public void test_getFeedsFromSeedsByPath_validPathWithRealFeeds_feedCorrectlyPopulateMessages() throws Exception
     {
-        String path = tempFolder.getPath();
         Feed actual = sut.getFeedsFromSeedsByPath(path).get(23);
         Assert.assertTrue(!actual.getTitle().isEmpty());
     }
@@ -56,7 +66,7 @@ public class ProcessRSSTest {
     @Test
     public void test_getFeedsFromSeedsByPath_validPathWithRealFeeds_seedsAreCorrectlyDeleted() throws Exception
     {
-        String path = tempFolder.getPath();
+
         sut.getFeedsFromSeedsByPath(path);
         List<String> fileList = FileHelper.getFileList(path, "");
         int expected = 0;
