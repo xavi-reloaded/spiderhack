@@ -23,14 +23,23 @@ public class spider {
         try
         {
             SpiderSiRSS runner = new SpiderSiRSS();
+            runner.getNewsFromRSSserver("http://www.rtve.es/rss/");
+            runner.stop();
 
-//            runner.getNewsFromRSSserver("http://news.bbc.co.uk/2/hi/help/rss/");
 //            runner.getNewsFromRSSserver("http://www.foxnews.com/about/rss/");
-            runner.getNewsFromRSSserver("http://rss.elmundo.es/rss/");
+//            runner.stop();
+//
+//            runner.getNewsFromRSSserver("http://rss.elmundo.es/rss/");
+//            runner.stop();
+
+
+
 
             String workingFolder = runner.getWorkingFolder();
 
-            ProcessRSS process = new ProcessRSS();
+            boolean keepCacheFiles = false;
+            ProcessRSS process = new ProcessRSS(keepCacheFiles);
+//            String workingFolder = "sd_spider/spider/SpiderSiRSS";
             List<Feed> feeds = process.getFeedsFromSeedsByPath(workingFolder);
 
             for (Feed feed : feeds) {

@@ -43,8 +43,8 @@ public class ProcessRSSTest {
         Feed feed = sut.getFeedsFromSeedsByPath(path).get(23);
         String serverResponse = sut.loadFeedInServer(feed);
 
-        String expected = "adfs";
-        Assert.assertEquals(serverResponse,expected);
+        String expected = "{\"feeds\":";
+        Assert.assertTrue(serverResponse.startsWith(expected));
 
     }
 

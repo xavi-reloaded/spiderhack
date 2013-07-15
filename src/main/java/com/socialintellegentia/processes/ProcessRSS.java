@@ -26,8 +26,18 @@ import java.util.List;
 public class ProcessRSS {
 
     private static final String TOKEN = "9gLa3sIY2KR3G4YCBX7Qppi6zGvYOD0cAxzU2cnzb9o5YvxV4GGquD%252B4yCSnWp9o5ZQyi630NIyWt";
+    private boolean keepCacheFiles = false;
     protected Log log = LogFactory.getLog(this.getClass());
     protected DateTimeFormatter fmt = DateTimeFormat.forPattern("dd-MMMM-yyyy:HH:ss:mm");
+    private SocialIntellegentiaAPI siAPI = new SocialIntellegentiaAPI(true);
+
+    public ProcessRSS() {
+
+    }
+
+    public ProcessRSS(boolean keepCacheFiles) {
+        this.keepCacheFiles = keepCacheFiles;
+    }
 
     public List<Feed> getFeedsFromSeedsByPath(String path) throws Exception {
         List<String> fileList = FileHelper.getFileList(path, "");
@@ -39,7 +49,7 @@ public class ProcessRSS {
             String fileString = FileHelper.fileToString(filePath);
             Feed feed = parser.readFeed(fileString);
             feedList.add(feed);
-            FileHelper.deleteFile(filePath);
+            if (!keepCacheFiles) FileHelper.deleteFile(filePath);
         }
 
         return feedList;
@@ -51,9 +61,10 @@ public class ProcessRSS {
         DateTime dtBegin = new DateTime();
         log.debug("[ProcessRSS] --> Inject into server " + feed.getTitle() + " in: " + fmt.print(dtBegin));
 
-        SocialIntellegentiaAPI siAPI = new SocialIntellegentiaAPI();
-        String addFeed = siAPI.newsFeedService_addFeed(TOKEN, feed);
 
+        String addFeed = siAPI.newsFeedService_addFeed(TOKEN, feed);
+        log.debug("[ProcessRSS] --> Server response: [" + addFeed + "]");
+        log.debug("[ProcessRSS] --> With : [" + feed.toJson() + "]");
         DateTime dtEnd = new DateTime();
         Period totalPeriod = new Period(dtBegin, dtEnd, PeriodType.time());
         String strTotalTime=  totalPeriod.getHours() + ":" + totalPeriod.getSeconds() + ":" + totalPeriod.getMillis();

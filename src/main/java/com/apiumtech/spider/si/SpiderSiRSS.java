@@ -74,7 +74,7 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         /////////////////////////////////////////////////////////
         StringBuffer html = downloader.getRequest(rss_server);
 
-        RSSFrontEndHelper rssFrontEndHelper = new RSSFrontEndHelper();
+        RSSFrontEndHelper rssFrontEndHelper = new RSSFrontEndHelper(rss_server);
 
         if (html!=null)
         {
@@ -82,7 +82,7 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
             log.debug(LOG_PREFIX + "Request " + rss_server + " in: " + fmt.print(dtBegin) + "\n");
 
             FrontEndItem frontEndItem = rssFrontEndHelper.getFrontEndItemFromHtml(html);
-            log.debug(LOG_PREFIX + "get [" + frontEndItem.getFeedList().size() + "] feeds from " + rss_server);
+            log.debug(LOG_PREFIX + "got [" + frontEndItem.getFeedList().size() + "] feeds from " + rss_server);
             StringBuilder builder = new StringBuilder("process feeds from" + rss_server +"\n");
             for(Feed feed : frontEndItem.getFeedList())
             {
