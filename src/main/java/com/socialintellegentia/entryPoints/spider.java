@@ -32,19 +32,8 @@ public class spider {
 //            runner.getNewsFromRSSserver("http://rss.elmundo.es/rss/");
 //            runner.stop();
 
-
-
-
-            String workingFolder = runner.getWorkingFolder();
-
-            boolean keepCacheFiles = false;
-            ProcessRSS process = new ProcessRSS(keepCacheFiles);
-//            String workingFolder = "sd_spider/spider/SpiderSiRSS";
-            List<Feed> feeds = process.getFeedsFromSeedsByPath(workingFolder);
-
-            for (Feed feed : feeds) {
-                process.loadFeedInServer(feed);
-            }
+            ProcessRSS processRSS = new ProcessRSS();
+            processRSS.processRSSfromWorkingDirectory(runner.getWorkingFolder());
 
 
 
@@ -54,6 +43,7 @@ public class spider {
 
         }
     }
+
 
 
 

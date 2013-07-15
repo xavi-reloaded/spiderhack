@@ -39,6 +39,24 @@ public class ProcessRSS {
         this.keepCacheFiles = keepCacheFiles;
     }
 
+    public void processRSSfromWorkingDirectory(String workingFolder) throws Exception {
+
+        DateTime dtBegin = new DateTime();
+        log.debug("[ProcessRSS] --> Begin process injection in " + workingFolder + " in: " + fmt.print(dtBegin));
+
+        List<Feed> feeds = getFeedsFromSeedsByPath(workingFolder);
+        log.debug("[ProcessRSS] --> Catch process injection with: [" + feeds.size() + "] Feeds");
+        for (Feed feed : feeds) {
+            loadFeedInServer(feed);
+        }
+
+        DateTime dtEnd = new DateTime();
+        Period totalPeriod = new Period(dtBegin, dtEnd, PeriodType.time());
+        String strTotalTime=  totalPeriod.getHours() + ":" + totalPeriod.getSeconds() + ":" + totalPeriod.getMillis();
+        log.debug("[ProcessRSS] --> Finish process injection in " + workingFolder + " in: " + fmt.print(dtEnd) +  ". Time: " + strTotalTime + "\n");
+
+    }
+
     public List<Feed> getFeedsFromSeedsByPath(String path) throws Exception {
         List<String> fileList = FileHelper.getFileList(path, "");
         RSSFeedParser parser = new RSSFeedParser();
@@ -63,14 +81,13 @@ public class ProcessRSS {
 
 
         String addFeed = siAPI.newsFeedService_addFeed(TOKEN, feed);
+
         log.debug("[ProcessRSS] --> Server response: [" + addFeed + "]");
         log.debug("[ProcessRSS] --> With : [" + feed.toJson() + "]");
         DateTime dtEnd = new DateTime();
         Period totalPeriod = new Period(dtBegin, dtEnd, PeriodType.time());
         String strTotalTime=  totalPeriod.getHours() + ":" + totalPeriod.getSeconds() + ":" + totalPeriod.getMillis();
-        String lastLog = "[ProcessRSS] --> Finish injection "+ feed.getTitle() +" in: " + fmt.print(dtEnd) +  ". Time: " + strTotalTime + "\n";
-
-        log.debug(lastLog);
+        log.debug("[ProcessRSS] --> Finish injection "+ feed.getTitle() +" in: " + fmt.print(dtEnd) +  ". Time: " + strTotalTime + "\n");
 
         return addFeed;
     }
