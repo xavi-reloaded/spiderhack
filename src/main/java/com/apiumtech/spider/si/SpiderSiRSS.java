@@ -46,8 +46,7 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         /////////////////////////////////////////////////////////
         // Parameters
         /////////////////////////////////////////////////////////
-        String jobName = "SpiderSiRSS";
-        String workingFolder = WORKING_FOLDER + "/spider/" + jobName;
+        String workingFolder = getWorkingFolder();
         int maxSpiderThreads = 20;
         int milisecondsBetweenQueries = 1000;
 
@@ -122,7 +121,10 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         log.debug(lastLog);
     }
 
-
+    public String getWorkingFolder() {
+        String jobName = "SpiderSiRSS";
+        return WORKING_FOLDER + "/spider/" + jobName;
+    }
 
 
 }

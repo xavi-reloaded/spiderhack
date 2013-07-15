@@ -38,7 +38,7 @@ public class ProcessRSSTest {
 
     }
 
-    @Test(enabled = false )
+    @Test
     public void test_loadFeedInServer_() throws Exception {
         Feed feed = sut.getFeedsFromSeedsByPath(path).get(23);
         String serverResponse = sut.loadFeedInServer(feed);
