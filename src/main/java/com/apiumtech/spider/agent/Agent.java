@@ -15,7 +15,7 @@ public abstract class Agent extends HttpDownloader implements Runnable
 {
 
 
-    protected Log log = LogFactory.getLog(this.getClass());
+    protected Log log = LogFactory.getLog(Agent.class);
     protected DateTimeFormatter fmt = DateTimeFormat.forPattern("dd-MMMM-yyyy:HH:ss:mm");
 
 	private String m_workingFolder = "";

@@ -1,8 +1,10 @@
 package com.socialintellegentia.entryPoints;
 
+import com.androidxtrem.commonsHelpers.FileHelper;
 import com.apiumtech.spider.si.SpiderSiRSS;
 import com.socialintellegentia.commonhelpers.rss.Feed;
 import com.socialintellegentia.processes.ProcessRSS;
+import com.socialintellegentia.util.JsonHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,34 +19,49 @@ import java.util.List;
 public class spider {
 
 
-
     public static void main(String[] args)
     {
+
+        if (args.length<1) {
+            printUsage();
+            return;
+        }
+        String sourceFile = args[0];
+
         try
         {
-            SpiderSiRSS runner = new SpiderSiRSS();
-            runner.getNewsFromRSSserver("http://www.rtve.es/rss/");
-            runner.stop();
 
-//            runner.getNewsFromRSSserver("http://www.foxnews.com/about/rss/");
-//            runner.stop();
-//
-//            runner.getNewsFromRSSserver("http://rss.elmundo.es/rss/");
-//            runner.stop();
+            String rssSourcesJson = FileHelper.fileToString(sourceFile);
 
             ProcessRSS processRSS = new ProcessRSS();
-            processRSS.processRSSfromWorkingDirectory(runner.getWorkingFolder());
+            List<String> rssSources = JsonHelper.getRssSourcesFromJson(rssSourcesJson);
 
-
+            for (String rssSource : rssSources) {
+                SpiderSiRSS runner = new SpiderSiRSS();
+                runner.getNewsFromRSSserver(rssSource);
+                runner.stop();
+                String workingFolder = runner.getWorkingFolder();
+                processRSS.processRSSfromWorkingDirectory(workingFolder);
+            }
 
         }
         catch (Exception e){
-            System.out.println("Error when running spider: " + e.getMessage());
+            System.out.println("Error when running spider: ["+e.getMessage()+"]");
+            e.printStackTrace();
 
         }
     }
 
-
+    private static void printUsage() {
+        System.out.println("Usage:\n" +
+                " java -jar spider.jar [options] start a spider job\n" +
+                "\n" +
+                "Options:\n" +
+                " -k                           keep cache files\n" +
+                " -w[working directory]        change working directory\n" +
+                " -c                           config file\n" +
+                " -t                           publish to test server\n");
+    }
 
 
 }

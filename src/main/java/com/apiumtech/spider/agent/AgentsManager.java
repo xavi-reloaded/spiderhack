@@ -15,7 +15,7 @@ import java.util.List;
 public class AgentsManager implements Runnable 
 {
 
-    protected Log log = LogFactory.getLog(this.getClass());
+    protected Log log = LogFactory.getLog(AgentsManager.class);
     protected DateTimeFormatter fmt = DateTimeFormat.forPattern("dd-MMMM-yyyy:HH:ss:mm");
 
 	// private int m_milisecondsBetweenQueries = 0;

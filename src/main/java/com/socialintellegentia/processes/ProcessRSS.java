@@ -27,9 +27,9 @@ public class ProcessRSS {
 
     private static final String TOKEN = "9gLa3sIY2KR3G4YCBX7Qppi6zGvYOD0cAxzU2cnzb9o5YvxV4GGquD%252B4yCSnWp9o5ZQyi630NIyWt";
     private boolean keepCacheFiles = false;
-    protected Log log = LogFactory.getLog(this.getClass());
+    protected Log log = LogFactory.getLog(ProcessRSS.class);
     protected DateTimeFormatter fmt = DateTimeFormat.forPattern("dd-MMMM-yyyy:HH:ss:mm");
-    private SocialIntellegentiaAPI siAPI = new SocialIntellegentiaAPI(true);
+    private SocialIntellegentiaAPI siAPI = new SocialIntellegentiaAPI();
 
     public ProcessRSS() {
 
@@ -75,9 +75,14 @@ public class ProcessRSS {
 
     public String loadFeedInServer(Feed feed) throws Exception {
 
+        if (feed==null) {
+            log.error("[ProcessRSS] --> Feed is null ");
+            return "";
+        }
 
         DateTime dtBegin = new DateTime();
-        log.debug("[ProcessRSS] --> Inject into server " + feed.getTitle() + " in: " + fmt.print(dtBegin));
+        String title = feed.getTitle();
+        log.debug("[ProcessRSS] --> Inject into server " + title + " in: " + fmt.print(dtBegin));
 
 
         String addFeed = siAPI.newsFeedService_addFeed(TOKEN, feed);
@@ -87,7 +92,7 @@ public class ProcessRSS {
         DateTime dtEnd = new DateTime();
         Period totalPeriod = new Period(dtBegin, dtEnd, PeriodType.time());
         String strTotalTime=  totalPeriod.getHours() + ":" + totalPeriod.getSeconds() + ":" + totalPeriod.getMillis();
-        log.debug("[ProcessRSS] --> Finish injection "+ feed.getTitle() +" in: " + fmt.print(dtEnd) +  ". Time: " + strTotalTime + "\n");
+        log.debug("[ProcessRSS] --> Finish injection "+ addFeed +" in: " + fmt.print(dtEnd) +  ". Time: " + strTotalTime + "\n");
 
         return addFeed;
     }
