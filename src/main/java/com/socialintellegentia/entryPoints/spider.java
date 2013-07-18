@@ -1,12 +1,10 @@
 package com.socialintellegentia.entryPoints;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
-import com.apiumtech.spider.si.SpiderSiRSS;
-import com.socialintellegentia.commonhelpers.rss.Feed;
+import com.androidxtrem.spider.si.SpiderSiRSS;
 import com.socialintellegentia.processes.ProcessRSS;
 import com.socialintellegentia.util.JsonHelper;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
