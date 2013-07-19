@@ -1,6 +1,7 @@
 package com.socialintellegentia.processes;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
+import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
 import com.socialintellegentia.commonhelpers.restclient.SocialIntellegentiaAPI;
 import com.socialintellegentia.commonhelpers.rss.Feed;
 import com.socialintellegentia.commonhelpers.rss.FeedMessage;
@@ -30,6 +31,7 @@ public class ProcessRSS {
     protected Log log = LogFactory.getLog(ProcessRSS.class);
     protected DateTimeFormatter fmt = DateTimeFormat.forPattern("dd-MMMM-yyyy:HH:ss:mm");
     private SocialIntellegentiaAPI siAPI = new SocialIntellegentiaAPI();
+    private SpiderPersistence spiderPersistence = new SpiderPersistence();
 
     public ProcessRSS() {
         init(false);
@@ -51,6 +53,7 @@ public class ProcessRSS {
         List<Feed> feeds = getFeedsFromSeedsByPath(workingFolder);
         log.debug("[ProcessRSS] --> Catch process injection with: [" + feeds.size() + "] Feeds");
         for (Feed feed : feeds) {
+            spiderPersistence.saveFeed(feed);
             loadFeedInServer(feed);
         }
 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.socialintellegentia.commonhelpers.rss">
+
+    <class name="Feed" table="feed">
+        <id name="id" column="ID">
+            <generator class="native"/>
+        </id>
+        <property name="title" type="text"/>
+        <property name="link"  type="text"/>
+        <property name="description"  type="text"/>
+        <property name="language"  />
+        <property name="copyright" type="text"/>
+        <property name="pubDateDate" type="date" column="pubDate"/>
+        <property name="author" type="text"/>
+
+    </class>
+
+</hibernate-mapping>
