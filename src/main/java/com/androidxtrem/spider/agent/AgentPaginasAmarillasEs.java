@@ -66,7 +66,7 @@ public class AgentPaginasAmarillasEs extends Agent
                     }
                 }
 
-                // save results
+                // saveFeed results
                 for(int i = 0; i < faxes.size(); i++)
                 {
                     String fax = faxes.get(i);
@@ -76,7 +76,7 @@ public class AgentPaginasAmarillasEs extends Agent
                     String filename = url.replaceAll("^([^/]+//[^/]+)/.*$", "$1").replaceAll("[:\\./]", "_") + "_fax" + fax.replaceAll("[^0-9]", "") + ".txt";
                     // data: "url[]\nfax[]"
                     String data = "url[" + url + "]\nfax[" + fax + "]";
-                    // save
+                    // saveFeed
                     saveResult(data, filename);
                     // mark
                     numberOfFaxes++;
