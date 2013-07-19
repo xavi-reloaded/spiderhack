@@ -9,11 +9,13 @@
         <id name="id" column="ID">
             <generator class="native"/>
         </id>
+        <property name="parentId"/>
         <property name="title" type="text"/>
         <property name="link"  type="text"/>
         <property name="description"  type="text"/>
         <property name="guid" type="text" />
-        <property name="pubDateDate" type="date" column="pubDate"/>
+        <property name="pubDateDate" type="timestamp"/>
+        <property name="pubDate"/>
         <property name="author"/>
 
     </class>
