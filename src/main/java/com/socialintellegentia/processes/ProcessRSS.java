@@ -32,10 +32,14 @@ public class ProcessRSS {
     private SocialIntellegentiaAPI siAPI = new SocialIntellegentiaAPI();
 
     public ProcessRSS() {
-
+        init(false);
     }
 
     public ProcessRSS(boolean keepCacheFiles) {
+        init(keepCacheFiles);
+    }
+
+    private void init(boolean keepCacheFiles) {
         this.keepCacheFiles = keepCacheFiles;
     }
 

@@ -24,7 +24,6 @@ public class AgentSiRSS extends Agent
     }
 
     @Override
-
     public void run()
     {
 
