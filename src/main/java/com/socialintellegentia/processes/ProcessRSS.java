@@ -52,9 +52,14 @@ public class ProcessRSS {
 
         List<Feed> feeds = getFeedsFromSeedsByPath(workingFolder);
         log.debug("[ProcessRSS] --> Catch process injection with: [" + feeds.size() + "] Feeds");
+
         for (Feed feed : feeds) {
-            spiderPersistence.saveFeed(feed);
-            loadFeedInServer(feed);
+            feed = spiderPersistence.deleteExistingFeedMessagesFromFeed(feed);
+            if (!feed.getFeedMessages().isEmpty())
+            {
+                spiderPersistence.saveFeed(feed);
+                loadFeedInServer(feed);
+            }
         }
 
         DateTime dtEnd = new DateTime();

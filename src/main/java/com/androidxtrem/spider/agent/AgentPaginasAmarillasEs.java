@@ -34,7 +34,7 @@ public class AgentPaginasAmarillasEs extends Agent
                 // fax list
                 List<String> faxes = new ArrayList<String>();
 
-                // normalize html
+                // getNormalizedMessage html
                 //html = html.toLowerCase();
                 html = StringHelper.unescapeHTML(html);
 
