@@ -7,9 +7,11 @@ import com.androidxtrem.spider.Seed;
 import com.androidxtrem.spider.SpiderConfig;
 import com.androidxtrem.spider.agent.Agent;
 import com.androidxtrem.spider.agent.AgentsManager;
+import com.socialintellegentia.commonhelpers.logger.LoggerHelper;
 import com.socialintellegentia.commonhelpers.rss.Feed;
 import com.socialintellegentia.commonhelpers.rss.FrontEndItem;
 import com.socialintellegentia.commonhelpers.rss.RSSFrontEndHelper;
+import com.socialintellegentia.commonhelpers.rss.RSSHelper;
 import org.joda.time.DateTime;
 import org.joda.time.Period;
 import org.joda.time.PeriodType;
@@ -74,10 +76,20 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         /////////////////////////////////////////////////////////
         StringBuffer html = downloader.getRequest(rss_server);
 
-        RSSFrontEndHelper rssFrontEndHelper = new RSSFrontEndHelper(rss_server);
-
-        if (html!=null)
+        if (html==null)
         {
+            log.warn(LOG_PREFIX + " can not get rss's from " + rss_server);
+            return;
+        }
+
+        if (RSSHelper.isXMLRSS(html.toString()))
+        {
+            addNewSeed(new Seed(rss_server, 100));
+//            builder.append("Added feed " + feed.toString() + "\n");
+        }
+        else
+        {
+            RSSFrontEndHelper rssFrontEndHelper = new RSSFrontEndHelper(rss_server);
             DateTime dtBegin = new DateTime();
             log.debug(LOG_PREFIX + "Request " + rss_server + " in: " + fmt.print(dtBegin) + "\n");
 
@@ -91,17 +103,12 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
             }
             log.debug(LOG_PREFIX + builder.toString());
 
-            DateTime dtEnd = new DateTime();
-            Period totalPeriod = new Period(dtBegin, dtEnd, PeriodType.time());
-            String strTotalTime=  totalPeriod.getHours() + ":" + totalPeriod.getSeconds() + ":" + totalPeriod.getMillis();
-            String lastLog = "[socialintellegentia-spider] --> Request "+ rss_server +" in: " + fmt.print(dtEnd) +  ". Tiempo total: " + strTotalTime;
+            String tag = "[socialintellegentia-spider] --> Request " + rss_server ;
+            LoggerHelper.writeTimmingToLog(dtBegin, tag);
 
-            log.debug(lastLog);
-
-        } else
-        {
-            log.warn(LOG_PREFIX + " can not get rss's from " + rss_server);
         }
+
+
 
         /////////////////////////////////////////////////////////
         // Start Agents
@@ -114,11 +121,8 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         stopAgentsManager();
         proxyManager.stop();
 
-        DateTime dtEnd = new DateTime();
-        Period totalPeriod = new Period(dtBegin, dtEnd, PeriodType.time());
-        String strTotalTime=  totalPeriod.getHours() + ":" + totalPeriod.getSeconds() + ":" + totalPeriod.getMillis();
-        String lastLog = "[AgentSiRSS] --> Request "+ rss_server +" in: " + fmt.print(dtEnd) +  ". Tiempo total: " + strTotalTime;
-        log.debug(lastLog);
+        String tag = "[AgentSiRSS] --> Request " + rss_server ;
+        LoggerHelper.writeTimmingToLog(dtBegin, tag);
     }
 
     public String getWorkingFolder() {

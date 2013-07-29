@@ -28,8 +28,10 @@ public class spider {
 
         try
         {
-
-            String rssSourcesJson = FileHelper.fileToString(sourceFile);
+            boolean fileExists = FileHelper.fileExists(sourceFile);
+            String rssSourcesJson = (fileExists)
+                        ? FileHelper.fileToString(sourceFile)
+                            : "[{\"source\":\""+sourceFile+"\"}]";
 
             ProcessRSS processRSS = new ProcessRSS();
             List<String> rssSources = JsonHelper.getRssSourcesFromJson(rssSourcesJson);
@@ -41,7 +43,6 @@ public class spider {
                 String workingFolder = runner.getWorkingFolder();
                 processRSS.processRSSfromWorkingDirectory(workingFolder);
             }
-
         }
         catch (Exception e){
             System.out.println("Error when running spider: ["+e.getMessage()+"]");
