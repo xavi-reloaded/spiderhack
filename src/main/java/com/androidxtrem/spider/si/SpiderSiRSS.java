@@ -7,6 +7,7 @@ import com.androidxtrem.spider.Seed;
 import com.androidxtrem.spider.SpiderConfig;
 import com.androidxtrem.spider.agent.Agent;
 import com.androidxtrem.spider.agent.AgentsManager;
+import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
 import com.socialintellegentia.commonhelpers.logger.LoggerHelper;
 import com.socialintellegentia.commonhelpers.rss.Feed;
 import com.socialintellegentia.commonhelpers.rss.FrontEndItem;
@@ -79,6 +80,8 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         if (html==null)
         {
             log.warn(LOG_PREFIX + " can not get rss's from " + rss_server);
+            SpiderPersistence pers = new SpiderPersistence();
+            pers.saveUrlToBlackList(rss_server);
             return;
         }
 

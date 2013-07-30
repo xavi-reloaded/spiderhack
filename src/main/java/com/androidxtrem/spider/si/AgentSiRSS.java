@@ -1,6 +1,7 @@
 package com.androidxtrem.spider.si;
 
 import com.androidxtrem.spider.agent.Agent;
+import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
 import com.socialintellegentia.commonhelpers.rss.RSSHelper;
 
 import java.io.IOException;
@@ -27,6 +28,7 @@ public class AgentSiRSS extends Agent
     public void run()
     {
 
+        SpiderPersistence pers = new SpiderPersistence();
 
         try
         {
@@ -37,13 +39,17 @@ public class AgentSiRSS extends Agent
             StringBuffer rawnews = getRequestXML(url, minutesInCache);
             if (!RSSHelper.isXMLRSS(rawnews.toString()))
             {
-                log.warn("[AgentSiRSS] --> Not a valid RSS source " + getSeed());
+                String infoMessage = "[AgentSiRSS] --> Not a valid RSS source " + getSeed();
+                log.warn(infoMessage);
+                pers.saveUrlToBlackList(getSeed(),infoMessage);
                 return;
             }
 
             if(rawnews == null)
             {
-                log.warn("[AgentSiRSS] --> Error requesting \"" + url + "\" from \"" + getProxy() + "\"");
+                String infoMessage = "[AgentSiRSS] --> Error requesting \"" + url + "\" from \"" + getProxy() + "\"";
+                log.warn(infoMessage);
+                pers.saveUrlToBlackList(url,infoMessage);
                 setProxy(null);
             }
             else

@@ -30,6 +30,7 @@
 
         <mapping resource="Feed.hbm.xml"/>
         <mapping resource="FeedMessage.hbm.xml"/>
+        <mapping resource="FeedBlacklist.hbm.xml"/>
 
 
     </session-factory>

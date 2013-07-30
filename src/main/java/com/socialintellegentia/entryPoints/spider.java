@@ -2,6 +2,7 @@ package com.socialintellegentia.entryPoints;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
 import com.androidxtrem.spider.si.SpiderSiRSS;
+import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
 import com.socialintellegentia.processes.ProcessRSS;
 import com.socialintellegentia.util.JsonHelper;
 
@@ -35,8 +36,17 @@ public class spider {
 
             ProcessRSS processRSS = new ProcessRSS();
             List<String> rssSources = JsonHelper.getRssSourcesFromJson(rssSourcesJson);
+            SpiderPersistence spiderPersistence = new SpiderPersistence();
 
             for (String rssSource : rssSources) {
+                if (spiderPersistence.isUrlInBlackList(rssSource)) {
+                    System.out.println("\n" +
+                            "\n____________________________________________________________________" +
+                            "\n B L A C K L I S T E D  ==>  " + rssSource +
+                            "\n____________________________________________________________________" +
+                            "\n");
+                    continue;
+                }
                 SpiderSiRSS runner = new SpiderSiRSS();
                 runner.getNewsFromRSSserver(rssSource);
                 runner.stop();
