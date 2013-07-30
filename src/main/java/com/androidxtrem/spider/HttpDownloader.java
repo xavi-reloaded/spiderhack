@@ -162,7 +162,7 @@ public class HttpDownloader
 				}
 				catch(Exception e)
 				{
-					System.out.println("getRequest error: class(" + e.getClass().toString() + "), message(" + e.getMessage() + "), url(" + url + ")");
+//					System.out.println("getRequest error: class(" + e.getClass().toString() + "), message(" + e.getMessage() + "), url(" + url + ")");
                     sb = null;
 				}
 			}
@@ -220,7 +220,7 @@ public class HttpDownloader
 			{
 				r = false;
 				
-				System.out.println("getRequest error: class(" + e.getClass().toString() + "), message(" + e.getMessage() + "), url(" + url + ")");
+//				System.out.println("getRequest error: class(" + e.getClass().toString() + "), message(" + e.getMessage() + "), url(" + url + ")");
 				
 				File outputFile = new File(outputFilePath);
 				if(outputFile.exists()) outputFile.delete();

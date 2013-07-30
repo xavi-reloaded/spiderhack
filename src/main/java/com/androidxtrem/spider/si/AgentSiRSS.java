@@ -37,11 +37,11 @@ public class AgentSiRSS extends Agent
             clearNewLinks();
             String url = getUrl();
             StringBuffer rawnews = getRequestXML(url, minutesInCache);
-            if (!RSSHelper.isXMLRSS(rawnews.toString()))
+            if (!RSSHelper.isXMLRSS(rawnews.toString()) && !RSSHelper.isRssLandingPage(rawnews.toString()))
             {
                 String infoMessage = "[AgentSiRSS] --> Not a valid RSS source " + getSeed();
                 log.warn(infoMessage);
-                pers.saveUrlToBlackList(getSeed(),infoMessage);
+                pers.saveUrlToBlackList(getSeed(), infoMessage);
                 return;
             }
 

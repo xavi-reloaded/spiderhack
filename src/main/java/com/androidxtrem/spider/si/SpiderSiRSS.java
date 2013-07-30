@@ -88,7 +88,6 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         if (RSSHelper.isXMLRSS(html.toString()))
         {
             addNewSeed(new Seed(rss_server, 100));
-//            builder.append("Added feed " + feed.toString() + "\n");
         }
         else
         {
