@@ -54,6 +54,7 @@ public class ProcessRSS {
         log.debug("[ProcessRSS] --> Catch process injection with: [" + feeds.size() + "] Feeds");
 
         for (Feed feed : feeds) {
+            if (feed==null) continue;
             feed = spiderPersistence.deleteExistingFeedMessagesFromFeed(feed);
             if (!feed.getFeedMessages().isEmpty())
             {
