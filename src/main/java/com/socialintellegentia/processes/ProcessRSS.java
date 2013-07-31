@@ -6,8 +6,11 @@ import com.socialintellegentia.commonhelpers.restclient.SocialIntellegentiaAPI;
 import com.socialintellegentia.commonhelpers.rss.Feed;
 import com.socialintellegentia.commonhelpers.rss.FeedMessage;
 import com.socialintellegentia.commonhelpers.rss.RSSFeedParser;
+import com.socialintellegentia.solr.SolrHelper;
+import com.socialintellegentia.solr.SolrIndexer;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.apache.solr.common.SolrInputDocument;
 import org.joda.time.DateTime;
 import org.joda.time.Period;
 import org.joda.time.PeriodType;
@@ -60,6 +63,7 @@ public class ProcessRSS {
             {
                 spiderPersistence.saveFeed(feed);
                 loadFeedInServer(feed);
+                indexFeedInSolr(feed);
             }
         }
 
@@ -67,6 +71,20 @@ public class ProcessRSS {
         Period totalPeriod = new Period(dtBegin, dtEnd, PeriodType.time());
         String strTotalTime=  totalPeriod.getHours() + ":" + totalPeriod.getSeconds() + ":" + totalPeriod.getMillis();
         log.debug("[ProcessRSS] --> Finish process injection in " + workingFolder + " in: " + fmt.print(dtEnd) +  ". Time: " + strTotalTime + "\n");
+
+    }
+
+    private void indexFeedInSolr(Feed feed) {
+        String queryingUrl = "http://localhost:8983/solr/collection1";
+        String indexingUrl = "http://localhost:8983/solr/collection1";
+        SolrHelper solrHelper = new SolrHelper(queryingUrl,indexingUrl);
+        SolrIndexer solrIndexer = new SolrIndexer(queryingUrl,indexingUrl);
+
+        for (FeedMessage feedMessage : feed.getFeedMessages())
+        {
+            SolrInputDocument solrFeedMessage = solrHelper.createSolrDocumentFromFeedMessage(feedMessage);
+            solrIndexer.index(solrFeedMessage);
+        }
 
     }
 

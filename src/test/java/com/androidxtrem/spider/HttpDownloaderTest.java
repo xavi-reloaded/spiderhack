@@ -46,7 +46,7 @@ public class HttpDownloaderTest {
 
     }
 
-    @Test
+    @Test(enabled = false)
     public void testGetRequest() throws Exception {
         String url = "http://www.paginasamarillas.es/search/colegio-publico/all-ma/all-pr/all-is/all-ci/all-ba/all-pu/all-nc/1";
         StringBuffer actual = sut.getRequest(url, -1, false);
