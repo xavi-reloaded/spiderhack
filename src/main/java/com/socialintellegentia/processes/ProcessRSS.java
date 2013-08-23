@@ -105,17 +105,23 @@ public class ProcessRSS {
 
         for (FeedMessage feedMessage : feed.getFeedMessages())
         {
+
             solrHelper.setNerEngine(spanishNer);
             SolrInputDocument solrFeedMessage = solrHelper.createSolrDocumentFromFeedMessage(feedMessage);
-            StringBuilder corpus = new StringBuilder();
-            corpus.append( solrFeedMessage.getFieldValue("title").toString());
-            corpus.append( "." );
-            corpus.append(solrFeedMessage.getFieldValue("description").toString());
-            solrFeedMessage = solrHelper.injectElementsFromNamedEntityExtraction(solrFeedMessage,corpus.toString());
+            String corpus = getAllCorpusFromFeed(solrFeedMessage);
+            solrFeedMessage = solrHelper.injectElementsFromNamedEntityExtraction(solrFeedMessage, corpus);
 
             solrIndexer.index(solrFeedMessage);
         }
 
+    }
+
+    private String getAllCorpusFromFeed(SolrInputDocument solrFeedMessage) {
+        StringBuilder corpus = new StringBuilder();
+        corpus.append( solrFeedMessage.getFieldValue("title").toString());
+        corpus.append( "." );
+        corpus.append(solrFeedMessage.getFieldValue("description").toString());
+        return corpus.toString();
     }
 
     public List<Feed> getFeedsFromSeedsByPath(String path) throws Exception {
