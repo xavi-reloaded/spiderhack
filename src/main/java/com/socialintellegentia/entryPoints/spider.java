@@ -30,9 +30,7 @@ public class spider {
         try
         {
             boolean fileExists = FileHelper.fileExists(sourceFile);
-            String rssSourcesJson = (fileExists)
-                        ? FileHelper.fileToString(sourceFile)
-                            : "[{\"source\":\""+sourceFile+"\"}]";
+            String rssSourcesJson = (fileExists) ? FileHelper.fileToString(sourceFile) : "[{\"source\":\""+sourceFile+"\"}]";
 
             ProcessRSS processRSS = new ProcessRSS();
             List<String> rssSources = JsonHelper.getRssSourcesFromJson(rssSourcesJson);

@@ -1,6 +1,9 @@
 package com.socialintellegentia.processes;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
+import com.androidxtrem.nlp.ner.FreeLingEnglishBioNerNer;
+import com.androidxtrem.nlp.ner.FreeLingSpanishBioNerNer;
+import com.androidxtrem.nlp.ner.INamedEntityRecognizer;
 import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
 import com.socialintellegentia.commonhelpers.restclient.SocialIntellegentiaAPI;
 import com.socialintellegentia.commonhelpers.rss.Feed;
@@ -17,8 +20,11 @@ import org.joda.time.PeriodType;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
+import javax.naming.ServiceUnavailableException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Created with IntelliJ IDEA.
@@ -30,11 +36,22 @@ import java.util.List;
 public class ProcessRSS {
 
     private static final String TOKEN = "9gLa3sIY2KR3G4YCBX7Qppi6zGvYOD0cAxzU2cnzb9o5YvxV4GGquD%252B4yCSnWp9o5ZQyi630NIyWt";
+    private static final String QUERYING_URL = "http://localhost:8983/solr/collection1";
+    private static final String INDEXING_URL = "http://localhost:8983/solr/collection1";
+
     private boolean keepCacheFiles = false;
     protected Log log = LogFactory.getLog(ProcessRSS.class);
     protected DateTimeFormatter fmt = DateTimeFormat.forPattern("dd-MMMM-yyyy:HH:ss:mm");
     private SocialIntellegentiaAPI siAPI = new SocialIntellegentiaAPI();
+
     private SpiderPersistence spiderPersistence = new SpiderPersistence();
+
+    private SolrHelper solrHelper = new SolrHelper(QUERYING_URL,INDEXING_URL);
+    private SolrIndexer solrIndexer = new SolrIndexer(QUERYING_URL,INDEXING_URL);
+
+    private INamedEntityRecognizer spanishNer;
+    private INamedEntityRecognizer englishNer;
+
 
     public ProcessRSS() {
         init(false);
@@ -46,6 +63,16 @@ public class ProcessRSS {
 
     private void init(boolean keepCacheFiles) {
         this.keepCacheFiles = keepCacheFiles;
+        try {
+            spanishNer = new FreeLingSpanishBioNerNer();
+            englishNer = new FreeLingEnglishBioNerNer();
+        } catch (ServiceUnavailableException e) {
+            log.error("NATURAL LANGUAGE PROCESS EPIC FAIL !!!");
+            log.error(e.getMessage());
+        } catch (IOException e) {
+            log.error("NATURAL LANGUAGE PROCESS EPIC FAIL !!!");
+            log.error(e.getMessage());
+        }
     }
 
     public void processRSSfromWorkingDirectory(String workingFolder) throws Exception {
@@ -74,15 +101,18 @@ public class ProcessRSS {
 
     }
 
-    private void indexFeedInSolr(Feed feed) {
-        String queryingUrl = "http://localhost:8983/solr/collection1";
-        String indexingUrl = "http://localhost:8983/solr/collection1";
-        SolrHelper solrHelper = new SolrHelper(queryingUrl,indexingUrl);
-        SolrIndexer solrIndexer = new SolrIndexer(queryingUrl,indexingUrl);
+    protected void indexFeedInSolr(Feed feed) {
 
         for (FeedMessage feedMessage : feed.getFeedMessages())
         {
+            solrHelper.setNerEngine(spanishNer);
             SolrInputDocument solrFeedMessage = solrHelper.createSolrDocumentFromFeedMessage(feedMessage);
+            StringBuilder corpus = new StringBuilder();
+            corpus.append( solrFeedMessage.getFieldValue("title").toString());
+            corpus.append( "." );
+            corpus.append(solrFeedMessage.getFieldValue("description").toString());
+            solrFeedMessage = solrHelper.injectElementsFromNamedEntityExtraction(solrFeedMessage,corpus.toString());
+
             solrIndexer.index(solrFeedMessage);
         }
 

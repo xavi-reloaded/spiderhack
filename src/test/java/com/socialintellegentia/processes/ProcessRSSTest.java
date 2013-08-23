@@ -2,6 +2,7 @@ package com.socialintellegentia.processes;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
 import com.socialintellegentia.commonhelpers.rss.Feed;
+import com.socialintellegentia.commonhelpers.rss.FeedMessage;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -9,6 +10,7 @@ import org.testng.annotations.Test;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -39,8 +41,25 @@ public class ProcessRSSTest {
     }
 
     @Test
+    public void test_indexFeedInSolr() throws Exception {
+
+        Feed feed = exerciseGetFeedsFromSeedsByPath().get(2);
+        FeedMessage feedMessage = feed.getFeedMessages().get(1);
+
+        feedMessage.setTitle("This is a also a hardcoded title and Barcelona is a nice city where Pepe and Pepito works at Gromenauer Place");
+        feedMessage.setAuthor("Xavi el Magnanimo");
+        feedMessage.setGuid("11111111111111111111111111");
+
+        ArrayList<FeedMessage> feedMessages = new ArrayList<FeedMessage>();
+        feedMessages.add(feedMessage);
+        feed.setFeedMessages(feedMessages);
+        sut.indexFeedInSolr(feed);
+
+    }
+
+    @Test
     public void test_loadFeedInServer_() throws Exception {
-        Feed feed = sut.getFeedsFromSeedsByPath(path).get(23);
+        Feed feed = exerciseGetFeedsFromSeedsByPath().get(23);
         String serverResponse = sut.loadFeedInServer(feed);
 
         String expected = "{\"feeds\":";
@@ -51,15 +70,19 @@ public class ProcessRSSTest {
     @Test
     public void test_getFeedsFromSeedsByPath_validPathWithRealFeeds_listOfRSSFrontEndHelpersCorrectlyPopulated() throws Exception
     {
-        List<Feed> actual = sut.getFeedsFromSeedsByPath(path);
+        List<Feed> actual = exerciseGetFeedsFromSeedsByPath();
         int expected = 73;
         Assert.assertEquals(actual.size(),expected);
+    }
+
+    private List<Feed> exerciseGetFeedsFromSeedsByPath() throws Exception {
+        return sut.getFeedsFromSeedsByPath(path);
     }
 
     @Test
     public void test_getFeedsFromSeedsByPath_validPathWithRealFeeds_feedCorrectlyPopulateMessages() throws Exception
     {
-        Feed actual = sut.getFeedsFromSeedsByPath(path).get(23);
+        Feed actual = exerciseGetFeedsFromSeedsByPath().get(23);
         Assert.assertTrue(!actual.getTitle().isEmpty());
     }
 
@@ -67,7 +90,7 @@ public class ProcessRSSTest {
     public void test_getFeedsFromSeedsByPath_validPathWithRealFeeds_seedsAreCorrectlyDeleted() throws Exception
     {
 
-        sut.getFeedsFromSeedsByPath(path);
+        exerciseGetFeedsFromSeedsByPath();
         List<String> fileList = FileHelper.getFileList(path, "");
         int expected = 0;
         Assert.assertEquals(fileList.size(),expected);
@@ -87,5 +110,7 @@ public class ProcessRSSTest {
         }
 
     }
+
+
 
 }
