@@ -7,6 +7,7 @@ import com.androidxtrem.nlp.ner.INamedEntityRecognizer;
 import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
 import com.socialintellegentia.commonhelpers.restclient.SocialIntellegentiaAPI;
 import com.socialintellegentia.commonhelpers.rss.Feed;
+import com.socialintellegentia.commonhelpers.rss.FeedLinkedContent;
 import com.socialintellegentia.commonhelpers.rss.FeedMessage;
 import com.socialintellegentia.commonhelpers.rss.RSSFeedParser;
 import com.socialintellegentia.solr.SolrHelper;
@@ -85,10 +86,13 @@ public class ProcessRSS {
 
         for (Feed feed : feeds) {
             if (feed==null) continue;
+
             feed = spiderPersistence.deleteExistingFeedMessagesFromFeed(feed);
             if (!feed.getFeedMessages().isEmpty())
             {
-                spiderPersistence.saveFeed(feed);
+
+                feed = spiderPersistence.saveFeed(feed);
+
                 loadFeedInServer(feed);
                 indexFeedInSolr(feed);
             }
@@ -101,16 +105,17 @@ public class ProcessRSS {
 
     }
 
-    protected void indexFeedInSolr(Feed feed) {
+    protected void indexFeedInSolr(Feed feed) throws IOException {
 
         for (FeedMessage feedMessage : feed.getFeedMessages())
         {
-
             solrHelper.setNerEngine(spanishNer);
-            SolrInputDocument solrFeedMessage = solrHelper.createSolrDocumentFromFeedMessage(feedMessage);
+            String link = feedMessage.getLink();
+            FeedLinkedContent feedLinkedContent = new FeedLinkedContent(link).captureLinkedContent();
+            spiderPersistence.saveFeedLinkedContent(feedLinkedContent);
+            SolrInputDocument solrFeedMessage = solrHelper.createSolrDocumentFromFeedMessage(feedMessage,feedLinkedContent);
             String corpus = getAllCorpusFromFeed(solrFeedMessage);
             solrFeedMessage = solrHelper.injectElementsFromNamedEntityExtraction(solrFeedMessage, corpus);
-
             solrIndexer.index(solrFeedMessage);
         }
 
@@ -119,8 +124,10 @@ public class ProcessRSS {
     private String getAllCorpusFromFeed(SolrInputDocument solrFeedMessage) {
         StringBuilder corpus = new StringBuilder();
         corpus.append( solrFeedMessage.getFieldValue("title").toString());
-        corpus.append( "." );
+        corpus.append( " \n  " );
         corpus.append(solrFeedMessage.getFieldValue("description").toString());
+        corpus.append( " \n  " );
+        corpus.append(solrFeedMessage.getFieldValue("content").toString());
         return corpus.toString();
     }
 

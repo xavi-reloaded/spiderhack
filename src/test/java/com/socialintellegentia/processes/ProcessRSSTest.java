@@ -49,6 +49,7 @@ public class ProcessRSSTest {
         feedMessage.setTitle("This is a also a hardcoded title and Barcelona is a nice city where Pepe and Pepito works at Gromenauer Place");
         feedMessage.setAuthor("Xavi el Magnanimo");
         feedMessage.setGuid("11111111111111111111111111");
+        feedMessage.setLink("http://www.lavanguardia.com/gente/20130827/54379808086/miley-cyrus-solivianta-eeuu-provocadora-sexual-mtv.html");
 
         ArrayList<FeedMessage> feedMessages = new ArrayList<FeedMessage>();
         feedMessages.add(feedMessage);
