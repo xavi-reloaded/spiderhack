@@ -1,43 +1,538 @@
 [
-            {"source":"http://eldia.es/rss/"},
-            {"source":"http://www.farodevigo.es/servicios/rss/rss.jsp"},
-            {"source":"http://www.levante-emv.com/servicios/rss/rss.jsp"},
-            {"source":"http://www.diariodesevilla.es/rss/articles.php"},
-            {"source":"http://www.deia.com/corporativos/suscripcion-por-rss"},
-            {"source":"http://www.diariodemallorca.es/servicios/rss/rss.jsp"},
-            {"source":"http://www.elpuntavui.cat/serveis/ginys/rss.html"},
-            {"source":"http://www.diariodeleon.es/info/rss.php"},
-            {"source":"http://www.diariodecadiz.es/rss/articles.php"},
-            {"source":"http://www.rsssearchhub.com/feeds/canal-sur-web-feeds/"},
-            {"source":"http://www.elcorreogallego.es/rss/index.php?idWeb=1"},
-            {"source":"http://www.catalunyapress.cat/es/rss.php"},
-            {"source":"http://www.diariodeburgos.es/rss.aspx"},
-            {"source":"http://feeds.feedburner.com/directecat"},
-            {"source":"http://www.elcorreo.com/vizcaya/rss/feeds/"},
-            {"source":"http://www.eleconomista.es/rss/"},
-            {"source":"http://www.lavozdegalicia.es/rss/"},
-            {"source":"http://www.diariovasco.com/rss/feeds/"},
-            {"source":"http://www.diariodenavarra.es/index.php/mod.portadas/mem.rss"},
-            {"source":"http://www.libertaddigital.com/rss/"},
-            {"source":"http://www.expansion.com/rss/"},
-            {"source":"http://www.tv3.cat/alaxarxa/rss"},
-            {"source":"http://www.cuatro.com/rss/"},
-            {"source":"http://www.lne.es/servicios/rss/rss.jsp"},
-            {"source":"http://www.eitb.com/es/rss/"},
-            {"source":"http://www.telemadrid.es/noticias/feedMessage"},
-            {"source":"http://www.324.cat/rss/"},
+    {"source":"http://www.europapress.es/rss/rss.aspx"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=66"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=69"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=136"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=313"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=445"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=126"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=73"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=279"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=289"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=284"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=290"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=293"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=286"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=287"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=288"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=192"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=282"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=283"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=280"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=294"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=281"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=285"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=310"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=291"},
+
+{"source":"http://www.europapress.es/rss/rss.aspx?ch=295"},
+
+ 
+
+{"source":"http://ep00.epimg.net/rss/elpais/portada.xml"},
+
+{"source":"http://ep00.epimg.net/rss/politica/portada.xml"},
+
+{"source":"http://ep00.epimg.net/rss/internacional/portada.xml"},
+
+{"source":"http://ep00.epimg.net/rss/sociedad/portada.xml"},
+
+{"source":"http://elpais.com/tag/rss/justicia/a/"},
+
+{"source":"http://ep00.epimg.net/rss/cultura/portada.xml"},
+
+{"source":"http://elpais.com/tag/rss/salud/a/"},
+
+{"source":"http://elpais.com/tag/rss/medio_ambiente/a/"},
+
+{"source":"http://elpais.com/tag/rss/conflictos/a/"},
+
+{"source":"http://ep00.epimg.net/rss/tags/c_ciencia.xml"},
+
+{"source":"http://ep00.epimg.net/rss/ccaa/catalunya.xml"},
+
+{"source":"http://ep00.epimg.net/rss/ccaa/madrid.xml"},
+
+{"source":"http://ep00.epimg.net/rss/ccaa/andalucia.xml"},
+
+{"source":"http://ep00.epimg.net/rss/ccaa/paisvasco.xml"},
+
+{"source":"http://ep00.epimg.net/rss/ccaa/galicia.xml"},
+
+{"source":"http://ep00.epimg.net/rss/ccaa/valencia.xml"},
+
+ 
+
+{"source":"http://www.abc.es/rss/feeds/abcPortada.xml"},
+
+{"source":"http://www.abc.es/rss/feeds/abc_Economia.xml"},
+
+{"source":"http://www.abc.es/rss/feeds/abc_Cultura.xml"},
+
+{"source":"http://www.abc.es/rss/feeds/abc_opinioncompleto.xml"},
+
+{"source":"http://www.abc.es/rss/feeds/abc_Sociedad.xml"},
+
+{"source":"http://www.abc.es/rss/feeds/ABC_Medios_Redes.xml"},
+
+{"source":"http://www.abc.es/rss/feeds/abc_Ciencia_Tecnologia.xml"},
+
+{"source":"http://www.abc.es/rss/feeds/abc_Internacional.xml"},
+
+{"source":"http://www.abc.es/rss/feeds/abc_Historicas.xml"},
+
+ 
+
+{"source":"http://www.politico.com/rss/politicopicks.xml"},
+
+{"source":"http://www.politico.com/rss/congress.xml"},
+
+{"source":"http://www.politico.com/rss/rogersimon.xml"},
+
+{"source":"http://www.politico.com/rss/playbook.xml"},
+
+{"source":"http://www.politico.com/rss/huddle.xml"},
+
+{"source":"http://www.politico.com/rss/politicoinfluence.xml"},
+
+{"source":"http://www.politico.com/rss/morningdefense.xml"},
+
+{"source":"http://www.politico.com/rss/morningeducation.xml"},
+
+{"source":"http://www.politico.com/rss/morningenergy.xml"},
+
+{"source":"http://www.politico.com/rss/morningmoney.xml"},
+
+{"source":"http://www.politico.com/rss/morningscore.xml"},
+
+{"source":"http://www.politico.com/rss/morningtax.xml"},
+
+{"source":"http://www.politico.com/rss/morningtech.xml"},
+
+{"source":"http://www.politico.com/rss/morningtransportation.xml"},
+
+{"source":"http://www.politico.com/rss/proreport.xml"},
+
+{"source":"http://www.politico.com/rss/politicopulse.xml"},
+
+{"source":"http://www.politico.com/rss/Top10Blogs.xml"},
+
+{"source":"http://www.politico.com/rss/media_full.xml"},
+
+{"source":"http://www.politico.com/rss/click_full.xml"},
+
+{"source":"http://www.politico.com/rss/undertheradar_full.xml"},
+
+{"source":"http://www.politico.com/rss/joescarborough_full.xml"},
+
+ 
+
+{"source":"http://feeds.foxnews.com/foxnews/politics"},
+
+{"source":"http://feeds.foxnews.com/foxnews/national"},
+
+{"source":"http://feeds.foxnews.com/foxnews/world"},
+
+{"source":"http://feeds.foxnews.com/foxnews/latest"},
+
+{"source":"http://feeds.foxnews.com/foxnews/health"},
+
+{"source":"http://feeds.foxnews.com/foxnews/opinion"},
+
+{"source":"http://feeds.foxnews.com/foxnews/science"},
+
+{"source":"http://feeds.foxnews.com/foxnews/tech"},
+
+{"source":"http://feeds.foxnews.com/foxnews/video"},
+
+{"source":"http://feeds.foxnews.com/foxnews/fox-news-Sunday"},
+
+{"source":"http://feeds.foxnews.com/foxnews/happening-now"},
+
+{"source":"http://feeds.foxnews.com/foxnews/special-report"},
+
+ 
+
+{"source":"http://www.tagesschau.de/xml/rss2"},
+
+{"source":"http://boerse.ard.de/index~rss.xml"},
+
+{"source":"http://boerse.ard.de/boersentrend/index~rss.xml"},
+
+ 
+
+{"source":"http://feeds.bbci.co.uk/news/rss.xml?edition=int"},
+
+{"source":"http://feeds.bbci.co.uk/news/video_and_audio/politics/rss.xml"},
+
+{"source":"http://feeds.bbci.co.uk/news/video_and_audio/world/rss.xml"},
+
+{"source":"http://feeds.bbci.co.uk/news/video_and_audio/news_front_page/rss.xml?edition=uk"},
+
+{"source":"http://feeds.bbci.co.uk/news/video_and_audio/uk/rss.xml"},
+
+{"source":"http://feeds.bbci.co.uk/news/video_and_audio/business/rss.xml"},
+
+{"source":"http://feeds.bbci.co.uk/news/video_and_audio/health/rss.xml"},
+
+{"source":"http://feeds.bbci.co.uk/news/video_and_audio/science_and_environment/rss.xml"},
+
+{"source":"http://feeds.bbci.co.uk/news/video_and_audio/technology/rss.xml"},
+
+{"source":"http://feeds.bbci.co.uk/news/video_and_audio/entertainment_and_arts/rss.xml"},
+
+{"source":"http://feeds.bbci.co.uk/news/system/latest_published_content/rss.xml"},
+
+{"source":"http://feeds.bbci.co.uk/news/magazine/rss.xml"},
+
+{"source":"http://feeds.bbci.co.uk/news/special_reports/rss.xml"},
+
+{"source":"http://feeds.bbci.co.uk/news/have_your_say/rss.xml"},
+
+{"source":"http://feeds.bbci.co.uk/news/rss.xml?edition=uk"},
+
+{"source":"http://feeds.bbci.co.uk/news/rss.xml?edition=us"},
+
+{"source":"http://feeds.bbci.co.uk/news/rss.xml?edition=int"},
+
+ 
+
+{"source":"http://www.cnbc.com/id/10000113/device/rss/rss.html"},
+
+{"source":"http://www.cnbc.com/id/100003114/device/rss/rss.html"},
+
+{"source":"http://www.cnbc.com/id/100727362/device/rss/rss.html"},
+
+{"source":"http://www.cnbc.com/id/19794221/device/rss/rss.html"},
+
+{"source":"http://www.cnbc.com/id/19832390/device/rss/rss.html"},
+
+{"source":"http://www.cnbc.com/id/20910258/device/rss/rss.html"},
+
+{"source":"http://www.cnbc.com/id/19836768/device/rss/rss.html"},
+
+{"source":"http://www.cnbc.com/id/21344232/device/rss/rss.html"},
+
+{"source":"http://www.cnbc.com/id/19854910/device/rss/rss.html"},
+
+{"source":"http://www.cnbc.com/id/100003241/device/rss/rss.html"},
+
+{"source":"http://www.cnbc.com/id/15839135/device/rss/rss.xml"},
+
+{"source":"http://www.cnbc.com/id/15839069/device/rss/rss.html"},
+
+{"source":"http://www.cnbc.com/id/10001135/device/rss/rss.html"},
+
+{"source":"http://www.cnbc.com/id/10000686/device/rss/rss.html"},
+
+{"source":"http://www.cnbc.com/id/10000709/device/rss/rss.html"},
+
+{"source":"http://www.cnbc.com/id/10000836/device/rss/rss.html"},
+
+{"source":"http://www.cnbc.com/id/10000115/device/rss/rss.html"},
+
+{"source":"http://www.cnbc.com/id/32331699/device/rss/rss.html"},
+
+{"source":"http://www.cnbc.com/id/10000108/device/rss/rss.html"},
+
+ 
+
+{"source":"http://rss.cnn.com/rss/edition.rss"},
+
+{"source":"http://rss.cnn.com/rss/edition_world.rss"},
+
+{"source":"http://rss.cnn.com/rss/edition_africa.rss"},
+
+{"source":"http://rss.cnn.com/rss/edition_americas.rss"},
+
+{"source":"http://rss.cnn.com/rss/edition_asia.rss"},
+
+{"source":"http://rss.cnn.com/rss/edition_europe.rss"},
+
+{"source":"http://rss.cnn.com/rss/edition_meast.rss"},
+
+{"source":"http://rss.cnn.com/rss/edition_us.rss"},
+
+{"source":"http://rss.cnn.com/rss/edition_business.rss"},
+
+{"source":"http://rss.cnn.com/rss/edition_technology.rss"},
+
+{"source":"http://rss.cnn.com/rss/edition_space.rss"},
+
+{"source":"http://rss.cnn.com/rss/edition_entertainment.rss"},
+
+{"source":"http://rss.cnn.com/rss/cnn_freevideo.rss"},
+
+{"source":"http://rss.cnn.com/rss/cnn_latest.rss"},
+
+{"source":"http://rss.cnn.com/rss/edition_business360.rss"},
+
+{"source":"http://rss.cnn.com/rss/edition_connecttheworld.rss"},
+
+{"source":"http://rss.cnn.com/rss/edition_inthefield.rss"},
+
+{"source":"http://rss.cnn.com/rss/edition_ime.rss"},
+
+{"source":"http://rss.cnn.com/rss/edition_idesk.rss"},
+
+{"source":"http://rss.cnn.com/rss/edition_prismblog.rss"},
+
+{"source":"http://rss.cnn.com/rss/edition_questmeansbusiness.rss"},
+
+{"source":"http://rss.cnn.com/rss/edition_screeningroom.rss"},
+
+{"source":"http://rss.cnn.com/rss/edition_worldsportblog.rss"},
+
+{"source":"http://rss.cnn.com/rss/edition_ukelectionblog.rss"},
+
+ 
+
+{"source":"http://www.thetimes.co.uk/tto/news/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/news/world/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/news/uk/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/news/politics/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/news/politics/sketch/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/news/world/agenda/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/news/world/europe/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/news/world/americas/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/news/world/middleeast/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/news/world/asia/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/news/world/africa/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/health/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/education/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/education/schoolgate/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/news/uk/defence/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/news/uk/defence/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/environment/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/environment/wildlife/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/science/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/technology/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/technology/internet/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/news/uk/crime/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/news/medianews/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/faith/articles-of-faith/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/faith/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/opinion/rss"},
+
+{"source":"http://www.thetimes.co.uk/tto/opinion/leaders/rss"},
+
+ 
+
+{"source":"http://feeds.feedburner.com/time/topstories?format=xml"},
+
+{"source":"http://feeds.feedburner.com/time/newsfeed?format=xml"},
+
+{"source":"http://feeds.feedburner.com/time/nation?format=xml"},
+
+{"source":"http://feeds.feedburner.com/timeblogs/swampland?format=xml"},
+
+{"source":"http://feeds.feedburner.com/time/world?format=xml"},
+
+{"source":"http://feeds.feedburner.com/time/business?format=xml"},
+
+{"source":"http://feeds.feedburner.com/timeblogs/nerd_world?format=xml"},
+
+{"source":"http://feeds.feedburner.com/time/healthland?format=xml"},
+
+{"source":"http://feeds.feedburner.com/time/scienceandhealth?format=xml"},
+
+{"source":"http://feeds.feedburner.com/timeblogs/ecocentric?format=xml"},
+
+{"source":"http://feeds.feedburner.com/time/ideas?format=xml"},
+
+ 
+
+{"source":"http://rssfeeds.usatoday.com/usatoday-NewsTopStories"},
+
+{"source":"http://rssfeeds.usatoday.com/UsatodaycomNation-TopStories"},
+
+{"source":"http://rssfeeds.usatoday.com/UsatodaycomWorld-TopStories"},
+
+{"source":"http://rssfeeds.usatoday.com/UsatodaycomWashington-TopStories"},
+
+{"source":"http://rssfeeds.usatoday.com/UsatodaycomHealth-TopStories"},
+
+{"source":"http://rssfeeds.usatoday.com/TP-OnPolitics"},
+
+{"source":"http://rssfeeds.usatoday.com/TheOvalTopStoriesCommunityFeed?format=xml"},
+
+{"source":"http://content.usatoday.com/marketing/rss/rsstrans.aspx?feedId=news10"},
+
+{"source":"http://rssfeeds.usatoday.com/usatoday-TechTopStories"},
+
+{"source":"http://rssfeeds.usatoday.com/UsatodaycomScienceAndSpace-TopStories"},
+
+{"source":"http://rssfeeds.usatoday.com/UsatodaycomTech-PersonalTalk"},
+
+ 
+
+{"source":"http://feeds.feedburner.com/euronews/en/home?format=xml"},
+
+{"source":"http://feeds.feedburner.com/euronews/en/news?format=xml"},
+
+{"source":"http://feeds.feedburner.com/euronews/en/business?format=xml"},
+
+{"source":"http://feeds.feedburner.com/euronews/en/Euronews-NoComment/"},
+
+{"source":"http://feeds.feedburner.com/euronews/en/europa?format=xml"},
+
+{"source":"http://feeds.feedburner.com/euronews/en/sci-tech?format=xml"},
+
+{"source":"http://feeds.feedburner.com/euronews/en/lifestyle/"},
+
+{"source":"http://feeds.feedburner.com/euronews/en/picture-of-the-day?format=xml"},
+
+ 
+
+{"source":"http://www.ft.com/rss/home/europe"},
+
+{"source":"http://www.ft.com/rss/home/us"},
+
+{"source":"http://www.ft.com/rss/home/asia"},
+
+{"source":"http://www.ft.com/rss/home/middleeast"},
+
+{"source":"http://www.ft.com/rss/home/india"},
+
+{"source":"http://www.ft.com/rss/home/uk"},
+
+{"source":"http://www.ft.com/rss/global-economy"},
+
+{"source":"http://www.ft.com/rss/world"},
+
+{"source":"http://blogs.ft.com/the-world/feed/"},
+
+{"source":"http://www.ft.com/rss/world/us"},
+
+{"source":"http://www.ft.com/rss/world/us/economy"},
+
+{"source":"http://www.ft.com/rss/world/us/politics"},
+
+{"source":"http://www.ft.com/rss/world/us/society"},
+
+{"source":"http://www.ft.com/rss/world/americas"},
+
+{"source":"http://www.ft.com/rss/world/americas/politics"},
+
+{"source":"http://www.ft.com/rss/world/americas/regulation"},
+
+{"source":"http://www.ft.com/rss/world/americas/society"},
+
+{"source":"http://www.ft.com/rss/world/mideast"},
+
+{"source":"http://www.ft.com/rss/world/mideast/economy"},
+
+{"source":"http://www.ft.com/rss/world/mideast/finance"},
+
+{"source":"http://www.ft.com/rss/world/mideast/politics"},
+
+{"source":"http://www.ft.com/rss/world/mideast/gulf"},
+
+{"source":"http://www.ft.com/rss/world/mideast/iran"},
+
+{"source":"http://www.ft.com/rss/world/europe"},
+
+{"source":"http://www.ft.com/rss/world/europe/brussels"},
+
+{"source":"http://www.ft.com/rss/world/uk"},
+
+{"source":"http://www.ft.com/rss/world/uk/economy"},
+
+{"source":"http://www.ft.com/rss/world/uk/politics"},
+
+{"source":"http://www.ft.com/rss/world/uk/business"},
+
+{"source":"http://www.ft.com/rss/comment"},
+
+{"source":"http://www.ft.com/rss/comment/analysis"},
+
+{"source":"http://www.ft.com/rss/comment/editorial"},
+
+{"source":"http://www.ft.com/rss/comment/opinion"},
+
+{"source":"http://www.ft.com/rss/companies/technology"},
+
+{"source":"http://www.ft.com/rss/arts"},
+
+{"source":"http://www.ft.com/rss/personal-finance/tax"},
+
+{"source":"http://www.ft.com/rss/management/connected-business"},
+
+ 
+
+{"source":"http://feeds.nbcnews.com/feeds/topstories"},
+
+{"source":"http://feeds.nbcnews.com/feeds/worldnews"},
+
+{"source":"http://feeds.nbcnews.com/feeds/health"},
+
+{"source":"http://feeds.nbcnews.com/feeds/investigations"},
+
+{"source":"http://feeds.nbcnews.com/feeds/science"},
+
+{"source":"http://feeds.nbcnews.com/feeds/topvideo"},
+            
+            {"source":"http://rss.elmundo.es/rss/"},
+            {"source":"http://servicios.elpais.com/rss/"},
+
+            {"source":"http://www.europapress.es/contenidosrss.aspx"},
+            {"source":"http://www.rtve.es/rss/"},
+            {"source":"http://www.telecinco.es/rss.html"},
+            {"source":"http://www.abc.es/rss"},
+            {"source":"http://www.lavanguardia.com/otros-formatos/rss.html"},
+
+   
             {"source":"http://www.elconfidencial.com/rss/"},
-            {"source":"http://www.cincodias.com/rss/listado_rss.html"},
-            {"source":"http://www.intereconomia.com/feeds/general/"},
-            {"source":"http://www.cadenaser.com/rss/"},
-            {"source":"http://www.cope.es/rss"},
-            {"source":"http://www.heraldo.es/index.php/mod.portadas/mem.rss"},
-            {"source":"http://www.noticiasdenavarra.com/corporativos/suscripcion-por-rss/"},
-            {"source":"http://www.canarias7.es/servicios/rss.cfm"},
-            {"source":"http://www.laprovincia.es/servicios/rss/rss.jsp"},
-            {"source":"http://www.npr.org/rss/"},
-            {"source":"http://www.cbsnews.com/stories/2005/01/12/utility/main666437.shtml?tag=contentMain;contentAux"},
-            {"source":"http://www.foxnews.com/about/rss/"},
+
             {"source":"http://www.nytimes.com/services/xml/rss/index.html"},
             {"source":"http://www.politico.com/rss/"},
             {"source":"http://www.nbcnews.com/id/5216556/"},
@@ -51,20 +546,15 @@
             {"source":"http://www.slate.com/articles/news_and_politics/slate_fare/2006/12/slates_new_improved_rss_feed.html"},
             {"source":"http://www.latimes.com/about/rss/"},
             {"source":"http://feeds.propublica.org/propublica/main"},
-            {"source":"http://content.usatoday.com/marketing/rss/index.aspx"},
-            {"source":"http://www.boston.com/tools/rss/"},
-            {"source":"http://seattletimes.com/flatpages/services/rss.html?from=stnv3"},
-            {"source":"http://www.chicagotribune.com/services/rss/"},
-            {"source":"http://www.huffingtonpost.com/syndication/"},
-            {"source":"http://www.euronews.com/services/rss/"},
-            {"source":"http://feeds.bbci.co.uk/news/rss.xml"},
-            {"source":"http://www.france24.com/en/rss"},
-            {"source":"http://mondediplo.com/backend"},
-            {"source":"http://www.economist.com/rss"},
-            {"source":"http://www.aljazeera.com/Services/Rss/?PostingId=2007731105943979989"},
+            {"source":"http://content.usatoday.com/marketing/rss/index.aspx"},            
+
+            {"source":"http://www.npr.org/rss/"},
+            {"source":"http://www.cbsnews.com/stories/2005/01/12/utility/main666437.shtml?tag=contentMain;contentAux"},
+            {"source":"http://www.foxnews.com/about/rss/"},
+
             {"source":"http://www.ft.com/intl/rss"},
             {"source":"http://www.reuters.com/tools/rss"},
-            {"source":"http://www.spiegel.de/international/rss-feedMessage-spiegel-international-for-your-favorite-reader-a-643192.html"},
+            {"source":"http://www.spiegel.de/international/rss-feed-spiegel-international-for-your-favorite-reader-a-643192.html"},
             {"source":"http://www.time.com/time/rss"},
             {"source":"http://www.thetimes.co.uk/tto/feedindex/"},
             {"source":"http://www.guardian.co.uk/help/feeds"},
@@ -74,44 +564,49 @@
             {"source":"http://www.liberation.fr/rss,99819"},
             {"source":"http://www.lesechos.fr/rss/"},
             {"source":"http://www.leparisien.fr/services/rss/"},
+
+            {"source":"http://mondediplo.com/backend"},
+            {"source":"http://www.economist.com/rss"},
+
+            {"source":"http://www.elcorreo.com/vizcaya/rss/feeds/"},
+            {"source":"http://www.eleconomista.es/rss/"},
+            {"source":"http://www.lavozdegalicia.es/rss/"},
+            {"source":"http://www.diariovasco.com/rss/feeds/"},
+            {"source":"http://www.diariodenavarra.es/index.php/mod.portadas/mem.rss"},
+            {"source":"http://www.libertaddigital.com/rss/"},
+            {"source":"http://www.expansion.com/rss/"},
+            {"source":"http://www.tv3.cat/alaxarxa/rss"},
+            {"source":"http://www.cuatro.com/rss/"},
+            {"source":"http://www.lne.es/servicios/rss/rss.jsp"},
+            {"source":"http://www.eitb.com/es/rss/"},
+            {"source":"http://www.telemadrid.es/noticias/feed"},
+         
+            {"source":"http://www.cincodias.com/rss/listado_rss.html"},
+            {"source":"http://www.intereconomia.com/feeds/general/"},
+            {"source":"http://www.cadenaser.com/rss/"},
+            {"source":"http://www.cope.es/rss"},
+            {"source":"http://www.heraldo.es/index.php/mod.portadas/mem.rss"},
+            
+                       
+            {"source":"http://www.boston.com/tools/rss/"},
+            {"source":"http://seattletimes.com/flatpages/services/rss.html?from=stnv3"},
+            {"source":"http://www.chicagotribune.com/services/rss/"},
+            {"source":"http://www.huffingtonpost.com/syndication/"},
+            {"source":"http://www.euronews.com/services/rss/"},
+            {"source":"http://feeds.bbci.co.uk/news/rss.xml"},
+            {"source":"http://www.france24.com/en/rss"},
+            
+            {"source":"http://www.aljazeera.com/Services/Rss/?PostingId=2007731105943979989"},
             {"source":"http://www.lepoint.fr/tags/rss/le-canard-enchaine.xml"},
             {"source":"http://www.linktv.org/rss/general/earth.xml"},
             {"source":"http://www.francetvinfo.fr/rss/"},
             {"source":"http://www.ard.de/home/ard/RSS_Feeds_der_ARD/89464/index.html"},
-            {"source":"http://www.lavanguardia.com/otros-formatos/rss.html"},
-	        {"source":"http://www.europapress.es/contenidosrss.aspx"},
-            {"source":"http://www.rtve.es/rss/"},
-            {"source":"http://www.telecinco.es/rss.html"},
-            {"source":"http://servicios.elpais.com/rss/"},
-            {"source":"http://rss.elmundo.es/rss/"},
-            {"source":"http://www.abc.es/rss"},
+            
+            
             {"source":"http://www.elperiodico.com/es/rss/portada_rss.shtml"}, 
             {"source":"http://www.larazon.es/feeds"},
-            {"source":"http://www.diarioinformacion.com/servicios/rss/rss.jsp"},
-            {"source":"http://ultimahora.es/mallorca/feedMessage.rss"},
-            {"source":"http://www.eldiariomontanes.es/rss/feeds/"},
-            {"source":"http://www.elnortedecastilla.es/rss/feeds/"},
-            {"source":"http://www.intereconomia.com/feeds/general/"},
-            {"source":"http://www.lasprovincias.es/rss/feeds/"},
-            {"source":"http://www.laverdad.es/murcia/rss/feeds/"},
-            {"source":"http://www.ideal.es/granada/rss/feeds/espana.xml"},
-            {"source":"http://www.diariosur.es/rss/feeds/"},
-            {"source":"http://www.diarioinformacion.com/servicios/rss/rss.jsp"},
-            {"source":"http://www.elcomerciodelecuador.es/servicios/rss.html"},
-            {"source":"http://www.elcomercio.com/servicios/rss.html"},
-            {"source":"http://eldia.es/rss/"},
-            {"source":"http://www.farodevigo.es/servicios/rss/rss.jsp"},
-            {"source":"http://www.levante-emv.com/servicios/rss/rss.jsp"},
-            {"source":"http://www.diariodesevilla.es/rss/articles.php"},
-            {"source":"http://www.deia.com/corporativos/suscripcion-por-rss"},
-            {"source":"http://www.diariodemallorca.es/servicios/rss/rss.jsp"},
-            {"source":"http://www.elpuntavui.cat/serveis/ginys/rss.html"},
-            {"source":"http://www.diariodeleon.es/info/rss.php"},
-            {"source":"http://www.diariodecadiz.es/rss/articles.php"},
-            {"source":"http://www.rsssearchhub.com/feeds/canal-sur-web-feeds/"},
-            {"source":"http://www.elcorreogallego.es/rss/index.php?idWeb=1"},
-            {"source":"http://www.catalunyapress.cat/es/rss.php"},
-            {"source":"http://www.diariodeburgos.es/rss.aspx"},
-            {"source":"http://feeds.feedburner.com/directecat"},
+            {"source":"http://www.diarioinformacion.com/servicios/rss/rss.jsp"}
+            
+            
             
 ]
