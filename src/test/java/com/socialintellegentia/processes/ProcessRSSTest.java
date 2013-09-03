@@ -26,6 +26,7 @@ public class ProcessRSSTest {
     private File tempFolder;
     private String path;
 
+
     @BeforeMethod
     public void setUp() throws Exception {
         sut = new ProcessRSS();
@@ -40,7 +41,7 @@ public class ProcessRSSTest {
 
     }
 
-    @Test
+    @Test(enabled = false)
     public void test_indexFeedInSolr() throws Exception {
 
         Feed feed = exerciseGetFeedsFromSeedsByPath().get(2);
@@ -58,7 +59,7 @@ public class ProcessRSSTest {
 
     }
 
-    @Test
+    @Test(enabled = false)
     public void test_loadFeedInServer_() throws Exception {
         Feed feed = exerciseGetFeedsFromSeedsByPath().get(23);
         String serverResponse = sut.loadFeedInServer(feed);
@@ -68,7 +69,7 @@ public class ProcessRSSTest {
 
     }
 
-    @Test
+    @Test (enabled = false)
     public void test_getFeedsFromSeedsByPath_validPathWithRealFeeds_listOfRSSFrontEndHelpersCorrectlyPopulated() throws Exception
     {
         List<Feed> actual = exerciseGetFeedsFromSeedsByPath();
@@ -80,14 +81,14 @@ public class ProcessRSSTest {
         return sut.getFeedsFromSeedsByPath(path);
     }
 
-    @Test
+    @Test(enabled = false)
     public void test_getFeedsFromSeedsByPath_validPathWithRealFeeds_feedCorrectlyPopulateMessages() throws Exception
     {
         Feed actual = exerciseGetFeedsFromSeedsByPath().get(23);
         Assert.assertTrue(!actual.getTitle().isEmpty());
     }
 
-    @Test
+    @Test (enabled = false)
     public void test_getFeedsFromSeedsByPath_validPathWithRealFeeds_seedsAreCorrectlyDeleted() throws Exception
     {
 

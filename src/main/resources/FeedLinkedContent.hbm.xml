@@ -6,13 +6,22 @@
 <hibernate-mapping package="com.socialintellegentia.commonhelpers.rss">
 
     <class name="FeedLinkedContent" table="feedLinkedContent">
+
         <id name="id" column="ID">
             <generator class="native"/>
         </id>
+
         <property name="parentId"/>
-        <property name="link"  type="text"/>
-        <property name="htmlContent"  type="text"/>
-        <property name="plainTextContent" type="text" />
+        <property name="link" type="text"/>
+
+        <property name="htmlContent" type="string">
+            <column name="htmlContent" sql-type="longtext"/>
+        </property>
+
+        <property name="plainTextContent" type="string">
+            <column name="plainTextContent" sql-type="longtext"/>
+        </property>
+
         <property name="date" type="timestamp"/>
 
     </class>
