@@ -26,6 +26,8 @@ public class spider {
             return;
         }
         String sourceFile = args[0];
+        SpiderPersistence spiderPersistence = new SpiderPersistence();
+        String workingFolder = (args.length>1) ? args[1].substring(13) : "";
 
         try
         {
@@ -33,8 +35,13 @@ public class spider {
             String rssSourcesJson = (fileExists) ? FileHelper.fileToString(sourceFile) : "[{\"source\":\""+sourceFile+"\"}]";
 
             ProcessRSS processRSS = new ProcessRSS();
+            if (!workingFolder.equals("")) {
+                processRSS.processRSSfromWorkingDirectory(workingFolder);
+                return;
+            }
+
             List<String> rssSources = JsonHelper.getRssSourcesFromJson(rssSourcesJson);
-            SpiderPersistence spiderPersistence = new SpiderPersistence();
+
 
             for (String rssSource : rssSources) {
                 if (spiderPersistence.isUrlInBlackList(rssSource)) {
@@ -45,17 +52,18 @@ public class spider {
                             "\n");
                     continue;
                 }
-                SpiderSiRSS runner = new SpiderSiRSS();
-                runner.getNewsFromRSSserver(rssSource);
-                runner.stop();
-                String workingFolder = runner.getWorkingFolder();
-                processRSS.processRSSfromWorkingDirectory(workingFolder);
+
+                    SpiderSiRSS runner = new SpiderSiRSS();
+                    runner.getNewsFromRSSserver(rssSource);
+                    runner.stop();
+                    workingFolder = runner.getWorkingFolder();
+                    processRSS.processRSSfromWorkingDirectory(workingFolder);
             }
         }
         catch (Exception e){
             System.out.println("Error when running spider: ["+e.getMessage()+"]");
-            e.printStackTrace();
-
+//            e.printStackTrace();
+            main(new String[]{sourceFile ,"onlyProcess="+workingFolder });
         }
     }
 
