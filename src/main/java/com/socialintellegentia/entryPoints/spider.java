@@ -26,19 +26,13 @@ public class spider {
             return;
         }
         String sourceFile = args[0];
-        SpiderPersistence spiderPersistence = new SpiderPersistence();
-        String workingFolder = (args.length>1) ? args[1].substring(13) : "";
 
         try
         {
             boolean fileExists = FileHelper.fileExists(sourceFile);
             String rssSourcesJson = (fileExists) ? FileHelper.fileToString(sourceFile) : "[{\"source\":\""+sourceFile+"\"}]";
 
-            ProcessRSS processRSS = new ProcessRSS();
-            if (!workingFolder.equals("")) {
-                processRSS.processRSSfromWorkingDirectory(workingFolder);
-                return;
-            }
+            SpiderPersistence spiderPersistence = new SpiderPersistence();
 
             List<String> rssSources = JsonHelper.getRssSourcesFromJson(rssSourcesJson);
 
@@ -53,17 +47,18 @@ public class spider {
                     continue;
                 }
 
-                    SpiderSiRSS runner = new SpiderSiRSS();
-                    runner.getNewsFromRSSserver(rssSource);
-                    runner.stop();
-                    workingFolder = runner.getWorkingFolder();
-                    processRSS.processRSSfromWorkingDirectory(workingFolder);
+                ProcessRSS processRSS = new ProcessRSS();
+                SpiderSiRSS runner = new SpiderSiRSS();
+                runner.getNewsFromRSSserver(rssSource);
+                runner.stop();
+                String workingFolder = runner.getWorkingFolder();
+                processRSS.processRSSfromWorkingDirectory(workingFolder);
+
             }
         }
         catch (Exception e){
             System.out.println("Error when running spider: ["+e.getMessage()+"]");
-//            e.printStackTrace();
-            main(new String[]{sourceFile ,"onlyProcess="+workingFolder });
+            e.printStackTrace();
         }
     }
 
