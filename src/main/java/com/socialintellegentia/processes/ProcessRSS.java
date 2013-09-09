@@ -122,12 +122,14 @@ public class ProcessRSS {
     }
 
     private String getAllCorpusFromFeed(SolrInputDocument solrFeedMessage) {
+        if (solrFeedMessage==null) return "";
         StringBuilder corpus = new StringBuilder();
-        corpus.append( solrFeedMessage.getFieldValue("title").toString());
-        corpus.append( " \n  " );
-        corpus.append(solrFeedMessage.getFieldValue("description").toString());
-        corpus.append( " \n  " );
-        corpus.append(solrFeedMessage.getFieldValue("content").toString());
+        String[] corpusKeys = new String[]{"title","description","content"};
+        for (String key : corpusKeys) {
+            if (!solrFeedMessage.containsKey(key)) continue;
+            corpus.append( solrFeedMessage.getFieldValue(key).toString());
+            corpus.append( " \n  " );
+        }
         return corpus.toString();
     }
 
