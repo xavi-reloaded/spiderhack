@@ -37,8 +37,8 @@ import java.util.Random;
 public class ProcessRSS {
 
     private static final String TOKEN = "9gLa3sIY2KR3G4YCBX7Qppi6zGvYOD0cAxzU2cnzb9o5YvxV4GGquD%252B4yCSnWp9o5ZQyi630NIyWt";
-    private static final String QUERYING_URL = "http://localhost:8983/solr/collection1";
-    private static final String INDEXING_URL = "http://localhost:8983/solr/collection1";
+    private static final String QUERYING_URL = "http://localhost:8983/solr/feeds";
+    private static final String INDEXING_URL = "http://localhost:8983/solr/feeds";
 
     private boolean keepCacheFiles = false;
     protected Log log = LogFactory.getLog(ProcessRSS.class);
@@ -106,30 +106,17 @@ public class ProcessRSS {
 
         for (FeedMessage feedMessage : feed.getFeedMessages())
         {
-            solrHelper.setNerEngine(spanishNer);
+            INamedEntityRecognizer ner = feed.getLanguage().toLowerCase().startsWith("en") ? englishNer : spanishNer;
+            solrHelper.setNerEngine(ner);
             String link = feedMessage.getLink();
             FeedLinkedContent feedLinkedContent = new FeedLinkedContent(link).captureLinkedContent();
             spiderPersistence.saveFeedLinkedContent(feedLinkedContent);
-            SolrInputDocument solrFeedMessage = solrHelper.createSolrDocumentFromFeedMessage(feedMessage,feedLinkedContent);
-            String corpus = getAllCorpusFromFeed(solrFeedMessage);
-            solrFeedMessage = solrHelper.injectElementsFromNamedEntityExtraction(solrFeedMessage, corpus);
+            SolrInputDocument solrFeedMessage = solrHelper.getFeedMessageSolrDocument(feedMessage, feedLinkedContent);
+            solrFeedMessage = solrHelper.injectNaturalLanguageProcessing(solrFeedMessage, feedMessage);
             solrIndexer.index(solrFeedMessage);
         }
 
     }
-
-    private String getAllCorpusFromFeed(SolrInputDocument solrFeedMessage) {
-        if (solrFeedMessage==null) return "";
-        StringBuilder corpus = new StringBuilder();
-        String[] corpusKeys = new String[]{"title","description","content"};
-        for (String key : corpusKeys) {
-            if (!solrFeedMessage.containsKey(key)) continue;
-            corpus.append( solrFeedMessage.getFieldValue(key).toString());
-            corpus.append( " \n  " );
-        }
-        return corpus.toString();
-    }
-
     public List<Feed> getFeedsFromSeedsByPath(String path) throws Exception {
         List<String> fileList = FileHelper.getFileList(path, "");
         RSSFeedParser parser = new RSSFeedParser();

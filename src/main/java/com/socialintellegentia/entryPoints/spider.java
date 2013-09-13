@@ -99,10 +99,12 @@ public class spider {
                 processRSS.processRSSfromWorkingDirectory(this.workingFolder);
             } catch (Exception e) {
                 e.printStackTrace();
+            } finally {
+                System.out.println("DONE! thread: [" + getName() +"]");
             }
-            System.out.println("DONE! thread: [" + getName() +"]");
         }
     }
+
 
 
 
