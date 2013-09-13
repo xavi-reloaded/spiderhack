@@ -45,21 +45,21 @@ public class ProcessRSS {
     protected DateTimeFormatter fmt = DateTimeFormat.forPattern("dd-MMMM-yyyy:HH:ss:mm");
     private SocialIntellegentiaAPI siAPI = new SocialIntellegentiaAPI();
 
-    private SpiderPersistence spiderPersistence = new SpiderPersistence();
-
     private SolrHelper solrHelper = new SolrHelper(QUERYING_URL,INDEXING_URL);
     private SolrIndexer solrIndexer = new SolrIndexer(QUERYING_URL,INDEXING_URL);
 
     private INamedEntityRecognizer spanishNer;
     private INamedEntityRecognizer englishNer;
+    private SpiderPersistence spiderPersistence;
 
 
     public ProcessRSS() {
         init(false);
     }
 
-    public ProcessRSS(boolean keepCacheFiles) {
-        init(keepCacheFiles);
+    public ProcessRSS(SpiderPersistence spiderPersistence) {
+        this.spiderPersistence=spiderPersistence;
+        init(false);
     }
 
     private void init(boolean keepCacheFiles) {

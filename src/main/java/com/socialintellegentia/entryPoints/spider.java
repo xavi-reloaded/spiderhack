@@ -7,6 +7,7 @@ import com.socialintellegentia.processes.ProcessRSS;
 import com.socialintellegentia.util.JsonHelper;
 import org.json.JSONException;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
@@ -19,6 +20,8 @@ import java.util.List;
  */
 public class spider {
 
+
+    private static String workingFolder;
 
     public static void main(String[] args)
     {
@@ -43,6 +46,7 @@ public class spider {
 
         try {
             runner = new SpiderSiRSS();
+            workingFolder = new java.io.File( "." ).getCanonicalPath() + File.separator + runner.getWorkingFolder();
         } catch (IOException e) {
             System.out.println("Error when running spider: ["+e.getMessage()+"]");
         }
@@ -71,20 +75,33 @@ public class spider {
                 System.out.println("Error when running spider: ["+e.getMessage()+"]");
             }
 
+            new ProcessRSSThread(rssSource,workingFolder,spiderPersistence).start();
 
-//
-
-
-//            try {
-//                String workingFolder = runner.getWorkingFolder();
-//                ProcessRSS processRSS = new ProcessRSS();
-//                processRSS.processRSSfromWorkingDirectory(workingFolder);
-//            } catch (Exception e) {
-//                System.out.println("Error when running spider: ["+e.getMessage()+"]");
-//            }
         }
         runner.stop();
         System.out.println("End of Routine: [" + "]");
+    }
+
+
+    static class ProcessRSSThread extends Thread {
+
+        private final String workingFolder;
+        ProcessRSS processRSS;
+
+        public ProcessRSSThread(String rssSource, String workingFolder, SpiderPersistence spiderPersistence) {
+            super(rssSource);
+            processRSS = new ProcessRSS(spiderPersistence);
+            this.workingFolder = workingFolder;
+        }
+
+        public void run() {
+            try {
+                processRSS.processRSSfromWorkingDirectory(this.workingFolder);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            System.out.println("DONE! thread: [" + getName() +"]");
+        }
     }
 
 
