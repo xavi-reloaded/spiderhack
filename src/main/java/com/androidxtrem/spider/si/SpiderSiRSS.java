@@ -32,6 +32,7 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
 
     private AnonymousProxyManager proxyManager = null;
     int maxProxyThreads = 20;
+    SpiderPersistence pers = new SpiderPersistence();
 
     public SpiderSiRSS() throws IOException
     {
@@ -78,10 +79,10 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         /////////////////////////////////////////////////////////
         StringBuffer html = downloader.getRequest(rss_server);
 
-        if (html==null)
+        if (html==null||"".equals(html)||RSSHelper.isXMLFeed(html.toString()))
         {
             log.warn(LOG_PREFIX + " can not get rss's from " + rss_server);
-            SpiderPersistence pers = new SpiderPersistence();
+
             pers.saveUrlToBlackList(rss_server);
             return;
         }

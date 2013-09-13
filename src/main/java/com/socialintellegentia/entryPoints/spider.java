@@ -72,7 +72,7 @@ public class spider {
             }
 
 
-//            runner.stop();
+//
 
 
 //            try {
@@ -83,6 +83,7 @@ public class spider {
 //                System.out.println("Error when running spider: ["+e.getMessage()+"]");
 //            }
         }
+        runner.stop();
         System.out.println("End of Routine: [" + "]");
     }
 
