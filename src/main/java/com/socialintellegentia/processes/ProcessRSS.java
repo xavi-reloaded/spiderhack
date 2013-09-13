@@ -86,13 +86,10 @@ public class ProcessRSS {
 
         for (Feed feed : feeds) {
             if (feed==null) continue;
-
-            feed = spiderPersistence.deleteExistingFeedMessagesFromFeed(feed);
+//            feed = spiderPersistence.deleteExistingFeedMessagesFromFeed(feed);
             if (!feed.getFeedMessages().isEmpty())
             {
-
-                feed = spiderPersistence.saveFeed(feed);
-
+//                feed = spiderPersistence.saveFeed(feed);
                 loadFeedInServer(feed);
                 indexFeedInSolr(feed);
             }
@@ -143,7 +140,9 @@ public class ProcessRSS {
             String fileString = FileHelper.fileToString(filePath);
             Feed feed = parser.readFeed(fileString);
             feedList.add(feed);
-            if (!keepCacheFiles) FileHelper.deleteFile(filePath);
+            if (!keepCacheFiles) {
+                FileHelper.deleteFile(filePath);
+            }
         }
 
         return feedList;
