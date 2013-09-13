@@ -31,7 +31,7 @@ import java.util.List;
 public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
 
     private AnonymousProxyManager proxyManager = null;
-    int maxProxyThreads = 5;
+    int maxProxyThreads = 20;
 
     public SpiderSiRSS() throws IOException
     {
@@ -51,8 +51,8 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         // Parameters
         /////////////////////////////////////////////////////////
         String workingFolder = getWorkingFolder();
-        int maxSpiderThreads = 20;
-        int milisecondsBetweenQueries = 1000;
+        int maxSpiderThreads = 50;
+        int milisecondsBetweenQueries = 500;
 
         /////////////////////////////////////////////////////////
         // Working Folders
@@ -88,7 +88,7 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
 
         if (RSSHelper.isXMLRSS(html.toString()))
         {
-            addNewSeed(new Seed(rss_server, 100));
+            addNewSeed(new Seed(rss_server, 10));
         }
         else
         {
@@ -101,7 +101,7 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
             StringBuilder builder = new StringBuilder("process feeds from" + rss_server +"\n");
             for(Feed feed : frontEndItem.getFeedList())
             {
-                addNewSeed(new Seed(feed.getLink(), 100));
+                addNewSeed(new Seed(feed.getLink(), 10));
                 builder.append("Added feed " + feed.toString() + "\n");
             }
             log.debug(LOG_PREFIX + builder.toString());
@@ -120,7 +120,11 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         log.debug("[AgentSiRSS] --> Request " + rss_server + " in: " + fmt.print(dtBegin) + "\n");
 
         startAgentsManager(milisecondsBetweenQueries, proxyManager, spiderList);
-        while(getSeedCount() > 0) Thread.sleep(50);
+        int avoidInfiniteLoop=0;
+        while(getSeedCount() > 0 && avoidInfiniteLoop>1000) {
+            Thread.sleep(50);
+            avoidInfiniteLoop++;
+        }
         stopAgentsManager();
         proxyManager.stop();
 
@@ -132,6 +136,5 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         String jobName = "SpiderSiRSS";
         return WORKING_FOLDER + "/spider/" + jobName;
     }
-
 
 }

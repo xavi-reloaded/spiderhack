@@ -22,7 +22,7 @@ public class spider {
 
     public static void main(String[] args)
     {
-
+        args = new String[]{"/home/sidev/workspace/bin/20130909_Sources_Feeds_Json.txt"};
         if (args.length<1) {
             printUsage();
             return;
@@ -44,7 +44,7 @@ public class spider {
         try {
             runner = new SpiderSiRSS();
         } catch (IOException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            System.out.println("Error when running spider: ["+e.getMessage()+"]");
         }
 
 
@@ -59,15 +59,21 @@ public class spider {
             }
 
             try {
+                System.out.println("\n" +
+                        "\n____________________________________________________________________" +
+                        "\n R E A D Y   T O   P R O C E S S    ==>  " + rssSource +
+                        "\n____________________________________________________________________" +
+                        "\n");
                 runner.getNewsFromRSSserver(rssSource);
             } catch (IOException e) {
-                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                System.out.println("Error when running spider: ["+e.getMessage()+"]");
             } catch (InterruptedException e) {
-                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                System.out.println("Error when running spider: ["+e.getMessage()+"]");
             }
 
 
 //            runner.stop();
+
 
 //            try {
 //                String workingFolder = runner.getWorkingFolder();
@@ -77,6 +83,7 @@ public class spider {
 //                System.out.println("Error when running spider: ["+e.getMessage()+"]");
 //            }
         }
+        System.out.println("End of Routine: [" + "]");
     }
 
 

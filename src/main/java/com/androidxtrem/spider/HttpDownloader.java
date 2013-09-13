@@ -14,8 +14,8 @@ public class HttpDownloader
 	private Proxy m_proxy = null;
 	private String m_cacheFolder = null;
 	private long m_minutesInCache = -1;
-	private int m_connectionTimeout = 5000;
-	private int m_readTimeout = 10000;
+	private int m_connectionTimeout = 2000;
+	private int m_readTimeout = 1000;
 
 	public HttpDownloader(String cacheFolder, long minutesInCache, int connectionTimeout, int readTimeout)
 	{
@@ -132,7 +132,8 @@ public class HttpDownloader
 					{
 						// System.out.println("Charset not found in headers " +
 						// conn.getHeaderFields( ).values( ).toString( ));
-						charset = "ISO-8859-1";
+//						charset = "ISO-8859-1";
+						charset = "UTF-8";
 					}
 
 					BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream(), charset/* "ISO-8859-1" */));
