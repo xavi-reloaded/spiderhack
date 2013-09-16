@@ -48,7 +48,7 @@ public class AgentSiRSS extends Agent
                 String infoMessage = "[AgentSiRSS] --> Error requesting \"" + url + "\" from \"" + getProxy() + "\"";
                 log.warn(infoMessage);
                 persistence.saveUrlToBlackList(url, infoMessage);
-                writeErrorFile(name, rawnews);
+                writeErrorFile(name, "--nein---");
                 return;
             }
             else
@@ -58,7 +58,7 @@ public class AgentSiRSS extends Agent
                     String infoMessage = "[AgentSiRSS] --> Not a valid RSS source " + getSeed();
                     log.warn(infoMessage);
                     persistence.saveUrlToBlackList(getSeed(), infoMessage);
-                    writeErrorFile(name, rawnews);
+                    writeErrorFile(name, rawnews.toString());
                     return;
                 }
                 saveResult(rawnews, name);
@@ -83,7 +83,7 @@ public class AgentSiRSS extends Agent
 
     }
 
-    private void writeErrorFile(String name, StringBuffer rawnews) throws IOException, InterruptedException {
+    private void writeErrorFile(String name, String rawnews) throws IOException, InterruptedException {
         String sep = System.getProperty("file.separator");
         String folder = getWorkingFolder() + sep + "error";
         String outputFile = folder + sep + name + ".ERROR";

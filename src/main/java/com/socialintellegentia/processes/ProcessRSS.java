@@ -164,4 +164,7 @@ public class ProcessRSS {
     }
 
 
+    public void setKeepCacheFiles(boolean keepCacheFiles) {
+        this.keepCacheFiles = keepCacheFiles;
+    }
 }
