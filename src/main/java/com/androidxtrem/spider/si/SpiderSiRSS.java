@@ -13,9 +13,8 @@ import com.socialintellegentia.commonhelpers.rss.Feed;
 import com.socialintellegentia.commonhelpers.rss.FrontEndItem;
 import com.socialintellegentia.commonhelpers.rss.RSSFrontEndHelper;
 import com.socialintellegentia.commonhelpers.rss.RSSHelper;
+import com.socialintellegentia.processes.ProcessRSS;
 import org.joda.time.DateTime;
-import org.joda.time.Period;
-import org.joda.time.PeriodType;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -30,13 +29,15 @@ import java.util.List;
  */
 public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
 
+    private SpiderPersistence persistence;
+    private ProcessRSS processRSS;
     private AnonymousProxyManager proxyManager = null;
     int maxProxyThreads = 20;
-    SpiderPersistence pers = new SpiderPersistence();
 
-    public SpiderSiRSS() throws IOException
+    public SpiderSiRSS(SpiderPersistence persistence) throws IOException
     {
         proxyManager = new AnonymousProxyManager(CACHE_FOLDER, maxProxyThreads);
+        this.persistence=persistence;
     }
 
     public void stop()
@@ -45,15 +46,15 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
     }
 
 
-    public void getNewsFromRSSserver(String rss_server) throws IOException, InterruptedException
+    public void getNewsFromRSSserver(String rss_server,ProcessRSS processRSS) throws IOException, InterruptedException
     {
         log.debug(LOG_PREFIX + "Begint Treatment of " + rss_server );
         /////////////////////////////////////////////////////////
         // Parameters
         /////////////////////////////////////////////////////////
         String workingFolder = getWorkingFolder();
-        int maxSpiderThreads = 50;
-        int milisecondsBetweenQueries = 500;
+        int maxSpiderThreads = 1;
+        int milisecondsBetweenQueries = 5000;
 
         /////////////////////////////////////////////////////////
         // Working Folders
@@ -66,7 +67,7 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         /////////////////////////////////////////////////////////
         List<Agent> spiderList = new ArrayList<Agent>();
         for(int i = 0; i < maxSpiderThreads; i++) {
-            spiderList.add(new AgentSiRSS(workingFolder, CACHE_FOLDER, Long.MAX_VALUE));
+            spiderList.add(new AgentSiRSS(workingFolder, CACHE_FOLDER, Long.MAX_VALUE, persistence, processRSS));
         }
 
         /////////////////////////////////////////////////////////
@@ -83,13 +84,13 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         {
             log.warn(LOG_PREFIX + " can not get rss's from " + rss_server);
 
-            pers.saveUrlToBlackList(rss_server);
+            persistence.saveUrlToBlackList(rss_server);
             return;
         }
 
         if (RSSHelper.isXMLRSS(html.toString()))
         {
-            addNewSeed(new Seed(rss_server, 10));
+            addNewSeed(new Seed(rss_server, 1));
         }
         else
         {
@@ -102,7 +103,7 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
             StringBuilder builder = new StringBuilder("process feeds from" + rss_server +"\n");
             for(Feed feed : frontEndItem.getFeedList())
             {
-                addNewSeed(new Seed(feed.getLink(), 10));
+                addNewSeed(new Seed(feed.getLink(), 1));
                 builder.append("Added feed " + feed.toString() + "\n");
             }
             log.debug(LOG_PREFIX + builder.toString());
@@ -119,11 +120,11 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         /////////////////////////////////////////////////////////
         DateTime dtBegin = new DateTime();
         log.debug("[AgentSiRSS] --> Request " + rss_server + " in: " + fmt.print(dtBegin) + "\n");
-
         startAgentsManager(milisecondsBetweenQueries, proxyManager, spiderList);
         int avoidInfiniteLoop=0;
+        Thread.sleep(3000);
         while(getSeedCount() > 0 && avoidInfiniteLoop>1000) {
-            Thread.sleep(50);
+            Thread.sleep(3000);
             avoidInfiniteLoop++;
         }
         stopAgentsManager();

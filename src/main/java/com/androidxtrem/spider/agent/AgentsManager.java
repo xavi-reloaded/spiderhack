@@ -18,7 +18,6 @@ public class AgentsManager implements Runnable
     protected Log log = LogFactory.getLog(AgentsManager.class);
     protected DateTimeFormatter fmt = DateTimeFormat.forPattern("dd-MMMM-yyyy:HH:ss:mm");
 
-	// private int m_milisecondsBetweenQueries = 0;
 	private AnonymousProxyManager m_proxyManager = null;
 	private List<Agent> m_agentList = null;
 	private List<Seed> m_seeds = new ArrayList<Seed>();
@@ -30,7 +29,7 @@ public class AgentsManager implements Runnable
 			m_thread = new Thread(this);
 		if(!m_thread.isAlive())
 		{
-			// m_milisecondsBetweenQueries = milisecondsBetweenQueries;
+//			m_milisecondsBetweenQueries = milisecondsBetweenQueries;
 			m_proxyManager = proxyManager;
 			m_agentList = agentList;
 			m_thread.start();

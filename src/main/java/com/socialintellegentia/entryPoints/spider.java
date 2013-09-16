@@ -4,12 +4,18 @@ import com.androidxtrem.commonsHelpers.FileHelper;
 import com.androidxtrem.spider.si.SpiderSiRSS;
 import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
 import com.socialintellegentia.processes.ProcessRSS;
+import com.socialintellegentia.solr.SolrAdapter;
+import com.socialintellegentia.solr.SolrHelper;
+import com.socialintellegentia.solr.SolrIndexer;
 import com.socialintellegentia.util.JsonHelper;
 import org.json.JSONException;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created with IntelliJ IDEA.
@@ -22,37 +28,51 @@ public class spider {
 
 
     private static String workingFolder;
+    private static ExecutorService service = Executors.newFixedThreadPool(100);
 
-    public static void main(String[] args)
-    {
+
+
+    public static void main(String[] args) {
         args = new String[]{"/home/sidev/workspace/bin/20130909_Sources_Feeds_Json.txt"};
-        if (args.length<1) {
+        if (args.length < 1) {
             printUsage();
             return;
         }
         String sourceFile = args[0];
         SpiderPersistence spiderPersistence = new SpiderPersistence();
 
+
         List<String> rssSources = null;
         try {
             rssSources = getRssSources(sourceFile);
         } catch (IOException e) {
-            System.out.println("Error openning file: ["+rssSources+"]\n["+e.getMessage()+"]");
+            System.out.println("Error openning file: [" + rssSources + "]\n[" + e.getMessage() + "]");
         } catch (JSONException e) {
             System.out.println("Error in JSON parsing: [" + e.getMessage() + "]");
         }
 
+
         SpiderSiRSS runner = null;
-
-        try {
-            runner = new SpiderSiRSS();
-            workingFolder = new java.io.File( "." ).getCanonicalPath() + File.separator + runner.getWorkingFolder();
-        } catch (IOException e) {
-            System.out.println("Error when running spider: ["+e.getMessage()+"]");
-        }
-
-
+        ProcessRSS processRSS = new ProcessRSS(spiderPersistence);
         for (String rssSource : rssSources) {
+
+            try {
+                runner = new SpiderSiRSS(spiderPersistence);
+                workingFolder = new java.io.File(".").getCanonicalPath() + File.separator + runner.getWorkingFolder();
+                System.out.println("\n" +
+                        "\n____________________________________________________________________" +
+                        "\n R E A D Y   T O   P R O C E S S    ==>  " + rssSource +
+                        "\n____________________________________________________________________" +
+                        "\n");
+                runner.getNewsFromRSSserver(rssSource, processRSS);
+
+
+            } catch (IOException e) {
+                System.out.println("Error when running spider: [" + e.getMessage() + "]");
+            } catch (InterruptedException e) {
+                System.out.println("Error when running spider: [" + e.getMessage() + "]");
+            }
+
             if (spiderPersistence.isUrlInBlackList(rssSource)) {
                 System.out.println("\n" +
                         "\n____________________________________________________________________" +
@@ -62,50 +82,11 @@ public class spider {
                 continue;
             }
 
-            try {
-                System.out.println("\n" +
-                        "\n____________________________________________________________________" +
-                        "\n R E A D Y   T O   P R O C E S S    ==>  " + rssSource +
-                        "\n____________________________________________________________________" +
-                        "\n");
-                runner.getNewsFromRSSserver(rssSource);
-            } catch (IOException e) {
-                System.out.println("Error when running spider: ["+e.getMessage()+"]");
-            } catch (InterruptedException e) {
-                System.out.println("Error when running spider: ["+e.getMessage()+"]");
-            }
-
-            new ProcessRSSThread(rssSource,workingFolder,spiderPersistence).start();
-
         }
         runner.stop();
         System.out.println("End of Routine: [" + "]");
+
     }
-
-
-    static class ProcessRSSThread extends Thread {
-
-        private final String workingFolder;
-        ProcessRSS processRSS;
-
-        public ProcessRSSThread(String rssSource, String workingFolder, SpiderPersistence spiderPersistence) {
-            super(rssSource);
-            processRSS = new ProcessRSS(spiderPersistence);
-            this.workingFolder = workingFolder;
-        }
-
-        public void run() {
-            try {
-                processRSS.processRSSfromWorkingDirectory(this.workingFolder);
-            } catch (Exception e) {
-                e.printStackTrace();
-            } finally {
-                System.out.println("DONE! thread: [" + getName() +"]");
-            }
-        }
-    }
-
-
 
 
     private static List<String> getRssSources(String sourceFile) throws IOException, JSONException {

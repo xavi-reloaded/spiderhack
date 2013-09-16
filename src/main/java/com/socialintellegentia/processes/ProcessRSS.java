@@ -10,6 +10,7 @@ import com.socialintellegentia.commonhelpers.rss.Feed;
 import com.socialintellegentia.commonhelpers.rss.FeedLinkedContent;
 import com.socialintellegentia.commonhelpers.rss.FeedMessage;
 import com.socialintellegentia.commonhelpers.rss.RSSFeedParser;
+import com.socialintellegentia.solr.SolrAdapter;
 import com.socialintellegentia.solr.SolrHelper;
 import com.socialintellegentia.solr.SolrIndexer;
 import org.apache.commons.logging.Log;
@@ -37,20 +38,18 @@ import java.util.Random;
 public class ProcessRSS {
 
     private static final String TOKEN = "9gLa3sIY2KR3G4YCBX7Qppi6zGvYOD0cAxzU2cnzb9o5YvxV4GGquD%252B4yCSnWp9o5ZQyi630NIyWt";
-    private static final String QUERYING_URL = "http://localhost:8983/solr/feeds";
-    private static final String INDEXING_URL = "http://localhost:8983/solr/feeds";
 
     private boolean keepCacheFiles = false;
     protected Log log = LogFactory.getLog(ProcessRSS.class);
     protected DateTimeFormatter fmt = DateTimeFormat.forPattern("dd-MMMM-yyyy:HH:ss:mm");
     private SocialIntellegentiaAPI siAPI = new SocialIntellegentiaAPI();
 
-    private SolrHelper solrHelper = new SolrHelper(QUERYING_URL,INDEXING_URL);
-    private SolrIndexer solrIndexer = new SolrIndexer(QUERYING_URL,INDEXING_URL);
 
     private INamedEntityRecognizer spanishNer;
     private INamedEntityRecognizer englishNer;
     private SpiderPersistence spiderPersistence;
+    private SolrHelper solrHelper;
+    private SolrIndexer solrIndexer;
 
 
     public ProcessRSS() {
@@ -63,6 +62,9 @@ public class ProcessRSS {
     }
 
     private void init(boolean keepCacheFiles) {
+        solrHelper = SolrAdapter.getInstance().getSolrHelper();
+        solrIndexer = SolrAdapter.getInstance().getSolrIndexer();
+
         this.keepCacheFiles = keepCacheFiles;
         try {
             spanishNer = new FreeLingSpanishBioNerNer();
