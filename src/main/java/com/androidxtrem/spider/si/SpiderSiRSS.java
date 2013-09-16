@@ -30,9 +30,8 @@ import java.util.List;
 public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
 
     private SpiderPersistence persistence;
-    private ProcessRSS processRSS;
     private AnonymousProxyManager proxyManager = null;
-    int maxProxyThreads = 20;
+    int maxProxyThreads = 5;
 
     public SpiderSiRSS(SpiderPersistence persistence) throws IOException
     {
@@ -53,8 +52,8 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         // Parameters
         /////////////////////////////////////////////////////////
         String workingFolder = getWorkingFolder();
-        int maxSpiderThreads = 1;
-        int milisecondsBetweenQueries = 5000;
+        int maxSpiderThreads = 10;
+        int milisecondsBetweenQueries = 3000;
 
         /////////////////////////////////////////////////////////
         // Working Folders
@@ -122,15 +121,16 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         log.debug("[AgentSiRSS] --> Request " + rss_server + " in: " + fmt.print(dtBegin) + "\n");
         startAgentsManager(milisecondsBetweenQueries, proxyManager, spiderList);
         int avoidInfiniteLoop=0;
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         while(getSeedCount() > 0 && avoidInfiniteLoop>1000) {
-            Thread.sleep(3000);
+            Thread.sleep(5000);
             avoidInfiniteLoop++;
         }
         stopAgentsManager();
         proxyManager.stop();
 
-        String tag = "[AgentSiRSS] --> Request " + rss_server ;
+
+        String tag = "[AgentSiRSS] --> Request ENDING ========> " + rss_server ;
         LoggerHelper.writeTimmingToLog(dtBegin, tag);
     }
 

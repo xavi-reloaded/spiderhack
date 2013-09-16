@@ -1,10 +1,12 @@
 package com.androidxtrem.spider.si;
 
+import com.androidxtrem.commonsHelpers.FileHelper;
 import com.androidxtrem.spider.agent.Agent;
 import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
 import com.socialintellegentia.commonhelpers.rss.RSSHelper;
 import com.socialintellegentia.processes.ProcessRSS;
 
+import java.io.File;
 import java.io.IOException;
 
 /**
@@ -21,6 +23,7 @@ public class AgentSiRSS extends Agent
     private long minutesInCache;
     private SpiderPersistence persistence;
     private ProcessRSS processRSS;
+    private int m_milisecondsBetweenQueries = 1000;
 
     public AgentSiRSS(String workingFolder, String cacheFolder, long minutesInCache, SpiderPersistence persistence, ProcessRSS processRSS) throws IOException, InterruptedException {
         super(workingFolder, cacheFolder, minutesInCache);
@@ -39,13 +42,15 @@ public class AgentSiRSS extends Agent
             String name = url.replaceAll("[\\\\/:\\*\"\\?<>\\|]", "");
             StringBuffer rawnews = getRequestXML(url, minutesInCache);
 
+
+
+
             if(rawnews == null)
             {
                 String infoMessage = "[AgentSiRSS] --> Error requesting \"" + url + "\" from \"" + getProxy() + "\"";
                 log.warn(infoMessage);
                 persistence.saveUrlToBlackList(url, infoMessage);
-//                setProxy(null);
-                saveResult(rawnews, name+".NULL.ERROR");
+                writeErrorFile(name, rawnews);
                 return;
             }
             else
@@ -55,7 +60,7 @@ public class AgentSiRSS extends Agent
                     String infoMessage = "[AgentSiRSS] --> Not a valid RSS source " + getSeed();
                     log.warn(infoMessage);
                     persistence.saveUrlToBlackList(getSeed(), infoMessage);
-                    saveResult(rawnews, name+".NOT.VALID.ERROR");
+                    writeErrorFile(name, rawnews);
                     return;
                 }
                 saveResult(rawnews, name);
@@ -63,11 +68,13 @@ public class AgentSiRSS extends Agent
             }
 
 
-            try {
-                processRSS.processRSSfromWorkingDirectory(getWorkingFolder());
-            } catch (Exception e) {
-                log.error("[AgentSiRSS] --> Error processing \"" + name + "\"");
-            }
+//            try {
+//                processRSS.processRSSfromWorkingDirectory(getWorkingFolder());
+//            } catch (Exception e) {
+//                log.error("[AgentSiRSS] --> Error processing \"" + name + "\"");
+//            }
+
+            Thread.sleep(m_milisecondsBetweenQueries);
         }
         catch(Exception e)
         {
@@ -76,6 +83,17 @@ public class AgentSiRSS extends Agent
         }
 
 
+    }
+
+    private void writeErrorFile(String name, StringBuffer rawnews) throws IOException, InterruptedException {
+        String sep = System.getProperty("file.separator");
+        String folder = getWorkingFolder() + sep + "error";
+        String outputFile = folder + sep + name + ".ERROR";
+        if (!FileHelper.fileExists(folder)) FileHelper.createFolder(folder);
+        if(!FileHelper.fileExists(outputFile))
+        {
+            FileHelper.stringToFile(rawnews.toString(), outputFile);
+        }
     }
 
 }

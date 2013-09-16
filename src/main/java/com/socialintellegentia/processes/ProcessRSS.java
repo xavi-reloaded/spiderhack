@@ -91,9 +91,11 @@ public class ProcessRSS {
 //            feed = spiderPersistence.deleteExistingFeedMessagesFromFeed(feed);
             if (!feed.getFeedMessages().isEmpty())
             {
-//                feed = spiderPersistence.saveFeed(feed);
-                loadFeedInServer(feed);
+                log.debug("[ProcessRSS] --> BE F O R E        S O L R : [" + feeds.size() + "] Feeds");
                 indexFeedInSolr(feed);
+                log.debug("[ProcessRSS] -->  A F T E          S O L R : [" + feeds.size() + "] Feeds");
+                loadFeedInServer(feed);
+//                feed = spiderPersistence.saveFeed(feed);
             }
         }
 
