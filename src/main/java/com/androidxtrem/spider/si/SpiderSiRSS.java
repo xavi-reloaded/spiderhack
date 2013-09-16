@@ -45,7 +45,7 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
     }
 
 
-    public void getNewsFromRSSserver(String rss_server,ProcessRSS processRSS) throws IOException, InterruptedException
+    public void getNewsFromRSSserver(String rss_server) throws IOException, InterruptedException
     {
         log.debug(LOG_PREFIX + "Begint Treatment of " + rss_server );
         /////////////////////////////////////////////////////////
@@ -66,7 +66,7 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         /////////////////////////////////////////////////////////
         List<Agent> spiderList = new ArrayList<Agent>();
         for(int i = 0; i < maxSpiderThreads; i++) {
-            spiderList.add(new AgentSiRSS(workingFolder, CACHE_FOLDER, Long.MAX_VALUE, persistence, processRSS));
+            spiderList.add(new AgentSiRSS(workingFolder, CACHE_FOLDER, Long.MAX_VALUE, persistence));
         }
 
         /////////////////////////////////////////////////////////
@@ -126,8 +126,8 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
             Thread.sleep(5000);
             avoidInfiniteLoop++;
         }
-        stopAgentsManager();
-        proxyManager.stop();
+//        stopAgentsManager();
+//        proxyManager.stop();
 
 
         String tag = "[AgentSiRSS] --> Request ENDING ========> " + rss_server ;

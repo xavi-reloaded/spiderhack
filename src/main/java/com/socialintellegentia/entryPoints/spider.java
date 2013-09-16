@@ -28,13 +28,12 @@ public class spider {
 
 
     private static String workingFolder;
-    private static ExecutorService service = Executors.newFixedThreadPool(100);
 
 
 
     public static void main(String[] args) {
 //        args = new String[]{"/home/sidev/workspace/bin/20130909_Sources_Feeds_Json.txt"};
-        args = new String[]{"{\"source\":\"http://www.npr.org/rss/rss.php?id=1001\"}"};
+//        args = new String[]{"{\"source\":\"http://www.npr.org/rss/rss.php?id=1001\"}"};
         if (args.length < 1) {
             printUsage();
             return;
@@ -45,7 +44,7 @@ public class spider {
 
         List<String> rssSources = null;
         try {
-            if (!sourceFile.contains("{\"source\":\"")) throw new Exception("is not a valid source");
+//            if (!sourceFile.contains("{\"source\":\"")) throw new Exception("is not a valid source");
             rssSources = getRssSources(sourceFile);
         } catch (IOException e) {
             System.out.println("Error openning file: [" + rssSources + "]\n[" + e.getMessage() + "]");
@@ -63,7 +62,7 @@ public class spider {
 
 
         SpiderSiRSS runner = null;
-        ProcessRSS processRSS = new ProcessRSS(spiderPersistence);
+//        ProcessRSS processRSS = new ProcessRSS(spiderPersistence);
         try {
             runner = new SpiderSiRSS(spiderPersistence);
         } catch (IOException e) {
@@ -91,7 +90,7 @@ public class spider {
                         "\n____________________________________________________________________" +
                         "\n");
 
-                runner.getNewsFromRSSserver(rssSource, processRSS);
+                runner.getNewsFromRSSserver(rssSource);
 
 
             } catch (IOException e) {

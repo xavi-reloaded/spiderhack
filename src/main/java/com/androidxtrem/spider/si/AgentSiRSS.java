@@ -22,14 +22,12 @@ public class AgentSiRSS extends Agent
 
     private long minutesInCache;
     private SpiderPersistence persistence;
-    private ProcessRSS processRSS;
     private int m_milisecondsBetweenQueries = 1000;
 
-    public AgentSiRSS(String workingFolder, String cacheFolder, long minutesInCache, SpiderPersistence persistence, ProcessRSS processRSS) throws IOException, InterruptedException {
+    public AgentSiRSS(String workingFolder, String cacheFolder, long minutesInCache, SpiderPersistence persistence) throws IOException, InterruptedException {
         super(workingFolder, cacheFolder, minutesInCache);
         this.minutesInCache = minutesInCache;
         this.persistence = persistence;
-        this.processRSS = processRSS;
     }
 
     @Override

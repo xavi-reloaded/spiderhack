@@ -32,7 +32,7 @@ public class AgentSiRSS_Test implements SpiderConfig
         prepareCacheFilesUsedOnTest();
         SpiderPersistence persistence = null;
         ProcessRSS processRSS = null;
-        sut = new AgentSiRSS(WORKING_FOLDER, CACHE_FOLDER, Long.MAX_VALUE,persistence,processRSS);
+        sut = new AgentSiRSS(WORKING_FOLDER, CACHE_FOLDER, Long.MAX_VALUE,persistence);
     }
 
     private void prepareCacheFilesUsedOnTest() throws Exception {
