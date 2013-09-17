@@ -4,7 +4,10 @@ import com.androidxtrem.commonsHelpers.FileHelper;
 import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
 import com.socialintellegentia.commonhelpers.rss.RSSHelper;
 import com.socialintellegentia.processes.ProcessRSS;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
+import java.io.File;
 import java.util.List;
 
 /**
@@ -18,6 +21,9 @@ import java.util.List;
 
 public class process {
 
+    protected static Log log = LogFactory.getLog(process.class);
+
+
     public static void main(String[] args) {
         SpiderPersistence persistence = new SpiderPersistence();
         String workingDirectory = "/home/sidev/workspace/bin/sd_spider/spider/SpiderSiRSS";
@@ -26,29 +32,35 @@ public class process {
 
             List<String> fileList = FileHelper.getFileList(workingDirectory, "");
             int cont=0;
+            int totalFiles = fileList.size();
 
             for (String filePath : fileList)
             {
-                System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBEGIN PROCES ("+cont+") ["+filePath+"]\n\n");
+                cont++;
+                log.info("BEGIN PROCES ("+cont+" of "+totalFiles+") ["+filePath+"]");
 
                 String rss = FileHelper.fileToString(filePath);
                 if (!RSSHelper.isXMLRSS(rss)) {
-                    System.out.println("BAD REQUEST (is not a valid rss resource) \n\n");
+                    log.warn("BAD REQUEST : ["+filePath+"] is not a valid rss resource, must be a FrontEnd RSS page");
+                    File file = new File(filePath);
+                    if (file.canWrite()) {
+                        FileHelper.deleteExistentFile(file);
+                    }
                     continue;
                 }
 
                 ProcessRSS processRSS = new ProcessRSS(persistence);
-                processRSS.setKeepCacheFiles(true);
                 processRSS.processRSSfromWorkingDirectory(filePath);
                 processRSS.flush();
 
-                cont++;
-                System.out.println("\n\nEND PROCES ("+cont+") ["+filePath+"]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+
+                log.info("BEGIN PROCES (" + cont + " of " + totalFiles + ") [" + filePath + "]");
             }
 
 
         } catch (Exception e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            log.error("MIERDER HAS HAPPENED INTO PROCESS ROUTINE (" + e.getMessage() + "]");
+            e.printStackTrace();
         }
     }
 

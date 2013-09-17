@@ -38,6 +38,12 @@ public class spider {
             printUsage();
             return;
         }
+        if (args[0].equals("-X")) {
+            process.main(args);
+            return;
+        }
+
+
         String sourceFile = args[0];
         SpiderPersistence spiderPersistence = new SpiderPersistence();
 
@@ -120,7 +126,7 @@ public class spider {
                 "Options:\n" +
                 " -k                           keep cache files\n" +
                 " -w[working directory]        change working directory\n" +
-                " -c                           config file\n" +
+                " -X                           launch rss injection\n" +
                 " -t                           publish to test server\n");
     }
 

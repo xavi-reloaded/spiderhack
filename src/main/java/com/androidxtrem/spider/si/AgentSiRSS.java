@@ -65,13 +65,6 @@ public class AgentSiRSS extends Agent
                 log.info("[AgentSiRSS] --> Save founded seed \"" + name + "\"");
             }
 
-
-//            try {
-//                processRSS.processRSSfromWorkingDirectory(getWorkingFolder());
-//            } catch (Exception e) {
-//                log.error("[AgentSiRSS] --> Error processing \"" + name + "\"");
-//            }
-
             Thread.sleep(m_milisecondsBetweenQueries);
         }
         catch(Exception e)
