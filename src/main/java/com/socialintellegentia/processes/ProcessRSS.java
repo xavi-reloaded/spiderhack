@@ -80,7 +80,7 @@ public class ProcessRSS {
         }
     }
 
-    public void processRSSfromWorkingDirectory(String workingFolder) throws Exception {
+            public void processRSSfromWorkingDirectory(String workingFolder) throws Exception {
 
         DateTime dtBegin = new DateTime();
         log.debug("[ProcessRSS] --> Begin process injection in " + workingFolder + " in: " + fmt.print(dtBegin));
@@ -128,6 +128,7 @@ public class ProcessRSS {
 
     }
 
+
     public List<Feed> getFeedsFromSeedsByPath(String path) throws Exception {
         List<String> fileList = (new File(path).isDirectory()) ? FileHelper.getFileList(path, "") : Arrays.asList(new String[]{path});
         RSSFeedParser parser = new RSSFeedParser();
@@ -145,7 +146,6 @@ public class ProcessRSS {
 
         return feedList;
     }
-
 
     public String loadFeedInServer(Feed feed) throws Exception {
 

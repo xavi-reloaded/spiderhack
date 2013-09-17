@@ -2,6 +2,7 @@ package com.socialintellegentia.entryPoints;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
 import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
+import com.socialintellegentia.commonhelpers.rss.RSSHelper;
 import com.socialintellegentia.processes.ProcessRSS;
 
 import java.util.List;
@@ -23,8 +24,16 @@ public class process {
             processRSS.setKeepCacheFiles(true);
 
             List<String> fileList = FileHelper.getFileList(workingDirectory, "");
+            int cont=0;
 
-            processRSS.processRSSfromWorkingDirectory(workingDirectory);
+            for (String filePath : fileList)
+            {
+                String rss = FileHelper.fileToString(filePath);
+                if (!RSSHelper.isXMLRSS(rss)) continue;
+                cont++;
+                processRSS.processRSSfromWorkingDirectory(filePath);
+            }
+
 
         } catch (Exception e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
