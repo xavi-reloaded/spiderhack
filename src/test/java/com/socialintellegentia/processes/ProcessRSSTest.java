@@ -113,13 +113,6 @@ public class ProcessRSSTest {
 
     }
 
-    @Test
-    public void test_processRSSfromFileDirectory() throws Exception {
-        String filePath = ProcessRSSTest.class.getResource("/SpiderSiRSS/httpestaticos.elmundo.eselmundodeporterssbaloncesto.xml").getPath();
-        sut.processRSSfromFileDirectory(filePath);
-
-    }
-
     @Test(groups = {"integration"})
     public void test_getFeedsFromSeedsByPath_onlyOneFileAndExists() throws Exception {
 

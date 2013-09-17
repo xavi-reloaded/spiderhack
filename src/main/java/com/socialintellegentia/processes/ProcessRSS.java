@@ -90,14 +90,14 @@ public class ProcessRSS {
 
         for (Feed feed : feeds) {
             if (feed==null) continue;
-            feed = spiderPersistence.deleteExistingFeedMessagesFromFeed(feed);
+//            feed = spiderPersistence.deleteExistingFeedMessagesFromFeed(feed);
             if (!feed.getFeedMessages().isEmpty())
             {
                 log.debug("[ProcessRSS] --> BE F O R E        S O L R : [" + feed.getFeedMessages().size() + "] Feeds");
                 indexFeedInSolr(feed);
                 log.debug("[ProcessRSS] -->  A F T E          S O L R : [" + feed.getFeedMessages().size() + "] Feeds");
                 loadFeedInServer(feed);
-//                feed = spiderPersistence.saveFeed(feed);
+                spiderPersistence.saveFeed(feed);
             }
         }
 
@@ -106,10 +106,6 @@ public class ProcessRSS {
         String strTotalTime=  totalPeriod.getHours() + ":" + totalPeriod.getSeconds() + ":" + totalPeriod.getMillis();
         log.debug("[ProcessRSS] --> Finish process injection in " + workingFolder + " in: " + fmt.print(dtEnd) +  ". Time: " + strTotalTime + "\n");
 
-    }
-
-    public void processRSSfromFileDirectory(String filePath) {
-        //To change body of created methods use File | Settings | File Templates.
     }
 
     protected void indexFeedInSolr(Feed feed) throws IOException {
