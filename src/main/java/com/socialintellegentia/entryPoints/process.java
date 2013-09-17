@@ -37,7 +37,7 @@ public class process {
             for (String filePath : fileList)
             {
                 cont++;
-                log.info("BEGIN PROCES ("+cont+" of "+totalFiles+") ["+filePath+"]");
+                log.debug("BEGIN PROCES ("+cont+" of "+totalFiles+") ["+filePath+"]");
 
                 String rss = FileHelper.fileToString(filePath);
                 if (!RSSHelper.isXMLRSS(rss)) {
@@ -54,13 +54,14 @@ public class process {
                 processRSS.flush();
 
 
-                log.info("BEGIN PROCES (" + cont + " of " + totalFiles + ") [" + filePath + "]");
+                log.debug("BEGIN PROCES (" + cont + " of " + totalFiles + ") [" + filePath + "]");
             }
 
 
         } catch (Exception e) {
-            log.error("MIERDER HAS HAPPENED INTO PROCESS ROUTINE (" + e.getMessage() + "]");
+            log.error("MIERDER HAS HAPPENED INTO PROCESS ROUTINE (" + e.toString() + "]");
             e.printStackTrace();
+            System.exit(0);
         }
     }
 
