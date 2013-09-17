@@ -14,24 +14,36 @@ import java.util.List;
  * Time: 7:00 PM
  * To change this template use File | Settings | File Templates.
  */
+
+
 public class process {
 
     public static void main(String[] args) {
         SpiderPersistence persistence = new SpiderPersistence();
-        ProcessRSS processRSS = new ProcessRSS(persistence);
         String workingDirectory = "/home/sidev/workspace/bin/sd_spider/spider/SpiderSiRSS";
+
         try {
-            processRSS.setKeepCacheFiles(true);
 
             List<String> fileList = FileHelper.getFileList(workingDirectory, "");
             int cont=0;
 
             for (String filePath : fileList)
             {
+                System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBEGIN PROCES ("+cont+") ["+filePath+"]\n\n");
+
                 String rss = FileHelper.fileToString(filePath);
-                if (!RSSHelper.isXMLRSS(rss)) continue;
-                cont++;
+                if (!RSSHelper.isXMLRSS(rss)) {
+                    System.out.println("BAD REQUEST (is not a valid rss resource) \n\n");
+                    continue;
+                }
+
+                ProcessRSS processRSS = new ProcessRSS(persistence);
+                processRSS.setKeepCacheFiles(true);
                 processRSS.processRSSfromWorkingDirectory(filePath);
+                processRSS.flush();
+
+                cont++;
+                System.out.println("\n\nEND PROCES ("+cont+") ["+filePath+"]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
             }
 
 

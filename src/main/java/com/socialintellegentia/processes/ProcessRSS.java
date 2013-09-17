@@ -80,7 +80,7 @@ public class ProcessRSS {
         }
     }
 
-            public void processRSSfromWorkingDirectory(String workingFolder) throws Exception {
+    public void processRSSfromWorkingDirectory(String workingFolder) throws Exception {
 
         DateTime dtBegin = new DateTime();
         log.debug("[ProcessRSS] --> Begin process injection in " + workingFolder + " in: " + fmt.print(dtBegin));
@@ -173,5 +173,12 @@ public class ProcessRSS {
 
     public void setKeepCacheFiles(boolean keepCacheFiles) {
         this.keepCacheFiles = keepCacheFiles;
+    }
+
+    public void flush() {
+        spanishNer.flushFreelingCache();
+        spanishNer.disposeFreeLingCache();
+        englishNer.flushFreelingCache();
+        englishNer.disposeFreeLingCache();
     }
 }
