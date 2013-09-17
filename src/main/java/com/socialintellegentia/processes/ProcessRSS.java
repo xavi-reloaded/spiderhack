@@ -23,8 +23,10 @@ import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
 import javax.naming.ServiceUnavailableException;
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
@@ -91,9 +93,9 @@ public class ProcessRSS {
 //            feed = spiderPersistence.deleteExistingFeedMessagesFromFeed(feed);
             if (!feed.getFeedMessages().isEmpty())
             {
-                log.debug("[ProcessRSS] --> BE F O R E        S O L R : [" + feeds.size() + "] Feeds");
+                log.debug("[ProcessRSS] --> BE F O R E        S O L R : [" + feed.getFeedMessages().size() + "] Feeds");
                 indexFeedInSolr(feed);
-                log.debug("[ProcessRSS] -->  A F T E          S O L R : [" + feeds.size() + "] Feeds");
+                log.debug("[ProcessRSS] -->  A F T E          S O L R : [" + feed.getFeedMessages().size() + "] Feeds");
                 loadFeedInServer(feed);
 //                feed = spiderPersistence.saveFeed(feed);
             }
@@ -104,6 +106,10 @@ public class ProcessRSS {
         String strTotalTime=  totalPeriod.getHours() + ":" + totalPeriod.getSeconds() + ":" + totalPeriod.getMillis();
         log.debug("[ProcessRSS] --> Finish process injection in " + workingFolder + " in: " + fmt.print(dtEnd) +  ". Time: " + strTotalTime + "\n");
 
+    }
+
+    public void processRSSfromFileDirectory(String filePath) {
+        //To change body of created methods use File | Settings | File Templates.
     }
 
     protected void indexFeedInSolr(Feed feed) throws IOException {
@@ -121,8 +127,9 @@ public class ProcessRSS {
         }
 
     }
+
     public List<Feed> getFeedsFromSeedsByPath(String path) throws Exception {
-        List<String> fileList = FileHelper.getFileList(path, "");
+        List<String> fileList = (new File(path).isDirectory()) ? FileHelper.getFileList(path, "") : Arrays.asList(new String[]{path});
         RSSFeedParser parser = new RSSFeedParser();
         List<Feed> feedList = new ArrayList<Feed>();
 
@@ -138,6 +145,7 @@ public class ProcessRSS {
 
         return feedList;
     }
+
 
     public String loadFeedInServer(Feed feed) throws Exception {
 
@@ -162,7 +170,6 @@ public class ProcessRSS {
 
         return addFeed;
     }
-
 
     public void setKeepCacheFiles(boolean keepCacheFiles) {
         this.keepCacheFiles = keepCacheFiles;
