@@ -96,7 +96,7 @@ public class ProcessRSS {
                 log.debug("[ProcessRSS] --> BE F O R E        S O L R : [" + feed.getFeedMessages().size() + "] Feeds");
                 indexFeedInSolr(feed);
                 log.debug("[ProcessRSS] -->  A F T E          S O L R : [" + feed.getFeedMessages().size() + "] Feeds");
-                loadFeedInServer(feed);
+//                loadFeedInServer(feed);
                 spiderPersistence.saveFeed(feed);
             }
         }
@@ -118,7 +118,7 @@ public class ProcessRSS {
             FeedLinkedContent feedLinkedContent = new FeedLinkedContent(link).captureLinkedContent();
             spiderPersistence.saveFeedLinkedContent(feedLinkedContent);
             SolrInputDocument solrFeedMessage = solrHelper.getFeedMessageSolrDocument(feedMessage, feedLinkedContent);
-            solrFeedMessage = solrHelper.injectNaturalLanguageProcessing(solrFeedMessage, feedMessage);
+//            solrFeedMessage = solrHelper.injectNaturalLanguageProcessing(solrFeedMessage, feedMessage);
             solrIndexer.index(solrFeedMessage);
         }
 
