@@ -44,15 +44,13 @@ public class process {
                     log.warn("BAD REQUEST : ["+filePath+"] is not a valid rss resource, must be a FrontEnd RSS page");
                     File file = new File(filePath);
                     if (file.canWrite()) {
-                        FileHelper.deleteExistentFile(file);
+                        FileHelper.deleteFile(file);
                     }
                     continue;
                 }
 
                 ProcessRSS processRSS = new ProcessRSS(persistence);
                 processRSS.processRSSfromWorkingDirectory(filePath);
-                processRSS.flush();
-
 
                 log.debug("BEGIN PROCES (" + cont + " of " + totalFiles + ") [" + filePath + "]");
             }

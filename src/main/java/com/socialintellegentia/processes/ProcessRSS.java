@@ -46,9 +46,6 @@ public class ProcessRSS {
     protected DateTimeFormatter fmt = DateTimeFormat.forPattern("dd-MMMM-yyyy:HH:ss:mm");
     private SocialIntellegentiaAPI siAPI = new SocialIntellegentiaAPI();
 
-
-    private INamedEntityRecognizer spanishNer;
-    private INamedEntityRecognizer englishNer;
     private SpiderPersistence spiderPersistence;
     private SolrHelper solrHelper;
     private SolrIndexer solrIndexer;
@@ -68,16 +65,6 @@ public class ProcessRSS {
         solrIndexer = SolrAdapter.getInstance().getSolrIndexer();
 
         this.keepCacheFiles = keepCacheFiles;
-        try {
-            spanishNer = new FreeLingSpanishBioNerNer();
-            englishNer = new FreeLingEnglishBioNerNer();
-        } catch (ServiceUnavailableException e) {
-            log.error("NATURAL LANGUAGE PROCESS EPIC FAIL !!!");
-            log.error(e.getMessage());
-        } catch (IOException e) {
-            log.error("NATURAL LANGUAGE PROCESS EPIC FAIL !!!");
-            log.error(e.getMessage());
-        }
     }
 
     public void processRSSfromWorkingDirectory(String workingFolder) throws Exception {
@@ -112,8 +99,6 @@ public class ProcessRSS {
 
         for (FeedMessage feedMessage : feed.getFeedMessages())
         {
-            INamedEntityRecognizer ner = feed.getLanguage().toLowerCase().startsWith("en") ? englishNer : spanishNer;
-            solrHelper.setNerEngine(ner);
             String link = feedMessage.getLink();
             FeedLinkedContent feedLinkedContent = new FeedLinkedContent(link).captureLinkedContent();
             spiderPersistence.saveFeedLinkedContent(feedLinkedContent);
@@ -172,12 +157,5 @@ public class ProcessRSS {
 
     public void setKeepCacheFiles(boolean keepCacheFiles) {
         this.keepCacheFiles = keepCacheFiles;
-    }
-
-    public void flush() {
-        spanishNer.flushFreelingCache();
-        spanishNer.disposeFreeLingCache();
-        englishNer.flushFreelingCache();
-        englishNer.disposeFreeLingCache();
     }
 }
