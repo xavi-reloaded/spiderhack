@@ -101,7 +101,7 @@ public class ProcessRSS {
         {
             String link = feedMessage.getLink();
             FeedLinkedContent feedLinkedContent = new FeedLinkedContent(link).captureLinkedContent();
-            spiderPersistence.saveFeedLinkedContent(feedLinkedContent);
+            if (spiderPersistence!=null) spiderPersistence.saveFeedLinkedContent(feedLinkedContent);
             SolrInputDocument solrFeedMessage = solrHelper.getFeedMessageSolrDocument(feedMessage, feedLinkedContent);
 //            solrFeedMessage = solrHelper.injectNaturalLanguageProcessing(solrFeedMessage, feedMessage);
             solrIndexer.index(solrFeedMessage);
