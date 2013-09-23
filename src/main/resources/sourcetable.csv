@@ -1,0 +1,76 @@
+id;First name;family name 1;family name 2;Published name A;Published name B shorter;Position;Mainstream Media Source complete name;Mainstream Media Source name to show;Domain clean para Jonny
+1000000001;Gary;Knell;;Gary Knell;G. Knell;President & CEO;NPR;npr.org;www.npr.org
+1000000002;Arianna;Huffington;;Arianna Huffington;A. Huffington;Editor;The Huffington Post;huffingtonpost.com;www.huffingtonpost.com
+1000000003;Jill;Abramson;;Jill Abramson;J. Abramson;Editor;The New York Times;nytimes.com;www.nytimes.com
+1000000004;Gerard;Baker;;Gerard Baker;G. Baker;Editor;The Wall Street Journal;wsj.com;online.wsj.com
+1000000005;Martin;Baron;;Martin Baron;M. Baron;Editor;The Washington Post;washingtonpost.com;www.washingtonpost.com
+1000000006;Jeff;Fager;;Jeff Fager;J. Fager;Chairman;CBS News;cbsnews.com;www.cbsnews.com
+1000000007;Roger;Ailes;;Roger Ailes;R. Ailes;Chairman & CEO;FOX News;foxnews.com;www.foxnews.com
+1000000008;Patricia;Fili-Krushel;;Patricia Fili-Krushel;P. Fili-Krushel;Chairman of NBCUniversal News Group;NBC News;nbcnews.com;www.nbcnews.com
+1000000009;Patricia;Fili-Krushel;;Patricia Fili-Krushel;P. Fili-Krushel;Chairman of NBCUniversal News Group;CNBC;cnbc.com;www.cnbc.com
+1000000010;Jeff;Zucker;;Jeff Zucker;J. Zucker;President;CNN;cnn.com;edition.cnn.com
+1000000011;David;Remnick;;David Remnick;D. Remnick;Edtor;The New Yorker;newyorker.com;www.newyorker.com
+1000000012;David;Daley;;David Daley;D. Daley;Editor;Salon;salon.com;www.salon.com
+1000000013;Paul;Lee;;Paul Lee;P. Lee;President;ABC (American Broadcasting Company);abcnews.com;abcnews.go.com
+1000000014;David;Plotz;;David Plotz;D. Plotz;Editor;Slate (Magazine);slate.com;www.slate.com
+1000000015;Paul S.;Mason;;Paul S. Mason;P.S. Mason;President & CEO;Link TV;linktv.org;www.linktv.org
+1000000016;Michel;Chossudovsky;;Michel Chossudovsky;M. Chossudovsky;Editor;Centre for Research on Globalization;globalresearch.ca;www.globalresearch.ca
+1000000017;John F. ;Harris;;John F.  Harris;J.F. Harris;Editor-in-Chief;Politico;politico.com;www.politico.com
+1000000018;David;Callaway ;;David Callaway ;D. Callaway ;Editor-in-Chief;USA today;usatoday.com/news;www.usatoday.com
+1000000019;Stephen;Engelberg;;Stephen Engelberg;S. Engelberg;Editor-in-Chief;ProPublica;propublica.org;www.propublica.org
+1000000021;Stephen J.;Adler;;Stephen J. Adler;S.J. Adler;Editor-in-Chief;Reuters News;reuters.com;www.reuters.com
+1000000022;Tina;Brown;;Tina Brown;T. Brown;Editor;The Daily Beast;thedailybeast.com;www.thedailybeast.com
+1000000023;Richard;Stengel;;Richard Stengel;R. Stengel;Managing Editor;Time Magazine;time.com;www.time.com
+1000000024;Brian;McGrory;;Brian McGrory;B. McGrory;Editor;The Boston Globe;bostonglobe.com;www.boston.com
+1000000025;Eddy;Hartenstein;;Eddy Hartenstein;E. Hartenstein;CEO;Los Angeles Times;latimes.com;www.latimes.com
+1000000026;David;Boardman;;David Boardman;D. Boardman;Editor;The Seattle Times;seattletimes.com;www.seattletimes.com
+1000000026;Gerould W.;Kern;;Gerould W. Kern;G.W. Kern;Editor;The Chicago Tribune;chicagotribune.com;www.chicagotribune.com
+44000000001;Tony;Hall;of Birkenhead;Tony Hall;T. Hall;Director-General;BBC;bbc.co.uk/news;www.bbc.co.uk
+44000000002;John;Micklethwait;;John Micklethwait;J. Micklethwait;Editor;The Economist;economist.com;www.economist.com
+44000000003;Lionel;Barber;;Lionel Barber;L. Barber;Editor;Financial Times;ft.com;www.ft.com
+44000000004;John;Witherow;;John Witherow;J. Witherow;Editor;The Times;thetimes.co.uk;www.thetimes.co.uk
+44000000005;Alan;Rusbridger;;Alan Rusbridger;A. Rusbridger;Editor;The Guardian;theguardian.com;www.theguardian.com
+44000000006;Amol;Rajan;;Amol Rajan;A. Rajan;Editor;The Independent;independent.co.uk;www.independent.co.uk
+33000000001;Lucian;Sârb;;Lucian Sârb;L. Sârb;Director of News and Programmes;Euronews;euronews.com;www.euronews.com
+33000000002;Marie-Christine;Saragosse;;Marie-Christine Saragosse;M.C. Saragosse;Président-directeur général;France24;france24.com;www.france24.com
+33000000003A;Serge;Halimi;;Serge Halimi;S. Halimi;Directeur de la rédaction;Le Monde Diplomatique (En.Ed.);mondediplo.com;mondediplo.com
+33000000003B;Serge;Halimi;;Serge Halimi;S. Halimi;Directeur de la rédaction;Le Monde Diplomatique;mondediplo.com;www.monde-diplomatique.fr
+33000000004;Louis;Dreyfus;;Louis Dreyfus;L. Dreyfus;Directeur de publication;Le Monde;lemonde.fr;www.lemonde.fr
+33000000005;Alexis;Brézet;;Alexis Brézet;A. Brézet;Directeur de la rédaction;Le Figaro;lefigaro.fr;www.lefigaro.fr
+33000000006;Antoine;de Gaudemar;;Antoine de Gaudemar;A. de Gaudemar;Editor;Libération;liberation.fr;www.liberation.fr
+33000000007;Nicolas;Barré;;Nicolas Barré;N. Barré;Directeur de la rédaction;Les Échos;lesechos.fr;www.lesechos.fr
+33000000008;Thierry;Borsa;;Thierry Borsa;T. Borsa;Directeur de la rédaction;Le Parisien;leparisien.fr;www.leparisien.fr
+33000000009;Rémy;Pflimlin;;Rémy Pflimlin;R. Pflimlin;Président;France Televisions;francetvinfo.fr;www.francetvinfo.fr
+974000000001;Mustafa;Soug;;Mustafa Soug;M. Soug;Editor-in-Chief;Al Jazeera;aljazeera.com;www.aljazeera.com
+974000000002;Kate;O'Brian;;Kate O'Brian;K. O'Brian;President;Al Jazeera America;aljazeera america;america.aljazeera.com
+49000000001;Mathias;Müller von Blumencron;;Mathias Müller von Blumencron;M. Müller von Blumencron;Editor-in-Chief;Spiegel online;spiegel.de;www.spiegel.de
+49000000002;Kai;Gniffke;;Kai Gniffke;K. Gniffke;Chefredakteur;Tagesschau (ARD);tagesschau.de;www.tagesschau.de
+49000000003;Volker;Herres;;Volker Herres;V. Herres;Programmdirektor;ARD;ard.de;www.boerse.ard.de
+34000000001;Javier;García;;Javier García;J. García;Director;Europa Press;europapress.es;www.europapress.es
+34000000002;Leopoldo;Gonzalez-Echenique; y Castellanos de Ubao;Leopoldo Gonzalez-Echenique;L. Gonzalez-Echenique;Presidente;Radiotelevisión Española;rtve.es;www.rtve.es
+34000000003;Paolo;Vasile;;Paolo Vasile;P Vasile;CEO;Telecinco;telecinco.es/informativos;www.telecinco.es
+34000000004;Javier;Moreno;Barber;Javier Moreno;J. Moreno;Director;El País;elpais.com;elpais.com
+34000000005;Pedro J.;Ramírez;Codina;Pedro J. Ramírez;P.J. Ramírez;Director;El Mundo (España);elmundo.es;www.elmundo.es
+34000000006;Josep;Antich;Valero;Josep Antich;J. Antich;Director;La Vanguardia;lavanguardia.com;www.lavanguardia.com
+34000000007;Bieito;Rubido;Ramonde;Bieito Rubido;B. Rubido;Director;ABC (periódico español);abc.es;www.abc.es
+34000000008;Gloria;Fernández-Lomana;García;Gloria Fernández-Lomana;G. Fernández-Lomana;Directora de Informativos;Antena3;antena3.com;www.antena3.com
+34000000009;;;; ; ;;Cuatro tv;cuatro.com;www.cuatro.com
+34000000010;Antonio;Hernández-Rodicio;Romero;Antonio Hernández-Rodicio;A. Hernández-Rodicio;Director;Cadena SER;cadenaser.com;www.cadenaser.com
+34000000011;Fernando;Giménez;Barriocanal;Fernando Giménez;F. Giménez;Presidente y CEO;COPE;cope.es;www.cope.es
+34000000012;Nacho;Cardero;;Nacho Cardero;N. Cardero;Director;El Confidencial;elconfidencial.com;rss.elconfidencial.com
+34000000013;Francisco;Marhuenda;;Francisco Marhuenda;F. Marhuenda;Director;La Razón (España);larazon.es;www.larazon.es
+34000000014;Amador;García;Ayora;Amador García;A. García;Director;El Economista (España);eleconomista.es;www.eleconomista.es
+34000000015;Raúl;Vilas;;Raúl Vilas;R. Vilas;Director;Libertad Digital;libertaddigital.com;www.libertaddigital.com
+34000000016;Ana Isabel;Pereda;;Ana Isabel Pereda;A.I. Pereda;Director;Expansión;expansion.com;www.expansion.com
+34000000017;Jorge;Rivera;Garcia;Jorge Rivera;J. Rivera;Director;Cinco Días;cincodias.com;www.cincodias.com
+34000000018;Julio;Ariza;Irigoyen;Julio Ariza;J. Ariza;Presidente;Intereconomía TV;intereconomia.com;www.intereconomia.com
+34000000020;Enric;Hernandez;Llorente ;Enric Hernandez;E. Hernandez;Director;El Periódico de Catalunya;elperiodico.com/es;www.elperiodico.com
+34000000021;Juan Carlos;Martínez;;Juan Carlos Martínez;J.C. Martínez;Director;El Correo;elcorreo.com;www.elcorreo.com
+34000000023;Inés;Artajo;Ayesa;Inés Artajo;I. Artajo;Director;Diario de Navarra;diariodenavarra.es;www.diariodenavarra.es
+34000000026;Ángeles;Rivero;;Ángeles Rivero;A. Rivero;Director;La Nueva España;lne.es;www.lne.es
+34000000027;Maite;Iturbe;;Maite Iturbe;M. Iturbe;Director General;EiTB (Euskal Irrati Telebista);eitb.com/es/noticias;www.eitb.com
+34000000028;José Antonio;Sánchez;Domínguez;José Antonio Sánchez;J.A. Sánchez;Director General;Telemadrid;telemadrid.es/noticias;www.telemadrid.es
+34000000029;Miguel;Iturbe;Mach;Miguel Iturbe;M. Iturbe;Director;Heraldo de Aragón;heraldo.es;www.heraldo.es
+34000000030;Joseba;Santamaría;Rekarte;Joseba Santamaría;J. Santamaría;Director;Diario de Noticias;noticiasdenavarra.com;www.noticiasdenavarra.com
+34000000031;Francisco;Suárez;Álamo;Francisco Suárez;F. Suárez;Director;Canarias7;canarias7.es;www.canarias7.es
+34000000032;Antonio;Cacereño;Ibañez;Antonio Cacereño;A. Cacereño;Director;La Provincia (Canarias);laprovincia.es;www.laprovincia.es
