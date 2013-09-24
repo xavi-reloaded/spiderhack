@@ -47,7 +47,7 @@ public class AgentSiRSS extends Agent
             {
                 String infoMessage = "[AgentSiRSS] --> Error requesting \"" + url + "\" from \"" + getProxy() + "\"";
                 log.warn(infoMessage);
-                persistence.saveUrlToBlackList(url, infoMessage);
+//                persistence.saveUrlToBlackList(url, infoMessage);
                 writeErrorFile(name, "--nein---");
                 return;
             }
@@ -57,7 +57,7 @@ public class AgentSiRSS extends Agent
                 {
                     String infoMessage = "[AgentSiRSS] --> Not a valid RSS source " + getSeed();
                     log.warn(infoMessage);
-                    persistence.saveUrlToBlackList(getSeed(), infoMessage);
+//                    persistence.saveUrlToBlackList(getSeed(), infoMessage);
                     writeErrorFile(name, rawnews.toString());
                     return;
                 }

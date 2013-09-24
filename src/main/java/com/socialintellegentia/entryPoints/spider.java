@@ -78,14 +78,14 @@ public class spider {
 
             try {
 
-                if (spiderPersistence.isUrlInBlackList(rssSource)) {
-                    System.out.println("\n" +
-                            "\n____________________________________________________________________" +
-                            "\n B L A C K L I S T E D  ==>  " + rssSource +
-                            "\n____________________________________________________________________" +
-                            "\n");
-                    continue;
-                }
+//                if (spiderPersistence.isUrlInBlackList(rssSource)) {
+//                    System.out.println("\n" +
+//                            "\n____________________________________________________________________" +
+//                            "\n B L A C K L I S T E D  ==>  " + rssSource +
+//                            "\n____________________________________________________________________" +
+//                            "\n");
+//                    continue;
+//                }
 
                 workingFolder = new java.io.File(".").getCanonicalPath() + File.separator + runner.getWorkingFolder();
                 System.out.println("\n" +

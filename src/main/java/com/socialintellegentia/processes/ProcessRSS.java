@@ -4,12 +4,13 @@ import com.androidxtrem.commonsHelpers.FileHelper;
 import com.androidxtrem.nlp.ner.FreeLingEnglishBioNerNer;
 import com.androidxtrem.nlp.ner.FreeLingSpanishBioNerNer;
 import com.androidxtrem.nlp.ner.INamedEntityRecognizer;
+import com.commafeed.backend.feeds.FeedParser;
+import com.commafeed.backend.feeds.FetchedFeed;
+import com.commafeed.backend.model.FeedEntry;
+import com.commafeed.backend.model.FeedEntryContent;
 import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
 import com.socialintellegentia.commonhelpers.restclient.SocialIntellegentiaAPI;
-import com.socialintellegentia.commonhelpers.rss.Feed;
-import com.socialintellegentia.commonhelpers.rss.FeedLinkedContent;
-import com.socialintellegentia.commonhelpers.rss.FeedMessage;
-import com.socialintellegentia.commonhelpers.rss.RSSFeedParser;
+import com.socialintellegentia.commonhelpers.rss.*;
 import com.socialintellegentia.solr.SolrAdapter;
 import com.socialintellegentia.solr.SolrHelper;
 import com.socialintellegentia.solr.SolrIndexer;
@@ -25,10 +26,9 @@ import org.joda.time.format.DateTimeFormatter;
 import javax.naming.ServiceUnavailableException;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
+import java.sql.*;
+import java.util.*;
+import java.util.Date;
 
 /**
  * Created with IntelliJ IDEA.
@@ -49,6 +49,7 @@ public class ProcessRSS {
     private SpiderPersistence spiderPersistence;
     private SolrHelper solrHelper;
     private SolrIndexer solrIndexer;
+    private CustomFeedParser feedParser;
 
 
     public ProcessRSS() {
@@ -73,6 +74,7 @@ public class ProcessRSS {
         log.debug("[ProcessRSS] --> Begin process injection in " + workingFolder + " in: " + fmt.print(dtBegin));
 
         List<Feed> feeds = getFeedsFromSeedsByPath(workingFolder);
+
         log.debug("[ProcessRSS] --> Catch process injection with: [" + feeds.size() + "] Feeds");
 
         for (Feed feed : feeds) {
@@ -84,7 +86,7 @@ public class ProcessRSS {
                 indexFeedInSolr(feed);
                 log.debug("[ProcessRSS] -->  A F T E          S O L R : [" + feed.getFeedMessages().size() + "] Feeds");
 //                loadFeedInServer(feed);
-                spiderPersistence.saveFeed(feed);
+//                spiderPersistence.saveFeed(feed);
             }
         }
 
@@ -101,7 +103,7 @@ public class ProcessRSS {
         {
             String link = feedMessage.getLink();
             FeedLinkedContent feedLinkedContent = new FeedLinkedContent(link).captureLinkedContent();
-            if (spiderPersistence!=null) spiderPersistence.saveFeedLinkedContent(feedLinkedContent);
+//            if (spiderPersistence!=null) spiderPersistence.saveFeedLinkedContent(feedLinkedContent);
             SolrInputDocument solrFeedMessage = solrHelper.getFeedMessageSolrDocument(feedMessage, feedLinkedContent);
 //            solrFeedMessage = solrHelper.injectNaturalLanguageProcessing(solrFeedMessage, feedMessage);
             solrIndexer.index(solrFeedMessage);
@@ -112,14 +114,14 @@ public class ProcessRSS {
 
     public List<Feed> getFeedsFromSeedsByPath(String path) throws Exception {
         List<String> fileList = (new File(path).isDirectory()) ? FileHelper.getFileList(path, "") : Arrays.asList(new String[]{path});
-        RSSFeedParser parser = new RSSFeedParser();
+        feedParser = new CustomFeedParser();
         List<Feed> feedList = new ArrayList<Feed>();
 
         for(String filePath : fileList)
         {
             String fileString = FileHelper.fileToString(filePath);
-            Feed feed = parser.readFeed(fileString);
-            feedList.add(feed);
+            Feed feed = feedParser.parse(filePath, fileString.getBytes());
+            if (feed!=null) feedList.add(feed);
             if (!keepCacheFiles) {
                 File file = new File(filePath);
                 if (file.canWrite()) {
@@ -127,7 +129,6 @@ public class ProcessRSS {
                 }
             }
         }
-
         return feedList;
     }
 

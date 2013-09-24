@@ -79,11 +79,11 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         /////////////////////////////////////////////////////////
         StringBuffer html = downloader.getRequest(rss_server);
 
-        if (html==null||"".equals(html)||RSSHelper.isXMLFeed(html.toString()))
+        if (html==null||"".equals(html))
         {
             log.warn(LOG_PREFIX + " can not get rss's from " + rss_server);
 
-            persistence.saveUrlToBlackList(rss_server);
+//            persistence.saveUrlToBlackList(rss_server);
             return;
         }
 
