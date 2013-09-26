@@ -73,7 +73,7 @@ public class ProcessRSSTest {
     public void test_getFeedsFromSeedsByPath_validPathWithRealFeeds_listOfRSSFrontEndHelpersCorrectlyPopulated() throws Exception
     {
         List<Feed> actual = exerciseGetFeedsFromSeedsByPath();
-        int expected = 73;
+        int expected = 72;
         Assert.assertEquals(actual.size(),expected);
     }
 
