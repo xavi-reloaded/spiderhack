@@ -1,9 +1,6 @@
 package com.socialintellegentia.processes;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
-import com.commafeed.backend.feeds.FeedParser;
-import com.commafeed.backend.feeds.FetchedFeed;
-import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
 import com.socialintellegentia.commonhelpers.rss.Feed;
 import com.socialintellegentia.commonhelpers.rss.FeedMessage;
 import org.testng.Assert;
