@@ -42,6 +42,7 @@ public class process {
                 if (!FileHelper.fileExists(filePath)) continue;
 
                 String rss = FileHelper.fileToString(filePath);
+
                 if (!RSSHelper.isXMLRSS(rss)) {
                     log.warn("BAD REQUEST : ["+filePath+"] is not a valid rss resource, must be a FrontEnd RSS page");
                     File file = new File(filePath);
