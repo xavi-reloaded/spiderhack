@@ -1,13 +1,6 @@
 package com.socialintellegentia.processes;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
-import com.androidxtrem.nlp.ner.FreeLingEnglishBioNerNer;
-import com.androidxtrem.nlp.ner.FreeLingSpanishBioNerNer;
-import com.androidxtrem.nlp.ner.INamedEntityRecognizer;
-import com.commafeed.backend.feeds.FeedParser;
-import com.commafeed.backend.feeds.FetchedFeed;
-import com.commafeed.backend.model.FeedEntry;
-import com.commafeed.backend.model.FeedEntryContent;
 import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
 import com.socialintellegentia.commonhelpers.restclient.SocialIntellegentiaAPI;
 import com.socialintellegentia.commonhelpers.rss.*;
@@ -105,7 +98,7 @@ public class ProcessRSS {
             FeedLinkedContent feedLinkedContent = new FeedLinkedContent(link).captureLinkedContent();
 //            if (spiderPersistence!=null) spiderPersistence.saveFeedLinkedContent(feedLinkedContent);
             SolrInputDocument solrFeedMessage = solrHelper.getFeedMessageSolrDocument(feedMessage, feedLinkedContent);
-//            solrFeedMessage = solrHelper.injectNaturalLanguageProcessing(solrFeedMessage, feedMessage);
+            solrFeedMessage = solrHelper.injectTopicsIssuesNLP(solrFeedMessage);
             solrIndexer.index(solrFeedMessage);
         }
 
