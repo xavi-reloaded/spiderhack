@@ -41,7 +41,7 @@ public class ProcessRSSTest {
 
     }
 
-    @Test(groups = {"integration"})
+    @Test(groups = {"integration"}, enabled=false)
     public void test_indexFeedInSolr() throws Exception {
 
         Feed feed = exerciseGetFeedsFromSeedsByPath().get(2);
