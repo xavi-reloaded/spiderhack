@@ -77,4 +77,10 @@ public class AgentSiRSS_Test implements SpiderConfig
         Assert.assertTrue(actual.toString().startsWith(expected),actual.toString());
 
     }
+
+    @Test
+    public void test_getTempFileName() throws Exception {
+        String actual = sut.getTempFileName("http://feeds.foxnews.com/foxnews/most-popular");
+        Assert.assertTrue(actual.endsWith("___httpfeeds.foxnews.comfoxnewsmost-popular"));
+    }
 }

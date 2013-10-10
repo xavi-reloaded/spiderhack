@@ -59,7 +59,7 @@ public class ProcessRSSTest {
 
     }
 
-    @Test(groups = {"integration"})
+    @Test(groups = {"integration"}, enabled=false)
     public void test_loadFeedInServer_() throws Exception {
         Feed feed = exerciseGetFeedsFromSeedsByPath().get(23);
         String serverResponse = sut.loadFeedInServer(feed);
@@ -69,7 +69,7 @@ public class ProcessRSSTest {
 
     }
 
-    @Test (groups = {"integration"})
+    @Test (groups = {"integration"}, enabled=false)
     public void test_getFeedsFromSeedsByPath_validPathWithRealFeeds_listOfRSSFrontEndHelpersCorrectlyPopulated() throws Exception
     {
         List<Feed> actual = exerciseGetFeedsFromSeedsByPath();
@@ -81,14 +81,14 @@ public class ProcessRSSTest {
         return sut.getFeedsFromSeedsByPath(path);
     }
 
-    @Test(groups = {"integration"})
+    @Test(groups = {"integration"}, enabled=false)
     public void test_getFeedsFromSeedsByPath_validPathWithRealFeeds_feedCorrectlyPopulateMessages() throws Exception
     {
         Feed actual = exerciseGetFeedsFromSeedsByPath().get(23);
         Assert.assertTrue(!actual.getTitle().isEmpty());
     }
 
-    @Test(groups = {"integration"})
+    @Test(groups = {"integration"}, enabled=false)
     public void test_getFeedsFromSeedsByPath_validPathWithRealFeeds_seedsAreCorrectlyDeleted() throws Exception
     {
         exerciseGetFeedsFromSeedsByPath();
@@ -112,7 +112,7 @@ public class ProcessRSSTest {
 
     }
 
-    @Test(groups = {"integration"})
+    @Test(groups = {"integration"}, enabled=false)
     public void test_getFeedsFromSeedsByPath_onlyOneFileAndExists() throws Exception {
 
         String filePathName = "/tmp/temp.xml";

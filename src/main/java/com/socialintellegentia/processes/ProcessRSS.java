@@ -1,6 +1,7 @@
 package com.socialintellegentia.processes;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
+import com.androidxtrem.nlp.contents.StandardContentKyoto;
 import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
 import com.socialintellegentia.commonhelpers.restclient.SocialIntellegentiaAPI;
 import com.socialintellegentia.commonhelpers.rss.*;
@@ -16,12 +17,9 @@ import org.joda.time.PeriodType;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
-import javax.naming.ServiceUnavailableException;
 import java.io.File;
 import java.io.IOException;
-import java.sql.*;
 import java.util.*;
-import java.util.Date;
 
 /**
  * Created with IntelliJ IDEA.
@@ -33,6 +31,7 @@ import java.util.Date;
 public class ProcessRSS {
 
     private static final String TOKEN = "9gLa3sIY2KR3G4YCBX7Qppi6zGvYOD0cAxzU2cnzb9o5YvxV4GGquD%252B4yCSnWp9o5ZQyi630NIyWt";
+    private static final String GUI_HASH_PATH = "/usr/local/share/kyotodata/metadata/guiPersistentHash.kch";
 
     private boolean keepCacheFiles = false;
     protected Log log = LogFactory.getLog(ProcessRSS.class);
@@ -43,6 +42,8 @@ public class ProcessRSS {
     private SolrHelper solrHelper;
     private SolrIndexer solrIndexer;
     private CustomFeedParser feedParser;
+
+    private StandardContentKyoto guiPersistentHash;
 
 
     public ProcessRSS() {
@@ -59,6 +60,12 @@ public class ProcessRSS {
         solrIndexer = SolrAdapter.getInstance().getSolrIndexer();
 
         this.keepCacheFiles = keepCacheFiles;
+        try {
+            guiPersistentHash = new StandardContentKyoto(GUI_HASH_PATH,true);
+        } catch (IOException e) {
+
+
+        }
     }
 
     public void processRSSfromWorkingDirectory(String workingFolder) throws Exception {
@@ -77,7 +84,7 @@ public class ProcessRSS {
             {
                 log.debug("[ProcessRSS] --> BE F O R E        S O L R : [" + feed.getFeedMessages().size() + "] Feeds");
                 indexFeedInSolr(feed);
-                log.debug("[ProcessRSS] -->  A F T E          S O L R : [" + feed.getFeedMessages().size() + "] Feeds");
+                log.debug("[ProcessRSS] -->  A F T E R        S O L R : [" + feed.getFeedMessages().size() + "] Feeds");
 //                loadFeedInServer(feed);
 //                spiderPersistence.saveFeed(feed);
             }
@@ -95,11 +102,15 @@ public class ProcessRSS {
         for (FeedMessage feedMessage : feed.getFeedMessages())
         {
             String link = feedMessage.getLink();
+            String guid = feedMessage.getGuid();
+            boolean existsGuid = ("1".equals(guiPersistentHash.get(guid)));
+            if (existsGuid) continue;
             FeedLinkedContent feedLinkedContent = new FeedLinkedContent(link).captureLinkedContent();
-//            if (spiderPersistence!=null) spiderPersistence.saveFeedLinkedContent(feedLinkedContent);
+
             SolrInputDocument solrFeedMessage = solrHelper.getFeedMessageSolrDocument(feedMessage, feedLinkedContent);
             solrFeedMessage = solrHelper.injectTopicsIssuesNLP(solrFeedMessage);
             solrIndexer.index(solrFeedMessage);
+            guiPersistentHash.put(guid, "1");
         }
 
     }

@@ -68,12 +68,12 @@ public class spider {
 
 
         SpiderSiRSS runner = null;
-//        ProcessRSS processRSS = new ProcessRSS(spiderPersistence);
+
         try {
             runner = new SpiderSiRSS(spiderPersistence);
         } catch (IOException e) {
-
         }
+
         for (String rssSource : rssSources) {
 
             try {

@@ -8,6 +8,7 @@ import com.socialintellegentia.processes.ProcessRSS;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Date;
 
 /**
  * Created with IntelliJ IDEA.
@@ -37,7 +38,9 @@ public class AgentSiRSS extends Agent
         try
         {
             String url = getUrl();
-            String name = url.replaceAll("[\\\\/:\\*\"\\?<>\\|]", "");
+
+            String name = getTempFileName(url);
+
             StringBuffer rawnews = getRequestXML(url, minutesInCache);
 
 
@@ -74,6 +77,15 @@ public class AgentSiRSS extends Agent
         }
 
 
+    }
+
+    public String getTempFileName(String url) {
+        StringBuilder builder = new StringBuilder();
+        builder.append(new Date().getTime());
+        builder.append("___");
+        builder.append(url.replaceAll("[\\\\/:\\*\"\\?<>\\|]", ""));
+
+        return builder.toString();
     }
 
     private void writeErrorFile(String name, String rawnews) throws IOException, InterruptedException {
