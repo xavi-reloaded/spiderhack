@@ -56,7 +56,7 @@ public class AgentSiRSS extends Agent
             }
             else
             {
-                if (!RSSHelper.isXMLRSS(rawnews.toString()) && !RSSHelper.isRssLandingPage(rawnews.toString()))
+                if (!RSSHelper.isXMLRSS(rawnews.toString()) || RSSHelper.isRssLandingPage(rawnews.toString()))
                 {
                     String infoMessage = "[AgentSiRSS] --> Not a valid RSS source " + getSeed();
                     log.warn(infoMessage);

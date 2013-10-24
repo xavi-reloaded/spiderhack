@@ -2,6 +2,7 @@ package com.socialintellegentia.entryPoints;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
 import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
+import com.socialintellegentia.commonhelpers.mailer.MailSender;
 import com.socialintellegentia.commonhelpers.rss.RSSHelper;
 import com.socialintellegentia.processes.ProcessRSS;
 import org.apache.commons.logging.Log;
@@ -27,6 +28,7 @@ public class process {
     public static void main(String[] args) {
         SpiderPersistence persistence = new SpiderPersistence();
         String workingDirectory = "/home/sidev/workspace/bin/sd_spider/spider/SpiderSiRSS";
+//        String workingDirectory = "/home/sidev/Desktop/mierder_rss";
 
         try {
 
@@ -61,9 +63,12 @@ public class process {
 
         } catch (Exception e) {
             log.error("MIERDER HAS HAPPENED INTO PROCESS ROUTINE (" + e.toString() + "]");
+            MailSender.sendErrorMessage("error trace:\n\n\n\n\n\n\n"+e.getMessage()+"\n\n\nCause:\n"+e.getCause().toString(), "Error in process Routine");
             e.printStackTrace();
             System.exit(0);
         }
+
+
     }
 
 }
