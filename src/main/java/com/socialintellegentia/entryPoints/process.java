@@ -67,8 +67,5 @@ public class process {
             e.printStackTrace();
             System.exit(0);
         }
-
-
     }
-
 }
