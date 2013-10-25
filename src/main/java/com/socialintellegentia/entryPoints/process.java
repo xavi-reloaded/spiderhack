@@ -9,6 +9,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import java.io.File;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -29,7 +30,8 @@ public class process {
         SpiderPersistence persistence = new SpiderPersistence();
         String workingDirectory = "/home/sidev/workspace/bin/sd_spider/spider/SpiderSiRSS";
 //        String workingDirectory = "/home/sidev/Desktop/mierder_rss";
-
+        String filePath_ = "";
+        String rss       = "";
         try {
 
             List<String> fileList = FileHelper.getFileList(workingDirectory, "");
@@ -38,12 +40,14 @@ public class process {
 
             for (String filePath : fileList)
             {
+                filePath_=filePath;
+
                 cont++;
                 log.debug("BEGIN PROCES ("+cont+" of "+totalFiles+") ["+filePath+"]");
 
                 if (!FileHelper.fileExists(filePath)) continue;
 
-                String rss = FileHelper.fileToString(filePath);
+                rss = FileHelper.fileToString(filePath);
 
                 if (!RSSHelper.isXMLRSS(rss)&&!RSSHelper.isXMLFeed(rss)) {
                     log.warn("BAD REQUEST : ["+filePath+"] is not a valid rss resource, must be a FrontEnd RSS page");
@@ -63,7 +67,15 @@ public class process {
 
         } catch (Exception e) {
             log.error("MIERDER HAS HAPPENED INTO PROCESS ROUTINE (" + e.toString() + "]");
-            MailSender.sendErrorMessage("error trace:\n\n\n\n\n\n\n"+e.getMessage()+"\n\n\nCause:\n"+e.getCause().toString(), "Error in process Routine");
+            MailSender.sendErrorMessage(
+                    "error:\n"+e.toString()+"\n\n"+
+                    "date:\n"+new Date()+"\n\n"+
+                    "Error trace:\n"+e.getMessage()+"\n\n"+
+                    "File:\n"+filePath_+"\n\n" +
+                    "File content:\n\n"+rss,
+
+                    "Error in process ["+e.toString()+"]"
+            );
             e.printStackTrace();
             System.exit(0);
         }
