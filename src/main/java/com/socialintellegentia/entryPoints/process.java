@@ -1,14 +1,18 @@
 package com.socialintellegentia.entryPoints;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
+import com.google.common.collect.Lists;
 import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
 import com.socialintellegentia.commonhelpers.mailer.MailSender;
 import com.socialintellegentia.commonhelpers.rss.RSSHelper;
 import com.socialintellegentia.processes.ProcessRSS;
+import com.socialintellegentia.util.JsonHelper;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.json.JSONException;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
@@ -28,13 +32,14 @@ public class process {
 
     public static void main(String[] args) {
         SpiderPersistence persistence = new SpiderPersistence();
-        String workingDirectory = "/home/sidev/workspace/bin/sd_spider/spider/SpiderSiRSS";
-//        String workingDirectory = "/home/sidev/Desktop/mierder_rss";
+        String workingDirectory = (args.length == 2) ? args[1] : "/home/sidev/workspace/bin/sd_spider/spider/SpiderSiRSS";
+
         String filePath_ = "";
         String rss       = "";
         try {
 
-            List<String> fileList = FileHelper.getFileList(workingDirectory, "");
+//            List<String> fileList = FileHelper.getFileList(workingDirectory, "");
+            List<String> fileList = getFileList(workingDirectory);
             int cont=0;
             int totalFiles = fileList.size();
 
@@ -79,5 +84,16 @@ public class process {
             e.printStackTrace();
             System.exit(0);
         }
+    }
+
+    private static List<String> getFileList(String workingDirectory) throws IOException, JSONException {
+        boolean isDirectory = new File(workingDirectory).isDirectory();
+
+        if (isDirectory) return FileHelper.getFileList(workingDirectory, "");
+
+        List<String> fileList = Lists.newArrayList();
+        fileList.add( workingDirectory );
+
+        return fileList;
     }
 }

@@ -43,7 +43,7 @@ public class ProcessRSS {
     private SolrIndexer solrIndexer;
     private CustomFeedParser feedParser;
 
-    private StandardContentKyoto guiPersistentHash;
+//    private StandardContentKyoto guiPersistentHash;
 
 
     public ProcessRSS() {
@@ -60,12 +60,11 @@ public class ProcessRSS {
         solrIndexer = SolrAdapter.getInstance().getSolrIndexer();
 
         this.keepCacheFiles = keepCacheFiles;
-        try {
-            guiPersistentHash = new StandardContentKyoto(GUI_HASH_PATH,true);
-        } catch (IOException e) {
-
-
-        }
+//        try {
+//            guiPersistentHash = new StandardContentKyoto(GUI_HASH_PATH,true);
+//        } catch (IOException e) {
+//
+//        }
     }
 
     public void processRSSfromWorkingDirectory(String workingFolder) throws Exception {
@@ -101,16 +100,17 @@ public class ProcessRSS {
 
         for (FeedMessage feedMessage : feed.getFeedMessages())
         {
-            String link = feedMessage.getLink();
-            String guid = feedMessage.getGuid();
-            boolean existsGuid = ("1".equals(guiPersistentHash.get(guid)));
-            if (existsGuid) continue;
-            FeedLinkedContent feedLinkedContent = new FeedLinkedContent(link).captureLinkedContent();
+//            String link = feedMessage.getLink();
+//            String guid = feedMessage.getGuid();
+//            boolean existsGuid = ("1".equals(guiPersistentHash.get(guid)));
+//            if (existsGuid) continue;
+//            FeedLinkedContent feedLinkedContent = new FeedLinkedContent(link).captureLinkedContent();
 
+            FeedLinkedContent feedLinkedContent = new FeedLinkedContent();
             SolrInputDocument solrFeedMessage = solrHelper.getFeedMessageSolrDocument(feedMessage, feedLinkedContent);
             solrFeedMessage = solrHelper.injectTopicsIssuesNLP(solrFeedMessage);
             solrIndexer.index(solrFeedMessage);
-            guiPersistentHash.put(guid, "1");
+//            guiPersistentHash.put(guid, "1");
         }
 
     }

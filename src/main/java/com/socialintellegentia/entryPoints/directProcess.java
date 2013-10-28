@@ -1,10 +1,16 @@
 package com.socialintellegentia.entryPoints;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
+import com.androidxtrem.commonsHelpers.WgetHelper;
 import com.androidxtrem.spider.si.SpiderSiRSS;
+import com.androidxtrem.util.ExpectedTimeGenerator;
 import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
 import com.socialintellegentia.commonhelpers.mailer.MailSender;
+import com.socialintellegentia.commonhelpers.rss.RSSHelper;
+import com.socialintellegentia.processes.ProcessRSS;
 import com.socialintellegentia.util.JsonHelper;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.json.JSONException;
 
 import java.io.File;
@@ -19,29 +25,20 @@ import java.util.List;
  * Time: 17:33
  * To change this template use File | Settings | File Templates.
  */
-public class spider {
+public class directProcess {
 
 
-    private static String workingFolder;
     private static StringBuilder report;
     private static StringBuilder errorReport;
+    protected static Log log = LogFactory.getLog(directProcess.class);
 
 
 
     public static void main(String[] args) {
-//        args = new String[]{"/home/sidev/workspace/bin/20130909_Sources_Feeds_Json.txt"};
+        args = new String[]{"/home/sidev/workspace/bin/20130909_Sources_Feeds_Json.txt"};
 //        args = new String[]{"{\"source\":\"http://www.npr.org/rss/rss.php?id=1001\"}"};
         if (args.length < 1) {
             printUsage();
-            return;
-        }
-        if (args[0].equals("-X")) {
-            process.main(args);
-            return;
-        }
-
-        if (args[0].equals("-DP")) {
-            directProcess.main(args);
             return;
         }
 
@@ -80,57 +77,74 @@ public class spider {
             return;
         }
 
-
-        SpiderSiRSS runner = null;
-
-        try {
-            runner = new SpiderSiRSS(spiderPersistence);
-        } catch (IOException e) {
-            sendErrorMessage(e,"SpiderSiRSS can not connect");
-        }
-
-        for (String rssSource : rssSources) {                http://www.credibarco.com/Leasing-Nautico.html
+        int cont = 0;
+        int contError = 0;
+        int totalFiles = rssSources.size();
+        for (String rssSource : rssSources) {
 
             try {
+                long startProcess = System.currentTimeMillis();
+                cont++;
+                log.debug("BEGIN PROCES ("+cont+" of "+totalFiles+") ["+rssSource+"]");
 
-//                if (spiderPersistence.isUrlInBlackList(rssSource)) {
-//                    System.out.println("\n" +
-//                            "\n____________________________________________________________________" +
-//                            "\n B L A C K L I S T E D  ==>  " + rssSource +
-//                            "\n____________________________________________________________________" +
-//                            "\n");
-//                    continue;
-//                }
+                String rss = WgetHelper.get(rssSource);
 
-                workingFolder = new java.io.File(".").getCanonicalPath() + File.separator + runner.getWorkingFolder();
-                System.out.println("\n" +
-                        "\n____________________________________________________________________" +
-                        "\n R E A D Y   T O   P R O C E S S    ==>  " + rssSource +
-                        "\n____________________________________________________________________" +
-                        "\n");
+                File tempFolder = FileHelper.createTempFolder("spider");
+                String filePathName = tempFolder.getPath() + "/1.rss";
+                FileHelper.stringToFile(rss, filePathName);
 
-                runner.getNewsFromRSSserver(rssSource);
-                report.append(rssSource).append("\n");
+                if (!RSSHelper.isXMLRSS(rss)&&!RSSHelper.isXMLFeed(rss)) {
+                    log.warn("BAD REQUEST : [" + rssSource +"] is not a valid rss resource, must be a FrontEnd RSS page");
+                    File file = new File(filePathName);
+                    if (file.canWrite()) {
+                        FileHelper.deleteFile(file);
+                    }
+                    continue;
+                }
+
+
+                int percentage = (totalFiles * 100) / cont;
+                report.append("BEGIN PROCES ("+cont+" of "+totalFiles+")("+percentage+"%) [  "+rssSource+"  ]").append("\n");
+                String expectedDuration = ExpectedTimeGenerator.getExpectedTimeInString(cont, totalFiles, startProcess);
+                report.append("Expected duration -> " + expectedDuration ).append("\n");
+
+                ProcessRSS processRSS = new ProcessRSS(spiderPersistence);
+                processRSS.processRSSfromWorkingDirectory(tempFolder.getPath());
+
+                long tEnd = System.currentTimeMillis();
+                long tDelta = tEnd - startProcess;
+                double elapsedSeconds = tDelta / 1000.0;
+
+                report.append("END PROCES ("+elapsedSeconds+")\n\n");
+
 
             } catch (IOException e) {
-                System.out.println("\n\n\n\n\n\n\nError when running spider: [" + e.getMessage() + "]\n\n");
-                errorReport.append("error:" + e.toString() + "^date:" + new Date() + "^Error trace:[" + e.getMessage() + "]^File:" + rssSource + "^");
+                contError = errorReport(contError, rssSource, e);
             } catch (InterruptedException e) {
-                System.out.println("\n\n\n\n\n\n\nError when running spider: [" + e.getMessage() + "]\n\n");
-                errorReport.append("error:" + e.toString() + "^date:" + new Date() + "^Error trace:[" + e.getMessage() + "]^File:" + rssSource + "^");
+                contError = errorReport(contError, rssSource, e);
+            } catch (Exception e) {
+                contError = errorReport(contError, rssSource, e);
             }
-
-
 
         }
 
         report.append("finish at ").append(new Date()).append("\n");
 
         System.out.println("End of Routine: [" + "]");
-        if (!errorReport.toString().equals("")) MailSender.sendErrorMessage(errorReport.toString(),"spider error report");
-        MailSender.sendErrorMessage(report.toString(),"spider report");
+        if (!errorReport.toString().equals("")) {
+            errorReport.append("\n\n DIO CANE DE DIO ! ! ! !\n "+contError+" ERRORE ! ! ! ! !");
+            MailSender.sendErrorMessage(errorReport.toString(), "spider error report");
+        }
+        MailSender.sendErrorMessage(report.toString(), "spider report");
         System.exit(0);
 
+    }
+
+    private static int errorReport(int contError, String rssSource, Exception e) {
+        contError++;
+        System.out.println("\n\n\n\n\n\n\nError when running spider: [" + e.getMessage() + "]\n\n");
+        errorReport.append("error:" + e.toString() + "^date:" + new Date() + "^Error trace:[" + e.getMessage() + "]^File:" + rssSource + "^").append("\n");
+        return contError;
     }
 
     private static void sendErrorMessage(Exception e, String errorMessage) {
@@ -156,7 +170,7 @@ public class spider {
                 " -k                           keep cache files\n" +
                 " -w[working directory]        change working directory\n" +
                 " -X                           launch rss injection\n" +
-                " -DP                          direct process\n");
+                " -t                           publish to test server\n");
     }
 
 
