@@ -79,6 +79,7 @@ public class directProcess {
 
         int cont = 0;
         int contError = 0;
+        int contBadRequest = 0;
         int totalFiles = rssSources.size();
         for (String rssSource : rssSources) {
 
@@ -93,8 +94,17 @@ public class directProcess {
                 String filePathName = tempFolder.getPath() + "/1.rss";
                 FileHelper.stringToFile(rss, filePathName);
 
+                int percentage = ( cont * 100) / totalFiles;
+                report.append("BEGIN PROCESS ("+cont+" of "+totalFiles+")("+percentage+"%)\n[  "+rssSource+"  ]").append("\n");
+
                 if (!RSSHelper.isXMLRSS(rss)&&!RSSHelper.isXMLFeed(rss)) {
-                    log.warn("BAD REQUEST : [" + rssSource +"] is not a valid rss resource, must be a FrontEnd RSS page");
+                    contBadRequest++;
+                    log.warn("BAD REQUEST : [" + rssSource +"] is not a valid rss resource");
+                    report.append("BAD REQUEST  [" + rssSource + "]");
+                    report.append(" is XMLRSS? "+RSSHelper.isXMLRSS(rss));
+                    report.append(" is XMLFeed? " + RSSHelper.isXMLFeed(rss));
+                    report.append(" is empty? " + rss.trim().equals(""));
+                    report.append("\n\n");
                     File file = new File(filePathName);
                     if (file.canWrite()) {
                         FileHelper.deleteFile(file);
@@ -102,20 +112,10 @@ public class directProcess {
                     continue;
                 }
 
-
-                int percentage = (totalFiles * 100) / cont;
-                report.append("BEGIN PROCES ("+cont+" of "+totalFiles+")("+percentage+"%) [  "+rssSource+"  ]").append("\n");
-                String expectedDuration = ExpectedTimeGenerator.getExpectedTimeInString(cont, totalFiles, startProcess);
-                report.append("Expected duration -> " + expectedDuration ).append("\n");
-
                 ProcessRSS processRSS = new ProcessRSS(spiderPersistence);
                 processRSS.processRSSfromWorkingDirectory(tempFolder.getPath());
 
-                long tEnd = System.currentTimeMillis();
-                long tDelta = tEnd - startProcess;
-                double elapsedSeconds = tDelta / 1000.0;
-
-                report.append("END PROCES ("+elapsedSeconds+")\n\n");
+                report.append("END PROCESS ("+getElapsedSeconds(startProcess)+" seconds)\n\n");
 
 
             } catch (IOException e) {
@@ -136,8 +136,15 @@ public class directProcess {
             MailSender.sendErrorMessage(errorReport.toString(), "spider error report");
         }
         MailSender.sendErrorMessage(report.toString(), "spider report");
+        MailSender.sendErrorMessage("total sources: "+cont+"\ntotal errors: "+contError+"\ntotal bad request: "+contBadRequest, "spider aggregated report");
         System.exit(0);
 
+    }
+
+    private static double getElapsedSeconds(long startProcess) {
+        long tEnd = System.currentTimeMillis();
+        long tDelta = tEnd - startProcess;
+        return tDelta / 1000.0;
     }
 
     private static int errorReport(int contError, String rssSource, Exception e) {
