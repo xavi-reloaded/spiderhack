@@ -30,6 +30,7 @@ public class directProcess {
 
     private static StringBuilder report;
     private static StringBuilder errorReport;
+    private static StringBuilder badRequestReport;
     protected static Log log = LogFactory.getLog(directProcess.class);
 
 
@@ -44,6 +45,7 @@ public class directProcess {
 
         report = new StringBuilder();
         errorReport = new StringBuilder();
+        badRequestReport = new StringBuilder();
         String sourceFile = args[0];
         SpiderPersistence spiderPersistence = new SpiderPersistence();
 
@@ -99,7 +101,9 @@ public class directProcess {
 
                 if (!RSSHelper.isXMLRSS(rss)&&!RSSHelper.isXMLFeed(rss)) {
                     contBadRequest++;
-                    log.warn("BAD REQUEST : [" + rssSource +"] is not a valid rss resource");
+                    String errorMessage = "BAD REQUEST : [" + rssSource + "] is not a valid rss resource";
+                    log.warn(errorMessage);
+                    badRequestReport.append(errorMessage).append("\n");
                     report.append("BAD REQUEST  [" + rssSource + "]");
                     report.append(" is XMLRSS? "+RSSHelper.isXMLRSS(rss));
                     report.append(" is XMLFeed? " + RSSHelper.isXMLFeed(rss));
@@ -136,7 +140,9 @@ public class directProcess {
             MailSender.sendErrorMessage(errorReport.toString(), "spider error report");
         }
         MailSender.sendErrorMessage(report.toString(), "spider report");
+        MailSender.sendErrorMessage(badRequestReport.toString(), "spider bad request report");
         MailSender.sendErrorMessage("total sources: "+cont+"\ntotal errors: "+contError+"\ntotal bad request: "+contBadRequest, "spider aggregated report");
+
         System.exit(0);
 
     }

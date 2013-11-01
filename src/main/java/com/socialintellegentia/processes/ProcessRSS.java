@@ -108,7 +108,11 @@ public class ProcessRSS {
 
             FeedLinkedContent feedLinkedContent = new FeedLinkedContent();
             SolrInputDocument solrFeedMessage = solrHelper.getFeedMessageSolrDocument(feedMessage, feedLinkedContent);
-            solrFeedMessage = solrHelper.injectTopicsIssuesNLP(solrFeedMessage);
+            try{
+                solrFeedMessage = solrHelper.injectTopicsIssuesNLP(solrFeedMessage);
+            }catch (Exception e) {
+                log.error("ProcessRSS::indexFeedInSolr \n["+feed.getId()+"]\n["+feedMessage.toString()+"]",e);
+            }
             solrIndexer.index(solrFeedMessage);
 //            guiPersistentHash.put(guid, "1");
         }
