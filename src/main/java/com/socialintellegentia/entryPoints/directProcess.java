@@ -103,7 +103,7 @@ public class directProcess {
                     contBadRequest++;
                     String errorMessage = "BAD REQUEST : [" + rssSource + "] is not a valid rss resource";
                     log.warn(errorMessage);
-                    badRequestReport.append(errorMessage).append("\n");
+                    badRequestReport.append(rssSource).append("\n");
                     report.append("BAD REQUEST  [" + rssSource + "]");
                     report.append(" is XMLRSS? "+RSSHelper.isXMLRSS(rss));
                     report.append(" is XMLFeed? " + RSSHelper.isXMLFeed(rss));
