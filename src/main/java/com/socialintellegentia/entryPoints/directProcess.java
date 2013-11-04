@@ -93,6 +93,7 @@ public class directProcess {
         int cont = 0;
         int contError = 0;
         int contBadRequest = 0;
+        int contFeedMessages = 0;
         int totalFiles = rssSources.size();
         for (String rssSource : rssSources) {
 
@@ -128,9 +129,10 @@ public class directProcess {
                 }
 
                 ProcessRSS processRSS = new ProcessRSS(customProfileKeywords,guiPersistentHash);
-                processRSS.processRSSfromWorkingDirectory(tempFolder.getPath());
-                report.append("END PROCESS ("+getElapsedSeconds(startProcess)+" seconds)\n\n");
+                int processMessages = processRSS.processRSSfromWorkingDirectory(tempFolder.getPath());
 
+                report.append("END PROCESS FOR ["+processMessages+"] MESSAGES in ("+getElapsedSeconds(startProcess)+" seconds)\n\n");
+                contFeedMessages = contFeedMessages +processMessages;
 
             } catch (IOException e) {
                 contError = errorReport(contError, rssSource, e);
@@ -157,6 +159,7 @@ public class directProcess {
                 "total sources: "+cont+"\n" +
                 "total errors: "+contError+"\n" +
                 "total bad request: "+contBadRequest+"\n" +
+                "total feed messages (news): "+contFeedMessages+"\n" +
                 "________________________________________" +
                 "time total"+ elapsedSeconds +"\n" +
                 "time average per message "+(elapsedSeconds/cont)

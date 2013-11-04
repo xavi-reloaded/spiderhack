@@ -68,8 +68,8 @@ public class ProcessRSS {
         this.keepCacheFiles = keepCacheFiles;
     }
 
-    public void processRSSfromWorkingDirectory(String workingFolder) throws Exception {
-
+    public Integer processRSSfromWorkingDirectory(String workingFolder) throws Exception {
+        Integer feedMessageProcessed=0;
         DateTime dtBegin = new DateTime();
         log.debug("[ProcessRSS] --> Begin process injection in " + workingFolder + " in: " + fmt.print(dtBegin));
 
@@ -81,6 +81,7 @@ public class ProcessRSS {
             if (feed==null) continue;
             if (!feed.getFeedMessages().isEmpty()) {
                 indexFeedInSolr(feed);
+                feedMessageProcessed=feed.getFeedMessages().size();
             }
         }
 
@@ -88,6 +89,8 @@ public class ProcessRSS {
         Period totalPeriod = new Period(dtBegin, dtEnd, PeriodType.time());
         String strTotalTime=  totalPeriod.getHours() + ":" + totalPeriod.getSeconds() + ":" + totalPeriod.getMillis();
         log.debug("[ProcessRSS] --> Finish process injection in " + workingFolder + " in: " + fmt.print(dtEnd) +  ". Time: " + strTotalTime + "\n");
+
+       return feedMessageProcessed;
     }
 
     protected String indexFeedInSolr(Feed feed) throws IOException {
