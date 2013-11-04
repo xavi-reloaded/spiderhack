@@ -79,14 +79,8 @@ public class ProcessRSS {
 
         for (Feed feed : feeds) {
             if (feed==null) continue;
-//            feed = spiderPersistence.deleteExistingFeedMessagesFromFeed(feed);
-            if (!feed.getFeedMessages().isEmpty())
-            {
-                log.debug("[ProcessRSS] --> BE F O R E        S O L R : [" + feed.getFeedMessages().size() + "] Feeds");
+            if (!feed.getFeedMessages().isEmpty()) {
                 status = indexFeedInSolr(feed);
-                log.debug("[ProcessRSS] -->  A F T E R        S O L R : [" + feed.getFeedMessages().size() + "] Feeds");
-//                loadFeedInServer(feed);
-//                spiderPersistence.saveFeed(feed);
             }
         }
 
@@ -103,12 +97,7 @@ public class ProcessRSS {
         {
             FeedLinkedContent feedLinkedContent = new FeedLinkedContent();
             SolrInputDocument solrFeedMessage = solrHelper.getFeedMessageSolrDocument(feedMessage, feedLinkedContent);
-            try{
-                solrFeedMessage = solrHelper.injectTopicsIssuesNLP(solrFeedMessage);
-            }catch (Exception e) {
-                response = "ProcessRSS::indexFeedInSolr \n[" + feed.getId() + "]\n[" + feedMessage.toString() + "]";
-                log.error(response,e);
-            }
+            solrFeedMessage = solrHelper.injectTopicsIssuesNLP(solrFeedMessage);
             solrIndexer.index(solrFeedMessage);
 //            guiPersistentHash.put(guid, "1");
         }
