@@ -117,8 +117,11 @@ public class directProcess {
                 }
 
                 ProcessRSS processRSS = new ProcessRSS(spiderPersistence);
-                processRSS.processRSSfromWorkingDirectory(tempFolder.getPath());
-
+                String message = processRSS.processRSSfromWorkingDirectory(tempFolder.getPath());
+                if (!message.equals("")){
+                    Exception customException = new ProcessRSSfromWorkingDirectoryException(message);
+                    errorReport(contError, rssSource, customException);
+                }
                 report.append("END PROCESS ("+getElapsedSeconds(startProcess)+" seconds)\n\n");
 
 

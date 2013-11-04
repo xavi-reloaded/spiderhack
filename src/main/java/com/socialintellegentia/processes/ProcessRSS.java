@@ -67,8 +67,9 @@ public class ProcessRSS {
 //        }
     }
 
-    public void processRSSfromWorkingDirectory(String workingFolder) throws Exception {
+    public String processRSSfromWorkingDirectory(String workingFolder) throws Exception {
 
+        String status = "";
         DateTime dtBegin = new DateTime();
         log.debug("[ProcessRSS] --> Begin process injection in " + workingFolder + " in: " + fmt.print(dtBegin));
 
@@ -82,7 +83,7 @@ public class ProcessRSS {
             if (!feed.getFeedMessages().isEmpty())
             {
                 log.debug("[ProcessRSS] --> BE F O R E        S O L R : [" + feed.getFeedMessages().size() + "] Feeds");
-                indexFeedInSolr(feed);
+                status = indexFeedInSolr(feed);
                 log.debug("[ProcessRSS] -->  A F T E R        S O L R : [" + feed.getFeedMessages().size() + "] Feeds");
 //                loadFeedInServer(feed);
 //                spiderPersistence.saveFeed(feed);
@@ -93,29 +94,25 @@ public class ProcessRSS {
         Period totalPeriod = new Period(dtBegin, dtEnd, PeriodType.time());
         String strTotalTime=  totalPeriod.getHours() + ":" + totalPeriod.getSeconds() + ":" + totalPeriod.getMillis();
         log.debug("[ProcessRSS] --> Finish process injection in " + workingFolder + " in: " + fmt.print(dtEnd) +  ". Time: " + strTotalTime + "\n");
-
+        return status;
     }
 
-    protected void indexFeedInSolr(Feed feed) throws IOException {
-
+    protected String indexFeedInSolr(Feed feed) throws IOException {
+        String response="";
         for (FeedMessage feedMessage : feed.getFeedMessages())
         {
-//            String link = feedMessage.getLink();
-//            String guid = feedMessage.getGuid();
-//            boolean existsGuid = ("1".equals(guiPersistentHash.get(guid)));
-//            if (existsGuid) continue;
-//            FeedLinkedContent feedLinkedContent = new FeedLinkedContent(link).captureLinkedContent();
-
             FeedLinkedContent feedLinkedContent = new FeedLinkedContent();
             SolrInputDocument solrFeedMessage = solrHelper.getFeedMessageSolrDocument(feedMessage, feedLinkedContent);
             try{
                 solrFeedMessage = solrHelper.injectTopicsIssuesNLP(solrFeedMessage);
             }catch (Exception e) {
-                log.error("ProcessRSS::indexFeedInSolr \n["+feed.getId()+"]\n["+feedMessage.toString()+"]",e);
+                response = "ProcessRSS::indexFeedInSolr \n[" + feed.getId() + "]\n[" + feedMessage.toString() + "]";
+                log.error(response,e);
             }
             solrIndexer.index(solrFeedMessage);
 //            guiPersistentHash.put(guid, "1");
         }
+        return response;
 
     }
 
