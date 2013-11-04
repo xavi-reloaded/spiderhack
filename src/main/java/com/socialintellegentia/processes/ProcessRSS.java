@@ -2,6 +2,7 @@ package com.socialintellegentia.processes;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
 import com.androidxtrem.nlp.contents.StandardContentKyoto;
+import com.androidxtrem.nlp.keywords.CustomProfileKeywords;
 import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
 import com.socialintellegentia.commonhelpers.restclient.SocialIntellegentiaAPI;
 import com.socialintellegentia.commonhelpers.rss.*;
@@ -31,7 +32,7 @@ import java.util.*;
 public class ProcessRSS {
 
     private static final String TOKEN = "9gLa3sIY2KR3G4YCBX7Qppi6zGvYOD0cAxzU2cnzb9o5YvxV4GGquD%252B4yCSnWp9o5ZQyi630NIyWt";
-    private static final String GUI_HASH_PATH = "/usr/local/share/kyotodata/metadata/guiPersistentHash.kch";
+    private StandardContentKyoto guiPersistentHash;
 
     private boolean keepCacheFiles = false;
     protected Log log = LogFactory.getLog(ProcessRSS.class);
@@ -43,7 +44,6 @@ public class ProcessRSS {
     private SolrIndexer solrIndexer;
     private CustomFeedParser feedParser;
 
-//    private StandardContentKyoto guiPersistentHash;
 
 
     public ProcessRSS() {
@@ -55,21 +55,21 @@ public class ProcessRSS {
         init(false);
     }
 
+    public ProcessRSS(CustomProfileKeywords searchEngine, StandardContentKyoto guiPersistentHash) {
+        init(false);
+        this.guiPersistentHash=guiPersistentHash;
+        solrHelper.setSearchEngine(searchEngine);
+    }
+
     private void init(boolean keepCacheFiles) {
         solrHelper = SolrAdapter.getInstance().getSolrHelper();
         solrIndexer = SolrAdapter.getInstance().getSolrIndexer();
 
         this.keepCacheFiles = keepCacheFiles;
-//        try {
-//            guiPersistentHash = new StandardContentKyoto(GUI_HASH_PATH,true);
-//        } catch (IOException e) {
-//
-//        }
     }
 
-    public String processRSSfromWorkingDirectory(String workingFolder) throws Exception {
+    public void processRSSfromWorkingDirectory(String workingFolder) throws Exception {
 
-        String status = "";
         DateTime dtBegin = new DateTime();
         log.debug("[ProcessRSS] --> Begin process injection in " + workingFolder + " in: " + fmt.print(dtBegin));
 
@@ -80,7 +80,7 @@ public class ProcessRSS {
         for (Feed feed : feeds) {
             if (feed==null) continue;
             if (!feed.getFeedMessages().isEmpty()) {
-                status = indexFeedInSolr(feed);
+                indexFeedInSolr(feed);
             }
         }
 
@@ -88,18 +88,20 @@ public class ProcessRSS {
         Period totalPeriod = new Period(dtBegin, dtEnd, PeriodType.time());
         String strTotalTime=  totalPeriod.getHours() + ":" + totalPeriod.getSeconds() + ":" + totalPeriod.getMillis();
         log.debug("[ProcessRSS] --> Finish process injection in " + workingFolder + " in: " + fmt.print(dtEnd) +  ". Time: " + strTotalTime + "\n");
-        return status;
     }
 
     protected String indexFeedInSolr(Feed feed) throws IOException {
         String response="";
         for (FeedMessage feedMessage : feed.getFeedMessages())
         {
+            String guid = feedMessage.getGuid();
+            if (guiPersistentHash==null) if (guiPersistentHash.get(guid).equals("1")) continue;
+
             FeedLinkedContent feedLinkedContent = new FeedLinkedContent();
             SolrInputDocument solrFeedMessage = solrHelper.getFeedMessageSolrDocument(feedMessage, feedLinkedContent);
             solrFeedMessage = solrHelper.injectTopicsIssuesNLP(solrFeedMessage);
             solrIndexer.index(solrFeedMessage);
-//            guiPersistentHash.put(guid, "1");
+            guiPersistentHash.put(guid, "1");
         }
         return response;
 

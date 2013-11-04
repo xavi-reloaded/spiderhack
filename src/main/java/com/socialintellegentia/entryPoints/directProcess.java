@@ -2,6 +2,8 @@ package com.socialintellegentia.entryPoints;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
 import com.androidxtrem.commonsHelpers.WgetHelper;
+import com.androidxtrem.nlp.contents.StandardContentKyoto;
+import com.androidxtrem.nlp.keywords.CustomProfileKeywords;
 import com.androidxtrem.spider.si.SpiderSiRSS;
 import com.androidxtrem.util.ExpectedTimeGenerator;
 import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
@@ -32,6 +34,8 @@ public class directProcess {
     private static StringBuilder errorReport;
     private static StringBuilder badRequestReport;
     protected static Log log = LogFactory.getLog(directProcess.class);
+    private static final String GUI_HASH_PATH = "/usr/local/share/kyotodata/metadata/guiPersistentHash.kch";
+
 
 
 
@@ -43,12 +47,19 @@ public class directProcess {
             return;
         }
 
+        long tStart = System.currentTimeMillis();
         report = new StringBuilder();
         errorReport = new StringBuilder();
         badRequestReport = new StringBuilder();
         String sourceFile = args[0];
-        SpiderPersistence spiderPersistence = new SpiderPersistence();
 
+        CustomProfileKeywords customProfileKeywords = new CustomProfileKeywords("en");
+        StandardContentKyoto guiPersistentHash = null;
+        try {
+            guiPersistentHash = new StandardContentKyoto(GUI_HASH_PATH,true);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
 
         List<String> rssSources = null;
@@ -116,12 +127,8 @@ public class directProcess {
                     continue;
                 }
 
-                ProcessRSS processRSS = new ProcessRSS(spiderPersistence);
-                String message = processRSS.processRSSfromWorkingDirectory(tempFolder.getPath());
-                if (!message.equals("")){
-                    Exception customException = new ProcessRSSfromWorkingDirectoryException(message);
-                    errorReport(contError, rssSource, customException);
-                }
+                ProcessRSS processRSS = new ProcessRSS(customProfileKeywords,guiPersistentHash);
+                processRSS.processRSSfromWorkingDirectory(tempFolder.getPath());
                 report.append("END PROCESS ("+getElapsedSeconds(startProcess)+" seconds)\n\n");
 
 
@@ -144,7 +151,16 @@ public class directProcess {
         }
         MailSender.sendErrorMessage(report.toString(), "spider report");
         MailSender.sendErrorMessage(badRequestReport.toString(), "spider bad request report");
-        MailSender.sendErrorMessage("total sources: "+cont+"\ntotal errors: "+contError+"\ntotal bad request: "+contBadRequest, "spider aggregated report");
+        double elapsedSeconds = getElapsedSeconds(tStart);
+        MailSender.sendErrorMessage("" +
+                "datetime: " + new Date() +
+                "total sources: "+cont+"\n" +
+                "total errors: "+contError+"\n" +
+                "total bad request: "+contBadRequest+"\n" +
+                "________________________________________" +
+                "time total"+ elapsedSeconds +"\n" +
+                "time average per message "+(elapsedSeconds/cont)
+                , "spider aggregated report");
 
         System.exit(0);
 
