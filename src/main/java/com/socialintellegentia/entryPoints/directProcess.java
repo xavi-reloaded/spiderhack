@@ -64,7 +64,7 @@ public class directProcess {
 
         List<String> rssSources = null;
 
-        report.append("ready to process... \n\n\nºn").append(new Date()).append("\n");
+        report.append("ready to process... \n\n\n\n").append(new Date()).append("\n");
 
         try {
 //            if (!sourceFile.contains("{\"source\":\"")) throw new Exception("is not a valid source");
