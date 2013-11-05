@@ -90,7 +90,7 @@ public class ProcessRSS {
         String strTotalTime=  totalPeriod.getHours() + ":" + totalPeriod.getSeconds() + ":" + totalPeriod.getMillis();
         log.debug("[ProcessRSS] --> Finish process injection in " + workingFolder + " in: " + fmt.print(dtEnd) +  ". Time: " + strTotalTime + "\n");
 
-       return feedMessageProcessed;
+        return feedMessageProcessed;
     }
 
     protected String indexFeedInSolr(Feed feed) throws IOException {
@@ -98,13 +98,14 @@ public class ProcessRSS {
         for (FeedMessage feedMessage : feed.getFeedMessages())
         {
             String guid = feedMessage.getGuid();
-            if (guiPersistentHash==null) if (guiPersistentHash.get(guid).equals("1")) continue;
+//            if (guiPersistentHash.get(guid).equals("1")) continue;
 
             FeedLinkedContent feedLinkedContent = new FeedLinkedContent();
             SolrInputDocument solrFeedMessage = solrHelper.getFeedMessageSolrDocument(feedMessage, feedLinkedContent);
             solrFeedMessage = solrHelper.injectTopicsIssuesNLP(solrFeedMessage);
             solrIndexer.index(solrFeedMessage);
-            guiPersistentHash.put(guid, "1");
+
+//            if (guiPersistentHash!=null) guiPersistentHash.put(guid, "1");
         }
         return response;
 

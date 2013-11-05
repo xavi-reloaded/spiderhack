@@ -55,21 +55,21 @@ public class directProcess {
 
         CustomProfileKeywords customProfileKeywords = new CustomProfileKeywords("en");
         StandardContentKyoto guiPersistentHash = null;
-        try {
-            guiPersistentHash = new StandardContentKyoto(GUI_HASH_PATH,true);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            guiPersistentHash = new StandardContentKyoto(GUI_HASH_PATH,true);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
 
         List<String> rssSources = null;
 
-        report.append("ready to process... \n").append(new Date());
+        report.append("ready to process... \n\n\nºn").append(new Date()).append("\n");
 
         try {
 //            if (!sourceFile.contains("{\"source\":\"")) throw new Exception("is not a valid source");
             rssSources = getRssSources(sourceFile);
-            report.append("files to process: ").append(rssSources.size());
+            report.append("files to process: ").append(rssSources.size()).append("\n\n");
         } catch (IOException e) {
             String errormsg = "Error openning file: [" + rssSources + "]\n[" + e.getMessage() + "]";
             System.out.println(errormsg);
@@ -132,7 +132,7 @@ public class directProcess {
                 int processMessages = processRSS.processRSSfromWorkingDirectory(tempFolder.getPath());
 
                 report.append("END PROCESS FOR ["+processMessages+"] MESSAGES in ("+getElapsedSeconds(startProcess)+" seconds)\n\n");
-                contFeedMessages = contFeedMessages +processMessages;
+                contFeedMessages = contFeedMessages + processMessages;
 
             } catch (IOException e) {
                 contError = errorReport(contError, rssSource, e);
@@ -152,17 +152,20 @@ public class directProcess {
             MailSender.sendErrorMessage(errorReport.toString(), "spider error report");
         }
         MailSender.sendErrorMessage(report.toString(), "spider report");
-        MailSender.sendErrorMessage(badRequestReport.toString(), "spider bad request report");
+        if (!badRequestReport.toString().equals("")) {
+            MailSender.sendErrorMessage(badRequestReport.toString(), "spider bad request report");
+        }
         double elapsedSeconds = getElapsedSeconds(tStart);
-        MailSender.sendErrorMessage("" +
-                "datetime: " + new Date() +
+        MailSender.sendErrorMessage("\n\n" +
+                "datetime: " + new Date() +"\n"+
                 "total sources: "+cont+"\n" +
                 "total errors: "+contError+"\n" +
                 "total bad request: "+contBadRequest+"\n" +
                 "total feed messages (news): "+contFeedMessages+"\n" +
-                "________________________________________" +
-                "time total"+ elapsedSeconds +"\n" +
-                "time average per message "+(elapsedSeconds/cont)
+                "________________________________________\n" +
+                "time total: "+ elapsedSeconds +"\n" +
+                "time average per message: "+(elapsedSeconds/cont)+"\n"+
+                "________________________________________\n"
                 , "spider aggregated report");
 
         System.exit(0);
