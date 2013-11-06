@@ -17,6 +17,9 @@ import org.json.JSONException;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.management.ManagementFactory;
+import java.lang.reflect.InvocationTargetException;
+import java.text.NumberFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -30,6 +33,7 @@ import java.util.List;
 public class directProcess {
 
 
+    private static final String PROCESS_FILE = "spider.pid";
     private static StringBuilder report;
     private static StringBuilder errorReport;
     private static StringBuilder badRequestReport;
@@ -46,6 +50,56 @@ public class directProcess {
             printUsage();
             return;
         }
+
+
+        String processId = "0000";
+        try {
+            processId= getProcessId();
+        } catch (NoSuchFieldException e) {
+        } catch (IllegalAccessException e) {
+        } catch (NoSuchMethodException e) {
+        } catch (InvocationTargetException e) {
+        }
+
+        if (FileHelper.fileExists(PROCESS_FILE)) {
+            System.out.println("The spider is currently running");
+            String currentProcess = "0000";
+            try {
+                currentProcess = FileHelper.fileToString(PROCESS_FILE);
+            } catch (IOException e) {
+
+            }
+            Runtime runtime = Runtime.getRuntime();
+            NumberFormat format = NumberFormat.getInstance();
+
+            StringBuilder sb = new StringBuilder();
+            long maxMemory = runtime.maxMemory();
+            long allocatedMemory = runtime.totalMemory();
+            long freeMemory = runtime.freeMemory();
+
+            sb.append(new Date());
+            sb.append("\nThis spider thread runs with process ["+processId+"]");
+            sb.append("\nbut the spider main thread working is ["+ currentProcess +"]");
+            sb.append("\nso fortunately we do nothing... ");
+            sb.append("\n__________________________________________\n");
+            sb.append("free memory: " + format.format(freeMemory / 1024) + "\n");
+            sb.append("allocated memory: " + format.format(allocatedMemory / 1024) + "\n");
+            sb.append("max memory: " + format.format(maxMemory / 1024) + "\n");
+            sb.append("total free memory: " + format.format((freeMemory + (maxMemory - allocatedMemory)) / 1024) + "\n");
+            sb.append("\n\n\n\n\n\n\n");
+
+            MailSender.sendErrorMessage(sb.toString(), "[spider is happy] ["+currentProcess+"]");
+            return;
+        } else {
+            try {
+                FileHelper.stringToFile(processId, PROCESS_FILE);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+
+
 
         long tStart = System.currentTimeMillis();
         report = new StringBuilder();
@@ -144,6 +198,12 @@ public class directProcess {
 
         }
 
+        try {
+            FileHelper.deleteExistentFile(new File(PROCESS_FILE));
+        } catch (IOException e) {
+            errorReport.insert(0,"Error deleting pid process file\n\n");
+        }
+
         report.append("finish at ").append(new Date()).append("\n");
 
         System.out.println("End of Routine: [" + "]");
@@ -167,6 +227,10 @@ public class directProcess {
                 "time average per message: "+(elapsedSeconds/cont)+"\n"+
                 "________________________________________\n"
                 , "spider aggregated report");
+
+
+
+
 
         System.exit(0);
 
@@ -209,6 +273,18 @@ public class directProcess {
                 " -w[working directory]        change working directory\n" +
                 " -X                           launch rss injection\n" +
                 " -t                           publish to test server\n");
+    }
+
+    private static String getProcessId() throws NoSuchFieldException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
+        java.lang.management.RuntimeMXBean runtime = java.lang.management.ManagementFactory.getRuntimeMXBean();
+        java.lang.reflect.Field jvm = runtime.getClass().getDeclaredField("jvm");
+        jvm.setAccessible(true);
+        sun.management.VMManagement mgmt = (sun.management.VMManagement) jvm.get(runtime);
+        java.lang.reflect.Method pid_method = mgmt.getClass().getDeclaredMethod("getProcessId");
+        pid_method.setAccessible(true);
+
+        int pid = (Integer) pid_method.invoke(mgmt);
+        return ""+pid;
     }
 
 
