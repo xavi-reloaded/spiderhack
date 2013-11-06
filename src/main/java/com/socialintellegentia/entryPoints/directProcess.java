@@ -73,11 +73,22 @@ public class directProcess {
             NumberFormat format = NumberFormat.getInstance();
 
             StringBuilder sb = new StringBuilder();
+            sb.append(new Date());
+            sb.append("\n\n\n");
+
+            sb.append("__  .__                     _____              __                 \n" +
+                    "  ___.__. ____  __ __    _____   _____/  |_|  |__   ___________  _/ ____\\_ __   ____ |  | __ ___________ \n" +
+                    "  <   |  |/  _ \\|  |  \\  /     \\ /  _ \\   __\\  |  \\_/ __ \\_  __ \\ \\   __\\  |  \\_/ ___\\|  |/ // __ \\_  __ \\\n" +
+                    " \\___  (  <_> )  |  / |  Y Y  (  <_> )  | |   Y  \\  ___/|  | \\/  |  | |  |  /\\  \\___|    <\\  ___/|  | \\/\n" +
+                    "  / ____|\\____/|____/  |__|_|  /\\____/|__| |___|  /\\___  >__|     |__| |____/  \\___  >__|_ \\\\___  >__|   \n" +
+                    "\\/                         \\/                 \\/     \\/                          \\/     \\/    \\/  ");
+
             long maxMemory = runtime.maxMemory();
             long allocatedMemory = runtime.totalMemory();
             long freeMemory = runtime.freeMemory();
 
-            sb.append(new Date());
+
+            sb.append("\n\n\n");
             sb.append("\nThis spider thread runs with process ["+processId+"]");
             sb.append("\nbut the spider main thread working is ["+ currentProcess +"]");
             sb.append("\nso fortunately we do nothing... ");
