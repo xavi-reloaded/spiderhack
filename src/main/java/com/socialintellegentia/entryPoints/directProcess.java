@@ -99,7 +99,7 @@ public class directProcess {
             sb.append("total free memory: " + format.format((freeMemory + (maxMemory - allocatedMemory)) / 1024) + "\n");
             sb.append("\n\n\n\n\n\n\n");
 
-            MailSender.sendErrorMessage(sb.toString(), "[spider is happy] ["+currentProcess+"]");
+            MailSender.sendErrorMessage(sb.toString(), "[spider ping] ["+currentProcess+"]");
             return;
         } else {
             try {
