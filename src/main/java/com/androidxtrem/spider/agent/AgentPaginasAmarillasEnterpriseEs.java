@@ -39,7 +39,7 @@ public class AgentPaginasAmarillasEnterpriseEs extends Agent
                 html = StringHelper.unescapeHTML(html);
 
                 // fax title regexp
-                String regExp_faxTitle = "([teléfon]{1,8}[ ]*[/y])*[ ]*(fax|telefax)";
+                String regExp_faxTitle = "([telefon]{1,8}[ ]*[/y])*[ ]*(fax|telefax)";
 
                 // fax number regexp
                 String regExp_faxNumber = "[ /0-9\\\\#{}\\+\\*\\-\\()\\[\\]\\.]+[0-9][ /0-9\\\\#{}\\+\\*\\-\\()\\[\\]\\.]+";
