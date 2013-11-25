@@ -104,6 +104,7 @@ public class ProcessRSS {
             SolrInputDocument solrFeedMessage = solrHelper.getFeedMessageSolrDocument(feedMessage, feedLinkedContent);
             solrFeedMessage = solrHelper.injectTopicsIssuesNLP(solrFeedMessage);
             solrFeedMessage = solrHelper.translateDescriptionToSimplified(solrFeedMessage);
+            solrFeedMessage = solrHelper.translateTitleAndDescriptionToSimplified(solrFeedMessage);
             solrIndexer.index(solrFeedMessage);
 
 //            if (guiPersistentHash!=null) guiPersistentHash.put(guid, "1");
