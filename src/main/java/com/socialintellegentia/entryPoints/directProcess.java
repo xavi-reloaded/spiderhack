@@ -40,9 +40,6 @@ public class directProcess {
     protected static Log log = LogFactory.getLog(directProcess.class);
 
 
-
-
-
     public static void main(String[] args) {
         args = new String[]{"/home/sidev/workspace/bin/20130909_Sources_Feeds_Json.txt"};
 //        args = new String[]{"{\"source\":\"http://www.npr.org/rss/rss.php?id=1001\"}"};
@@ -60,9 +57,6 @@ public class directProcess {
         String sourceFile = args[0];
 
         CustomProfileKeywords customProfileKeywords = new CustomProfileKeywords("en");
-
-
-
 
         List<String> rssSources = null;
 
