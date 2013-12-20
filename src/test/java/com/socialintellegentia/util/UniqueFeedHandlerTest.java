@@ -17,11 +17,6 @@ public class UniqueFeedHandlerTest {
 
     }
 
-    @AfterClass
-    public void tearDown() throws Exception {
-        UniqueFeedHandler.getInstance().remove("this is my index, the one and only");
-    }
-
     @Test
     public void test_getSingleton() throws Exception {
         UniqueFeedHandler sut = UniqueFeedHandler.getInstance();
@@ -52,6 +47,8 @@ public class UniqueFeedHandlerTest {
         boolean actual = exerciseExists("asdfasdfdasdfasdfas");
         Assert.assertFalse(actual);
     }
+
+
 
     private boolean exerciseExists(String feedGui) {
         UniqueFeedHandler sut = UniqueFeedHandler.getInstance();

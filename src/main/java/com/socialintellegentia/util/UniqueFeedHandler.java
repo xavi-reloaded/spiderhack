@@ -38,10 +38,9 @@ public class UniqueFeedHandler implements IUniqueFeedHandler{
 
     @Override
     public boolean exists(String feedGui) {
-        String result = null;
         boolean exists = false;
         try {
-            result = guiPersistentHash.get(feedGui);
+            String result = guiPersistentHash.get(feedGui);
             if (result!=null) exists = result.equals("1");
         } catch (IOException e) {
             return false;
@@ -49,7 +48,4 @@ public class UniqueFeedHandler implements IUniqueFeedHandler{
         return exists;
     }
 
-    public void remove(String feedGui) {
-        guiPersistentHash.put(feedGui,"0");
-    }
 }
