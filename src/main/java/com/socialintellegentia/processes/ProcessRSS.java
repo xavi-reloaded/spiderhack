@@ -9,6 +9,7 @@ import com.socialintellegentia.commonhelpers.rss.*;
 import com.socialintellegentia.solr.SolrAdapter;
 import com.socialintellegentia.solr.SolrHelper;
 import com.socialintellegentia.solr.SolrIndexer;
+import com.socialintellegentia.util.UniqueFeedHandler;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.solr.common.SolrInputDocument;
@@ -32,7 +33,6 @@ import java.util.*;
 public class ProcessRSS {
 
     private static final String TOKEN = "9gLa3sIY2KR3G4YCBX7Qppi6zGvYOD0cAxzU2cnzb9o5YvxV4GGquD%252B4yCSnWp9o5ZQyi630NIyWt";
-    private StandardContentKyoto guiPersistentHash;
 
     private boolean keepCacheFiles = false;
     protected Log log = LogFactory.getLog(ProcessRSS.class);
@@ -55,9 +55,8 @@ public class ProcessRSS {
         init(false);
     }
 
-    public ProcessRSS(CustomProfileKeywords searchEngine, StandardContentKyoto guiPersistentHash) {
+    public ProcessRSS(CustomProfileKeywords searchEngine) {
         init(false);
-        this.guiPersistentHash=guiPersistentHash;
         solrHelper.setSearchEngine(searchEngine);
     }
 
@@ -98,7 +97,7 @@ public class ProcessRSS {
         for (FeedMessage feedMessage : feed.getFeedMessages())
         {
             String guid = feedMessage.getGuid();
-//            if (guiPersistentHash.get(guid).equals("1")) continue;
+            if (UniqueFeedHandler.getInstance().exists(guid)) continue;
 
             FeedLinkedContent feedLinkedContent = new FeedLinkedContent();
             SolrInputDocument solrFeedMessage = solrHelper.getFeedMessageSolrDocument(feedMessage, feedLinkedContent);
@@ -106,8 +105,7 @@ public class ProcessRSS {
             solrFeedMessage = solrHelper.translateDescriptionToSimplified(solrFeedMessage);
             solrFeedMessage = solrHelper.translateTitleAndDescriptionToSimplified(solrFeedMessage);
             solrIndexer.index(solrFeedMessage);
-
-//            if (guiPersistentHash!=null) guiPersistentHash.put(guid, "1");
+            UniqueFeedHandler.getInstance().put(guid);
         }
         return response;
 

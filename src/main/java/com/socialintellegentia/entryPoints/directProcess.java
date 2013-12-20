@@ -60,7 +60,6 @@ public class directProcess {
         String sourceFile = args[0];
 
         CustomProfileKeywords customProfileKeywords = new CustomProfileKeywords("en");
-        StandardContentKyoto guiPersistentHash = null;
 
 
 
@@ -131,7 +130,7 @@ public class directProcess {
                     continue;
                 }
 
-                ProcessRSS processRSS = new ProcessRSS(customProfileKeywords,guiPersistentHash);
+                ProcessRSS processRSS = new ProcessRSS(customProfileKeywords);
                 int processMessages = processRSS.processRSSfromWorkingDirectory(tempFolder.getPath());
 
                 report.append("END PROCESS FOR ["+processMessages+"] MESSAGES in ("+getElapsedSeconds(startProcess)+" seconds)\n\n");
