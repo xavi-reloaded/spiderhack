@@ -38,7 +38,7 @@ public class directProcess {
     private static StringBuilder errorReport;
     private static StringBuilder badRequestReport;
     protected static Log log = LogFactory.getLog(directProcess.class);
-    private static final String GUI_HASH_PATH = "/usr/local/share/kyotodata/metadata/guiPersistentHash.kch";
+
 
 
 
@@ -51,66 +51,7 @@ public class directProcess {
             return;
         }
 
-
-        String processId = "0000";
-        try {
-            processId= getProcessId();
-        } catch (NoSuchFieldException e) {
-        } catch (IllegalAccessException e) {
-        } catch (NoSuchMethodException e) {
-        } catch (InvocationTargetException e) {
-        }
-
-        if (FileHelper.fileExists(PROCESS_FILE)) {
-            System.out.println("The spider is currently running");
-            String currentProcess = "0000";
-            try {
-                currentProcess = FileHelper.fileToString(PROCESS_FILE);
-            } catch (IOException e) {
-
-            }
-            Runtime runtime = Runtime.getRuntime();
-            NumberFormat format = NumberFormat.getInstance();
-
-            StringBuilder sb = new StringBuilder();
-            sb.append(new Date());
-            sb.append("\n\n\n");
-
-            sb.append("__  .__                     _____              __                 \n" +
-                    "  ___.__. ____  __ __    _____   _____/  |_|  |__   ___________  _/ ____\\_ __   ____ |  | __ ___________ \n" +
-                    "  <   |  |/  _ \\|  |  \\  /     \\ /  _ \\   __\\  |  \\_/ __ \\_  __ \\ \\   __\\  |  \\_/ ___\\|  |/ // __ \\_  __ \\\n" +
-                    " \\___  (  <_> )  |  / |  Y Y  (  <_> )  | |   Y  \\  ___/|  | \\/  |  | |  |  /\\  \\___|    <\\  ___/|  | \\/\n" +
-                    "  / ____|\\____/|____/  |__|_|  /\\____/|__| |___|  /\\___  >__|     |__| |____/  \\___  >__|_ \\\\___  >__|   \n" +
-                    "\\/                         \\/                 \\/     \\/                          \\/     \\/    \\/  ");
-
-            long maxMemory = runtime.maxMemory();
-            long allocatedMemory = runtime.totalMemory();
-            long freeMemory = runtime.freeMemory();
-
-
-            sb.append("\n\n\n");
-            sb.append("\nThis spider thread runs with process ["+processId+"]");
-            sb.append("\nbut the spider main thread working is ["+ currentProcess +"]");
-            sb.append("\nso fortunately we do nothing... ");
-            sb.append("\n__________________________________________\n");
-            sb.append("free memory: " + format.format(freeMemory / 1024) + "\n");
-            sb.append("allocated memory: " + format.format(allocatedMemory / 1024) + "\n");
-            sb.append("max memory: " + format.format(maxMemory / 1024) + "\n");
-            sb.append("total free memory: " + format.format((freeMemory + (maxMemory - allocatedMemory)) / 1024) + "\n");
-            sb.append("\n\n\n\n\n\n\n");
-
-            MailSender.sendErrorMessage(sb.toString(), "[spider ping] ["+currentProcess+"]");
-            return;
-        } else {
-            try {
-                FileHelper.stringToFile(processId, PROCESS_FILE);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-
-
-
+        if (checkIfProcessIsRunning()) return;
 
         long tStart = System.currentTimeMillis();
         report = new StringBuilder();
@@ -120,11 +61,8 @@ public class directProcess {
 
         CustomProfileKeywords customProfileKeywords = new CustomProfileKeywords("en");
         StandardContentKyoto guiPersistentHash = null;
-//        try {
-//            guiPersistentHash = new StandardContentKyoto(GUI_HASH_PATH,true);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+
+
 
 
         List<String> rssSources = null;
@@ -245,6 +183,59 @@ public class directProcess {
 
         System.exit(0);
 
+    }
+
+    private static boolean checkIfProcessIsRunning() {
+        String processId = "0000";
+        try {
+            processId= getProcessId();
+        } catch (NoSuchFieldException e) {
+        } catch (IllegalAccessException e) {
+        } catch (NoSuchMethodException e) {
+        } catch (InvocationTargetException e) {
+        }
+
+        if (FileHelper.fileExists(PROCESS_FILE)) {
+            System.out.println("The spider is currently running");
+            String currentProcess = "0000";
+            try {
+                currentProcess = FileHelper.fileToString(PROCESS_FILE);
+            } catch (IOException e) {
+
+            }
+            Runtime runtime = Runtime.getRuntime();
+            NumberFormat format = NumberFormat.getInstance();
+
+            StringBuilder sb = new StringBuilder();
+            sb.append(new Date());
+            sb.append("\n\n\n");
+
+            long maxMemory = runtime.maxMemory();
+            long allocatedMemory = runtime.totalMemory();
+            long freeMemory = runtime.freeMemory();
+
+
+            sb.append("\n\n\n");
+            sb.append("\nThis spider thread runs with process ["+processId+"]");
+            sb.append("\nbut the spider main thread working is ["+ currentProcess +"]");
+            sb.append("\nso fortunately we do nothing... ");
+            sb.append("\n__________________________________________\n");
+            sb.append("free memory: " + format.format(freeMemory / 1024) + "\n");
+            sb.append("allocated memory: " + format.format(allocatedMemory / 1024) + "\n");
+            sb.append("max memory: " + format.format(maxMemory / 1024) + "\n");
+            sb.append("total free memory: " + format.format((freeMemory + (maxMemory - allocatedMemory)) / 1024) + "\n");
+            sb.append("\n\n\n\n\n\n\n");
+
+            MailSender.sendErrorMessage(sb.toString(), "[spider ping] [" + currentProcess + "]");
+            return true;
+        } else {
+            try {
+                FileHelper.stringToFile(processId, PROCESS_FILE);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return false;
     }
 
     private static double getElapsedSeconds(long startProcess) {
