@@ -2,8 +2,6 @@ package com.socialintellegentia.entryPoints;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
 import com.androidxtrem.spider.si.SpiderSiRSS;
-import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
-import com.socialintellegentia.commonhelpers.mailer.MailSender;
 import com.socialintellegentia.util.JsonHelper;
 import org.json.JSONException;
 
@@ -48,7 +46,6 @@ public class spider {
         report = new StringBuilder();
         errorReport = new StringBuilder();
         String sourceFile = args[0];
-        SpiderPersistence spiderPersistence = new SpiderPersistence();
 
 
 
@@ -63,19 +60,16 @@ public class spider {
         } catch (IOException e) {
             String errormsg = "Error openning file: [" + rssSources + "]\n[" + e.getMessage() + "]";
             System.out.println(errormsg);
-            sendErrorMessage(e,errormsg);
             e.printStackTrace();
             return;
         } catch (JSONException e) {
             String errormsg = "Error in JSON parsing: [" + e.getMessage() + "]";
             System.out.println(errormsg);
-            sendErrorMessage(e,errormsg);
             e.printStackTrace();
             return;
         } catch (Exception e) {
             String errormsg = "Error in JSON parsing: [" + e.getMessage() + "]";
             System.out.println(errormsg);
-            sendErrorMessage(e,errormsg);
             e.printStackTrace();
             return;
         }
@@ -84,12 +78,13 @@ public class spider {
         SpiderSiRSS runner = null;
 
         try {
-            runner = new SpiderSiRSS(spiderPersistence);
+            runner = new SpiderSiRSS();
         } catch (IOException e) {
-            sendErrorMessage(e,"SpiderSiRSS can not connect");
+            System.out.println("SpiderSiRSS can not connect");
+            e.printStackTrace();
         }
 
-        for (String rssSource : rssSources) {                http://www.credibarco.com/Leasing-Nautico.html
+        for (String rssSource : rssSources) {
 
             try {
 
@@ -127,18 +122,8 @@ public class spider {
         report.append("finish at ").append(new Date()).append("\n");
 
         System.out.println("End of Routine: [" + "]");
-        if (!errorReport.toString().equals("")) MailSender.sendErrorMessage(errorReport.toString(),"spider error report");
-        MailSender.sendErrorMessage(report.toString(),"spider report");
         System.exit(0);
 
-    }
-
-    private static void sendErrorMessage(Exception e, String errorMessage) {
-        MailSender.sendErrorMessage(
-                "error:\n" + e.toString() + "\n\ndate:\n" + new Date() + "\n\nError trace:\n" + e.getMessage() + "\n\n" +
-                        "Error Message:\n"+errorMessage,
-                "Error in spider [" + e.toString() + "]"
-        );
     }
 
 

@@ -1,11 +1,7 @@
 package com.socialintellegentia.entryPoints;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
-import com.androidxtrem.nlp.keywords.CustomProfileKeywords;
 import com.google.common.collect.Lists;
-import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
-import com.socialintellegentia.commonhelpers.mailer.MailSender;
-import com.socialintellegentia.commonhelpers.rss.RSSHelper;
 import com.socialintellegentia.processes.ProcessRSS;
 import com.socialintellegentia.util.JsonHelper;
 import org.apache.commons.logging.Log;
@@ -32,7 +28,6 @@ public class process {
 
 
     public static void main(String[] args) {
-        SpiderPersistence persistence = new SpiderPersistence();
         String workingDirectory = (args.length == 2) ? args[1] : "/home/sidev/workspace/bin/sd_spider/spider/SpiderSiRSS";
 
         String filePath_ = "";
@@ -55,17 +50,17 @@ public class process {
 
                 rss = FileHelper.fileToString(filePath);
 
-                if (!RSSHelper.isXMLRSS(rss)&&!RSSHelper.isXMLFeed(rss)) {
-                    log.warn("BAD REQUEST : ["+filePath+"] is not a valid rss resource, must be a FrontEnd RSS page");
-                    File file = new File(filePath);
-                    if (file.canWrite()) {
-                        FileHelper.deleteFile(file);
-                    }
-                    continue;
-                }
+//                if (!RSSHelper.isXMLRSS(rss)&&!RSSHelper.isXMLFeed(rss)) {
+//                    log.warn("BAD REQUEST : ["+filePath+"] is not a valid rss resource, must be a FrontEnd RSS page");
+//                    File file = new File(filePath);
+//                    if (file.canWrite()) {
+//                        FileHelper.deleteFile(file);
+//                    }
+//                    continue;
+//                }
 
-                ProcessRSS processRSS = new ProcessRSS(persistence);
-                processRSS.processRSSfromWorkingDirectory(filePath);
+                ProcessRSS processRSS = new ProcessRSS();
+//                processRSS.processRSSfromWorkingDirectory(filePath);
 
                 log.debug("BEGIN PROCES (" + cont + " of " + totalFiles + ") [" + filePath + "]");
             }
@@ -73,15 +68,7 @@ public class process {
 
         } catch (Exception e) {
             log.error("MIERDER HAS HAPPENED INTO PROCESS ROUTINE (" + e.toString() + "]");
-            MailSender.sendErrorMessage(
-                    "error:\n"+e.toString()+"\n\n"+
-                    "date:\n"+new Date()+"\n\n"+
-                    "Error trace:\n"+e.getMessage()+"\n\n"+
-                    "File:\n"+filePath_+"\n\n" +
-                    "File content:\n\n"+rss,
 
-                    "Error in process ["+e.toString()+"]"
-            );
             e.printStackTrace();
             System.exit(0);
         }

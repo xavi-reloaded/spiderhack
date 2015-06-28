@@ -1,6 +1,5 @@
 package com.socialintellegentia.util;
 
-import com.androidxtrem.nlp.contents.StandardContentKyoto;
 
 import java.io.IOException;
 
@@ -11,7 +10,7 @@ public class UniqueFeedHandler implements IUniqueFeedHandler{
 
     private static UniqueFeedHandler instance = null;
     private static final String GUI_HASH_PATH = "/usr/local/share/kyotodata/metadata/guiPersistentHash.kch";
-    private static StandardContentKyoto guiPersistentHash;
+//    private static StandardContentKyoto guiPersistentHash;
 
 
     public UniqueFeedHandler(){
@@ -21,11 +20,11 @@ public class UniqueFeedHandler implements IUniqueFeedHandler{
     public static UniqueFeedHandler getInstance() {
         if(instance == null) {
             instance = new UniqueFeedHandler();
-            try {
-                guiPersistentHash = new StandardContentKyoto(GUI_HASH_PATH,true);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+//            try {
+////                guiPersistentHash = new StandardContentKyoto(GUI_HASH_PATH,true);
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
         }
         return instance;
     }
@@ -33,18 +32,15 @@ public class UniqueFeedHandler implements IUniqueFeedHandler{
 
     @Override
     public void put(String feedGui) {
-        guiPersistentHash.put(feedGui,"1");
+
     }
 
     @Override
     public boolean exists(String feedGui) {
         boolean exists = false;
-        try {
-            String result = guiPersistentHash.get(feedGui);
+            String result = "0"; //guiPersistentHash.get(feedGui);
             if (result!=null) exists = result.equals("1");
-        } catch (IOException e) {
-            return false;
-        }
+
         return exists;
     }
 

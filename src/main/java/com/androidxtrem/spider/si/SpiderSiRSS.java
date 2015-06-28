@@ -7,12 +7,6 @@ import com.androidxtrem.spider.Seed;
 import com.androidxtrem.spider.SpiderConfig;
 import com.androidxtrem.spider.agent.Agent;
 import com.androidxtrem.spider.agent.AgentsManager;
-import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
-import com.socialintellegentia.commonhelpers.logger.LoggerHelper;
-import com.socialintellegentia.commonhelpers.rss.Feed;
-import com.socialintellegentia.commonhelpers.rss.FrontEndItem;
-import com.socialintellegentia.commonhelpers.rss.RSSFrontEndHelper;
-import com.socialintellegentia.commonhelpers.rss.RSSHelper;
 import com.socialintellegentia.processes.ProcessRSS;
 import org.joda.time.DateTime;
 
@@ -29,14 +23,12 @@ import java.util.List;
  */
 public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
 
-    private SpiderPersistence persistence;
     private AnonymousProxyManager proxyManager = null;
     int maxProxyThreads = 5;
 
-    public SpiderSiRSS(SpiderPersistence persistence) throws IOException
+    public SpiderSiRSS() throws IOException
     {
         proxyManager = new AnonymousProxyManager(CACHE_FOLDER, maxProxyThreads);
-        this.persistence=persistence;
     }
 
     public void stop()
@@ -66,7 +58,7 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         /////////////////////////////////////////////////////////
         List<Agent> spiderList = new ArrayList<Agent>();
         for(int i = 0; i < maxSpiderThreads; i++) {
-            spiderList.add(new AgentSiRSS(workingFolder, CACHE_FOLDER, Long.MAX_VALUE, persistence));
+            spiderList.add(new AgentSiRSS(workingFolder, CACHE_FOLDER, Long.MAX_VALUE));
         }
 
         /////////////////////////////////////////////////////////
@@ -87,30 +79,30 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
             return;
         }
 
-        if (RSSHelper.isXMLRSS(html.toString()))
-        {
-            addNewSeed(new Seed(rss_server, 1));
-        }
-        else
-        {
-            RSSFrontEndHelper rssFrontEndHelper = new RSSFrontEndHelper(rss_server);
-            DateTime dtBegin = new DateTime();
-            log.debug(LOG_PREFIX + "Request " + rss_server + " in: " + fmt.print(dtBegin) + "\n");
-
-            FrontEndItem frontEndItem = rssFrontEndHelper.getFrontEndItemFromHtml(html);
-            log.debug(LOG_PREFIX + "got [" + frontEndItem.getFeedList().size() + "] feeds from " + rss_server);
-            StringBuilder builder = new StringBuilder("process feeds from" + rss_server +"\n");
-            for(Feed feed : frontEndItem.getFeedList())
-            {
-                addNewSeed(new Seed(feed.getLink(), 1));
-                builder.append("Added feed " + feed.toString() + "\n");
-            }
-            log.debug(LOG_PREFIX + builder.toString());
-
-            String tag = "[socialintellegentia-spider] --> Request " + rss_server ;
-            LoggerHelper.writeTimmingToLog(dtBegin, tag);
-
-        }
+//        if (RSSHelper.isXMLRSS(html.toString()))
+//        {
+//            addNewSeed(new Seed(rss_server, 1));
+//        }
+//        else
+//        {
+//            RSSFrontEndHelper rssFrontEndHelper = new RSSFrontEndHelper(rss_server);
+//            DateTime dtBegin = new DateTime();
+//            log.debug(LOG_PREFIX + "Request " + rss_server + " in: " + fmt.print(dtBegin) + "\n");
+//
+//            FrontEndItem frontEndItem = rssFrontEndHelper.getFrontEndItemFromHtml(html);
+//            log.debug(LOG_PREFIX + "got [" + frontEndItem.getFeedList().size() + "] feeds from " + rss_server);
+//            StringBuilder builder = new StringBuilder("process feeds from" + rss_server +"\n");
+//            for(Feed feed : frontEndItem.getFeedList())
+//            {
+//                addNewSeed(new Seed(feed.getLink(), 1));
+//                builder.append("Added feed " + feed.toString() + "\n");
+//            }
+//            log.debug(LOG_PREFIX + builder.toString());
+//
+//            String tag = "[socialintellegentia-spider] --> Request " + rss_server ;
+////            LoggerHelper.writeTimmingToLog(dtBegin, tag);
+//
+//        }
 
 
 
@@ -131,7 +123,7 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
 
 
         String tag = "[AgentSiRSS] --> Request ENDING ========> " + rss_server ;
-        LoggerHelper.writeTimmingToLog(dtBegin, tag);
+//        LoggerHelper.writeTimmingToLog(dtBegin, tag);
     }
 
     public String getWorkingFolder() {

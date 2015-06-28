@@ -1,6 +1,5 @@
 package com.androidxtrem.spider.si;
 
-import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
 import com.socialintellegentia.processes.ProcessRSS;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -20,7 +19,7 @@ public class SpiderSiRSS_Test
 
     @BeforeMethod
     public void setUp() throws Exception {
-        sut = new SpiderSiRSS(new SpiderPersistence());
+        sut = new SpiderSiRSS();
     }
 
 

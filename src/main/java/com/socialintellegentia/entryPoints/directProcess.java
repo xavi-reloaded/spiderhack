@@ -2,14 +2,6 @@ package com.socialintellegentia.entryPoints;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
 import com.androidxtrem.commonsHelpers.WgetHelper;
-import com.androidxtrem.nlp.contents.StandardContentKyoto;
-import com.androidxtrem.nlp.keywords.CustomProfileKeywords;
-import com.androidxtrem.spider.si.SpiderSiRSS;
-import com.androidxtrem.util.ExpectedTimeGenerator;
-import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
-import com.socialintellegentia.commonhelpers.mailer.MailSender;
-import com.socialintellegentia.commonhelpers.rss.RSSHelper;
-import com.socialintellegentia.processes.ProcessRSS;
 import com.socialintellegentia.util.JsonHelper;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -56,7 +48,6 @@ public class directProcess {
         badRequestReport = new StringBuilder();
         String sourceFile = args[0];
 
-        CustomProfileKeywords customProfileKeywords = new CustomProfileKeywords("en");
 
         List<String> rssSources = null;
 
@@ -107,32 +98,30 @@ public class directProcess {
                 int percentage = ( cont * 100) / totalFiles;
                 report.append("BEGIN PROCESS ("+cont+" of "+totalFiles+")("+percentage+"%)\n[  "+rssSource+"  ]").append("\n");
 
-                if (!RSSHelper.isXMLRSS(rss)&&!RSSHelper.isXMLFeed(rss)) {
-                    contBadRequest++;
-                    String errorMessage = "BAD REQUEST : [" + rssSource + "] is not a valid rss resource";
-                    log.warn(errorMessage);
-                    badRequestReport.append(rssSource).append("\n");
-                    report.append("BAD REQUEST  [" + rssSource + "]");
-                    report.append(" is XMLRSS? "+RSSHelper.isXMLRSS(rss));
-                    report.append(" is XMLFeed? " + RSSHelper.isXMLFeed(rss));
-                    report.append(" is empty? " + rss.trim().equals(""));
-                    report.append("\n\n");
-                    File file = new File(filePathName);
-                    if (file.canWrite()) {
-                        FileHelper.deleteFile(file);
-                    }
-                    continue;
-                }
-
-                ProcessRSS processRSS = new ProcessRSS(customProfileKeywords);
-                int processMessages = processRSS.processRSSfromWorkingDirectory(tempFolder.getPath());
-
-                report.append("END PROCESS FOR ["+processMessages+"] MESSAGES in ("+getElapsedSeconds(startProcess)+" seconds)\n\n");
-                contFeedMessages = contFeedMessages + processMessages;
+//                if (!RSSHelper.isXMLRSS(rss)&&!RSSHelper.isXMLFeed(rss)) {
+//                    contBadRequest++;
+//                    String errorMessage = "BAD REQUEST : [" + rssSource + "] is not a valid rss resource";
+//                    log.warn(errorMessage);
+//                    badRequestReport.append(rssSource).append("\n");
+//                    report.append("BAD REQUEST  [" + rssSource + "]");
+//                    report.append(" is XMLRSS? "+RSSHelper.isXMLRSS(rss));
+//                    report.append(" is XMLFeed? " + RSSHelper.isXMLFeed(rss));
+//                    report.append(" is empty? " + rss.trim().equals(""));
+//                    report.append("\n\n");
+//                    File file = new File(filePathName);
+//                    if (file.canWrite()) {
+//                        FileHelper.deleteFile(file);
+//                    }
+//                    continue;
+//                }
+//
+//                ProcessRSS processRSS = new ProcessRSS(customProfileKeywords);
+//                int processMessages = processRSS.processRSSfromWorkingDirectory(tempFolder.getPath());
+//
+//                report.append("END PROCESS FOR ["+processMessages+"] MESSAGES in ("+getElapsedSeconds(startProcess)+" seconds)\n\n");
+//                contFeedMessages = contFeedMessages + processMessages;
 
             } catch (IOException e) {
-                contError = errorReport(contError, rssSource, e);
-            } catch (InterruptedException e) {
                 contError = errorReport(contError, rssSource, e);
             } catch (Exception e) {
                 contError = errorReport(contError, rssSource, e);
@@ -151,25 +140,10 @@ public class directProcess {
         System.out.println("End of Routine: [" + "]");
         if (!errorReport.toString().equals("")) {
             errorReport.append("\n\n DIO CANE DE DIO ! ! ! !\n "+contError+" ERRORE ! ! ! ! !");
-            MailSender.sendErrorMessage(errorReport.toString(), "spider error report");
         }
-        MailSender.sendErrorMessage(report.toString(), "spider report");
         if (!badRequestReport.toString().equals("")) {
-            MailSender.sendErrorMessage(badRequestReport.toString(), "spider bad request report");
         }
         double elapsedSeconds = getElapsedSeconds(tStart);
-        MailSender.sendErrorMessage("\n\n" +
-                "datetime: " + new Date() +"\n"+
-                "total sources: "+cont+"\n" +
-                "total errors: "+contError+"\n" +
-                "total bad request: "+contBadRequest+"\n" +
-                "total feed messages (news): "+contFeedMessages+"\n" +
-                "________________________________________\n" +
-                "time total: "+ elapsedSeconds +"\n" +
-                "time average per message: "+(elapsedSeconds/cont)+"\n"+
-                "________________________________________\n"
-                , "spider aggregated report");
-
 
 
 
@@ -219,7 +193,6 @@ public class directProcess {
             sb.append("total free memory: " + format.format((freeMemory + (maxMemory - allocatedMemory)) / 1024) + "\n");
             sb.append("\n\n\n\n\n\n\n");
 
-            MailSender.sendErrorMessage(sb.toString(), "[spider ping] [" + currentProcess + "]");
             return true;
         } else {
             try {
@@ -245,11 +218,7 @@ public class directProcess {
     }
 
     private static void sendErrorMessage(Exception e, String errorMessage) {
-        MailSender.sendErrorMessage(
-                "error:\n" + e.toString() + "\n\ndate:\n" + new Date() + "\n\nError trace:\n" + e.getMessage() + "\n\n" +
-                        "Error Message:\n"+errorMessage,
-                "Error in spider [" + e.toString() + "]"
-        );
+
     }
 
 

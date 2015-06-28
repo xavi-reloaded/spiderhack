@@ -1,8 +1,6 @@
 package com.socialintellegentia.processes;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
-import com.socialintellegentia.commonhelpers.rss.Feed;
-import com.socialintellegentia.commonhelpers.rss.FeedMessage;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -41,57 +39,57 @@ public class ProcessRSSTest {
 
     }
 
-    @Test(groups = {"integration"}, enabled=false)
-    public void test_indexFeedInSolr() throws Exception {
-
-        Feed feed = exerciseGetFeedsFromSeedsByPath().get(2);
-        FeedMessage feedMessage = feed.getFeedMessages().get(1);
-
-        feedMessage.setTitle("This is a also a hardcoded title and Barcelona is a nice city where Pepe and Pepito works at Gromenauer Place");
-        feedMessage.setAuthor("Xavi el Magnanimo");
-        feedMessage.setGuid("11111111111111111111111111");
-        feedMessage.setLink("http://www.lavanguardia.com/gente/20130827/54379808086/miley-cyrus-solivianta-eeuu-provocadora-sexual-mtv.html");
-
-        ArrayList<FeedMessage> feedMessages = new ArrayList<FeedMessage>();
-        feedMessages.add(feedMessage);
-        feed.setFeedMessages(feedMessages);
-        sut.indexFeedInSolr(feed);
-
-    }
-
-    @Test(groups = {"integration"}, enabled=false)
-    public void test_loadFeedInServer_() throws Exception {
-        Feed feed = exerciseGetFeedsFromSeedsByPath().get(23);
-        String serverResponse = sut.loadFeedInServer(feed);
-
-        String expected = "{\"feeds\":";
-        Assert.assertTrue(serverResponse.startsWith(expected));
-
-    }
-
-    @Test (groups = {"integration"}, enabled=false)
-    public void test_getFeedsFromSeedsByPath_validPathWithRealFeeds_listOfRSSFrontEndHelpersCorrectlyPopulated() throws Exception
-    {
-        List<Feed> actual = exerciseGetFeedsFromSeedsByPath();
-        int expected = 72;
-        Assert.assertEquals(actual.size(),expected);
-    }
-
-    private List<Feed> exerciseGetFeedsFromSeedsByPath() throws Exception {
-        return sut.getFeedsFromSeedsByPath(path);
-    }
-
-    @Test(groups = {"integration"}, enabled=false)
-    public void test_getFeedsFromSeedsByPath_validPathWithRealFeeds_feedCorrectlyPopulateMessages() throws Exception
-    {
-        Feed actual = exerciseGetFeedsFromSeedsByPath().get(23);
-        Assert.assertTrue(!actual.getTitle().isEmpty());
-    }
+//    @Test(groups = {"integration"}, enabled=false)
+//    public void test_indexFeedInSolr() throws Exception {
+//
+//        Feed feed = exerciseGetFeedsFromSeedsByPath().get(2);
+//        FeedMessage feedMessage = feed.getFeedMessages().get(1);
+//
+//        feedMessage.setTitle("This is a also a hardcoded title and Barcelona is a nice city where Pepe and Pepito works at Gromenauer Place");
+//        feedMessage.setAuthor("Xavi el Magnanimo");
+//        feedMessage.setGuid("11111111111111111111111111");
+//        feedMessage.setLink("http://www.lavanguardia.com/gente/20130827/54379808086/miley-cyrus-solivianta-eeuu-provocadora-sexual-mtv.html");
+//
+//        ArrayList<FeedMessage> feedMessages = new ArrayList<FeedMessage>();
+//        feedMessages.add(feedMessage);
+//        feed.setFeedMessages(feedMessages);
+//        sut.indexFeedInSolr(feed);
+//
+//    }
+//
+//    @Test(groups = {"integration"}, enabled=false)
+//    public void test_loadFeedInServer_() throws Exception {
+//        Feed feed = exerciseGetFeedsFromSeedsByPath().get(23);
+//        String serverResponse = sut.loadFeedInServer(feed);
+//
+//        String expected = "{\"feeds\":";
+//        Assert.assertTrue(serverResponse.startsWith(expected));
+//
+//    }
+//
+//    @Test (groups = {"integration"}, enabled=false)
+//    public void test_getFeedsFromSeedsByPath_validPathWithRealFeeds_listOfRSSFrontEndHelpersCorrectlyPopulated() throws Exception
+//    {
+//        List<Feed> actual = exerciseGetFeedsFromSeedsByPath();
+//        int expected = 72;
+//        Assert.assertEquals(actual.size(),expected);
+//    }
+//
+//    private List<Feed> exerciseGetFeedsFromSeedsByPath() throws Exception {
+//        return sut.getFeedsFromSeedsByPath(path);
+//    }
+//
+//    @Test(groups = {"integration"}, enabled=false)
+//    public void test_getFeedsFromSeedsByPath_validPathWithRealFeeds_feedCorrectlyPopulateMessages() throws Exception
+//    {
+//        Feed actual = exerciseGetFeedsFromSeedsByPath().get(23);
+//        Assert.assertTrue(!actual.getTitle().isEmpty());
+//    }
 
     @Test(groups = {"integration"}, enabled=false)
     public void test_getFeedsFromSeedsByPath_validPathWithRealFeeds_seedsAreCorrectlyDeleted() throws Exception
     {
-        exerciseGetFeedsFromSeedsByPath();
+//        exerciseGetFeedsFromSeedsByPath();
         List<String> fileList = FileHelper.getFileList(path, "");
         int expected = 0;
         Assert.assertEquals(fileList.size(),expected);
@@ -111,17 +109,17 @@ public class ProcessRSSTest {
         }
 
     }
-
-    @Test(groups = {"integration"}, enabled=false)
-    public void test_getFeedsFromSeedsByPath_onlyOneFileAndExists() throws Exception {
-
-        String filePathName = "/tmp/temp.xml";
-        FileHelper.stringToFile(rss, filePathName);
-        List<Feed> actual = sut.getFeedsFromSeedsByPath(filePathName);
-        String expected = "Baloncesto // elmundo.es - deportes";
-        Assert.assertEquals(actual.get(0).getTitle(),expected);
-
-    }
+//
+//    @Test(groups = {"integration"}, enabled=false)
+//    public void test_getFeedsFromSeedsByPath_onlyOneFileAndExists() throws Exception {
+//
+//        String filePathName = "/tmp/temp.xml";
+//        FileHelper.stringToFile(rss, filePathName);
+//        List<Feed> actual = sut.getFeedsFromSeedsByPath(filePathName);
+//        String expected = "Baloncesto // elmundo.es - deportes";
+//        Assert.assertEquals(actual.get(0).getTitle(),expected);
+//
+//    }
 
 
     String rss = "<?xml version='1.0' encoding='UTF-8'?><?xml-stylesheet type='text/xsl' href='http://elmundo.feedsportal.com/xsl/es/rss.xsl'?>\n" +

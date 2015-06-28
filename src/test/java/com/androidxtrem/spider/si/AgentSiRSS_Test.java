@@ -2,7 +2,6 @@ package com.androidxtrem.spider.si;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
 import com.androidxtrem.spider.SpiderConfig;
-import com.socialintellegentia.commonhelpers.hibernate.SpiderPersistence;
 import com.socialintellegentia.processes.ProcessRSS;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -30,9 +29,8 @@ public class AgentSiRSS_Test implements SpiderConfig
         url = "http://someurl/news/latests";
         filePath = CACHE_FOLDER + "/httpsomeurlnewslatests.html";
         prepareCacheFilesUsedOnTest();
-        SpiderPersistence persistence = null;
         ProcessRSS processRSS = null;
-        sut = new AgentSiRSS(WORKING_FOLDER, CACHE_FOLDER, Long.MAX_VALUE,persistence);
+        sut = new AgentSiRSS(WORKING_FOLDER, CACHE_FOLDER, Long.MAX_VALUE);
     }
 
     private void prepareCacheFilesUsedOnTest() throws Exception {
