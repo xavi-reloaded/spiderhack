@@ -1,7 +1,9 @@
 package com.socialintellegentia.entryPoints;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
+import com.androidxtrem.spider.SpiderWasshotFeed;
 import com.androidxtrem.spider.si.SpiderSiRSS;
+import com.rometools.rome.io.FeedException;
 import com.socialintellegentia.util.JsonHelper;
 import org.json.JSONException;
 
@@ -17,7 +19,7 @@ import java.util.List;
  * Time: 17:33
  * To change this template use File | Settings | File Templates.
  */
-public class spider {
+public class WasshotSpider {
 
 
     private static String workingFolder;
@@ -26,7 +28,7 @@ public class spider {
 
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FeedException {
 //        args = new String[]{"/home/sidev/workspace/bin/20130909_Sources_Feeds_Json.txt"};
         args = new String[]{"{\"source\":\"http://www.techlearning.com/rss\"}"};
         if (args.length < 1) {
@@ -75,10 +77,10 @@ public class spider {
         }
 
 
-        SpiderSiRSS runner = null;
+        SpiderWasshotFeed runner = null;
 
         try {
-            runner = new SpiderSiRSS();
+            runner = new SpiderWasshotFeed();
         } catch (IOException e) {
             System.out.println("SpiderSiRSS can not connect");
             e.printStackTrace();
@@ -88,33 +90,12 @@ public class spider {
 
             try {
 
-//                if (spiderPersistence.isUrlInBlackList(rssSource)) {
-//                    System.out.println("\n" +
-//                            "\n____________________________________________________________________" +
-//                            "\n B L A C K L I S T E D  ==>  " + rssSource +
-//                            "\n____________________________________________________________________" +
-//                            "\n");
-//                    continue;
-//                }
-
-                workingFolder = new java.io.File(".").getCanonicalPath() + File.separator + runner.getWorkingFolder();
-                System.out.println("\n" +
-                        "\n____________________________________________________________________" +
-                        "\n R E A D Y   T O   P R O C E S S    ==>  " + rssSource +
-                        "\n____________________________________________________________________" +
-                        "\n");
-
                 runner.getNewsFromRSSserver(rssSource);
                 report.append(rssSource).append("\n");
 
             } catch (IOException e) {
-                System.out.println("\n\n\n\n\n\n\nError when running spider: [" + e.getMessage() + "]\n\n");
-                errorReport.append("error:" + e.toString() + "^date:" + new Date() + "^Error trace:[" + e.getMessage() + "]^File:" + rssSource + "^");
             } catch (InterruptedException e) {
-                System.out.println("\n\n\n\n\n\n\nError when running spider: [" + e.getMessage() + "]\n\n");
-                errorReport.append("error:" + e.toString() + "^date:" + new Date() + "^Error trace:[" + e.getMessage() + "]^File:" + rssSource + "^");
             }
-
 
 
         }

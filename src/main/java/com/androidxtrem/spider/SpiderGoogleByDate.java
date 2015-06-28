@@ -15,7 +15,7 @@ import java.util.List;
 
 public class SpiderGoogleByDate extends AgentsManager
 {	
-	void test() throws IOException, InterruptedException
+	public void test() throws IOException, InterruptedException
 	{
 		{
 			// String workingfolder = "\\\\ficheros\\65-XTYLE\\processes\\wordcontext";
@@ -30,8 +30,8 @@ public class SpiderGoogleByDate extends AgentsManager
 
 			int i = 0;
 			String jobName = "wordcontext_caramel";
-			String workingFolder = "/home/xavi/.gvfs/processes/" + jobName;
-			String cacheFolder = "/home/xavi/.gvfs/processes/spidercache";
+			String workingFolder = "/home/apium/workspace/xavi-reloaded/spiderhack/sd_spider/processes/" + jobName;
+			String cacheFolder = "/home/apium/workspace/xavi-reloaded/spiderhack/sd_spider/processes/spidercache";
 			String googleSearch = "\"caramel\"";
 			int maxSimultaneousSeeds = 15;
 			int maxLinksPerSeed = 3000;

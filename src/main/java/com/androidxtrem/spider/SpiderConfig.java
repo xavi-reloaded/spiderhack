@@ -9,8 +9,8 @@ package com.androidxtrem.spider;
  */
 public interface SpiderConfig {
 
-    String WORKING_FOLDER = "sd_spider";
-    String CACHE_FOLDER = "sd_spider/cache";
-    String LOG_PREFIX = "[socialintellegentia-spider] --> ";
+    String WORKING_FOLDER = "/home/apium/workspace/xavi-reloaded/spiderhack/sd_spider";
+    String CACHE_FOLDER = "/home/apium/workspace/xavi-reloaded/spiderhack/sd_spider/cache";
+    String LOG_PREFIX = "[ultra-spider] --> ";
 
 }

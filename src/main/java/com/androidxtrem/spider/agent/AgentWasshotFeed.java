@@ -20,7 +20,6 @@ public class AgentWasshotFeed extends Agent
     @Override
     public void run()
     {
-
         try
         {
             String url = getUrl();
