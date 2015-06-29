@@ -98,4 +98,8 @@ public class FeedFetcher {
 		}
 		return foundUrl;
 	}
+
+    public FetchedFeed fetch(String url) throws HttpGetter.NotModifiedException, FeedException, IOException {
+        return fetch(url, true, "", "", new Date(), "");
+    }
 }

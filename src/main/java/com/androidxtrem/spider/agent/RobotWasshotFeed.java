@@ -9,7 +9,6 @@ import java.util.Date;
 public class RobotWasshotFeed extends Robot
 {
 
-
     private long minutesInCache;
     private int m_milisecondsBetweenQueries = 1000;
 
