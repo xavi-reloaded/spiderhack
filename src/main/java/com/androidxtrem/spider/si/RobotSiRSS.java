@@ -1,18 +1,26 @@
-package com.androidxtrem.spider.agent;
+package com.androidxtrem.spider.si;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
+import com.androidxtrem.spider.core.Robot;
 
 import java.io.IOException;
 import java.util.Date;
 
-public class AgentWasshotFeed extends Agent
+/**
+ * Created with IntelliJ IDEA.
+ * User: fjhidalgo
+ * Date: 5/29/13
+ * Time: 6:12 PM
+ * To change this template use File | Settings | File Templates.
+ */
+public class RobotSiRSS extends Robot
 {
 
 
     private long minutesInCache;
     private int m_milisecondsBetweenQueries = 1000;
 
-    public AgentWasshotFeed(String workingFolder, String cacheFolder, long minutesInCache) throws IOException, InterruptedException {
+    public RobotSiRSS(String workingFolder, String cacheFolder, long minutesInCache) throws IOException, InterruptedException {
         super(workingFolder, cacheFolder, minutesInCache);
         this.minutesInCache = minutesInCache;
     }
@@ -20,6 +28,7 @@ public class AgentWasshotFeed extends Agent
     @Override
     public void run()
     {
+
         try
         {
             String url = getUrl();
@@ -28,15 +37,27 @@ public class AgentWasshotFeed extends Agent
 
             StringBuffer rawnews = getRequestXML(url, minutesInCache);
 
+
+
+
             if(rawnews == null)
             {
                 String infoMessage = "[AgentSiRSS] --> Error requesting \"" + url + "\" from \"" + getProxy() + "\"";
                 log.warn(infoMessage);
+//                persistence.saveUrlToBlackList(url, infoMessage);
                 writeErrorFile(name, "--nein---");
                 return;
             }
             else
             {
+//                if (!RSSHelper.isXMLRSS(rawnews.toString()) || RSSHelper.isRssLandingPage(rawnews.toString()))
+//                {
+//                    String infoMessage = "[AgentSiRSS] --> Not a valid RSS source " + getSeed();
+//                    log.warn(infoMessage);
+////                    persistence.saveUrlToBlackList(getSeed(), infoMessage);
+//                    writeErrorFile(name, rawnews.toString());
+//                    return;
+//                }
                 saveResult(rawnews, name);
                 log.info("[AgentSiRSS] --> Save founded seed \"" + name + "\"");
             }

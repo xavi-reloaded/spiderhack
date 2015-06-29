@@ -1,10 +1,8 @@
 package com.androidxtrem.spider;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
-import com.androidxtrem.spider.agent.Agent;
-import com.androidxtrem.spider.agent.AgentWasshotFeed;
-import com.androidxtrem.spider.agent.AgentsManager;
-import com.wasshot.feederwerk.feed.FeedParser;
+import com.androidxtrem.spider.core.*;
+import com.androidxtrem.spider.agent.RobotWasshotFeed;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -13,7 +11,7 @@ import java.util.List;
 /**
  * Created by apium on 6/28/15.
  */
-public class DummySpider extends AgentsManager implements SpiderConfig{
+public class DummySpider extends RobotExerciser implements SpiderConfig {
 
     private AnonymousProxyManager proxyManager = null;
     int maxProxyThreads = 3;
@@ -32,9 +30,9 @@ public class DummySpider extends AgentsManager implements SpiderConfig{
         addNewSeed(new Seed("http://www.techlearning.com/rss", 1));
 
 
-        List<Agent> spiderList = new ArrayList<Agent>();
+        List<Robot> spiderList = new ArrayList<Robot>();
         for(int i = 0; i < 5; i++) {
-            spiderList.add(new AgentWasshotFeed(folder, CACHE_FOLDER, Long.MAX_VALUE));
+            spiderList.add(new RobotWasshotFeed(folder, CACHE_FOLDER, Long.MAX_VALUE));
         }
 
 

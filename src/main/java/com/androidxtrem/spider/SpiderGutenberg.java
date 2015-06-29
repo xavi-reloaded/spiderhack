@@ -1,15 +1,14 @@
 package com.androidxtrem.spider;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
-import com.androidxtrem.spider.agent.Agent;
-import com.androidxtrem.spider.agent.AgentGutenbergEpub;
-import com.androidxtrem.spider.agent.AgentsManager;
+import com.androidxtrem.spider.core.*;
+import com.androidxtrem.spider.agent.RobotGutenbergEpub;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SpiderGutenberg extends AgentsManager implements SpiderConfig
+public class SpiderGutenberg extends RobotExerciser implements SpiderConfig
 {   String cacheFolder = WORKING_FOLDER + "/guttemberg";
 	private AnonymousProxyManager proxyManager = null;
 	int maxProxyThreads = 5;
@@ -61,9 +60,9 @@ public class SpiderGutenberg extends AgentsManager implements SpiderConfig
 		FileHelper.createFolder(workingFolder);
 		FileHelper.createFolder(cacheFolder);
 		//AnonymousProxyManager proxyManager = new AnonymousProxyManager(cachefolder, maxProxyThreads);
-		List<Agent> spiderList = new ArrayList<Agent>();
+		List<Robot> spiderList = new ArrayList<Robot>();
 		for(int i = 0; i < maxSpiderThreads; i++)
-			spiderList.add(new AgentGutenbergEpub(workingFolder, cacheFolder, Long.MAX_VALUE));
+			spiderList.add(new RobotGutenbergEpub(workingFolder, cacheFolder, Long.MAX_VALUE));
 
 		HttpDownloader downloader = new HttpDownloader(cacheFolder, 10 * 24 * 60, 10000, 60000);
 

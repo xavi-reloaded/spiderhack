@@ -1,7 +1,5 @@
-package com.androidxtrem.spider.agent;
+package com.androidxtrem.spider.core;
 
-import com.androidxtrem.spider.AnonymousProxyManager;
-import com.androidxtrem.spider.Seed;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.joda.time.format.DateTimeFormat;
@@ -12,18 +10,18 @@ import java.net.Proxy;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AgentsManager implements Runnable 
+public class RobotExerciser implements Runnable
 {
 
-    protected Log log = LogFactory.getLog(AgentsManager.class);
+    protected Log log = LogFactory.getLog(RobotExerciser.class);
     protected DateTimeFormatter fmt = DateTimeFormat.forPattern("dd-MMMM-yyyy:HH:ss:mm");
 
 	private AnonymousProxyManager m_proxyManager = null;
-	private List<Agent> m_agentList = null;
+	private List<Robot> m_agentList = null;
 	private List<Seed> m_seeds = new ArrayList<Seed>();
 	private Thread m_thread = null;
 
-	protected void startAgentsManager(int milisecondsBetweenQueries, AnonymousProxyManager proxyManager, List<Agent> agentList) throws InterruptedException, IOException
+	protected void startAgentsManager(int milisecondsBetweenQueries, AnonymousProxyManager proxyManager, List<Robot> agentList) throws InterruptedException, IOException
 	{
 		if(m_thread == null)
 			m_thread = new Thread(this);

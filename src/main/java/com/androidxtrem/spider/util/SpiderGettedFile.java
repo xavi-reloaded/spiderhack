@@ -1,6 +1,6 @@
 package com.androidxtrem.spider.util;
 
-import com.androidxtrem.spider.SpiderConfig;
+import com.androidxtrem.spider.core.SpiderConfig;
 import com.androidxtrem.spider.domain.DataFax;
 
 import java.io.*;

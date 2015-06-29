@@ -52,7 +52,7 @@ public class HttpGetter {
 
 	@Inject
 	public HttpGetter() {
-		this.userAgent = String.format("CommaFeed/%s (https://www.commafeed.com)", "FLIPPER AGENT");
+		this.userAgent = String.format("Wasshot/%s (http://www.wasshot.com)", "FLIPPER AGENT");
 	}
 
 	public HttpResult getBinary(String url, int timeout) throws ClientProtocolException, IOException, NotModifiedException {

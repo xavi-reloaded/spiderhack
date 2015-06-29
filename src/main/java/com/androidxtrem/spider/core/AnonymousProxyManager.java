@@ -1,6 +1,7 @@
-package com.androidxtrem.spider;
+package com.androidxtrem.spider.core;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
+import com.androidxtrem.spider.RegExpHelper;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -9,12 +10,12 @@ import java.net.Proxy;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AnonymousProxyManager implements Runnable,SpiderConfig
+public class AnonymousProxyManager implements Runnable, SpiderConfig
 {
 	private List<Thread> m_threads = null;
 	private List<Proxy> m_proxyList = null;
 	private List<Proxy> m_checkedProxyList = new ArrayList<Proxy>();
-	private int m_currentProxy = -1;
+    private int m_currentProxy = -1;
 	private int m_poolSize = 0;
 
 	public AnonymousProxyManager(String cacheFolder, int poolSize) throws IOException
@@ -29,6 +30,19 @@ public class AnonymousProxyManager implements Runnable,SpiderConfig
 			m_threads.get(i).start();
 		}
 	}
+
+    private List<Proxy> getProxyList(String cacheFolder) throws IOException
+    {
+        List<Proxy> proxyList = new ArrayList<Proxy>();
+//		proxyList.addAll(getProxyList_workingproxiesorg(cacheFolder));
+//		proxyList.addAll( getProxyList_rosinstrumentcom( cacheFolder ) );
+        proxyList.addAll(getSshProxy(cacheFolder));
+        proxyList = cleanlist(proxyList);
+
+        System.out.println(proxyList.size() + " proxies has been found");
+
+        return randomizelist(proxyList);
+    }
 
 	private List<Proxy> getProxies(String text, String pat)
 	{
@@ -113,14 +127,14 @@ public class AnonymousProxyManager implements Runnable,SpiderConfig
 		return result;
 	}
 
-	/*private List<Proxy> getProxyList_21(String cachefolder) throws IOException
+	private List<Proxy> getSshProxy(String cachefolder) throws IOException
 	{
-		HttpDownloader downloader = new HttpDownloader(cachefolder, 5000, 10000);
-		String response = downloader.getRequest("http://xn--21-9kcepstre5j7bf.xn--p1ai/d/Free_Anonymous_Proxy_List.html", 0);
-		List<Proxy> proxyList = getProxies(response, "([0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}):([0-9]+)");
-		System.out.println(proxyList.size() + " proxies has been found from http://xn--21-9kcepstre5j7bf.xn--p1ai/d/Free_Anonymous_Proxy_List.html");
+		HttpDownloader downloader = new HttpDownloader(cachefolder, 60 * 24, 5000, 10000);
+		StringBuffer response = downloader.getRequest("http://www.sshproxy.info/2015/04/update-1000-proxylist-21-april-2015.html");
+		List<Proxy> proxyList = getProxies(response.toString(), "([0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}):([0-9]+)");
+		System.out.println(proxyList.size() + " proxies has been found from http://www.sshproxy.info/2015/04/update-1000-proxylist-21-april-2015.html");
 		return proxyList;
-	}*/
+	}
 
 	private List<Proxy> getProxyList_rosinstrumentcom(String cacheFolder) throws IOException
 	{
@@ -135,29 +149,18 @@ public class AnonymousProxyManager implements Runnable,SpiderConfig
 		return proxyList;
 	}
 
-	/*private List<Proxy> getProxyList_workingproxiesorg(String cachefolder) throws IOException
+	private List<Proxy> getProxyList_workingproxiesorg(String cachefolder) throws IOException
 	{
-		HttpDownloader downloader = new HttpDownloader(cachefolder, 5000, 10000);
+		HttpDownloader downloader = new HttpDownloader(cachefolder, 60 * 24, 5000, 10000);
 		String pattern = "<font color=\"#333333\">([0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3})</font></td><td><font color=\"#333333\">([0-9]{2,5})[ \\r\\n\\t]*</font>";
 		List<Proxy> proxyList = new ArrayList<Proxy>();
 		for(int i = 1; i <= 10; i++)
 		{
-			String response = downloader.getRequest("http://www.proxyleech.com/page/" + i + ".php", 60 * 12);
-			proxyList.addAll(getProxies(response, pattern));
+			StringBuffer response = downloader.getRequest("http://www.proxyleech.com/page/" + i + ".php");
+			proxyList.addAll(getProxies(response.toString(), pattern));
 		}
 		System.out.println(proxyList.size() + " proxies has been found from http://www.proxyleech.com");
 		return proxyList;
-	}*/
-
-	private List<Proxy> getProxyList(String cacheFolder) throws IOException
-	{
-		List<Proxy> proxyList = new ArrayList<Proxy>();
-		//proxyList.addAll(getProxyList_workingproxiesorg(cachefolder));
-		proxyList.addAll( getProxyList_rosinstrumentcom( cacheFolder ) );
-		//		proxyList.addAll(getProxyList_21(cachefolder));
-		proxyList = cleanlist(proxyList);
-		System.out.println(proxyList.size() + " proxies has been found");
-		return randomizelist(proxyList);
 	}
 
 	private boolean testProxy(Proxy proxy)
@@ -168,7 +171,7 @@ public class AnonymousProxyManager implements Runnable,SpiderConfig
 			HttpDownloader downloader = new HttpDownloader(null, -1, 5000, 10000);
 			downloader.setProxy(proxy);
 			String key = "" + Math.random();
-			String response = downloader.getRequest("http://ca.wikipedia.org/w/index.php?title=Especial%3ACerca&search=" + key, -1, false).toString();
+			String response = downloader.getRequest("https://en.wikipedia.org/wiki/Special:Search?search=comparison+of+software&go=Go" + key, -1, false).toString();
 			if(response != null)
 			{
 				if(response.length() > 0)
@@ -182,7 +185,7 @@ public class AnonymousProxyManager implements Runnable,SpiderConfig
 		}
 		catch (Exception e)
 		{
-			// e.printStackTrace( );
+			e.printStackTrace( );
 		}
 		return r;
 	}
@@ -241,6 +244,7 @@ public class AnonymousProxyManager implements Runnable,SpiderConfig
 			}
 			catch (InterruptedException e)
 			{
+                System.out.println("Message !!! " + m_checkedProxyList.size() + "/" + m_poolSize);
 				break;
 			}
 		}

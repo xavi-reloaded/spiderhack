@@ -1,5 +1,7 @@
 package com.androidxtrem.spider.agent;
 
+import com.androidxtrem.spider.core.Robot;
+
 import java.io.IOException;
 
 /**
@@ -9,9 +11,9 @@ import java.io.IOException;
  * Time: 1:00 PM
  * To change this template use File | Settings | File Templates.
  */
-public class AgentSeccionAmarillaMe extends Agent {
+public class RobotSeccionAmarillaMe extends Robot {
 
-    public AgentSeccionAmarillaMe(String workingFolder, String cacheFolder, long minutesInCache) throws IOException, InterruptedException {
+    public RobotSeccionAmarillaMe(String workingFolder, String cacheFolder, long minutesInCache) throws IOException, InterruptedException {
         super(workingFolder, cacheFolder, minutesInCache);
     }
 

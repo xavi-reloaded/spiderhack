@@ -1,6 +1,7 @@
 package com.androidxtrem.spider;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
+import com.androidxtrem.spider.core.HttpDownloader;
 import junit.framework.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;

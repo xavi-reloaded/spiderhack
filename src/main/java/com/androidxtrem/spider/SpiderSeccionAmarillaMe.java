@@ -1,15 +1,14 @@
 package com.androidxtrem.spider;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
-import com.androidxtrem.spider.agent.Agent;
-import com.androidxtrem.spider.agent.AgentSeccionAmarillaMe;
-import com.androidxtrem.spider.agent.AgentsManager;
+import com.androidxtrem.spider.core.*;
+import com.androidxtrem.spider.agent.RobotSeccionAmarillaMe;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SpiderSeccionAmarillaMe extends AgentsManager implements SpiderConfig
+public class SpiderSeccionAmarillaMe extends RobotExerciser implements SpiderConfig
 {
     String cacheFolder = WORKING_FOLDER + "/spidercache_seccionamarillame";
     private AnonymousProxyManager proxyManager = null;
@@ -49,9 +48,9 @@ public class SpiderSeccionAmarillaMe extends AgentsManager implements SpiderConf
         /////////////////////////////////////////////////////////
         // Create Spiders
         /////////////////////////////////////////////////////////
-        List<Agent> spiderList = new ArrayList<Agent>();
+        List<Robot> spiderList = new ArrayList<Robot>();
         for(int i = 0; i < maxSpiderThreads; i++) {
-            spiderList.add(new AgentSeccionAmarillaMe(workingFolder, cacheFolder, Long.MAX_VALUE));
+            spiderList.add(new RobotSeccionAmarillaMe(workingFolder, cacheFolder, Long.MAX_VALUE));
         }
 
         /////////////////////////////////////////////////////////

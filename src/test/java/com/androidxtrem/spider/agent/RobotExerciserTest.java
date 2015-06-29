@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
  * Time: 11:15 AM
  * To change this template use File | Settings | File Templates.
  */
-public class AgentsManagerTest {
+public class RobotExerciserTest {
 
 
     @BeforeMethod

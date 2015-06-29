@@ -1,14 +1,11 @@
 package com.androidxtrem.spider;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
-import com.androidxtrem.spider.agent.Agent;
-import com.androidxtrem.spider.agent.AgentWasshotFeed;
-import com.androidxtrem.spider.agent.AgentsManager;
-import com.androidxtrem.spider.si.AgentSiRSS;
+import com.androidxtrem.spider.core.*;
+import com.androidxtrem.spider.agent.RobotWasshotFeed;
 import com.rometools.rome.io.FeedException;
 import com.wasshot.feederwerk.feed.FeedParser;
 import com.wasshot.feederwerk.feed.FetchedFeed;
-import com.wasshot.feederwerk.model.Feed;
 import com.wasshot.feederwerk.model.FeedEntry;
 import org.joda.time.DateTime;
 
@@ -23,7 +20,7 @@ import java.util.List;
  * Time: 6:32 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SpiderWasshotFeed extends AgentsManager implements SpiderConfig {
+public class SpiderWasshotFeed extends RobotExerciser implements SpiderConfig {
 
     private AnonymousProxyManager proxyManager = null;
     private FeedParser parser;
@@ -51,9 +48,9 @@ public class SpiderWasshotFeed extends AgentsManager implements SpiderConfig {
         FileHelper.createFolder(workingFolder);
         FileHelper.createFolder(CACHE_FOLDER);
 
-        List<Agent> spiderList = new ArrayList<Agent>();
+        List<Robot> spiderList = new ArrayList<Robot>();
         for(int i = 0; i < maxSpiderThreads; i++) {
-            spiderList.add(new AgentWasshotFeed(workingFolder, CACHE_FOLDER, Long.MAX_VALUE));
+            spiderList.add(new RobotWasshotFeed(workingFolder, CACHE_FOLDER, Long.MAX_VALUE));
         }
 
         HttpDownloader downloader = new HttpDownloader(CACHE_FOLDER, 10 * 24 * 60, 10000, 60000);

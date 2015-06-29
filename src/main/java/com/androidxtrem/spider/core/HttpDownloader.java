@@ -1,6 +1,7 @@
-package com.androidxtrem.spider;
+package com.androidxtrem.spider.core;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
+import com.androidxtrem.spider.RegExpHelper;
 
 import java.io.*;
 import java.net.Proxy;
@@ -153,17 +154,17 @@ public class HttpDownloader
                         System.out.println("Warning: url(" + url + ") has returned " + code);
                     }
                     else*/
-                    {
+
                         if(minutesInCache > -1 && sb.length() > 0)
                         {
                             FileHelper.createFolder(m_cacheFolder);
                             setInCache(url, sb.toString());
                         }
-                    }
+
 				}
 				catch(Exception e)
 				{
-//					System.out.println("getRequest error: class(" + e.getClass().toString() + "), message(" + e.getMessage() + "), url(" + url + ")");
+					System.out.println("getRequest error: class(" + e.getClass().toString() + "), message(" + e.getMessage() + "), url(" + url + ")");
                     sb = null;
 				}
 			}

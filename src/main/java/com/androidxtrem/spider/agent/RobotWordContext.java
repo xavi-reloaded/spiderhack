@@ -2,15 +2,16 @@ package com.androidxtrem.spider.agent;
 
 import com.androidxtrem.spider.RegExpHelper;
 import com.androidxtrem.spider.StringHelper;
+import com.androidxtrem.spider.core.Robot;
 
 import java.io.IOException;
 import java.util.List;
 
-public class AgentWordContext extends Agent 
+public class RobotWordContext extends Robot
 {
 	private String m_word = "";
 
-	public AgentWordContext(String word, String workingFolder, String cacheFolder, long minutesInCache) throws IOException, InterruptedException
+	public RobotWordContext(String word, String workingFolder, String cacheFolder, long minutesInCache) throws IOException, InterruptedException
 	{
 		super(workingFolder, cacheFolder, minutesInCache);
 		m_word = word;

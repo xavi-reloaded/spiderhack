@@ -2,12 +2,13 @@ package com.androidxtrem.spider.agent;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
 import com.androidxtrem.spider.RegExpHelper;
+import com.androidxtrem.spider.core.Robot;
 
 import java.io.IOException;
 
-public class AgentGutenbergEpub extends Agent 
+public class RobotGutenbergEpub extends Robot
 {
-	public AgentGutenbergEpub(String workingFolder, String cacheFolder, long minutesInCache) throws IOException, InterruptedException
+	public RobotGutenbergEpub(String workingFolder, String cacheFolder, long minutesInCache) throws IOException, InterruptedException
 	{
 		super(workingFolder, cacheFolder, minutesInCache);
 	}

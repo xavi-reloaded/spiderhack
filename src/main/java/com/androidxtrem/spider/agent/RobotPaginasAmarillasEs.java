@@ -2,15 +2,16 @@ package com.androidxtrem.spider.agent;
 
 import com.androidxtrem.spider.RegExpHelper;
 import com.androidxtrem.spider.StringHelper;
+import com.androidxtrem.spider.core.Robot;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 
-public class AgentPaginasAmarillasEs extends Agent
+public class RobotPaginasAmarillasEs extends Robot
 {
-	public AgentPaginasAmarillasEs(String workingFolder, String cacheFolder, long minutesInCache) throws IOException, InterruptedException
+	public RobotPaginasAmarillasEs(String workingFolder, String cacheFolder, long minutesInCache) throws IOException, InterruptedException
 	{
 		super(workingFolder, cacheFolder, minutesInCache);
 	}

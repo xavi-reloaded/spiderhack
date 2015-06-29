@@ -1,9 +1,11 @@
 package com.androidxtrem.spider;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
-import com.androidxtrem.spider.agent.Agent;
-import com.androidxtrem.spider.agent.AgentWordContext;
-import com.androidxtrem.spider.agent.AgentsManager;
+import com.androidxtrem.spider.core.Robot;
+import com.androidxtrem.spider.agent.RobotWordContext;
+import com.androidxtrem.spider.core.RobotExerciser;
+import com.androidxtrem.spider.core.AnonymousProxyManager;
+import com.androidxtrem.spider.core.Seed;
 
 import java.io.IOException;
 import java.text.Format;
@@ -13,7 +15,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-public class SpiderGoogleByDate extends AgentsManager
+public class SpiderGoogleByDate extends RobotExerciser
 {	
 	public void test() throws IOException, InterruptedException
 	{
@@ -42,8 +44,8 @@ public class SpiderGoogleByDate extends AgentsManager
 			FileHelper.createFolder(workingFolder);
 			FileHelper.createFolder(cacheFolder);
 			AnonymousProxyManager proxyManager = new AnonymousProxyManager(cacheFolder, maxProxyThreads);
-			List<Agent> spiderList = new ArrayList<Agent>();
-			for(i = 0; i < maxSpiderThreads; i++) spiderList.add(new AgentWordContext("caramel", workingFolder, cacheFolder, Long.MAX_VALUE));
+			List<Robot> spiderList = new ArrayList<Robot>();
+			for(i = 0; i < maxSpiderThreads; i++) spiderList.add(new RobotWordContext("caramel", workingFolder, cacheFolder, Long.MAX_VALUE));
 			startAgentsManager(milisecondsBetweenQueries, proxyManager, spiderList);
 
 			long googlePage = 0;

@@ -1,7 +1,7 @@
 package com.androidxtrem.spider.agent;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
-import com.androidxtrem.spider.HttpDownloader;
+import com.androidxtrem.spider.core.HttpDownloader;
 import com.androidxtrem.spider.RegExpHelper;
 import com.androidxtrem.spider.StringHelper;
 

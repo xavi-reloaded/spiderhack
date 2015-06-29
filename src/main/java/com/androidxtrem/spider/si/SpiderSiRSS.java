@@ -1,13 +1,11 @@
 package com.androidxtrem.spider.si;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
-import com.androidxtrem.spider.AnonymousProxyManager;
-import com.androidxtrem.spider.HttpDownloader;
-import com.androidxtrem.spider.Seed;
-import com.androidxtrem.spider.SpiderConfig;
-import com.androidxtrem.spider.agent.Agent;
-import com.androidxtrem.spider.agent.AgentsManager;
-import com.socialintellegentia.processes.ProcessRSS;
+import com.androidxtrem.spider.core.AnonymousProxyManager;
+import com.androidxtrem.spider.core.HttpDownloader;
+import com.androidxtrem.spider.core.SpiderConfig;
+import com.androidxtrem.spider.core.Robot;
+import com.androidxtrem.spider.core.RobotExerciser;
 import org.joda.time.DateTime;
 
 import java.io.IOException;
@@ -21,7 +19,7 @@ import java.util.List;
  * Time: 6:32 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
+public class SpiderSiRSS extends RobotExerciser implements SpiderConfig {
 
     private AnonymousProxyManager proxyManager = null;
     int maxProxyThreads = 5;
@@ -56,9 +54,9 @@ public class SpiderSiRSS extends AgentsManager implements SpiderConfig {
         /////////////////////////////////////////////////////////
         // Create Spiders
         /////////////////////////////////////////////////////////
-        List<Agent> spiderList = new ArrayList<Agent>();
+        List<Robot> spiderList = new ArrayList<Robot>();
         for(int i = 0; i < maxSpiderThreads; i++) {
-            spiderList.add(new AgentSiRSS(workingFolder, CACHE_FOLDER, Long.MAX_VALUE));
+            spiderList.add(new RobotSiRSS(workingFolder, CACHE_FOLDER, Long.MAX_VALUE));
         }
 
         /////////////////////////////////////////////////////////

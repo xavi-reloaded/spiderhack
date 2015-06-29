@@ -1,4 +1,4 @@
-package com.androidxtrem.spider;
+package com.androidxtrem.spider.core;
 
 /**
  * Created with IntelliJ IDEA.

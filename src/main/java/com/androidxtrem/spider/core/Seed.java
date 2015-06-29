@@ -1,4 +1,4 @@
-package com.androidxtrem.spider;
+package com.androidxtrem.spider.core;
 
 import java.util.ArrayList;
 import java.util.List;

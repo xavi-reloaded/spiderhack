@@ -11,15 +11,15 @@ import org.testng.annotations.Test;
  * Time: 10:56 AM
  * To change this template use File | Settings | File Templates.
  */
-public class AgentPaginasAmarillasEnterpriseEsTest {
+public class RobotPaginasAmarillasEnterpriseEsTest {
 
-    private AgentPaginasAmarillasEnterpriseEs sut;
+    private RobotPaginasAmarillasEnterpriseEs sut;
 
     @BeforeMethod
     public void setUp() throws Exception {
         String workingfolder = "/home/fjhidalgo/workspace/processes/src/test/resources/processes/workingfolder";
         String cacheFolder = "/home/fjhidalgo/workspace/processes/src/test/resources/processes/cachefolder";
-        sut = new AgentPaginasAmarillasEnterpriseEs(workingfolder,cacheFolder,Long.MAX_VALUE);
+        sut = new RobotPaginasAmarillasEnterpriseEs(workingfolder,cacheFolder,Long.MAX_VALUE);
     }
 
     @Test

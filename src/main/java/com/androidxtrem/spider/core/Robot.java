@@ -1,7 +1,6 @@
-package com.androidxtrem.spider.agent;
+package com.androidxtrem.spider.core;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
-import com.androidxtrem.spider.HttpDownloader;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.joda.time.format.DateTimeFormat;
@@ -11,11 +10,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Agent extends HttpDownloader implements Runnable
+public abstract class Robot extends HttpDownloader implements Runnable
 {
 
 
-    protected Log log = LogFactory.getLog(Agent.class);
+    protected Log log = LogFactory.getLog(Robot.class);
     protected DateTimeFormatter fmt = DateTimeFormat.forPattern("dd-MMMM-yyyy:HH:ss:mm");
 
 	private String m_workingFolder = "";
@@ -24,7 +23,7 @@ public abstract class Agent extends HttpDownloader implements Runnable
 	private Thread m_thread = null;
 	private List<String> m_newLinks = new ArrayList<String>();
 
-	public Agent(String workingFolder, String cacheFolder, long minutesInCache) throws IOException, InterruptedException
+	public Robot(String workingFolder, String cacheFolder, long minutesInCache) throws IOException, InterruptedException
 	{
 		super(cacheFolder, minutesInCache, 10000, 60000);
 		m_workingFolder = workingFolder;

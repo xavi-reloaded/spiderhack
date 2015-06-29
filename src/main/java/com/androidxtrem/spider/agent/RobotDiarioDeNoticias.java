@@ -2,13 +2,14 @@ package com.androidxtrem.spider.agent;
 
 import com.androidxtrem.spider.RegExpHelper;
 import com.androidxtrem.spider.StringHelper;
+import com.androidxtrem.spider.core.Robot;
 
 import java.io.IOException;
 import java.util.List;
 
-public class AgentDiarioDeNoticias extends Agent
+public class RobotDiarioDeNoticias extends Robot
 {
-	public AgentDiarioDeNoticias(String workingFolder, String cacheFolder, long minutesInCache) throws IOException, InterruptedException
+	public RobotDiarioDeNoticias(String workingFolder, String cacheFolder, long minutesInCache) throws IOException, InterruptedException
 	{
 		super(workingFolder, cacheFolder, minutesInCache);
 	}

@@ -1,15 +1,14 @@
 package com.androidxtrem.spider;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
-import com.androidxtrem.spider.agent.Agent;
-import com.androidxtrem.spider.agent.AgentPaginasAmarillasEs;
-import com.androidxtrem.spider.agent.AgentsManager;
+import com.androidxtrem.spider.core.*;
+import com.androidxtrem.spider.agent.RobotPaginasAmarillasEs;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SpiderPaginasAmarillasEs extends AgentsManager implements SpiderConfig
+public class SpiderPaginasAmarillasEs extends RobotExerciser implements SpiderConfig
 {
     //	String cachefolder = "/home/fjhidalgo/.gvfs/processes/spidercache_paginasamarillases";
 	String cacheFolder = WORKING_FOLDER + "/spidercache_paginasamarillases";
@@ -67,9 +66,9 @@ public class SpiderPaginasAmarillasEs extends AgentsManager implements SpiderCon
         /////////////////////////////////////////////////////////
         // Create Spiders
         /////////////////////////////////////////////////////////
-        List<Agent> spiderList = new ArrayList<Agent>();
+        List<Robot> spiderList = new ArrayList<Robot>();
         for(int i = 0; i < maxSpiderThreads; i++) {
-            spiderList.add(new AgentPaginasAmarillasEs(workingFolder, cacheFolder, Long.MAX_VALUE));
+            spiderList.add(new RobotPaginasAmarillasEs(workingFolder, cacheFolder, Long.MAX_VALUE));
         }
 
         /////////////////////////////////////////////////////////

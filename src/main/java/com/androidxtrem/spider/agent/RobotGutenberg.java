@@ -1,12 +1,13 @@
 package com.androidxtrem.spider.agent;
 
 import com.androidxtrem.commonsHelpers.RegExpHelper;
+import com.androidxtrem.spider.core.Robot;
 
 import java.io.IOException;
 
-public class AgentGutenberg extends Agent 
+public class RobotGutenberg extends Robot
 {
-	public AgentGutenberg(String workingFolder, String cacheFolder, long minutesInCache) throws IOException, InterruptedException
+	public RobotGutenberg(String workingFolder, String cacheFolder, long minutesInCache) throws IOException, InterruptedException
 	{
 		super(workingFolder, cacheFolder, minutesInCache);
 	}
