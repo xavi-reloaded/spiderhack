@@ -18,12 +18,18 @@ public class RobotWasshotFeed extends Robot
         this.minutesInCache = minutesInCache;
     }
 
+    public RobotWasshotFeed(String workingFolder, String cacheFolder) throws IOException, InterruptedException {
+        super(workingFolder, cacheFolder, Long.MAX_VALUE);
+        this.minutesInCache = Long.MAX_VALUE;
+    }
+
     @Override
     public void run()
     {
         try
         {
             String url = getUrl();
+            log.info("[RobotWasshot]" + url);
 
             String name = getTempFileName(url);
 
@@ -31,7 +37,7 @@ public class RobotWasshotFeed extends Robot
 
             if(rawnews == null)
             {
-                String infoMessage = "[AgentSiRSS] --> Error requesting \"" + url + "\" from \"" + getProxy() + "\"";
+                String infoMessage = "[RobotWasshot] --> Error requesting \"" + url + "\" from \"" + getProxy() + "\"";
                 log.warn(infoMessage);
                 writeErrorFile(name, "--nein---");
                 return;

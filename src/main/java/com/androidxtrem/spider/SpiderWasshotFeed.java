@@ -51,7 +51,7 @@ public class SpiderWasshotFeed extends RobotExerciser implements SpiderConfig {
 
         List<Robot> spiderList = new ArrayList<Robot>();
         for(int i = 0; i < maxSpiderThreads; i++) {
-            spiderList.add(new RobotWasshotFeed(workingFolder, CACHE_FOLDER, Long.MAX_VALUE));
+            spiderList.add(new RobotWasshotFeed(workingFolder, CACHE_FOLDER));
         }
 
         HttpDownloader downloader = new HttpDownloader(CACHE_FOLDER, 10 * 24 * 60, 10000, 60000);
@@ -75,7 +75,6 @@ public class SpiderWasshotFeed extends RobotExerciser implements SpiderConfig {
         DateTime dtBegin = new DateTime();
         log.debug("[Agent-Wasshot] --> Request " + rss_server + " in: " + fmt.print(dtBegin) + "\n");
 
-        startAgentsManager(milisecondsBetweenQueries, proxyManager, spiderList);
 
         int avoidInfiniteLoop=0;
         Thread.sleep(5000);
@@ -84,6 +83,8 @@ public class SpiderWasshotFeed extends RobotExerciser implements SpiderConfig {
             Thread.sleep(5000);
             avoidInfiniteLoop++;
         }
+
+        startAgentsManager(milisecondsBetweenQueries, proxyManager, spiderList);
 //        stopAgentsManager();
 //        proxyManager.stop();
     }

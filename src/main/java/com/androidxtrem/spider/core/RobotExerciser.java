@@ -112,12 +112,16 @@ public class RobotExerciser implements Runnable
 						Proxy proxy = m_proxyManager.getProxy();
 						if(proxy != null)
 						{
-							for(j = 0; j < m_agentList.size(); j++)
-								if(m_agentList.get(j).getProxy() != null)
-									if(m_agentList.get(j).getProxy().toString().compareTo(proxy.toString()) == 0)
-										break;
-							if(j == m_agentList.size())
-								m_agentList.get(i).setProxy(proxy);
+							for(j = 0; j < m_agentList.size(); j++) {
+                                if (m_agentList.get(j).getProxy() != null) {
+                                    if (m_agentList.get(j).getProxy().toString().compareTo(proxy.toString()) == 0) {
+                                        break;
+                                    }
+                                }
+                            }
+							if(j == m_agentList.size()) {
+                                m_agentList.get(i).setProxy(proxy);
+                            }
 						}
 					}
 					// provide a link to processes
@@ -152,8 +156,9 @@ public class RobotExerciser implements Runnable
 					{
 						if(m_agentList.get(j).isAlive())
 						{
-							if(m_agentList.get(j).getSeed().compareTo(m_seeds.get(i).getSeed()) == 0)
-								break;
+							if(m_agentList.get(j).getSeed().compareTo(m_seeds.get(i).getSeed()) == 0) {
+                                break;
+                            }
 						}
 					}
 					if(j == m_agentList.size())
@@ -174,7 +179,9 @@ public class RobotExerciser implements Runnable
 			{
 				break;
 			}
+
 		}
+
 	}
 
 	public void stopAgentsManager() throws InterruptedException

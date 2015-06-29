@@ -32,10 +32,15 @@ public class DummySpider extends RobotExerciser implements SpiderConfig {
 
 
         List<Robot> spiderList = new ArrayList<Robot>();
-        for(int i = 0; i < 5; i++) {
-            spiderList.add(new RobotWasshotFeed(folder, CACHE_FOLDER, Long.MAX_VALUE));
-        }
+        spiderList.add(new RobotWasshotFeed(folder, CACHE_FOLDER, Long.MAX_VALUE));
 
+
+        int avoidInfiniteLoop=0;
+        Thread.sleep(5000);
+        while(getSeedCount() > 0 && avoidInfiniteLoop>10000) {
+            Thread.sleep(5000);
+            avoidInfiniteLoop++;
+        }
 
         startAgentsManager(0, proxyManager, spiderList);
 
