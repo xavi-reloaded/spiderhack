@@ -1,5 +1,6 @@
 package com.androidxtrem.spider.core;
 
+import com.androidxtrem.spider.core.proxy.AnonymousProxyManager;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.joda.time.format.DateTimeFormat;

@@ -1,7 +1,7 @@
 package com.androidxtrem.spider.si;
 
 import com.androidxtrem.commonsHelpers.FileHelper;
-import com.androidxtrem.spider.core.AnonymousProxyManager;
+import com.androidxtrem.spider.core.proxy.AnonymousProxyManager;
 import com.androidxtrem.spider.core.HttpDownloader;
 import com.androidxtrem.spider.core.SpiderConfig;
 import com.androidxtrem.spider.core.Robot;

@@ -3,6 +3,7 @@ package com.androidxtrem.spider;
 import com.androidxtrem.commonsHelpers.FileHelper;
 import com.androidxtrem.spider.core.*;
 import com.androidxtrem.spider.agent.RobotWasshotFeed;
+import com.androidxtrem.spider.core.proxy.AnonymousProxyManager;
 import com.rometools.rome.io.FeedException;
 import com.wasshot.feederwerk.feed.FeedParser;
 import com.wasshot.feederwerk.feed.FetchedFeed;

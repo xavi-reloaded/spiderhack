@@ -12,28 +12,28 @@ import java.util.Date;
 
 public class HttpDownloader
 {
-	private Proxy m_proxy = null;
-	private String m_cacheFolder = null;
-	private long m_minutesInCache = -1;
-	private int m_connectionTimeout = 2000;
-	private int m_readTimeout = 1000;
+	private Proxy proxy = null;
+	private String cacheFolder = null;
+	private long minutesInCache = -1;
+	private int connectionTimeout = 2000;
+	private int readTimeout = 5000;
 
 	public HttpDownloader(String cacheFolder, long minutesInCache, int connectionTimeout, int readTimeout)
 	{
-		m_cacheFolder = cacheFolder;
-		m_minutesInCache = minutesInCache;
-		m_connectionTimeout = connectionTimeout;
-		m_readTimeout = readTimeout;
+		cacheFolder = cacheFolder;
+		minutesInCache = minutesInCache;
+		connectionTimeout = connectionTimeout;
+		readTimeout = readTimeout;
 	}
 
 	public void setProxy(Proxy proxy)
 	{
-		m_proxy = proxy;
+		this.proxy = proxy;
 	}
 
 	public Proxy getProxy()
 	{
-		return m_proxy;
+		return this.proxy;
 	}
 
 	private long getMinutesSinceLastModified(String filePath)
@@ -46,14 +46,14 @@ public class HttpDownloader
 
 	public String getCacheFileName(String url)
 	{
-		return (m_cacheFolder + System.getProperty("file.separator") + url.replaceAll("[\\\\/:\\*\"\\?<>\\|]", "") + ".html").toLowerCase();
+		return (cacheFolder + System.getProperty("file.separator") + url.replaceAll("[\\\\/:\\*\"\\?<>\\|]", "") + ".html").toLowerCase();
 	}
 
 	public boolean isInCache(String url, long minutesCache)
 	{
 		boolean result = false;
 
-		if(url != null && m_cacheFolder != null)
+		if(url != null && cacheFolder != null)
 		{
 			String cachefile = getCacheFileName(url);
             boolean fileExists = FileHelper.fileExists(cachefile);
@@ -65,7 +65,7 @@ public class HttpDownloader
 
 	private void setInCache(String url, String page) throws IOException
 	{
-		if(url != null && m_cacheFolder != null)
+		if(url != null && cacheFolder != null)
 		{
 			String cachefile = getCacheFileName(url);
 			FileHelper.stringToFile(page, cachefile);
@@ -76,7 +76,7 @@ public class HttpDownloader
 	{
 		String result = null;
 
-		if(url != null && m_cacheFolder != null)
+		if(url != null && cacheFolder != null)
 		{
 			String cachefile = getCacheFileName(url);
 			result = FileHelper.fileToString(cachefile);
@@ -87,12 +87,12 @@ public class HttpDownloader
 
 	public StringBuffer getRequest(String url) throws IOException
 	{
-		return getRequest(url, m_minutesInCache, true);
+		return getRequest(url, minutesInCache, true);
 	}
 
     public StringBuffer getRequestXML(String url, long minutesInCache) throws IOException
     {
-        return getRequest(url, m_minutesInCache, false);
+        return getRequest(url, minutesInCache, false);
     }
 
 	public StringBuffer getRequest(String url, long minutesInCache, boolean setRequestProperties) throws IOException
@@ -112,30 +112,31 @@ public class HttpDownloader
 				{
 					URLConnection conn = null;
                     URL urlObject = new URL(url);
-                    if(m_proxy != null)
+                    if(proxy != null)
 					{
-						conn = urlObject.openConnection(m_proxy);
-						conn.setConnectTimeout(m_connectionTimeout);
-						conn.setReadTimeout(m_readTimeout);
+						conn = urlObject.openConnection(proxy);
+						conn.setConnectTimeout(connectionTimeout);
+						conn.setReadTimeout(readTimeout);
 					}
 					else
 					{
 						conn = urlObject.openConnection();
-						conn.setConnectTimeout(m_connectionTimeout);
-						conn.setReadTimeout(m_readTimeout);
+						conn.setConnectTimeout(connectionTimeout);
+						conn.setReadTimeout(readTimeout);
 					}
 
                     if (setRequestProperties) setRequestProperties(conn);
 
-					String contentType = conn.getHeaderField("Content-Type").toUpperCase();
-					String charset = RegExpHelper.getFirstMatch(contentType, "CHARSET[ ]*=[ ]*([^ ;]+)", 1);
-					if(charset.length() == 0)
-					{
-						// System.out.println("Charset not found in headers " +
-						// conn.getHeaderFields( ).values( ).toString( ));
-//						charset = "ISO-8859-1";
-						charset = "UTF-8";
-					}
+//					String contentType = conn.getHeaderField("Content-Type").toUpperCase();
+//					String charset = RegExpHelper.getFirstMatch(contentType, "CHARSET[ ]*=[ ]*([^ ;]+)", 1);
+//					if(charset.length() == 0)
+//					{
+//						// System.out.println("Charset not found in headers " +
+//						// conn.getHeaderFields( ).values( ).toString( ));
+////						charset = "ISO-8859-1";
+//						charset = "UTF-8";
+//					}
+                    String charset = "UTF-8";
 
 					BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream(), charset/* "ISO-8859-1" */));
 
@@ -157,7 +158,7 @@ public class HttpDownloader
 
                         if(minutesInCache > -1 && sb.length() > 0)
                         {
-                            FileHelper.createFolder(m_cacheFolder);
+                            FileHelper.createFolder(cacheFolder);
                             setInCache(url, sb.toString());
                         }
 
@@ -188,17 +189,17 @@ public class HttpDownloader
 			try
 			{
 				URLConnection conn = null;
-				if(m_proxy != null)
+				if(proxy != null)
 				{
-					conn = (new URL(url)).openConnection(m_proxy);
-					conn.setConnectTimeout(m_connectionTimeout);
-					conn.setReadTimeout(m_readTimeout);
+					conn = (new URL(url)).openConnection(proxy);
+					conn.setConnectTimeout(connectionTimeout);
+					conn.setReadTimeout(readTimeout);
 				}
 				else
 				{
 					conn = (new URL(url)).openConnection();
-					conn.setConnectTimeout(m_connectionTimeout);
-					conn.setReadTimeout(m_readTimeout);
+					conn.setConnectTimeout(connectionTimeout);
+					conn.setReadTimeout(readTimeout);
 				}
 
 				conn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
@@ -249,18 +250,18 @@ public class HttpDownloader
 				try
 				{
 					URLConnection conn = null;
-					if(m_proxy != null)
+					if(proxy != null)
 					{
-						conn = (new URL(url)).openConnection(m_proxy);
-						conn.setConnectTimeout(m_connectionTimeout);
-						conn.setReadTimeout(m_readTimeout);
+						conn = (new URL(url)).openConnection(proxy);
+						conn.setConnectTimeout(connectionTimeout);
+						conn.setReadTimeout(readTimeout);
 						conn.setDoOutput(true);
 					}
 					else
 					{
 						conn = (new URL(url)).openConnection();
-						conn.setConnectTimeout(m_connectionTimeout);
-						conn.setReadTimeout(m_readTimeout);
+						conn.setConnectTimeout(connectionTimeout);
+						conn.setReadTimeout(readTimeout);
 						conn.setDoOutput(true);
 					}
 
@@ -291,11 +292,11 @@ public class HttpDownloader
 					rd.close();
 
 					response = sb.toString();
-					// if(m_regExpManager.getFirstMatch( response, "(<.+>)+",
+					// if(regExpManager.getFirstMatch( response, "(<.+>)+",
 					// 1).length( ) == 0 ) throw new Exception( "Format Error");
 					if(minutesInCache > -1)
 					{
-						FileHelper.createFolder(m_cacheFolder);
+						FileHelper.createFolder(cacheFolder);
 						setInCache(url, response);
 					}
 				}

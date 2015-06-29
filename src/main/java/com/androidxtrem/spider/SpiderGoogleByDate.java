@@ -4,7 +4,7 @@ import com.androidxtrem.commonsHelpers.FileHelper;
 import com.androidxtrem.spider.core.Robot;
 import com.androidxtrem.spider.agent.RobotWordContext;
 import com.androidxtrem.spider.core.RobotExerciser;
-import com.androidxtrem.spider.core.AnonymousProxyManager;
+import com.androidxtrem.spider.core.proxy.AnonymousProxyManager;
 import com.androidxtrem.spider.core.Seed;
 
 import java.io.IOException;

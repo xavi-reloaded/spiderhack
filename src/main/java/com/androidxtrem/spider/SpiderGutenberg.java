@@ -3,6 +3,7 @@ package com.androidxtrem.spider;
 import com.androidxtrem.commonsHelpers.FileHelper;
 import com.androidxtrem.spider.core.*;
 import com.androidxtrem.spider.agent.RobotGutenbergEpub;
+import com.androidxtrem.spider.core.proxy.AnonymousProxyManager;
 
 import java.io.IOException;
 import java.util.ArrayList;
