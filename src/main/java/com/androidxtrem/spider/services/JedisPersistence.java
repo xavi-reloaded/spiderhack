@@ -5,7 +5,7 @@ import redis.clients.jedis.Jedis;
 /**
  * Created by Xavi the Hut on 21/04/14.
  */
-public class JedisPersistence implements IJedisBasics{
+public class JedisPersistence implements IJedisBasics {
 
     public final static String PROXY_BLACKLIST = "proxy-blacklist";
     private static final int PROXY_BLACKLIST_DATABASE_INDEX = 9;

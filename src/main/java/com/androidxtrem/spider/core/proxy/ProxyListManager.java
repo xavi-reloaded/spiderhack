@@ -14,8 +14,8 @@ import java.util.List;
  * Created by apium on 6/29/15.
  */
 public class ProxyListManager implements SpiderConfig{
-    protected Log log = LogFactory.getLog(ProxyListManager.class);
     List<IProxyRetriever> proxyRetrieverList;
+    public ProxyTester proxyTester;
 
     public ProxyListManager() {
 
@@ -23,6 +23,8 @@ public class ProxyListManager implements SpiderConfig{
         proxyRetrieverList.add(new FixedKnownProxies());
 //        proxyRetrieverList.add(new LocalProxy());
         proxyRetrieverList.add(new ProxiesRoseInstrument());
+
+        proxyTester = new ProxyTester();
 
     }
 
@@ -84,21 +86,5 @@ public class ProxyListManager implements SpiderConfig{
 
     protected boolean testProxy(Proxy proxy)
     {
-        boolean proxyWorks = false;
-        try
-        {
-            HttpDownloader downloader = new HttpDownloader(null, -1, 5000, 10000);
-            downloader.setProxy(proxy);
-            String response = downloader.getRequest("http://apiumtech.com", -1, false).toString();
-            if(response != null && response.length() > 0) proxyWorks = true;
-        }
-        catch (Exception e)
-        {
-//            e.printStackTrace( );
-            log.error("Proxy "+proxy.toString() + " is disabled");
-            log.info("Add proxy to blacklist... " + proxy.toString());
-            return proxyWorks;
-        }
-        return proxyWorks;
-    }
+        return proxyTester.test(proxy);    }
 }
