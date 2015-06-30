@@ -13,6 +13,7 @@ public class FunctionalRunner_Dummy_Test {
     public void test_functional_withProxies() throws Exception {
         DummySpider sut = new DummySpider();
         sut.methodainen();
+        Thread.sleep(100000);
     }
 
     @Test

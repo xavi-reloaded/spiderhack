@@ -2,6 +2,8 @@ package com.androidxtrem.spider.core.proxy;
 
 import com.androidxtrem.spider.core.HttpDownloader;
 import com.androidxtrem.spider.core.SpiderConfig;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 import java.io.IOException;
 import java.net.Proxy;
@@ -12,15 +14,15 @@ import java.util.List;
  * Created by apium on 6/29/15.
  */
 public class ProxyListManager implements SpiderConfig{
-
+    protected Log log = LogFactory.getLog(ProxyListManager.class);
     List<IProxyRetriever> proxyRetrieverList;
 
     public ProxyListManager() {
 
         proxyRetrieverList = new ArrayList<>();
-//        proxyRetrieverList.add(new FixedKnownProxies());
-        proxyRetrieverList.add(new LocalProxy());
-//        proxyRetrieverList.add(new ProxiesRoseInstrument());
+        proxyRetrieverList.add(new FixedKnownProxies());
+//        proxyRetrieverList.add(new LocalProxy());
+        proxyRetrieverList.add(new ProxiesRoseInstrument());
 
     }
 
@@ -92,7 +94,10 @@ public class ProxyListManager implements SpiderConfig{
         }
         catch (Exception e)
         {
-            e.printStackTrace( );
+//            e.printStackTrace( );
+            log.error("Proxy "+proxy.toString() + " is disabled");
+            log.info("Add proxy to blacklist... " + proxy.toString());
+            return proxyWorks;
         }
         return proxyWorks;
     }
